@@ -1,0 +1,3661 @@
+*{
+    box-sizing: border-box;
+}
+  
+.med_relative {position: relative;}
+
+.med_absolute{position: absolute;}
+
+.med_flex{display: flex;}
+
+.med_flexCenter{display: flex; align-items: center;}
+
+.med_pull_left {float:left;}
+
+.med_pull_right {float: right !important;}
+
+.med_textIndent{text-indent: 5px;}
+
+.med_textRight{text-align:right;}
+
+.med_fontBold{font-weight:bold !important;}
+
+.med_radiusNone{border-radius:0px !important;}
+
+.med_transition{transition: all 0.2s ease;}
+  
+.med_wideDIV{
+    float:left;
+    width:100%;
+}
+
+.med_wideDIV div {float:left;}
+
+.med_heightDIV{
+    float:left;
+    height:100%;
+}
+
+.med_flexHeight {
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.med_clear{clear:both;}
+
+.med_wideDIV div{float:left;}
+
+input::placeholder {font-size:12px;}
+
+.med_pointer{cursor:pointer;}
+
+.med_height100pr{height:100%;}
+
+/* width */
+.med_Width1pr{width: 1%;}
+.med_Width2pr{width: 2%;}
+.med_Width3pr{width: 3%;}
+.med_Width4pr{width: 4%;}
+.med_Width5pr{width: 5%;}
+.med_Width6pr{width: 6%;}
+.med_Width7pr{width: 7%;}
+.med_Width8pr{width: 8%;}
+.med_Width9pr{width: 9%;}
+.med_Width10pr{width: 10%;}
+
+.med_Width11pr{width: 11%;}
+.med_Width12pr{width: 12%;}
+.med_Width13pr{width: 13%;}
+.med_Width14pr{width: 14%;}
+.med_Width15pr{width: 15%;}
+.med_Width16pr{width: 16%;}
+.med_Width17pr{width: 17%;}
+.med_Width18pr{width: 18%;}
+.med_Width19pr{width: 19%;}
+.med_Width20pr{width: 20%;}
+
+.med_Width21pr{width: 21%;}
+.med_Width22pr{width: 22%;}
+.med_Width23pr{width: 23%;}
+.med_Width24pr{width: 24%;}
+.med_Width25pr{width: 25%;}
+.med_Width26pr{width: 26%;}
+.med_Width27pr{width: 27%;}
+.med_Width28pr{width: 28%;}
+.med_Width29pr{width: 29%;}
+.med_Width30pr{width: 30%;}
+
+.med_Width31pr{width: 31%;}
+.med_Width32pr{width: 32%;}
+.med_Width33pr{width: 33%;}
+.med_Width33_33pr{width: 33.33%;}
+.med_Width34pr{width: 34%;}
+.med_Width35pr{width: 35%;}
+.med_Width36pr{width: 36%;}
+.med_Width37pr{width: 37%;}
+.med_Width38pr{width: 38%;}
+.med_Width39pr{width: 39%;}
+.med_Width40pr{width: 40%;}
+
+.med_Width41pr{width: 41%;}
+.med_Width42pr{width: 42%;}
+.med_Width43pr{width: 43%;}
+.med_Width44pr{width: 44%;}
+.med_Width45pr{width: 45%;}
+.med_Width46pr{width: 46%;}
+.med_Width47pr{width: 47%;}
+.med_Width48pr{width: 48%;}
+.med_Width49pr{width: 49%;}
+.med_Width50pr{width: 50%;}
+
+.med_Width51pr{width: 51%;}
+.med_Width52pr{width: 52%;}
+.med_Width53pr{width: 53%;}
+.med_Width54pr{width: 54%;}
+.med_Width55pr{width: 55%;}
+.med_Width56pr{width: 56%;}
+.med_Width57pr{width: 57%;}
+.med_Width58pr{width: 58%;}
+.med_Width59pr{width: 59%;}
+.med_Width60pr{width: 60%;}
+
+.med_Width61pr{width: 61%;}
+.med_Width62pr{width: 62%;}
+.med_Width63pr{width: 63%;}
+.med_Width64pr{width: 64%;}
+.med_Width65pr{width: 65%;}
+.med_Width66pr{width: 66%;}
+.med_Width66_66pr{width: 66.66%;}
+.med_Width67pr{width: 67%;}
+.med_Width68pr{width: 68%;}
+.med_Width69pr{width: 69%;}
+.med_Width70pr{width: 70%;}
+
+.med_Width71pr{width: 71%;}
+.med_Width72pr{width: 72%;}
+.med_Width73pr{width: 73%;}
+.med_Width74pr{width: 74%;}
+.med_Width75pr{width: 75%;}
+.med_Width76pr{width: 76%;}
+.med_Width77pr{width: 77%;}
+.med_Width78pr{width: 78%;}
+.med_Width79pr{width: 79%;}
+.med_Width80pr{width: 80%;}
+
+.med_Width81pr{width: 81%;}
+.med_Width82pr{width: 82%;}
+.med_Width83pr{width: 83%;}
+.med_Width84pr{width: 84%;}
+.med_Width85pr{width: 85%;}
+.med_Width86pr{width: 86%;}
+.med_Width87pr{width: 87%;}
+.med_Width88pr{width: 88%;}
+.med_Width89pr{width: 89%;}
+.med_Width90pr{width: 90%;}
+
+.med_Width91pr{width: 91%;}
+.med_Width92pr{width: 92%;}
+.med_Width93pr{width: 93%;}
+.med_Width94pr{width: 94%;}
+.med_Width95pr{width: 95%;}
+.med_Width96pr{width: 96%;}
+.med_Width97pr{width: 97%;}
+.med_Width98pr{width: 98%;}
+.med_Width99pr{width: 99%;}
+.med_Width100pr{width: 100%;}
+/* width end */
+
+/* padding */
+.med_padding5{padding: 5px;}
+.med_padding10{padding: 10px;}
+.med_padding5x10{padding: 5px 10px;}
+.med_padding7x10{padding: 7px 10px;}
+.med_padding15{padding: 15px;}
+.med_padding20{padding: 20px;}
+.med_padding25{padding: 25px;}
+/* padding end*/
+
+/* padding left*/
+.med_paddingL5{padding-left: 5px;}
+.med_paddingL10{padding-left: 10px;}
+.med_paddingL15{padding-left: 15px;}
+.med_paddingL20{padding-left: 20px;}
+.med_paddingL25{padding-left: 25px;}
+/* padding left end*/
+
+/* padding right*/
+.med_paddingR0{padding-right: 0px !important;}
+.med_paddingR5{padding-right: 5px;}
+.med_paddingR10{padding-right: 10px;}
+.med_paddingR15{padding-right: 15px;}
+.med_paddingR20{padding-right: 20px;}
+.med_paddingR25{padding-right: 25px;}
+.med_paddingR40{padding-right: 40px;}
+/* padding right end*/
+
+/* padding top*/
+.med_paddingT5{padding-top: 5px;}
+.med_paddingT8{padding-top: 8px;}
+.med_paddingT10{padding-top: 10px;}
+.med_paddingT15{padding-top: 15px;}
+.med_paddingT20{padding-top: 20px;}
+.med_paddingT25{padding-top: 25px;}
+/* padding top end*/
+
+/* padding left right*/
+.med_paddingLR5{padding: 0px 5px;}
+.med_paddingLR10{padding: 0px 10px;}
+.med_paddingLR15{padding: 0px 15px;}
+.med_paddingLR20{padding: 0px 20px;}
+.med_paddingLR25{padding: 0px 25px;}
+/* padding left right end*/
+
+/* padding top bottom*/
+.med_paddingTB5{padding: 5px 0px;}
+.med_paddingTB10{padding: 10px 0px;}
+.med_paddingTB15{padding: 15px 0px;}
+.med_paddingTB20{padding: 20px 0px;}
+.med_paddingTB25{padding: 25px 0px;}
+/* padding top bottom end*/
+
+/* margin */
+.med_margin5{margin: 5px;}
+.med_margin10{margin: 10px;}
+.med_margin15{margin: 15px;}
+.med_margin20{margin: 20px;}
+.med_margin25{margin: 25px;}
+/* margin end*/
+
+/* margin left*/
+.med_marginL5{margin-left: 5px;}
+.med_marginL10{margin-left: 10px;}
+.med_marginL15{margin-left: 15px;}
+.med_marginL20{margin-left: 20px;}
+.med_marginL25{margin-left: 25px;}
+/* margin left end*/
+
+/* margin right*/
+.med_marginR5{margin-right: 5px;}
+.med_marginR7{margin-right: 7px;}
+.med_marginR8{margin-right: 8px;}
+.med_marginR10{margin-right: 10px;}
+.med_marginR15{margin-right: 15px;}
+.med_marginR20{margin-right: 20px;}
+.med_marginR25{margin-right: 25px;}
+/* margin right end*/
+
+/* margin top*/
+.med_marginT3{margin-top: 3px;}
+.med_marginT4{margin-top: 4px;}
+.med_marginT5{margin-top: 5px;}
+.med_marginT7{margin-top: 7px;}
+.med_marginT8{margin-top: 8px;}
+.med_marginT10{margin-top: 10px;}
+.med_marginT12{margin-top: 12px;}
+.med_marginT15{margin-top: 15px;}
+.med_marginT20{margin-top: 20px;}
+.med_marginT25{margin-top: 25px;}
+/* margin top end*/
+
+/* margin left right*/
+.med_marginLR5{margin: 0px 5px;}
+.med_marginLR10{margin: 0px 10px;}
+.med_marginLR15{margin: 0px 15px;}
+.med_marginLR20{margin: 0px 20px;}
+.med_marginLR25{margin: 0px 25px;}
+/* margin left right end*/
+
+/* margin top bottom*/
+.med_marginTB5{margin: 5px 0px;}
+.med_marginTB6{margin: 6px 0px;}
+.med_marginTB7{margin: 7px 0px;}
+.med_marginTB8{margin: 8px 0px;}
+.med_marginTB10{margin: 10px 0px;}
+.med_marginTB15{margin: 15px 0px;}
+.med_marginTB20{margin: 20px 0px;}
+.med_marginTB25{margin: 25px 0px;}
+/* margin top bottom end*/
+
+/* color */
+.med_colorRed{color:red !important;}
+.med_colorGreen{color:green !important;}
+.med_colorBlue{color:blue !important;}
+.med_colorOrange{color:orange !important;}
+.med_colorGrey{color:#777 important;}
+.med_colorWhite{color:#fff important;}
+.med_colorBlack{color:#000 important;}
+/* color end */
+
+/* color code*/
+.med_colorSlot {
+    color: #fff;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    min-width: 90px;
+}
+
+.med_colorCode{
+    margin-left:10px;
+    margin-top: 10px;
+}
+/* color code end*/
+
+/* headings*/
+.med_heading1_2{
+    font-size:1.2em;
+}
+
+.med_heading1_5{
+    font-size:1.5em;
+}
+
+.med_heading1_8{
+    font-size:1.8em;
+}
+
+.med_heading2{
+    font-size:2em;
+}
+
+.med_heading2_3{
+    font-size:2.3em;
+}
+
+.med_heading2_5{
+    font-size:2.5em;
+}
+/* headings end*/
+
+/* border */
+.med_borderTop{
+    border-top:1px solid #dedede;
+}
+
+.med_borderBottom{
+    border-bottom:1px solid #dedede;
+}
+
+.med_borderLeft{
+    border-left:1px solid #dedede;
+}
+
+.med_borderRight{
+    border-right:1px solid #dedede;
+}
+
+.med_borderTB{
+    border-top:1px solid #dedede;
+    border-bottom:1px solid #dedede;
+}
+
+.med_borderLR{
+    border-left:1px solid #dedede;
+    border-right:1px solid #dedede;
+}
+
+.med_border{
+    border:1px solid #dedede;
+}
+/* border end*/
+
+/* on mouse hover*/
+.med_onHoverBlock{
+    display:none !important;
+}
+.med_onHoverBlock:hover {
+    display:block !important;
+}
+.med_onHover:hover .med_onHoverBlock{
+    display:block !important;
+}
+/* on mouse hover end*/
+
+/* Select Option md*/
+.med_selectOption_md {
+    position:relative;
+    float:left;
+    width:100%;
+}
+
+.med_selectOption_md select{
+    width: 100%;
+    height: 28px ! important;
+    border: 1px solid #ccc;
+    background: white;
+    outline: none;
+    cursor:pointer;
+}
+
+.med_selectOption_md:before {
+    background: #fff none repeat scroll 0 0;
+    /* border-right: 0px solid #ccc; */
+    color: #34485d;
+    content: "\f107";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    width: 20px;
+    pointer-events: none;
+    position: absolute;
+    right: 1px !important;
+    top: 1px !important;
+    text-align: center;
+    font-weight: normal;
+}
+
+.med_selectOption_md:hover:before {
+    background: #fff none repeat scroll 0 0;
+}
+/* Select Option md end*/
+
+/* Select Option lg*/
+.med_selectOption_lg {
+    position:relative;
+    float:left;
+    width:100%;
+}
+
+.med_selectOption_lg select{
+    width: 100%;
+    height: 36px ! important;
+    border: 1px solid #ccc;
+    background: white;
+    outline: none;
+    cursor:pointer;
+}
+
+.med_selectOption_lg:before {
+    background: #fff none repeat scroll 0 0;
+    /* border-right: 0px solid #ccc; */
+    color: #34485d;
+    content: "\f107";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    width: 20px;
+    pointer-events: none;
+    position: absolute;
+    right: 1px !important;
+    top: 1px !important;
+    text-align: center;
+    font-weight: normal;
+}
+
+.med_selectOption_lg:hover:before {
+    background: #fff none repeat scroll 0 0;
+}
+/* Select Option lg end*/
+
+/*Combo box md*/
+.med_Combo_md {
+    cursor:pointer;
+    position:relative;
+    float:left;
+    width:100% !important;
+}
+
+.med_Combo_md div{
+    width:100% !important;
+}
+
+.med_Combo_md input{
+    width:100% !important;
+    padding-right:20px;
+}
+
+.med_Combo_md:before {
+    background: #fff none repeat scroll 0 0;
+    / border-right: 0px solid #ccc; /
+    color: #34485d;
+    content: "\f107";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    width: 20px;
+    pointer-events: none;
+    position: absolute;
+    right: 1px !important;
+    top: 1px !important;
+    text-align: center;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.med_Combo_md:hover:before {
+    background: #fff none repeat scroll 0 0;
+}
+
+.med_Combo_md img {
+    height: 28px !important;
+    width: 20px !important;
+    position: absolute;
+    right: 0px;
+}
+
+.med_Combo_md > .x-form-field-wrap .x-form-trigger {
+    background-image: none !important;
+    border-bottom-color: transparent;
+    height: 28px !important;
+}
+/*Combo box md end*/
+
+/*Combo box lg*/
+.med_Combo_lg {
+    cursor:pointer;
+    position:relative;
+    float:left;
+    width:100% ;
+}
+
+.med_Combo_lg div{
+    width:100% !important;
+}
+.med_Combo_lg input{
+    width:100% !important;
+    padding-right:20px;
+}
+.med_Combo_lg:before {
+    background: #fff none repeat scroll 0 0;
+    /* border-right: 0px solid #ccc; */
+    color: #34485d;
+    content: "\f107";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    width: 20px;
+    pointer-events: none;
+    position: absolute;
+    right: 1px !important;
+    top: 1px !important;
+    text-align: center;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.med_Combo_lg:hover:before {
+    background: #fff none repeat scroll 0 0;
+}
+.med_Combo_lg img {
+    height: 36px;
+    width: 20px !important;
+    position: absolute;
+    right: 0px;
+}
+.med_Combo_lg > .x-form-field-wrap .x-form-trigger {
+    background-image: none !important;
+    border-bottom-color: transparent;
+    height: 36px !important;
+}
+/*Combo box lg end*/
+
+/* Input box */
+.med_placeholder {
+    float: left;
+    margin-bottom: -7.5px;
+    position: relative;
+    background: #fff;
+    padding: 0px 5px;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 5px;
+    color: #777;
+    font-size: 11px;
+    z-index:9;
+}
+
+.med_input_md{
+    height:28px !important;
+    outline: none;
+    border: 1px solid #ccc;
+    text-indent:5px;
+    width:100% !important;
+}
+
+.med_input_md:hover{
+    border: 1px solid #1E88E5;
+}
+
+.med_input_md:focus{
+    border: 1px solid #1E88E5;
+}
+
+.med_md_currencyFlag {
+    position: absolute;
+    left: 1px;
+    background: #f5f5f5;
+    top: 1px;
+    width: 30px;
+    text-align: center;
+    height: calc(100% - 2px);
+    line-height: 26px;
+    border-right: 1px solid #dedede;
+}
+
+.med_input_mdCurrency{
+    text-indent:35px;
+}
+
+.med_input_lg {
+    height: 36px !important;
+    outline: none;
+    border: 1px solid #ccc;
+    text-indent: 5px;
+    padding-top: 3px;
+    width:100% !important;
+}
+
+.med_input_lg:hover{
+    border: 1px solid #1E88E5;
+}
+
+.med_input_lg:focus{
+    border: 1px solid #1E88E5;
+}
+
+.med_lg_currencyFlag {
+    position: absolute;
+    left: 5px;
+    background: #f5f5f5;
+    top: 9px;
+    width: 30px;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 3px;
+    z-index: 9;
+}
+
+.med_input_lgCurrency{
+    text-indent:40px;
+}
+/* Input box end*/
+
+/* Input + Add box */
+.med_input_add_md{
+    width:calc(100% - 28px);
+}
+.med_input_add_lg {
+    width:calc(100% - 36px);
+}
+
+.med_inputAddBtn_md {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #777;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    line-height: 27px !important;
+    width:28px;
+    text-align: center;
+    margin-left: -1px;
+}
+
+.med_inputAddBtn_md:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+    color: #333;
+}
+
+.med_inputAddBtn_lg {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #777;
+    cursor: pointer;
+    float: left;
+    height: 36px;
+    line-height: 36px !important;
+    width: 36px;
+    text-align: center;
+    margin-left: -1px;
+}
+
+.med_inputAddBtn_lg:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+    color: #333;
+}
+/* Input + Add box end*/
+
+/* searchbar */
+.med_search{
+    position:relative;
+}
+
+.med_search:after {
+    content: '\f002';
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 14px;
+    right: 7px;
+    top: 7px;
+    color: #999;
+}
+
+.med_search_lg{
+    position:relative;
+}
+
+.med_search_lg:after{
+    content: '\f002';
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 14px;
+    right: 7px;
+    top: 11px;
+    color: #999;
+}
+/* searchbar end*/
+
+/* Search list */
+.med_searchList {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.15);
+    position: absolute;
+    right: 0px;
+    background: #fff;
+    top: 100%;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    z-index: 9;
+    min-height:100px;
+    margin-top: 1px;
+}
+/* Search list end*/
+
+/* textarea */
+.med_txtarea_outer{
+    height: 100px;
+}
+
+.med_txtarea{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.med_txtarea:hover{
+    border: 1px solid #1E88E5;
+}
+
+.med_txtarea:focus{
+    border: 1px solid #1E88E5;
+}
+/* textarea end*/
+
+/* text editor */
+.med_tinymc form{
+    height:100%;
+}
+
+.med_tinymc .tox-tinymce{
+    width:100%;
+    height:100%;
+}
+
+.med_tinymc .tox-promotion{
+    display:none;
+}
+
+.med_tinymc .tox-statusbar__branding{
+    display:none;
+}
+.med_tinymc .tox-statusbar__path{
+    opacity: 0;
+}
+
+.med_tinymc .tox-statusbar__help-text{
+   opacity: 0;
+}
+
+/* text editor end*/
+
+/* disabled*/
+.med_disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.med_disabled select{
+    background:#f5f5f5;
+}
+
+.med_disabled:before {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+
+.med_input_readonly{
+    pointer-events:none;
+}
+
+.med_input_readonly input{
+    background:#f5f5f5;
+    pointer-events:none;
+}
+
+.med_input_readonly:hover input{
+    border:1px solid #ccc;
+}
+
+.med_input_readonly:before {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+
+.med_input_readonly:hover:before {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+/* disabled end*/
+
+/* Radio */
+.med_fancy-radio input[type="radio"] {
+    display: none;
+}
+
+.med_fancy-radio label:before {
+    border: 2px solid #bbb;
+    background:#fff;
+    color: transparent;
+    border-radius: 50%;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 9px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 8px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.med_fancy-radio input[type="radio"]:checked ~ label:before {
+    border: 2px solid #1e88e5;
+    background:#1e88e5;
+    color: #fff;
+    border-radius: 50%;
+    content: '\f111';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 9px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 8px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+/* Radio end*/
+
+/* checkbox */
+.med_fancy-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.med_fancy-checkbox label:before {
+    border: 1px solid #bbb;
+    background:#fff;
+    color: transparent;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 8px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.med_fancy-checkbox input[type="checkbox"]:checked ~ label:before {
+    border: 1px solid #1e88e5;
+    background:#1e88e5;
+    color: #fff;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 8px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.med_fancy-checkbox input[type="checkbox"]:disabled ~ label:before {
+    opacity:0.5;
+}
+/* checkbox end*/
+
+/* age picker*/
+.med_lg_ageFlag {
+    position: absolute;
+    right: 5px;
+    background: #f5f5f5;
+    width: 18px;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 3px;
+    z-index: 9;
+}
+
+.med_md_ageFlag {
+    text-align: center;
+    width: 18px;
+    color:#777;
+}
+
+.med_ageInput {
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.med_ageSept{
+    margin-left:-1px;
+}
+
+.med_ageLength {
+    width: calc(100% - 20px) !important;
+    float: left;
+}
+/* age picker end*/
+
+/* date picker*/
+.med_datePicker{
+    width: 105px;
+    position: relative;
+}
+
+.med_datePicker:after {
+    content: '\f133';
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 12px;
+    right: 5px;
+    top: 7.5px;
+    color: #aaa;
+}
+
+.med_iconDatePicker {
+    /* background: #e1eaee none repeat scroll 0 0; */
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px !important;
+    height: 28px;
+    line-height: 28px !important;
+    text-align: center;
+    width: 22px;
+    /* border: 1px solid #dedede; */
+}
+
+.med_iconDatePicker:hover {
+    background: #d7e0e4;
+}
+/* date picker end*/
+
+/* time picker */
+.med_timePicker {
+    width: 105px;
+    position: relative;
+    border: 1px solid #ccc;
+    display: flex;
+    height:28px;
+}
+
+.med_timeInput {
+    width: 33.33%;
+    border: 1px solid transparent;
+    text-align: center;
+    text-indent:0px;
+    height:100% !important;
+}
+
+.med_timePicker_TM {
+    width: 70px;
+    position: relative;
+    border: 1px solid #ccc;
+    display: flex;
+    height:28px;
+}
+
+.med_timeInput_TM {
+    width: 50%;
+    border: 1px solid transparent;
+    text-align: center;
+    text-indent: 0px;
+    height: 100% !important;
+}
+
+.med_timeColon {
+    margin: 0px 3px;
+    line-height: 26px;
+}
+
+.med_selectOption_amPm{
+    width:56px;
+}
+/* time picker end*/
+
+/* buttons */
+.med_primaryBtn_md{
+    background: #1E88E5 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+}
+.med_primaryBtn_md:hover{
+    background: #0e78d5 none repeat scroll 0 0;
+}
+
+.med_secondaryBtn_md{
+    background: #e1eaee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    text-align: center;
+    font-weight: bold;
+}
+.med_secondaryBtn_md:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+
+.med_successBtn_md {
+    background: #4aa570 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+.med_successBtn_md:hover{
+    background: #369d3a none repeat scroll 0 0;
+}
+
+.med_dangerBtn_md{
+    background: #E57373 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+.med_dangerBtn_md:hover{
+    background: #e06e6e none repeat scroll 0 0;
+}
+
+.med_warningBtn_md{
+    background: #f7a42a none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+.med_warningBtn_md:hover{
+    background: #F7952A none repeat scroll 0 0;
+}
+/* buttons end*/
+
+/* alert buttons */
+.med_secondaryAlertBtn_md{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    color: #333;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    margin:0px 10px;
+    text-align: center;
+}
+.med_secondaryAlertBtn_md:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+    border: 1px solid transparent;
+}
+
+.med_successAlertBtn_md {
+    background: #4aa570 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    margin:0px 10px;
+    cursor: pointer;
+    float: left;
+}
+.med_successAlertBtn_md:hover{
+    background: #369d3a none repeat scroll 0 0;
+}
+
+.med_dangerAlertBtn_md{
+    background: #E57373 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    margin:0px 10px;
+    cursor: pointer;
+    float: left;
+}
+.med_dangerAlertBtn_md:hover{
+    background: #e06e6e none repeat scroll 0 0;
+}
+
+.med_informationAlertBtn_md{
+    background: #f7a42a none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    color: #fff;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 12px;
+    margin:0px 10px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+}
+.med_informationAlertBtn_md:hover{
+    background: #F7952A none repeat scroll 0 0;
+}
+/* alert buttons end*/
+
+/* small button */
+.med_primaryBtn_sm{
+    background: #1E88E5 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+.med_primaryBtn_sm:hover{
+    background: #0e78d5 none repeat scroll 0 0;
+}
+
+.med_secondaryBtn_sm{
+    background: #e1eaee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    text-align: center;
+}
+.med_secondaryBtn_sm:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+
+.med_successBtn_sm {
+    background: #4aa570 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    cursor: pointer;
+    float: left;
+}
+.med_successBtn_sm:hover{
+    background: #369d3a none repeat scroll 0 0;
+}
+
+.med_dangerBtn_sm{
+    background: #E57373 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    cursor: pointer;
+    float: left;
+}
+.med_dangerBtn_sm:hover{
+    background: #e06e6e none repeat scroll 0 0;
+}
+
+.med_warningBtn_sm{
+    background: #f7a42a none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    cursor: pointer;
+    float: left;
+}
+.med_warningBtn_sm:hover{
+    background: #F7952A none repeat scroll 0 0;
+}
+/* small button end*/
+
+/* icon span */
+.med_iconSpan{
+    margin-right:5px;
+}
+/* icon span end*/
+
+/* button caret */
+.med_iconCaret {
+    margin-left: 12px;
+    float: right;
+    line-height: 27px !important;
+    border-left: 1px solid #ccc;
+    width: 24px;
+}
+/* button caret end*/
+
+/* icon button */
+.med_iconBtn {
+    background: #e1eaee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #22415e;
+    cursor: pointer;
+    height: 28px;
+    padding: 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 26px !important;
+    font-size: 14px !important;
+    width: 28px;
+}
+
+.med_iconBtn:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+
+.med_iconBtn_sm {
+    background: #e1eaee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #22415e;
+    cursor: pointer;
+    height: 24px;
+    padding: 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 22px !important;
+    font-size: 12px !important;
+    width: 24px;
+}
+.med_iconBtn_Xsm {
+    background: #e1eaee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #22415e;
+    cursor: pointer;
+    height: 20px;
+    padding: 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px !important;
+    font-size: 12px !important;
+    width: 20px;
+}
+.med_iconBtn_sm:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+/* icon button end*/
+
+/* icons */
+.med_icons {
+    border: 1px solid transparent;
+    color: #aaa;
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px !important;
+    height: 28px;
+    line-height: 28px !important;
+    text-align: center;
+    width: 28px;
+    position: relative;
+}
+
+.med_icons:hover{
+    background: #ECEAF1;
+    color:#555;
+}
+
+.med_IconMargin{
+    margin: -3px 0px;
+}
+/* icons end*/
+
+/* icons overlap*/
+.med_iconsSmallOverlap {
+    font-size: 10px !important;
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    background: #fff;
+    height: 12px;
+    width: 12px;
+    border-radius: 48px;
+    line-height: 12px;
+}
+
+.med_icons:hover .med_iconsSmallOverlap {
+    background: #ECEAF1;
+    color:#555;
+}
+/* icons overlap end */
+
+/* status icons */
+.med_iconStatus {
+    color: #aaa;
+    font-size: 16px !important;
+}
+/* status icons end*/
+
+/* count highlight*/
+.med_SM_count {
+    border-radius: 20px;
+    height: 20px;
+    font-weight: bold;
+    color:#fff;
+    min-width:20px;
+    padding:0px 5px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.med_MD_count {
+    border-radius: 20px;
+    height: 28px;
+    font-weight: bold;
+    color: #fff;
+    min-width: 28px;
+    padding:0px 5px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.med_LG_count {
+    border-radius: 20px;
+    height: 36px;
+    font-weight: bold;
+    color:#fff;
+    min-width:36px;
+    padding:0px 5px;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.med_greenCount{
+    background: #81c784 none repeat scroll 0 0;
+    border: 1px solid #66bb6a;
+}
+
+.med_orangeCount{
+    background: #f7a42a none repeat scroll 0 0;
+    border: 1px solid #f79e18;
+}
+
+.med_redCount{
+    background: red none repeat scroll 0 0;
+    border: 1px solid red;
+}
+
+.med_separates {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border-right: 1px solid #dedede;
+    padding-right: 10px;
+}
+/* count highlight end*/
+
+/* icons group*/
+.med_multiIconPosition_left {
+    position: absolute;
+    z-index: 9;
+    left: 0px;
+}
+
+.med_multiIconPosition_right {
+    position: absolute;
+    z-index: 9;
+    right: 0px;
+}
+
+.med_multiIconOverlayOuter {
+    height: 32px;
+    overflow: hidden;
+    width: 32px;
+    box-sizing: border-box;
+    background: transparent;
+    border:1px solid transparent;
+}
+
+.med_multiIconOverlayOuter:hover {
+    background: white none repeat scroll 0 0;
+    width: auto;
+    border-radius: 18px;
+    border:1px solid #eee;
+}
+/* icons group end*/
+
+/* Dialog box */
+.med_dialogBox {
+    width: 150px;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    position: absolute;
+    right: 0px;
+    background: #fff;
+    top: 100%;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    z-index:9;
+    padding:5px 0px;
+}
+
+.med_listDialogBox {
+    padding: 7px 10px;
+    background: #fff;
+    width: 100%;
+    cursor: pointer;
+    color:#444;
+}
+
+.med_listDialogBox:hover{
+    background:#f5f5f5;
+}
+
+.med_listDialogBox span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+/* Dialog box end*/
+
+/* Tooltip*/
+.med_tooltip {
+    width: 180px;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    border-radius: 4px;
+    z-index: 9;
+    padding: 10px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    margin-top: 8px;
+    line-height:normal;
+}
+
+.med_tooltip:after {
+    content: '\f0d8';
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top: -13px;
+    color: #555;
+}
+/* Tooltip end*/
+
+/* Tooltip top*/
+.med_tooltip_top {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.med_tooltip_top:after {
+    content: '\f0d7';
+    top: auto;
+    bottom: -13px;
+}
+/* Tooltip top end*/
+
+/* Tooltip top right*/
+.med_tooltip_top_right {
+    top: auto;
+    right: 0px;
+    bottom: 100%;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    left: auto;
+    line-height: normal;
+}
+
+.med_tooltip_top_right:after {
+    right: 10px;
+    content: '\f0d7';
+    top: auto;
+    bottom: -13px;
+    left: auto;
+}
+/* Tooltip top right end*/
+
+/* Tooltip bottom right*/
+.med_tooltip_bottom_right {
+    left: auto;
+    right: 0px;
+}
+
+.med_tooltip_bottom_right:after {
+    left: auto;
+    right: 10px;
+}
+/* Tooltip bottom right end*/
+
+/* -- Radio tabs -- */
+.med_radioTabs {
+    border-radius: 20px;
+    float: left;
+    font-size: 11px !important;
+    background: #F3F4F6 none repeat scroll 0 0;
+    height: 28px;
+}
+
+.med_radioTabs label span {
+    display: block;
+    height: 100% !important;
+    line-height: 30px !important;
+    padding: 0 8px !important;
+    text-align: center !important;
+    border-radius: 16px !important;
+}
+
+.med_radioTabs label span:hover{
+    background: #DBDCDE none repeat scroll 0 0 !important;
+}
+
+.med_radioTabs label input {
+    display: none !important;
+}
+
+.med_radioTabs input:checked + span {
+    background: #1E88E5 none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
+
+.med_radioTabs label {
+    cursor: pointer;
+    float: left;
+    height:100%;
+}
+/* -- Radio tabs end-- */
+
+/* toggle switch */
+.med_switch {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 24px;
+}
+
+.med_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.med_slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.med_slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .med_slider {
+    background-color: #1e88e5;
+}
+
+input:checked + .med_slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+.med_slider.med_round {
+    border-radius: 34px;
+}
+
+.med_slider.med_round:before {
+    border-radius: 50%;
+}
+/* toggle switch end*/
+
+/* star ratings */
+.med_star-rating {
+    font-size: 16px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.med_star-rating .med_star {
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.med_star-rating .med_star.med_activeStar {
+    color: #f7ca64;
+}
+/* star ratings end*/
+
+/* Toggle star */
+.med_toggleStar .fa-star{
+    color: #f7ca64;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.med_toggleStar .fa-star-o{
+    color: #aaa;
+    font-size: 16px;
+    cursor:pointer;
+}
+/* Toggle star end*/
+
+/* switchable tabs */
+.med_Tabs{
+    border-bottom:1px solid #dedede;
+    font-weight:bold;
+    width:100%;
+    height:32px;
+}
+
+.med_commonTab-active {
+    float: left;
+    padding: 0px 10px;
+    cursor: pointer;
+    text-align: center;
+    height:100%;
+    line-height:32px;
+    color: #1e88e5;
+    border-bottom: 3px solid #1e88e5;
+}
+
+.med_commonTab {
+    float: left;
+    padding: 0px 10px;
+    cursor: pointer;
+    text-align: center;
+    height:100%;
+    line-height:32px;
+    color: #999;
+    border-bottom: 3px solid transparent;
+}
+
+.med_commonTab:hover {
+    color: #1e88e5;
+}
+
+.med_commonTab_dottedPipe {
+    border-right: 1px dotted #dedede;
+    float: left;
+    height: 22px;
+    margin: 5px 4px;
+}
+/* switchable tabs end*/
+
+/* switchable tabs v2*/
+.med_Tabs_v2{
+    border-bottom:1px solid #1e88e5;
+    font-weight:bold;
+    width:100%;
+    height:32px;
+    padding-left: 5px;
+}
+
+.med_commonTab-active_v2 {
+    float: left;
+    padding: 0px 10px;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    line-height: 32px;
+    color: #fff;
+    border: 1px solid #1e88e5;
+    background: #1e88e5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 5px;
+}
+
+.med_commonTab_v2 {
+    float: left;
+    padding: 0px 10px;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    line-height: 32px;
+    color: #999;
+    border: 1px solid transparent;
+    background: #fff;
+    margin-right: 5px;
+}
+
+.med_commonTab_v2:hover {
+    color: #1e88e5;
+}
+/* switchable tabs end v2*/
+
+/* switchable vertical tabs*/
+.med_verticalTabs {
+      width: 30%;
+      background: #F3F4F6;
+      border-right: 1px solid #dedede;
+}
+
+.med_verticalTabsContent {
+    width: 70%;
+}
+
+.med_commonTabVertical-active {
+    cursor: pointer;
+    padding: 8px 10px;
+    width: 100%;
+    background: #1e88e5;
+    color: #fff;
+    border-left: 3px solid #033d70;
+}
+
+.med_commonTabVertical {
+    cursor: pointer;
+    padding: 8px 10px;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.med_commonTabVertical:hover{
+    background: #DBDCDE;
+}
+/* switchable vertical tabs end*/
+
+/* accordion panel*/
+.med_accordionTitle {
+    cursor: pointer;
+    background: #fff;
+    padding: 7px 10px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom:1px solid #dedede;
+}
+
+.med_accordionTitle:hover {
+    background: #f5f5f5;
+}
+
+.med_accordionContent{
+    width:100%;
+    padding:10px;
+}
+
+.med_accordionIcon {
+    font-size: 20px !important;
+    line-height: 14px !important;
+    transition: all 0.2s ease;
+}
+
+.med_accordionTitle + .med_accordionContent {
+    display: none;
+}
+
+.med_accordionTitle.is-open + .med_accordionContent {
+    display: block;
+    border-bottom:1px solid #dedede;
+}
+
+.med_accordionTitle.is-open {
+    background:#f5f5f5;
+}
+
+.med_accordionTitle .med_accordionIcon {
+    transform:rotate(0deg);
+}
+
+.med_accordionTitle.is-open .med_accordionIcon {
+    transform:rotate(-180deg);
+}
+/* accordion panel end*/
+
+/* collapse panel*/
+.med_collapseTitle {
+    cursor: pointer;
+    background: #fff;
+    padding: 7px 10px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom:1px solid #dedede;
+}
+
+.med_collapseTitle:hover {
+    background: #f5f5f5;
+}
+
+.med_collapseContent{
+    width:100%;
+    padding:10px;
+}
+/* collapse panel end*/
+
+/* lists view status circle*/
+.med_listStatus_circle{
+    width:14px;
+    font-size:12px !important;
+}
+
+.med_listStatus_green{
+    color:#4aa570;
+}
+
+.med_listStatus_red{
+    color:#E57373;
+}
+
+.med_listStatus_orange{
+    color:#f7a42a;
+}
+
+.med_listStatus_blue{
+    color:#1E88E5;
+}
+
+.med_listStatus_purple{
+    color:#7E57C2;
+}
+
+.med_listStatus_gray{
+    color:#999;
+}
+/* lists view status circle end*/
+
+/* lists view status square filter*/
+.med_squareFilter input[type="checkbox"] {
+    display: none;
+}
+
+.med_squareFilter label:before {
+    color: transparent;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 8px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.med_squareFilter input[type="checkbox"]:checked ~ label:before {
+    color: #000;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 8px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.med_squareFilter input[type="checkbox"]:disabled ~ label:before {
+    opacity:0.5;
+}
+
+/* green filter*/
+.med_squareFilter-green label:before {
+    border: 1px solid #4aa570;
+    background:#4aa57018;
+}
+
+/* red filter*/
+.med_squareFilter-red label:before {
+    border: 1px solid #E57373;
+    background:#E5737318;
+}
+
+/* orange filter*/
+.med_squareFilter-orange label:before {
+    border: 1px solid #f7a42a;
+    background:#f7a42a18;
+}
+
+/* blue filter*/
+.med_squareFilter-blue label:before {
+    border: 1px solid #1E88E5;
+    background:#1E88E518;
+}
+
+/* purple filter*/
+.med_squareFilter-purple label:before{
+    border: 1px solid #7E57C2;
+    background:#7E57C218;
+}
+
+/* gray filter*/
+.med_squareFilter-gray label:before{
+    border: 1px solid #777777;
+    background:#77777718;
+}
+/* lists view status square filter end*/
+
+/* table list view status */
+.med_TableStatus{
+    padding:3px 8px;
+    border-radius:10px;
+}
+
+.med_TableStatus_green{
+    background:#4aa57028;
+    color:#4aa570;
+
+}
+.med_TableStatus_red{
+    background:#E5737328;
+    color:#E57373;
+
+}
+.med_TableStatus_orange{
+    background:#f7a42a28;
+    color:#f7a42a;
+
+}
+.med_TableStatus_blue{
+    background:#1E88E528;
+    color:#1E88E5;
+}
+
+.med_TableStatus_purple{
+    background:#7E57C228;
+    color:#7E57C2;
+}
+
+.med_TableStatus_gray{
+    background:#77777728;
+    color:#777777;
+}
+/* table list view status end*/
+
+/* lists view */
+.med_listHeader {
+    background: #f5f5f5;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    padding: 5px 0;
+    text-transform: uppercase;
+    width: 100%;
+    position: sticky;
+    top:0px;
+}
+
+.med_tableRowDiv {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #edeff0;
+    float: left;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.med_listFooterDiv {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-top: 1px solid #edeff0;
+    float: left;
+    padding: 5px 0;
+    width: 100%;
+    font-weight:bold;
+}
+
+.med_overflowData{
+    overflow-y:auto;
+}
+
+.med_hoverSection:hover{
+    background:#f5f5f5;
+}
+/* lists view end*/
+
+/* grid view */
+.med_headerListInner{
+    width:calc(100% - 20px);
+    margin-left:10px;
+}
+
+.gridPatientName{
+    font-size: 1.3em;
+}
+
+.med_smallGreyText{
+    font-size:11px;
+    color:#777;
+}
+
+.med_statusListIcon {
+    background: #81c784 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: bold;
+    line-height: 17px;
+    text-align: center;
+    width: 16px;
+    border-radius: 10px;
+    font-size: 11px;
+    height: 16px;
+    margin-bottom: -3px;
+}
+
+.med_gridListEven {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #ddd;
+    float: left;
+    margin: 7px 0 0 10px;
+    padding: 8px 0;
+    width: calc(100% - 20px);
+}
+
+.med_gridListOdd {
+    background: #FAFAFC none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #ddd;
+    float: left;
+    margin: 7px 0 0 10px;
+    padding: 8px 0;
+    width: calc(100% - 20px);
+}
+/* grid view end*/
+
+/* table view*/
+.med_listTable table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    width: 100%;
+    float:left;
+    text-align: left;
+}
+
+.med_tableMaxContent table {
+    min-width: max-content;
+}
+
+.med_listTable table th {
+    position: sticky;
+    top: 0px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    padding: 7px 10px;
+    z-index: 99;
+    font-weight:normal;
+    text-transform: uppercase;
+}
+
+.med_listTable table td {
+    padding: 7px 10px;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    background: #fff;
+}
+
+.med_listTable table tr:hover td{
+    background:#f5f5f5;
+}
+/* table view end*/
+
+/* horizontal/vertical scroll table */
+.med_sticky-right {
+    right: 0;
+    position: sticky;
+    background-color: #f3c8c8;
+    width:150px;
+    text-align:right;
+    border-left: 1px solid #dedede;
+}
+
+.med_sticky-left {
+    left: 0;
+    z-index:100;
+    position: sticky;
+    background-color: #f3c8c8;
+    min-width: 250px;
+    text-align:left;
+}
+/* horizontal/vertical scroll table end*/
+
+/* popup */
+.med_commonPopupOuter {
+    background: rgba(11, 11, 11, 0.2) linear-gradient(rgba(11, 11, 11, 0.1), rgba(11, 11, 11, 0.6)) repeat-x scroll 0 0;
+    height: 100%;
+    left: 0 !important;
+    margin: 0 !important;
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    z-index: 9999;
+}
+
+.med_commonPopup {
+    border-radius: 5px;
+    left: 0 !important;
+    margin: 0 auto !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #ffffff none repeat scroll 0 0;
+    z-index: 1;
+}
+
+.med_commonPopupHeader {
+    background: #eef4f6 none repeat scroll 0 0;
+    border-bottom: 1px solid #e8e8e8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 40px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.med_commonPopupFooter {
+    background: #fff none repeat scroll 0 0;
+    border-top: 1px solid #dedede;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.med_commonPopupCloseIcon {
+    border-radius: 100%;
+    cursor: pointer;
+    float: right !important;
+    font-size: 18px !important;
+    height: 34px;
+    line-height: 34px !important;
+    margin: 3px 0;
+    text-align: center;
+    width: 34px;
+}
+
+.med_commonPopupCloseIcon:hover {
+    background: #e3e9eb none repeat scroll 0 0;
+}
+
+.med_commonPopupCloseIcon:focus {
+    background: #4aa570 none repeat scroll 0 0;
+    color:#fff;
+}
+
+.med_commonPopupLabelHeader {
+    font-size: 16px;
+    font-weight: bold;
+    width: calc(100% - 40px);
+}
+
+.med_commonPopupSm{
+    width:35%;
+    min-height:200px;
+}
+
+.med_commonPopupMd{
+    width:50%;
+    height:50%;
+}
+
+.med_commonPopupLg{
+    width:85%;
+    height:85%;
+}
+
+.med_commonPopupFs{
+    width:100%;
+    height:100%;
+}
+
+.med_commonPopupSide {
+    background: #fff none repeat scroll 0 0;
+    height:100%;
+    position:absolute;
+    width: 100%;
+    z-index: 9;
+    top:0px;
+}
+
+.med_popupMiddleData{
+    height: calc(100% - 90px);
+}
+/* popup end*/
+
+/* Alert popup*/
+.med_alertPopupHeader {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 3px 10px;
+    width: 100%;
+}
+
+.header_success{background: #4aa570;}
+.header_error{background: #E57373;}
+.header_information{background: #f7a42a;}
+
+.med_alertPopupFooter {
+    background: #fff none repeat scroll 0 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.med_alertPopupCloseIcon {
+    border-radius: 100%;
+    cursor: pointer;
+    float: right !important;
+    font-size: 24px !important;
+    height: 26px;
+    line-height: 27px !important;
+    text-align: center;
+    width: 26px;
+    transform: rotate(45deg);
+    color:#fff;
+}
+
+.med_alertPopupCloseIcon:before {
+    content: '+';
+}
+
+.med_alertPopupCloseIcon:hover {
+    background: #fff none repeat scroll 0 0;
+    color:#000;
+}
+
+
+.med_alertMsgCloseIcon {
+    border-radius: 100%;
+    cursor: pointer;
+    float: right !important;
+    font-size: 24px !important;
+    height: 26px;
+    line-height: 27px !important;
+    text-align: center;
+    width: 26px;
+    transform: rotate(45deg);
+    color:#777;
+    margin: 5px;
+}
+
+.med_alertMsgCloseIcon:before {
+    content: '+';
+}
+
+.med_alertMsgCloseIcon:hover {
+    background: #f5f5f5 none repeat scroll 0 0;
+    color:#000;
+}
+
+.med_iconAlert {
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px !important;
+    line-height: 40px !important;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    border: 5px solid #fff;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+}
+
+.med_iconAlert_success{
+    color:#fff;
+    background: #4aa570;
+}
+
+.med_iconAlert_alert{
+    color:#fff;
+    background: #E57373;
+}
+
+.med_iconAlert_information{
+    color:#fff;
+    background: #f7a42a;
+}
+
+.alertContent {
+    margin-top: 50px;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.alertContent span{
+    font-size:24px;
+}
+/* Alert popup end*/
+
+/* progress bar*/
+.med_progressBar{
+    background: rgba(0, 0, 0, 0.05);
+    height: calc(100vh - 0px);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999 !important;
+}
+
+.med_loading-icon{
+    color: #bbdefb;
+    height: 200px;
+    margin: calc(50vh - 100px) auto 0 calc(50% - 100px);
+    width: 200px;
+    font-size:200px !important;
+}
+/* progress bar end*/
+
+/* Alert message*/
+.med_AlertSlot {
+    font-size: 14px;
+    line-height: 1.4em;
+    padding: 16px;
+}
+
+.med_AlertSlot i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.med_AlertSlot span {
+    font-size: 18px;
+}
+
+.med_successMsg {
+    background: #f0fbf3;
+    border-radius: 5px;
+    border-left: 5px solid;
+    color:#4aa570;
+}
+
+.med_errorAlert {
+    background: #fcf1f5;
+    border-radius: 5px;
+    border-left: 5px solid;
+    color: #E57373;
+}
+
+.med_errorInfo {
+    background: #fefaed;
+    border-radius: 5px;
+    border-left: 5px solid;
+    color:#7a582c;
+}
+/* Alert message end*/
+
+/* Top alert message*/
+.med_msgTop {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 3px #ccc;
+    min-height: 60px;
+    position: absolute;
+    top: 32px;
+    z-index: 9999;
+    inset-inline-start: 0px;
+    inset-inline-end: 0px;
+    width: fit-content;
+    margin: auto;
+}
+
+.med_msgIcon {
+    border-radius: 5px 0 0 5px;
+    font-size: 24px !important;
+    line-height: 60px !important;
+    text-align: center;
+    width: 60px;
+}
+
+.med_msgText {
+    font-size: 14px;
+    padding: 22px 20px;
+    max-width: calc(100% - 92px);
+}
+
+.med_topSuccess_color{color: #4aa570;}
+.med_topSuccess_color i{background: #f0fbf3;}
+
+.med_topError_color{color: #E57373;}
+.med_topError_color i{background: #fcf1f5;}
+
+.med_topInfo_color{color: #7a582c;}
+.med_topInfo_color i{background: #fefaed;}
+/* Top alert message end*/
+
+/* Drawer open from left*/
+.med_left_drawer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.med_left_drawer.med_open {
+    left:0;
+}
+/* Drawer open from left end*/
+
+/* Drawer open from right*/
+.med_Right_drawer {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.med_Right_drawer.med_open {
+    right: 0;
+}
+/* Drawer open from right end*/
+
+/* Drawer inner*/
+.med_left_drawer_inner {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    position:relative;
+}
+
+.med_left_drawerCloseIcon {
+    background: #f7a42a none repeat scroll 0 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px !important;
+    height: 35px;
+    right: -35px;
+    line-height: 32px !important;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    z-index: 9;
+}
+
+.med_left_drawerCloseIcon:hover{
+    background:#F7952A;
+}
+
+.med_right_drawerCloseIcon {
+    background: #f7a42a none repeat scroll 0 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px !important;
+    height: 35px;
+    left: -35px;
+    line-height: 32px !important;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    z-index: 9;
+}
+
+.med_right_drawerCloseIcon:hover{
+    background:#F7952A;
+}
+/* Drawer inner end*/
+
+/* Drawer toggle*/
+.med_toggleDrawer {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    border:1px solid #dedede;
+    border-radius:5px;
+    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 9;
+}
+
+.med_filterHeader{
+    width:100%;
+    padding:10px;
+}
+
+.med_filterHeaderLabel{
+    font-weight:bold;
+    margin-top:6px;
+    font-size:14px;
+}
+
+.med_filterClose {
+    border-radius: 100%;
+    cursor: pointer;
+    float: right !important;
+    font-size: 24px !important;
+    height: 26px;
+    line-height: 27px !important;
+    text-align: center;
+    width: 26px;
+    transform: rotate(45deg);
+}
+
+.med_filterClose:before {
+    content: '+';
+}
+
+.med_filterClose:hover {
+    background: #d7e0e4 none repeat scroll 0 0;
+    color:#000;
+}
+
+.med_filterMiddle{
+    padding:10px;
+    width:100%;
+    height:calc(100% - 142px);
+    overflow-y:auto;
+    background-color: white;
+}
+/* Drawer toggle end*/
+
+/* Breadcrumb*/
+.med_breadcrumb {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #eae4e4;
+    height:28px;
+}
+
+.med_breadcrumb a {
+    color: #777;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.med_breadcrumb a:hover {
+    text-decoration:underline;
+    color: #1e88e5;
+}
+
+.med_breadcrumbHome {
+    float: left;
+    font-size: 16px !important;
+    text-decoration: none !important;
+}
+
+.med_breadcrumbAngle {
+    color: #777;
+    float: left;
+    font-size: 18px !important;
+    height: 28px !important;
+    line-height: 26px !important;
+}
+/* Breadcrumb end*/
+
+/* Pagination*/
+.med_paginationRow {
+    border-top: 1px solid #dedede;
+    width: 100%;
+    padding: 7px 10px;
+}
+
+.med_paginationPipe {
+    border-right: 1px solid #dedede;
+    margin-right: 10px;
+}
+
+.med_paginationBtn {
+    height: 28px;
+    line-height: 27px;
+    padding: 0px 7px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right:10px;
+    background:#f5f5f5;
+}
+
+.med_paginationBtn span{
+    color:#777;
+}
+
+.med_paginationGreyLabels{
+    margin-top:7px;
+    color:#777;
+}
+
+.med_paginationInputOuter {
+    float: left;
+    width: 44px;
+    text-align: center;
+    text-indent: 0px;
+}
+
+.med_paginationInput:focus {
+    border: 1px solid #1E88E5;
+}
+
+.med_RPP{
+    width:60px;
+}
+/* Pagination end*/
+
+/* Company header*/
+    .med_CompanyHeader {
+        background: #1E88E5;
+        height: 32px;
+        color: #fff;
+    }
+
+    .med_CompanyHeader .med_companyLogo {
+        background: url('images/logo mednet white.png') 0px 0px  no-repeat;
+        width: 120px;
+        height: 25px;
+        display: block;
+        margin-top: 6px;
+        margin-left: 10px;
+        background-size: 90% 20px;
+    }
+    .med_hamburger {
+        background: rgba(0,0,0,0.1);
+        width: 24px;
+        height: 24px;
+        line-height: 24px !important;
+        border-radius: 24px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1.2em !important;
+    }
+
+    .med_hamburger:hover{
+        background: rgba(0,0,0,0.3);
+    }
+
+    /* Company dropdown*/
+    .med_companyHeaderDropdown{
+        width: 260px;
+        height: 28px;
+        margin-left: 10px;
+        color: #000;
+    }
+
+    dropdown input {
+        display: none;
+    }
+
+    .med_companyHeaderDropdownLabel {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border: 1px solid #dedede;
+        border-radius: 15px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        cursor:pointer;
+    }
+
+    .med_selectedCompanyName {
+        float: left;
+        width: calc(100% - 0px);
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center !important;
+        padding-right: 25px;
+    }
+
+    .med_companySelectDDArrow {
+        font-size: 18px !important;
+        height: 100%;
+        line-height: 26px !important;
+        position: absolute;
+        right: 0;
+        width: 25px;
+        z-index: 9999;
+        text-align: center;
+        top: 0px;
+    }
+
+    .med_companyHeaderDropdown ul {
+        border: 1px solid #dedede;
+        box-sizing: border-box;
+        max-height: 315px;
+        overflow-y: auto;
+        width: 100%;
+        word-wrap: break-word;
+        background: #fff;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .med_dropdownCompanyList {
+        border-top: 1px solid #dedede;
+        box-sizing: border-box;
+        font-weight: normal;
+        padding: 7px 10px;
+        width: 100%;
+        float: left;
+        padding-right: 25px;
+        text-align: center;
+        cursor:pointer;
+    }
+
+    .med_dropdownCompanyList:hover{
+        background:#f5f5f5;
+    }
+
+    .med_companyHeaderDropdown input:checked + label{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom: 1px solid #dedede;
+    }
+
+    .med_companyHeaderDropdown input:checked ~ ul{
+        background: #fff none repeat scroll 0 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        opacity: 1;
+        top: -1px;
+        visibility: visible;
+        border-top:0px;
+        box-shadow: 0 3px 4px 0px #ddd;
+    }
+
+    .med_companyHeaderDropdown input ~ ul{
+        position: relative;
+        visibility: hidden;
+        opacity: 0;
+        top: 0px;
+        z-index: 1;
+    }
+    /* Company dropdown end*/
+
+    .med_notificationSlot {
+        position: relative;
+        cursor: pointer;
+        padding: 0px 10px;
+        margin-right:4px;
+    }
+
+    .med_notificationSlot:hover {
+        background: rgba(0,0,0,0.2);
+    }
+
+    .med_notificationCount {
+        background: #e55353;
+        color: #fff;
+        min-width: 16px;
+        text-align: center;
+        border-radius: 10px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 0.9em;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 0px 4px;
+    }
+
+    .med_companyHeaderIcon{
+        font-size:18px !important
+    }
+
+    .med_userSlot {
+        cursor: pointer;
+        padding: 0px 10px;
+        position: relative;
+    }
+
+    .med_userSlot:hover {
+        background: rgba(0,0,0,0.2);
+    }
+
+    .med_userName {
+        margin: 0px 10px;
+    }
+
+    .med_userDropArrow{
+        transition: all 0.1s ease;
+    }
+/* Company header end*/
+
+/* Slot view pattern*/
+.med_slotViewOuter{
+    border:1px solid #dedede;
+    padding:15px 10px;
+    border-radius:5px;
+    position:relative;
+}
+
+.med_slotViewLabel {
+    height: 25px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    position: absolute;
+    left: 5px;
+    top: -14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.med_slotViewOuter_color{
+    padding:10px 10px;
+    border-radius:5px;
+    position:relative;
+}
+
+.med_slotView_green{
+    background: #4aa57018;
+    border: 1px solid #4aa570;
+}
+
+.med_slotView_red{
+    background: #E5737318;
+    border: 1px solid #E57373;
+}
+
+.med_slotView_orange{
+    background: #f7a42a18;
+    border: 1px solid #f7a42a;
+}
+
+.med_slotView_blue{
+    background: #1E88E518;
+    border: 1px solid #1E88E5;
+}
+
+.med_slotViewLabel_color {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Slot view pattern end*/
+
+/* Heading band*/
+.med_headingBandOuter {
+    position: relative;
+    border: 1px solid #dedede;
+}
+
+.med_headingBandHeader {
+    background: #1E88E518;
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid #dedede;
+}
+
+.med_headingBandLabel{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* Heading band end*/
+
+/* Thumbnail view*/
+.med_thumbnailImgSlider {
+    width: calc(100% - 60px);
+    padding: 0px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.med_thumbnailImgSliderInner{
+    /*overflow: hidden;*/
+    width: 100%;;
+}
+
+.med_imgThumb {
+    width: 240px;
+    height: 240px;
+    border: 1px solid #dedede;
+    padding: 8px;
+    margin-right: 8px;
+    float: none !important;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px -2px #ccc;
+    border-radius: 4px;
+}
+
+.med_imgThumb:hover{
+    /*border: 1px solid #1e88e5;
+    background:#E1F5FE;*/
+    background: #1E88E518;
+    border: 1px solid #1E88E5;
+}
+
+.med_imgThumb_img {
+    width: 100%;
+    padding: 5px 0px;
+    height: calc(100% - 70px);
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 5px 0px;
+}
+
+.med_imgThumb_img img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.med_italicGrey {
+    color: #777;
+    font-style: italic;
+}
+
+.med_scrollLRIcon {
+    background: #e1eaee none repeat scroll 0 0;
+    border-radius: 24px;
+    color: #333;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    padding: 0 12px;
+    text-align: center;
+    line-height: 28px !important;
+    font-size: 1.2em !important;
+    width: 28px;
+}
+
+.med_scrollLRIcon:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+/* Thumbnail end*/
+
+/* Copy code*/
+.copy_popup_sm {
+    width: 160px;
+    display: none;
+    position: absolute;
+    left: 45px;
+    background-color: #E8F5E9;
+    color: #1B5E20;
+    border: 1px solid #A5D6A7;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0px;
+    z-index: 9;
+    height: 28px;
+    line-height: 26px;
+}
+/* TCopy code end*/
+
+/* Img aspect ratio */
+.med_aspectRatio {
+    height: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.med_aspectRatio img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Img aspect ratio end*/
+
+/* Patient Header Band 1 */
+.med_HeaderBand_btn {
+    border: 1px solid transparent;
+    color: #000;
+}
+
+.med_HeaderBand_btn:hover{
+    background:white;
+    border: 1px solid #4778C6;
+    border-radius: 3px;
+}
+
+.med_commonPopup_draggable {
+    border-radius: 5px;
+    margin: 0 auto !important;
+    position: absolute;
+    background: #ffffff none repeat scroll 0 0;
+    z-index: 1;
+}
+
+.med_header_draggable {
+    cursor: move;
+}
+/* Patient Header Band 1  end*/
+
+/* Text Ellipsis*/
+.med_textEllipsis {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .med_textEllipsis2 {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+}
+
+.med_textEllipsis3 {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+}
+/* Text Ellipsis end*/
+
+/* Company Hedaer*/
+.med_left-sidebar {
+    width: 160px;
+    background-color: #222d32;
+    border-right: 1px solid #e0e0e0;
+    height: 100%;
+}
+
+.med_left-sidebar.med_collapsed {
+    width: 40px;
+    text-align: center;
+}
+
+.med_left-sidebar.med_collapsed .med_submenu-toggle {
+    display: none;
+}
+
+.med_tooltip-text{
+    width:107px;
+    font-size:12px !important;
+    font-family:Helvetica;
+}
+
+.med_left-sidebar.med_collapsed #med_leftNavigation li a .med_tooltip-text {
+    display: none;
+}
+
+.med_leftNavIcon {
+    font-size: 14px !important;
+    width:22px;
+    margin-top:0px;
+}
+
+.med_left-sidebar.med_collapsed .med_leftNavIcon {
+   text-align: center !important;
+}
+
+.med_modulename {
+    width:120px;
+}
+
+.med_left-sidebar.med_collapsed .med_modulename {
+    display: none;
+}
+
+.med_left-sidebar.med_collapsed #med_leftNavigation li ul li a {
+    padding-left: 10px; 
+}
+
+#med_leftNavigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#med_leftNavigation li {
+    position: relative;
+}
+
+#med_leftNavigation li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #1a2226;
+    transition: none;
+    white-space: nowrap;
+}
+
+#med_leftNavigation li a:hover {
+    background: #1a2226;
+    color: white;
+}
+
+#med_leftNavigation li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    text-align: left;
+}
+
+#med_leftNavigation li ul.open {
+    display: block;
+}
+
+#med_leftNavigation li ul li {
+    width: 100%;
+}
+
+#med_leftNavigation li ul li a {
+    padding-left: 30px; 
+    text-align: left; 
+}
+
+.med_submenu-toggle {
+    margin: auto;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+    float: right;
+    font-size: 10px !important;
+    color: #999;
+}
+
+.med_submenu-toggle.rotate {
+    transform: rotate(180deg);
+}
+
+.med_expand_tooltip_style {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.med_expand_tooltip_style:hover::after {
+    content: attr(data-value); 
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 1000;
+}
+
+.med_expand_tooltip_style:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.med_expand_tooltip_style:hover::before {
+    content: none;
+}
+
+.med_outer-div {
+    display: flex;
+    width: 100%;
+    font-family: Helvetica;
+    height: 15px !important;
+    line-height: 17px !important;
+}
+
+#med_leftNavigation li.menu-active > a {
+    background-color: #1E88E5 !important;
+    color: white;
+}
+
+/* Active submenu style */
+#med_leftNavigation .submenu li.submenu-active > a {
+    background-color: black !important;
+    color: white;
+}
+.med_headerOuter{
+    font-size:14px;
+}
+
+.med_leftnavtxt_par{
+    word-wrap: break-word;
+}
+
+/* Comapny Header end*/
+
+/* Zoom In/Out Image */
+
+.med_Outerbody {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 350px;
+    border:1px solid #ccc;
+  }
+
+  .med_button-container {
+    padding: 5px 0px;
+    background-color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap:5px;
+  }
+
+  .med_zoom_outer {
+    overflow: hidden;
+    flex: 1;
+    padding:10px 0px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #f7f7f7, #ffffff);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #imageArea {
+    position: relative;
+    cursor: grab;
+    transition: transform 0.1s ease;
+  }
+
+  #imageArea:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  embed {
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+/* Zoom In/Out Image end*/
+
+
+.med_left-sidebar_white {
+    width: 160px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    height: 100%;
+}
+
+.med_left-sidebar_white.med_collapsed {
+    width: 40px;
+    text-align: center;
+}
+
+.med_left-sidebar_white.med_collapsed .med_submenu-toggle {
+    display: none;
+}
+
+.med_left-sidebar_white.med_collapsed #med_leftNavigation_white li a .med_tooltip-text {
+    display: none;
+}
+
+.med_left-sidebar_white.med_collapsed #med_leftNavigation_white li a {
+    justify-content: center;
+}
+
+.med_left-sidebar_white.med_collapsed .med_leftNavIcon {
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.med_left-sidebar_white.med_collapsed .med_modulename {
+    display: none;
+}
+
+.med_left-sidebar_white.med_collapsed #med_leftNavigation_white li ul li a {
+    padding-left: 10px; 
+}
+
+#med_leftNavigation_white {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#med_leftNavigation_white li {
+    position: relative;
+}
+
+#med_leftNavigation_white li a {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+    transition: background 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+#med_leftNavigation_white li a:hover {
+    background: #f1f1f1;
+    color: black;
+}
+
+#med_leftNavigation_white li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    text-align: left;
+}
+
+#med_leftNavigation_white li ul.open {
+    display: block;
+}
+
+#med_leftNavigation_white li ul li {
+    width: 100%;
+}
+
+#med_leftNavigation_white li ul li a {
+    padding-left: 30px; 
+    text-align: left; 
+}
+
+#med_leftNavigation_white li.menu-active > a {
+    background-color: #1E88E5 !important;
+    color: white;
+}
+
+#med_leftNavigation_white .submenu li.submenu-active > a {
+    background-color: #f1f1f1 !important;
+    color: #000;
+}
+
+
+/* Company header*/
+.med_CompanyHeader_white {
+    background: #f1f1f1;
+    height: 32px;
+    color: #000;
+}
+
+.med_CompanyHeader_white .med_companyLogo {
+    background: url('images/logo mednet.png') 0px 0px  no-repeat;
+    width: 120px;
+    height: 25px;
+    display: block;
+    margin-top: 6px;
+    margin-left: 10px;
+    background-size: 90% 20px;
+}
+.med_hamburger {
+    background: rgba(0,0,0,0.1);
+    width: 24px;
+    height: 24px;
+    line-height: 24px !important;
+    border-radius: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.2em !important;
+}
+
+.med_hamburger:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+/* Company dropdown*/
+.med_companyHeaderDropdown_white{
+    width: 260px;
+    height: 28px;
+    margin-left: 10px;
+    color: #000;
+}
+
+dropdown input {
+    display: none;
+}
+
+.med_companyHeaderDropdownLabel_white {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    background: #1E88E5;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.med_selectedCompanyName {
+    float: left;
+    width: calc(100% - 0px);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center !important;
+    padding-right: 25px;
+}
+
+.med_companySelectDDArrow {
+    font-size: 18px !important;
+    height: 100%;
+    line-height: 26px !important;
+    position: absolute;
+    right: 0;
+    width: 25px;
+    z-index: 9999;
+    text-align: center;
+    top: 0px;
+}
+
+.med_companyHeaderDropdown_white ul {
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    max-height: 315px;
+    overflow-y: auto;
+    width: 100%;
+    word-wrap: break-word;
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.med_dropdownCompanyList {
+    border-top: 1px solid #dedede;
+    box-sizing: border-box;
+    font-weight: normal;
+    padding: 7px 10px;
+    width: 100%;
+    float: left;
+    padding-right: 25px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.med_dropdownCompanyList:hover{
+    background:#f5f5f5;
+}
+
+.med_companyHeaderDropdown_white input:checked + label{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid #dedede;
+}
+
+.med_companyHeaderDropdown_white input:checked ~ ul{
+    background: #fff none repeat scroll 0 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 1;
+    top: -1px;
+    visibility: visible;
+    border-top:0px;
+    box-shadow: 0 3px 4px 0px #ddd;
+}
+
+.med_companyHeaderDropdown_white input ~ ul{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: 0px;
+    z-index: 1;
+}
+
+.med_dropdownCompanyList.redColor {
+    background-color: red;
+    color: white;
+}
+
+.med_dropdownCompanyList.greenColor {
+    background-color: green;
+    color: white;
+}
+
+.med_dropdownCompanyList.blueColor {
+    background-color: rgb(29, 29, 126);
+    color: white;
+}
+
+.med_dropdownCompanyList.OrangeColor {
+    background-color: rgba(255, 187, 0, 0.658);
+    color: white;
+}
+
+.med_companyHeaderDropdownLabel_white {
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Company dropdown end*/
+
+.med_dataIcon {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #bbb;
+    float: none !important;
+    font-size: 45px !important;
+    height: 100px;
+    line-height: 100px !important;
+    text-align: center;
+    width: 100px;
+}
+.med_blankPageOuter{
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+}
+.med_blankPageContent {
+    background: #fff none repeat scroll 0 0;
+    color: #777;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+.med_blankPageMsg{
+    margin-top:25px;
+    line-height:1.2em;
+}
+.med_middleAllign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
