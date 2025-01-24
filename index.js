@@ -1243,19 +1243,19 @@ function selectWorkingCompany_white(selectedCompany, selectedColor = '') {
     }
 }
 
-//Download tinymce zip file
 document.getElementById('downloadButton').addEventListener('click', function() {
-    // Replace with the actual URL to your zip file
-    const zipFileUrl = 'https://github.com/mednetOakland/UI-UX-Components-1/blob/ad93f4c5429d5f38713acc14cc3a824669dcb85f/tinymce.zip';
+    // Replace with the actual raw URL to your zip file
+    const zipFileUrl = 'https://github.com/mednetOakland/UI-UX-Components-1/raw/ad93f4c5429d5f38713acc14cc3a824669dcb85f/tinymce.zip';
     
     // Create a temporary link element
     const link = document.createElement('a');
     link.href = zipFileUrl;
-    link.download = zipFileUrl.split('/').pop(); // Name the file based on the URL
+    link.download = 'tinymce.zip'; // Optionally, specify the name of the file
     
     // Trigger a click event on the link to start the download
     link.click();
 });
+
 
 
 
