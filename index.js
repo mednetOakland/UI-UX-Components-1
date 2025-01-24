@@ -1246,7 +1246,7 @@ function selectWorkingCompany_white(selectedCompany, selectedColor = '') {
 //Download tinymce zip file
 document.getElementById('downloadButton').addEventListener('click', function() {
     // Replace with the actual URL to your zip file
-    const zipFileUrl = '/home/oakland-system/Downloads/22- Jan MEDNET UI Components/tinymce.zip';
+    const zipFileUrl = '/mednetOakland/UI-UX-Components-1/tinymce.zip';
     
     // Create a temporary link element
     const link = document.createElement('a');
