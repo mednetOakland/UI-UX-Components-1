@@ -230,6 +230,8 @@ input::placeholder {font-size:12px;}
 
 /* margin left*/
 .med_marginL5{margin-left: 5px;}
+.med_marginL7{margin-left: 7px;}
+.med_marginL8{margin-left: 8px;}
 .med_marginL10{margin-left: 10px;}
 .med_marginL15{margin-left: 15px;}
 .med_marginL20{margin-left: 20px;}
@@ -1348,7 +1350,7 @@ input::placeholder {font-size:12px;}
 }
 
 .med_icons:hover{
-    background: #ECEAF1;
+    background: #d8d8d8;
     color:#555;
 }
 
@@ -1461,7 +1463,7 @@ input::placeholder {font-size:12px;}
 }
 
 .med_multiIconOverlayOuter {
-    height: 32px;
+    height: 30px;
     overflow: hidden;
     width: 32px;
     box-sizing: border-box;
@@ -3658,4 +3660,8 @@ dropdown input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.med_boxShadow{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
