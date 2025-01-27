@@ -33,6 +33,7 @@
                     <li><a href="#textEditor" onclick="toggleActive('leftNav_textEditor')">Text Editor</a></li>
                     <li><a href="#radioButton" onclick="toggleActive('leftNav_radioButton')">Radio</a></li>
                     <li><a href="#checkbox" onclick="toggleActive('leftNav_checkbox')">Checkbox</a></li>
+                    <li><a href="#listFilter" onclick="toggleActive('leftNav_listFilter')">List Filter</a></li>
                     <li><a href="#agePicker" onclick="toggleActive('leftNav_agePicker')">Age Picker</a></li>
                     <li><a href="#datePicker" onclick="toggleActive('leftNav_datePicker')">Date Picker</a></li>
                     <li><a href="#timePicker" onclick="toggleActive('leftNav_timePicker')">Time Picker</a></li>
@@ -95,7 +96,7 @@
     </div>
 
     <div class="med_Width100pr" id="showForWeb" style="height:calc(100% - 60px);display:block;">
-        <div class="FixedInner" id="leftNav" style="">
+        <div class="FixedInner" id="leftNav">
             <a href="#selectOption"><div id="leftNav_selectOption" class="wrapperToggle_btn wrapperToggle_btnActive">Select Option</div></a>
             <a href="#comboBox"><div id="leftNav_comboBox" class="wrapperToggle_btn">Combo Box</div></a>
             <a href="#inputType"><div id="leftNav_inputType" class="wrapperToggle_btn">Input Type</div></a>
@@ -105,6 +106,7 @@
             <a href="#textEditor"><div id="leftNav_textEditor" class="wrapperToggle_btn">Text Editor</div></a>
             <a href="#radioButton"><div id="leftNav_radioButton" class="wrapperToggle_btn">Radio</div></a>
             <a href="#checkbox"><div id="leftNav_checkbox" class="wrapperToggle_btn" >Checkbox</div></a>
+            <a href="#listFilter"><div id="leftNav_listFilter" class="wrapperToggle_btn" >List Filter</div></a>
             <a href="#agePicker"><div id="leftNav_agePicker" class="wrapperToggle_btn">Age Picker</div></a>
             <a href="#datePicker"><div id="leftNav_datePicker" class="wrapperToggle_btn">Date Picker</div></a>
             <a href="#timePicker"><div id="leftNav_timePicker" class="wrapperToggle_btn">Time Picker</div></a>
@@ -933,6 +935,40 @@
                     </div>
                 </div>
                 <!-- Checkbox end-->
+                
+                <!-- List Filter -->
+                <div class="container" id="listFilter">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('listFilter_code')"></div>
+                            </div>
+                        </div>
+                        <pre id="listFilter_code">
+                            <code>
+                                
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Checkbox</h3>
+                            <div class="med_ListFilter_Red med_marginR10">
+                                <input class="med_pointer" type="checkbox"  checked="checked" id="filterRed">
+                                <label class="pointer" for="filterRed"></label>
+                            </div>
+                            <div class="med_ListFilter_Green med_marginR10">
+                                <input class="med_pointer" type="checkbox" id="filterGreen">
+                                <label class="med_pointer" for="filterGreen"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- List Filter end-->
 
                 <!-- Age picker -->
                 <div class="container" id="agePicker">
@@ -3369,6 +3405,10 @@
                             <code>
                                 &lt;div class="med_Width100pr med_padding10"&gt;
                                     &lt;div class="med_pull_right med_marginT5" style="margin-bottom:-3px;"&gt;
+                                        &lt;div class="med_squareFilter med_squareFilter-white med_paddingR20"&gt;
+                                            &lt;input type="checkbox" id="white" class="med_pointer" autocomplete="off"&gt;
+                                            &lt;label for="white" class="med_pointer"&gt;Present&lt;/label&gt;
+                                        &lt;/div&gt;
                                         &lt;div class="med_squareFilter med_squareFilter-green med_paddingR20"&gt;
                                             &lt;input type="checkbox" id="green" class="med_pointer" autocomplete="off"&gt;
                                             &lt;label for="green" class="med_pointer"&gt;Active&lt;/label&gt;
@@ -3410,6 +3450,27 @@
                                     &lt;/div&gt;
 
                                     &lt;div class="preview med_Width100pr" style="padding-bottom: 7px;"&gt;
+                                        &lt;div class="med_hoverSection med_gridListEven" style="background-color: #fff;"&gt;
+                                            &lt;div class="med_Width35pr med_paddingLR10"&gt;
+                                                &lt;div class="med_Width100pr"&gt;
+                                                    &lt;div class="med_Width90pr gridPatientName" style="width:calc(100% - 25px);"&gt;Mr. Himesh Hasan&lt;/div&gt;
+                                                    &lt;div class="med_statusListIcon med_pull_right"&gt;N&lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="med_Width100pr med_marginT5 med_smallGreyText"&gt;Dr. Prakash Patil&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="med_Width15pr"&gt;
+                                                &lt;div class="med_Width100pr"&gt;MRN-248700011&lt;/div&gt;
+                                                &lt;div class="med_Width100pr med_marginT5 med_smallGreyText"&gt;OPD.23-24-46&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="med_Width10pr"&gt;CASH&lt;/div&gt;
+                                            &lt;div class="med_Width10pr"&gt;T-875534534&lt;/div&gt;
+                                            &lt;div class="med_Width10pr"&gt;
+                                                &lt;div class="med_Width100pr"&gt;10:08 AM&lt;/div&gt;
+                                                &lt;div class="med_Width100pr med_marginT5 med_smallGreyText"&gt;14-Mar 2024&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="med_Width10pr"&gt;10:15 AM&lt;/div&gt;
+                                            &lt;div class="med_Width10pr"&gt;23 Yr &lt;/div&gt;
+                                        &lt;/div&gt;
                                         &lt;div class="med_hoverSection med_gridListEven" style="background-color: #4aa57018;"&gt;
                                             &lt;div class="med_Width35pr med_paddingLR10"&gt;
                                                 &lt;div class="med_Width100pr"&gt;
@@ -3498,7 +3559,7 @@
                                             &lt;div class="med_Width10pr"&gt;32 Yr &lt;/div&gt;
                                         &lt;/div&gt;
 
-                                        &lt;div class="med_hoverSection med_gridListOdd" style="background-color: #1E88E518;"&gt;
+                                        &lt;div class="med_hoverSection med_gridListOdd" style="background-color: #7E57C218;"&gt;
                                             &lt;div class="med_Width35pr med_paddingLR10"&gt;
                                                 &lt;div class="med_Width100pr"&gt;
                                                     &lt;div class="med_Width90pr gridPatientName" style="width:calc(100% - 25px);"&gt;Mr. Rohit Namdar&lt;/div&gt;
@@ -3533,6 +3594,10 @@
                             <div class="med_Width100pr med_padding10">
                                 <h3 class="med_pull_left" style="margin-bottom:0px;">Grid View</h3>
                                 <div class="med_pull_right med_marginT5" style="margin-bottom:-3px;">
+                                    <div class="med_squareFilter med_squareFilter-white med_paddingR20">
+                                        <input type="checkbox" id="white" class="med_pointer" autocomplete="off">
+                                        <label for="white" class="med_pointer">Present</label>
+                                    </div>
                                     <div class="med_squareFilter med_squareFilter-green med_paddingR20">
                                         <input type="checkbox" id="green" class="med_pointer" autocomplete="off">
                                         <label for="green" class="med_pointer">Active</label>
@@ -3574,6 +3639,27 @@
                                 </div>
 
                                 <div class="preview med_Width100pr" style="padding-bottom: 7px;">
+                                    <div class="med_hoverSection med_gridListEven" style="background-color: #fff;">
+                                        <div class="med_Width35pr med_paddingLR10">
+                                            <div class="med_Width100pr">
+                                                <div class="med_Width90pr gridPatientName" style="width:calc(100% - 25px);">Mr. Himesh Hasan</div>
+                                                <div class="med_statusListIcon med_pull_right">N</div>
+                                            </div>
+                                            <div class="med_Width100pr med_marginT5 med_smallGreyText">Dr. Prakash Patil</div>
+                                        </div>
+                                        <div class="med_Width15pr">
+                                            <div class="med_Width100pr">MRN-248700011</div>
+                                            <div class="med_Width100pr med_marginT5 med_smallGreyText">OPD.23-24-46</div>
+                                        </div>
+                                        <div class="med_Width10pr">CASH</div>
+                                        <div class="med_Width10pr">T-875534534</div>
+                                        <div class="med_Width10pr">
+                                            <div class="med_Width100pr">10:08 AM</div>
+                                            <div class="med_Width100pr med_marginT5 med_smallGreyText">14-Mar 2024</div>
+                                        </div>
+                                        <div class="med_Width10pr">10:15 AM</div>
+                                        <div class="med_Width10pr">23 Yr </div>
+                                    </div>
                                     <div class="med_hoverSection med_gridListEven" style="background-color: #4aa57018;">
                                         <div class="med_Width35pr med_paddingLR10">
                                             <div class="med_Width100pr">
@@ -3662,7 +3748,7 @@
                                         <div class="med_Width10pr">32 Yr </div>
                                     </div>
 
-                                    <div class="med_hoverSection med_gridListOdd" style="background-color: #1E88E518;">
+                                    <div class="med_hoverSection med_gridListOdd" style="background-color: #7E57C218;">
                                         <div class="med_Width35pr med_paddingLR10">
                                             <div class="med_Width100pr">
                                                 <div class="med_Width90pr gridPatientName" style="width:calc(100% - 25px);">Mr. Rohit Namdar</div>
@@ -6917,7 +7003,7 @@
                                                             <div class="med_paddingL5" style="font-weight:normal;">23 Yr  / M</div>
                                                         </div>
                                                         <div class="med_pull_left med_paddingL10" style="border-left:1px solid #ccc;">
-                                                            <div style="">DOB:</div>
+                                                            <div>DOB:</div>
                                                             <div class="med_paddingL5">14-08-1998</div>
                                                         </div>
                                                     </div>
@@ -6992,7 +7078,7 @@
                     <div onclick="closePopupSider();" class="fa_mednet fa-close med_commonPopupCloseIcon"></div>
                 </div>
 
-                <div class="med_Width100pr med_padding10 med_popupMiddleData" style="">Content goes here</div>
+                <div class="med_Width100pr med_padding10 med_popupMiddleData">Content goes here</div>
                 <div class="med_commonPopupFooter med_radiusNone">
                     <div class="med_primaryBtn_md" onclick="closePopupSider();">Save</div>
                 </div>

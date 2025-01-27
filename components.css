@@ -921,6 +921,108 @@ input::placeholder {font-size:12px;}
 }
 /* checkbox end*/
 
+/* List Filter */
+.med_ListFilter_Red{
+    background-color: #e1eaee;
+}
+.med_ListFilter_Red:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+
+.med_ListFilter_Red input[type="checkbox"] {
+    display: none;
+}
+
+.med_ListFilter_Red label:before {
+    border: 1px solid #ccc;
+    color: #999;
+    border-radius: 3px;
+    content: '\f05e';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+}
+
+.med_ListFilter_Red input[type="checkbox"]:checked ~ label:before {
+    border: 1px solid #ccc;
+    color: red;
+    border-radius: 3px;
+    content: "\f05e";
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+}
+
+.med_ListFilter_Red input[type="checkbox"]:disabled ~ label:before {
+    opacity:0.5;
+}
+/* End Red List Filter */
+
+/* Grren List Filter */
+.med_ListFilter_Green{
+    background-color: #e1eaee;
+}
+
+.med_ListFilter_Green:hover{
+    background: #d7e0e4 none repeat scroll 0 0;
+}
+
+.med_ListFilter_Green input[type="checkbox"] {
+    display: none;
+}
+
+.med_ListFilter_Green label:before {
+    border: 1px solid #ccc;
+    color: #999;
+    border-radius: 3px;
+    content: '\f256';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+}
+
+.med_ListFilter_Green input[type="checkbox"]:checked ~ label:before {
+    border: 1px solid #ccc;
+    color: green;
+    border-radius: 3px;
+    content: '\f256';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+}
+
+.med_ListFilter_Green input[type="checkbox"]:disabled ~ label:before {
+    opacity:0.5;
+}
+/* Green List Filter end*/
+
+.med_btnHover:hover{
+    background-color: #dedede;
+}
 /* age picker*/
 .med_lg_ageFlag {
     position: absolute;
@@ -2006,6 +2108,13 @@ input:checked + .med_slider:before {
     border: 1px solid #777777;
     background:#77777718;
 }
+
+/* white filter*/
+.med_squareFilter-white label:before{
+    border: 1px solid #bbb;
+    background:#fff;
+}
+
 /* lists view status square filter end*/
 
 /* table list view status */
