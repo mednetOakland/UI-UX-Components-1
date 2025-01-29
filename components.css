@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 }
-  
+
+.med_boderBox {box-sizing: border-box;}
+
 .med_relative {position: relative;}
 
 .med_absolute{position: absolute;}
@@ -924,6 +926,15 @@ input::placeholder {font-size:12px;}
 /* List Filter */
 .med_ListFilter_Red{
     background-color: #e1eaee;
+    height: 28px;
+    width: 28px;
+    line-height: 27px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+    float: left;
+    font-size: 16px;
+    text-align: center;
 }
 .med_ListFilter_Red:hover{
     background: #d7e0e4 none repeat scroll 0 0;
@@ -934,35 +945,22 @@ input::placeholder {font-size:12px;}
 }
 
 .med_ListFilter_Red label:before {
-    border: 1px solid #ccc;
     color: #999;
-    border-radius: 3px;
     content: '\f05e';
     font-family: "FontAwesome";
     cursor: pointer;
-    float: left;
-    font-size: 16px;
-    height: 26px;
-    width: 26px;
-    line-height: 26px;
-    position: relative;
-    text-align: center;
+    height:100%;
+    width:100%;
 }
 
 .med_ListFilter_Red input[type="checkbox"]:checked ~ label:before {
-    border: 1px solid #ccc;
     color: red;
-    border-radius: 3px;
     content: "\f05e";
     font-family: "FontAwesome";
     cursor: pointer;
-    float: left;
-    font-size: 16px;
-    height: 26px;
-    width: 26px;
-    line-height: 26px;
-    position: relative;
-    text-align: center;
+    height:100%;
+    width:100%;
+    
 }
 
 .med_ListFilter_Red input[type="checkbox"]:disabled ~ label:before {
@@ -973,6 +971,14 @@ input::placeholder {font-size:12px;}
 /* Grren List Filter */
 .med_ListFilter_Green{
     background-color: #e1eaee;
+    height: 28px;
+    width: 28px;
+    line-height: 27px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
 }
 
 .med_ListFilter_Green:hover{
@@ -984,35 +990,21 @@ input::placeholder {font-size:12px;}
 }
 
 .med_ListFilter_Green label:before {
-    border: 1px solid #ccc;
     color: #999;
-    border-radius: 3px;
+    width: 100%;
+    height: 100%;
     content: '\f256';
     font-family: "FontAwesome";
     cursor: pointer;
-    float: left;
-    font-size: 16px;
-    height: 26px;
-    width: 26px;
-    line-height: 26px;
-    position: relative;
-    text-align: center;
 }
 
 .med_ListFilter_Green input[type="checkbox"]:checked ~ label:before {
-    border: 1px solid #ccc;
     color: green;
-    border-radius: 3px;
+    width: 100%;
+    height: 100%;
     content: '\f256';
     font-family: "FontAwesome";
     cursor: pointer;
-    float: left;
-    font-size: 18px;
-    height: 26px;
-    width: 26px;
-    line-height: 26px;
-    position: relative;
-    text-align: center;
 }
 
 .med_ListFilter_Green input[type="checkbox"]:disabled ~ label:before {
