@@ -951,6 +951,7 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     height:100%;
     width:100%;
+    float: left;
 }
 
 .med_ListFilter_Red input[type="checkbox"]:checked ~ label:before {
@@ -960,6 +961,7 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     height:100%;
     width:100%;
+    float: left;
     
 }
 
@@ -996,6 +998,7 @@ input::placeholder {font-size:12px;}
     content: '\f256';
     font-family: "FontAwesome";
     cursor: pointer;
+    float: left;
 }
 
 .med_ListFilter_Green input[type="checkbox"]:checked ~ label:before {
@@ -1005,6 +1008,7 @@ input::placeholder {font-size:12px;}
     content: '\f256';
     font-family: "FontAwesome";
     cursor: pointer;
+    float: left;
 }
 
 .med_ListFilter_Green input[type="checkbox"]:disabled ~ label:before {
