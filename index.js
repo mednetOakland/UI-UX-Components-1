@@ -947,7 +947,7 @@ tinymce.init({
 //For draggable popup
 function dragElement(elmnt) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    const header = elmnt.querySelector(".header_draggable");
+    const header = elmnt.querySelector(".med_header_draggable");
     (header || elmnt).onmousedown = (e) => {
         e.preventDefault();
         pos3 = e.clientX; pos4 = e.clientY;
