@@ -170,6 +170,7 @@ input::placeholder {font-size:12px;}
 /* width end */
 
 /* padding */
+.med_padding3{padding: 3px;}
 .med_padding5{padding: 5px;}
 .med_padding10{padding: 10px;}
 .med_padding5x10{padding: 5px 10px;}
@@ -198,6 +199,7 @@ input::placeholder {font-size:12px;}
 /* padding right end*/
 
 /* padding top*/
+.med_paddingT3{padding-top: 3px;}
 .med_paddingT5{padding-top: 5px;}
 .med_paddingT8{padding-top: 8px;}
 .med_paddingT10{padding-top: 10px;}
@@ -215,6 +217,7 @@ input::placeholder {font-size:12px;}
 /* padding left right end*/
 
 /* padding top bottom*/
+.med_paddingTB3{padding: 3px 0px;}
 .med_paddingTB5{padding: 5px 0px;}
 .med_paddingTB10{padding: 10px 0px;}
 .med_paddingTB15{padding: 15px 0px;}
@@ -272,6 +275,7 @@ input::placeholder {font-size:12px;}
 /* margin left right end*/
 
 /* margin top bottom*/
+.med_marginTB3{margin: 3px 0px;}
 .med_marginTB5{margin: 5px 0px;}
 .med_marginTB6{margin: 6px 0px;}
 .med_marginTB7{margin: 7px 0px;}
