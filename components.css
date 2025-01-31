@@ -829,6 +829,26 @@ input::placeholder {font-size:12px;}
 .med_input_readonly:hover:before {
     background: #f5f5f5 none repeat scroll 0 0;
 }
+
+.med_input_md_readonly {
+    height: 28px !important;
+    outline: none;
+    border: 1px solid #ccc;
+    text-indent: 5px;
+    width: 100% !important;
+    background: #f5f5f5;
+    pointer-events: none;
+}
+
+.med_input_lg_readonly {
+    height: 36px !important;
+    outline: none;
+    border: 1px solid #ccc;
+    text-indent: 5px;
+    width: 100% !important;
+    background: #f5f5f5;
+    pointer-events: none;
+}
 /* disabled end*/
 
 /* Radio */
