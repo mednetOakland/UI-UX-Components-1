@@ -961,16 +961,11 @@ function dragElement(elmnt) {
     };
 }
 
-function centerPopup(elmnt) {
-    elmnt.style.position = "absolute";
-    elmnt.style.top = "50%"; elmnt.style.left = "50%";
-    elmnt.style.transform = "translate(-50%, -50%)";
-}
-
 document.querySelectorAll(".med_commonPopup_draggable").forEach(elmnt => {
-    centerPopup(elmnt);
     dragElement(elmnt);
 });
+
+
 
 //toggleEye for Company header
 function toggleReviewData_companyHeader() {
