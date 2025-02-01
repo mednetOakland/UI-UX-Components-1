@@ -965,7 +965,16 @@ document.querySelectorAll(".med_commonPopup_draggable").forEach(elmnt => {
     dragElement(elmnt);
 });
 
+document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
+    elmnt.addEventListener('click', () => {
+          let closestEle = elmnt.closest('.med_commonPopup_draggable');
+          if(closestEle) {
+                closestEle.style.top = '50%';
+                closestEle.style.left = '50%';
 
+          }
+    });
+});
 
 //toggleEye for Company header
 function toggleReviewData_companyHeader() {

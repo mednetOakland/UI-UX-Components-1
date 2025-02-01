@@ -4362,13 +4362,13 @@
                                     &lt;div class="med_commonPopup_draggable med_commonPopupSm"&gt;
                                         &lt;div class="med_commonPopupHeader med_header_draggable"&gt;
                                             &lt;div class="med_commonPopupLabelHeader"&gt;Small Popup&lt;/div&gt;
-                                            &lt;div onclick="closePopupSM();" class="fa_mednet fa-close med_commonPopupCloseIcon"&gt;&lt;/div&gt;
+                                            &lt;div onclick="closePopupSM();" class="fa_mednet fa-close med_commonPopupCloseIcon med_resetPosition"&gt;&lt;/div&gt;
                                         &lt;/div&gt;
             
                                         &lt;div class="med_Width100pr med_padding10" style="min-height:150px;"&gt;Content goes here&lt;/div&gt;
                                         &lt;div class="med_commonPopupFooter"&gt;
                                             &lt;div class="med_primaryBtn_md med_pull_left" onclick="closePopupSM();"&gt;Save&lt;/div&gt;
-                                            &lt;div class="med_secondaryBtn_md med_pull_right" onclick="closePopupSM();"&gt;Close&lt;/div&gt;
+                                            &lt;div class="med_secondaryBtn_md med_pull_right med_resetPosition" onclick="closePopupSM();"&gt;Close&lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
@@ -4380,13 +4380,13 @@
                                     &lt;div class="med_commonPopup_draggable med_commonPopupMd"&gt;
                                         &lt;div class="med_commonPopupHeader med_header_draggable"&gt;
                                             &lt;div class="med_commonPopupLabelHeader"&gt;Medium Popup&lt;/div&gt;   
-                                            &lt;div onclick="closePopupMD();" class="fa_mednet fa-close med_commonPopupCloseIcon"&gt;&lt;/div&gt;
+                                            &lt;div onclick="closePopupMD();" class="fa_mednet fa-close med_commonPopupCloseIcon med_resetPosition"&gt;&lt;/div&gt;
                                         &lt;/div&gt;
             
                                         &lt;div class="med_Width100pr med_padding10 med_popupMiddleData"&gt;Content goes here&lt;/div&gt;
                                         &lt;div class="med_commonPopupFooter"&gt;
                                             &lt;div class="med_primaryBtn_md med_pull_left" onclick="closePopupMD();"&gt;Save&lt;/div&gt;
-                                            &lt;div class="med_secondaryBtn_md med_pull_right" onclick="closePopupMD();"&gt;Close&lt;/div&gt;
+                                            &lt;div class="med_secondaryBtn_md med_pull_right med_resetPosition" onclick="closePopupMD();"&gt;Close&lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
@@ -4398,13 +4398,13 @@
                                     &lt;div class="med_commonPopup_draggable med_commonPopupLg"&gt;
                                         &lt;div class="med_commonPopupHeader med_header_draggable"&gt;
                                             &lt;div class="med_commonPopupLabelHeader"&gt;Open Large Popup&lt;/div&gt;
-                                            &lt;div onclick="closePopupLG();" class="fa_mednet fa-close med_commonPopupCloseIcon"&gt;&lt;/div&gt;
+                                            &lt;div onclick="closePopupLG();" class="fa_mednet fa-close med_commonPopupCloseIcon med_resetPosition"&gt;&lt;/div&gt;
                                         &lt;/div&gt;
             
                                         &lt;div class="med_Width100pr med_padding10 med_popupMiddleData"&gt;Content goes here&lt;/div&gt;
                                         &lt;div class="med_commonPopupFooter"&gt;
                                             &lt;div class="med_primaryBtn_md med_pull_left" onclick="closePopupLG();"&gt;Save&lt;/div&gt;
-                                            &lt;div class="med_secondaryBtn_md med_pull_right" onclick="closePopupLG();"&gt;Close&lt;/div&gt;
+                                            &lt;div class="med_secondaryBtn_md med_pull_right med_resetPosition" onclick="closePopupLG();"&gt;Close&lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
@@ -4472,6 +4472,16 @@
                                         dragElement(elmnt);
                                     });
                                     
+                                    document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
+                                        elmnt.addEventListener('click', () => {
+                                              let closestEle = elmnt.closest('.med_commonPopup_draggable');
+                                              if(closestEle) {
+                                                    closestEle.style.top = '50%';
+                                                    closestEle.style.left = '50%';
+                                    
+                                              }
+                                        });
+                                    });
                                 &lt;/script&gt;
                             </code>
                         </pre>
@@ -4497,13 +4507,13 @@
                         <div class="med_commonPopup_draggable med_commonPopupSm">
                             <div class="med_commonPopupHeader med_header_draggable">
                                 <div class="med_commonPopupLabelHeader">Small Popup</div>
-                                <div onclick="closePopupSM();" class="fa_mednet fa-close med_commonPopupCloseIcon"></div>
+                                <div onclick="closePopupSM();" class="fa_mednet fa-close med_commonPopupCloseIcon med_resetPosition"></div>
                             </div>
 
                             <div class="med_Width100pr med_padding10" style="min-height:150px;">Content goes here</div>
                             <div class="med_commonPopupFooter">
                                 <div class="med_primaryBtn_md med_pull_left" onclick="closePopupSM();">Save</div>
-                                <div class="med_secondaryBtn_md med_pull_right" onclick="closePopupSM();">Close</div>
+                                <div class="med_secondaryBtn_md med_pull_right med_resetPosition" onclick="closePopupSM();">Close</div>
                             </div>
                         </div>
                     </div>
@@ -4512,13 +4522,13 @@
                         <div class="med_commonPopup_draggable med_commonPopupMd">
                             <div class="med_commonPopupHeader med_header_draggable">
                                 <div class="med_commonPopupLabelHeader">Medium Popup</div>   
-                                <div onclick="closePopupMD();" class="fa_mednet fa-close med_commonPopupCloseIcon"></div>
+                                <div onclick="closePopupMD();" class="fa_mednet fa-close med_commonPopupCloseIcon med_resetPosition"></div>
                             </div>
 
                             <div class="med_Width100pr med_padding10 med_popupMiddleData">Content goes here</div>
                             <div class="med_commonPopupFooter">
                                 <div class="med_primaryBtn_md med_pull_left" onclick="closePopupMD();">Save</div>
-                                <div class="med_secondaryBtn_md med_pull_right" onclick="closePopupMD();">Close</div>
+                                <div class="med_secondaryBtn_md med_pull_right med_resetPosition" onclick="closePopupMD();">Close</div>
                             </div>
                         </div>
                     </div>
@@ -4527,13 +4537,13 @@
                         <div class="med_commonPopup_draggable med_commonPopupLg">
                             <div class="med_commonPopupHeader med_header_draggable">
                                 <div class="med_commonPopupLabelHeader">Open Large Popup</div>
-                                <div onclick="closePopupLG();" class="fa_mednet fa-close med_commonPopupCloseIcon"></div>
+                                <div onclick="closePopupLG();" class="fa_mednet fa-close med_commonPopupCloseIcon med_resetPosition"></div>
                             </div>
 
                             <div class="med_Width100pr med_padding10 med_popupMiddleData">Content goes here</div>
                             <div class="med_commonPopupFooter">
                                 <div class="med_primaryBtn_md med_pull_left" onclick="closePopupLG();">Save</div>
-                                <div class="med_secondaryBtn_md med_pull_right" onclick="closePopupLG();">Close</div>
+                                <div class="med_secondaryBtn_md med_pull_right med_resetPosition" onclick="closePopupLG();">Close</div>
                             </div>
                         </div>
                     </div>
