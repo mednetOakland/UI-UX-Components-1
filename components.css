@@ -275,6 +275,7 @@ input::placeholder {font-size:12px;}
 /* margin left right end*/
 
 /* margin top bottom*/
+.med_marginTB2{margin: 2px 0px;}
 .med_marginTB3{margin: 3px 0px;}
 .med_marginTB5{margin: 5px 0px;}
 .med_marginTB6{margin: 6px 0px;}
@@ -2184,6 +2185,7 @@ input:checked + .med_slider:before {
     width: 100%;
     position: sticky;
     top:0px;
+    line-height: normal !important;
 }
 
 .med_tableRowDiv {
