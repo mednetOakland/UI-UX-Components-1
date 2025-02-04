@@ -217,6 +217,7 @@ input::placeholder {font-size:12px;}
 /* padding left right end*/
 
 /* padding top bottom*/
+.med_paddingTB2{padding: 2px 0px;}
 .med_paddingTB3{padding: 3px 0px;}
 .med_paddingTB5{padding: 5px 0px;}
 .med_paddingTB10{padding: 10px 0px;}
@@ -226,6 +227,7 @@ input::placeholder {font-size:12px;}
 /* padding top bottom end*/
 
 /* margin */
+.med_margin3{margin: 3px;}
 .med_margin5{margin: 5px;}
 .med_margin10{margin: 10px;}
 .med_margin15{margin: 15px;}
