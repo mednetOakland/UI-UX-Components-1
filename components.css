@@ -20,12 +20,14 @@
 
 .med_textRight{text-align:right;}
 
+.med_textCenter{text-align:center;}
+
 .med_fontBold{font-weight:bold !important;}
 
 .med_radiusNone{border-radius:0px !important;}
 
 .med_transition{transition: all 0.2s ease;}
-  
+
 .med_wideDIV{
     float:left;
     width:100%;
@@ -182,6 +184,7 @@ input::placeholder {font-size:12px;}
 
 /* padding left*/
 .med_paddingL5{padding-left: 5px;}
+.med_paddingL7{padding-left: 7px;}
 .med_paddingL10{padding-left: 10px;}
 .med_paddingL15{padding-left: 15px;}
 .med_paddingL20{padding-left: 20px;}
@@ -217,7 +220,6 @@ input::placeholder {font-size:12px;}
 /* padding left right end*/
 
 /* padding top bottom*/
-.med_paddingTB2{padding: 2px 0px;}
 .med_paddingTB3{padding: 3px 0px;}
 .med_paddingTB5{padding: 5px 0px;}
 .med_paddingTB10{padding: 10px 0px;}
@@ -294,9 +296,9 @@ input::placeholder {font-size:12px;}
 .med_colorGreen{color:green !important;}
 .med_colorBlue{color:blue !important;}
 .med_colorOrange{color:orange !important;}
-.med_colorGrey{color:#777 important;}
-.med_colorWhite{color:#fff important;}
-.med_colorBlack{color:#000 important;}
+.med_colorGrey{color:#777 !important;}
+.med_colorWhite{color:#fff !important;}
+.med_colorBlack{color:#000 !important;}
 /* color end */
 
 /* color code*/
@@ -958,7 +960,7 @@ input::placeholder {font-size:12px;}
     line-height: 27px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    
+
     float: left;
     font-size: 16px;
     text-align: center;
@@ -989,7 +991,7 @@ input::placeholder {font-size:12px;}
     height:100%;
     width:100%;
     float: left;
-    
+
 }
 
 .med_ListFilter_Red input[type="checkbox"]:disabled ~ label:before {
@@ -2179,7 +2181,7 @@ input:checked + .med_slider:before {
 
 /* lists view */
 .med_listHeader {
-    background: #f5f5f5;
+    background: #f4f2f2;
     border-bottom: 1px solid #dedede;
     border-top: 1px solid #dedede;
     padding: 5px 0;
@@ -2199,7 +2201,7 @@ input:checked + .med_slider:before {
 }
 
 .med_listFooterDiv {
-    background: #f5f5f5 none repeat scroll 0 0;
+    background: #f4f2f2 none repeat scroll 0 0;
     border-top: 1px solid #edeff0;
     float: left;
     padding: 5px 0;
@@ -2213,6 +2215,20 @@ input:checked + .med_slider:before {
 
 .med_hoverSection:hover{
     background:#f5f5f5;
+}
+
+.med_grayCount {
+    background: #e8e7e79c none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #777;
+    border-radius: 20px;
+    height: 20px;
+    font-weight: bold;
+    min-width: 20px;
+    padding: 0px 5px;
+    font-size: 1em;
+    line-height: 20px;
+    text-align: center;
 }
 /* lists view end*/
 
@@ -2427,6 +2443,17 @@ input:checked + .med_slider:before {
 
 .med_popupMiddleData{
     height: calc(100% - 90px);
+}
+
+.med_totalFooterDiv {
+    background: #f4f2f2 none repeat scroll 0 0;
+    border-top: 1px solid #edeff0;
+    float: left;
+    padding: 5px 0;
+    width: 100%;
+    font-weight:bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
 }
 /* popup end*/
 
@@ -3332,7 +3359,7 @@ input:checked + .med_slider:before {
 }
 
 .med_left-sidebar.med_collapsed #med_leftNavigation li ul li a {
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 #med_leftNavigation {
@@ -3379,8 +3406,8 @@ input:checked + .med_slider:before {
 }
 
 #med_leftNavigation li ul li a {
-    padding-left: 30px; 
-    text-align: left; 
+    padding-left: 30px;
+    text-align: left;
 }
 
 .med_submenu-toggle {
@@ -3404,7 +3431,7 @@ input:checked + .med_slider:before {
 }
 
 .med_expand_tooltip_style:hover::after {
-    content: attr(data-value); 
+    content: attr(data-value);
     position: absolute;
     top: 50%;
     left: 100%;
@@ -3543,7 +3570,7 @@ input:checked + .med_slider:before {
 }
 
 .med_left-sidebar_white.med_collapsed #med_leftNavigation_white li ul li a {
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 #med_leftNavigation_white {
@@ -3590,8 +3617,8 @@ input:checked + .med_slider:before {
 }
 
 #med_leftNavigation_white li ul li a {
-    padding-left: 30px; 
-    text-align: left; 
+    padding-left: 30px;
+    text-align: left;
 }
 
 #med_leftNavigation_white li.menu-active > a {
