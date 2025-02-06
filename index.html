@@ -50,6 +50,7 @@
                     <li><a href="#radioTabs" onclick="toggleActive('leftNav_radioTabs')">Radio Tabs</a></li>
                     <li><a href="#toggleSwitch" onclick="toggleActive('leftNav_toggleSwitch')">Toggle Switch</a></li>
                     <li><a href="#starRatings" onclick="toggleActive('leftNav_starRatings')">Ratings</a></li>
+                    <li><a href="#iconSwitchableTabs" onclick="toggleActive('leftNav_iconSwitchableTabs')">Icon Tabs</a></li>
                     <li><a href="#switchableTabs" onclick="toggleActive('leftNav_switchableTabs')">Tabs</a></li>
                     <li><a href="#switchableTabs_v2" onclick="toggleActive('leftNav_switchableTabs_v2')">Tabs V2</a></li>
                     <li><a href="#switchableVerticalTabs" onclick="toggleActive('leftNav_switchableVerticalTabs')">Vertical Tabs</a></li>
@@ -123,6 +124,7 @@
             <a href="#radioTabs"><div id="leftNav_radioTabs" class="wrapperToggle_btn">Radio Tabs</div></a>
             <a href="#toggleSwitch"><div id="leftNav_toggleSwitch" class="wrapperToggle_btn">Toggle Switch</div></a>
             <a href="#starRatings"><div id="leftNav_starRatings" class="wrapperToggle_btn">Ratings</div></a>
+            <a href="#iconSwitchableTabs"><div id="leftNav_iconSwitchableTabs" class="wrapperToggle_btn">Icon Tabs</div></a>
             <a href="#switchableTabs"><div id="leftNav_switchableTabs" class="wrapperToggle_btn">Tabs</div></a>
             <a href="#switchableTabs_v2"><div id="leftNav_switchableTabs_v2" class="wrapperToggle_btn">Tabs V2</div></a>
             <a href="#switchableVerticalTabs"><div id="leftNav_switchableVerticalTabs" class="wrapperToggle_btn">Vertical Tabs</div></a>
@@ -2647,6 +2649,96 @@
                     </div>
                 </div>
                 <!-- Star ratings end-->
+                
+                <!-- Icon Switchable tabs -->
+                <div class="container" id="iconSwitchableTabs">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+
+                            <div class="med_pull_right">
+                                <div class="med_pull_left" onclick="toggleEye_iconSwitchableTabs();" title="Show / Hide Code">
+                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_iconTabs"></div>
+                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_iconTabs" style="display: none;"></div>
+                                </div>
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('iconSwitchableTabs_code')"></div>
+                            </div>
+                        </div>
+                        <pre id="iconSwitchableTabs_code" style="display: none;">
+                            <code>
+                                &lt;div class="med_Width100pr"&gt;
+                                    &lt;div class="med_IconTab_Outer"&gt;
+                                        &lt;div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab_active fa_mednet fa-list" id="iconTabs_listTabDIV" title="List View"&gt;&lt;/div&gt;
+                                        &lt;div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab fa_mednet fa-bar-chart" id="iconTabs_graphTabDIV" title="Graph View"&gt;&lt;/div&gt;
+                                        &lt;div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab fa_mednet fa-line-chart" id="iconTabs_lineGraphTabDIV" title="Line Graph View"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    
+                                    &lt;div id="listTabDIV" class="med_Width100pr med_marginT10" style="display:block;"&gt;
+                                        &lt;img src="images/listTabDIV.png" alt="ListTabDIV" height="200"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id="graphTabDIV" class="med_Width100pr med_marginT10" style="display:none;"&gt;
+                                        &lt;img src="images/graphTabDIV.png" alt="GraphTabDIV" height="200"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id="lineGraphTabDIV" class="med_Width100pr med_marginT10" style="display:none;"&gt;
+                                        &lt;img src="images/lineGraphTabDIV.png" alt="LineGraphTabDIV" height="200"&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;script&gt;
+                                    function toggleIconSwitchableTabs(com){
+                                        var myData = new Array();
+                                        myData[0] = 'iconTabs_listTabDIV';
+                                        myData[1] = 'iconTabs_graphTabDIV';
+                                        myData[2] = 'iconTabs_lineGraphTabDIV';
+                                    
+                                        var myData1 = new Array();
+                                        myData1[0] = 'listTabDIV';
+                                        myData1[1] = 'graphTabDIV';
+                                        myData1[2] = 'lineGraphTabDIV';
+                                    
+                                        for(var i=0 ; i < myData.length ; i++){
+                                            if(com.id == myData[i]){
+                                                $('#'+myData[i]).removeClass("med_IconTab");
+                                                $('#'+myData[i]).addClass("med_IconTab_active");
+                                                document.getElementById(myData1[i]).style.display = 'block';
+                                            }else{
+                                                $('#'+myData[i]).removeClass("med_IconTab_active");
+                                                $('#'+myData[i]).addClass("med_IconTab");
+                                                document.getElementById(myData1[i]).style.display = 'none';
+                                            }
+                                        }
+                                    }
+                                &lt;/script&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Switchable Icon Tabs</h3>
+                            <div class="med_Width100pr">
+                                <div class="med_IconTab_Outer">
+                                    <div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab_active fa_mednet fa-list" id="iconTabs_listTabDIV" title="List View"></div>
+                                    <div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab fa_mednet fa-bar-chart" id="iconTabs_graphTabDIV" title="Graph View"></div>
+                                    <div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab fa_mednet fa-line-chart" id="iconTabs_lineGraphTabDIV" title="Line Graph View"></div>
+                                </div>
+                                <div id="listTabDIV" class="med_Width100pr med_marginT10" style="display:block;">
+                                    <img src="images/listTabDIV.png" alt="ListTabDIV" height="200">
+                                </div>
+                                <div id="graphTabDIV" class="med_Width100pr med_marginT10" style="display:none;">
+                                    <img src="images/graphTabDIV.png" alt="GraphTabDIV" height="200">
+                                </div>
+                                <div id="lineGraphTabDIV" class="med_Width100pr med_marginT10" style="display:none;">
+                                    <img src="images/lineGraphTabDIV.png" alt="LineGraphTabDIV" height="200">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Icon Switchable tabs end-->
 
                 <!-- Switchable tabs -->
                 <div class="container" id="switchableTabs">
@@ -6679,6 +6771,9 @@
                         </div>
                         <pre id="zoomIO_imgDiv" style="display: none;">
                             <code>
+                                &lt;div class="fa_mednet fa-minus med_iconBtn_sm" id="zoomOutBtn"&gt;&lt;/div&gt;
+                                &lt;div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" id="zoomInBtn"&gt;&lt;/div&gt;
+
                                 &lt;div class="med_Outerbody"&gt;
                                     &lt;div class="med_button-container"&gt;
                                         &lt;div class="fa_mednet fa-minus med_iconBtn_sm" onclick="zoomIn()"&gt;&lt;/div&gt;

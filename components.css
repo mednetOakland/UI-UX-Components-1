@@ -1839,6 +1839,43 @@ input:checked + .med_slider:before {
 }
 /* Toggle star end*/
 
+/* switchable Icon tabs */
+.med_IconTab_Outer{
+    border-radius: 20px;
+    float: left;
+    font-size: 14px;
+    background: #F3F4F6 none repeat scroll 0 0;
+    height: 28px;
+}
+
+.med_IconTab{
+    display: block;
+    height: 100% !important;
+    line-height: 30px !important;
+    padding: 0 12px !important;
+    text-align: center !important;
+    border-radius: 16px !important;
+    cursor: pointer;
+}
+
+.med_IconTab:hover{
+    background: #DBDCDE none repeat scroll 0 0 !important;
+}
+
+.med_IconTab_active {
+    display: block;
+    height: 100%;
+    line-height: 30px !important;
+    padding: 0 12px;
+    text-align: center;
+    border-radius: 16px;
+    background: #1e88e5;
+    color: #fff;
+    cursor: pointer;
+}
+/* switchable Icon tabs end */
+
+
 /* switchable tabs */
 .med_Tabs{
     border-bottom:1px solid #dedede;

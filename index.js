@@ -251,6 +251,20 @@ function toggleEye_iconGrp_mouseover() {
     }
 }
 
+//Icon Switchable Tabs for Eye 1
+function toggleEye_iconSwitchableTabs() {
+    var x = document.getElementById("iconSwitchableTabs_code");
+    if (x.style.display === "none") {
+        document.getElementById('iconSwitchableTabs_code').style.display = "block";
+        document.getElementById('toggleEyeIcon_slash_iconTabs').style.display = "block";
+        document.getElementById('toggleEyeIcon_iconTabs').style.display = "none";
+    } else {
+        document.getElementById('iconSwitchableTabs_code').style.display = "none";
+        document.getElementById('toggleEyeIcon_slash_iconTabs').style.display = "none";
+        document.getElementById('toggleEyeIcon_iconTabs').style.display = "block";
+    }
+}
+
 //Switchable Tabs for Eye 1
 function toggleEye_switchableTabs() {
     var x = document.getElementById("switchableTabs_code");
@@ -591,6 +605,32 @@ function showDialogBox() {
         document.getElementById('dialogBoxDIV').style.display = "none";
     }
 }
+
+// Switchable tabs
+function toggleIconSwitchableTabs(com){
+    var myData = new Array();
+    myData[0] = 'iconTabs_listTabDIV';
+    myData[1] = 'iconTabs_graphTabDIV';
+    myData[2] = 'iconTabs_lineGraphTabDIV';
+
+    var myData1 = new Array();
+    myData1[0] = 'listTabDIV';
+    myData1[1] = 'graphTabDIV';
+    myData1[2] = 'lineGraphTabDIV';
+
+    for(var i=0 ; i < myData.length ; i++){
+        if(com.id == myData[i]){
+            $('#'+myData[i]).removeClass("med_IconTab");
+            $('#'+myData[i]).addClass("med_IconTab_active");
+            document.getElementById(myData1[i]).style.display = 'block';
+        }else{
+            $('#'+myData[i]).removeClass("med_IconTab_active");
+            $('#'+myData[i]).addClass("med_IconTab");
+            document.getElementById(myData1[i]).style.display = 'none';
+        }
+    }
+}
+
 
 // Switchable tabs
 function toggleSwitchableTabs(com){
