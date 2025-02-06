@@ -49,8 +49,6 @@
 
 .med_clear{clear:both;}
 
-.med_wideDIV div{float:left;}
-
 input::placeholder {font-size:12px;}
 
 .med_pointer{cursor:pointer;}
@@ -485,7 +483,7 @@ input::placeholder {font-size:12px;}
 
 .med_Combo_md:before {
     background: #fff none repeat scroll 0 0;
-    / border-right: 0px solid #ccc; /
+    /* border-right: 0px solid #ccc; */
     color: #34485d;
     content: "\f107";
     display: block;
@@ -532,10 +530,12 @@ input::placeholder {font-size:12px;}
 .med_Combo_lg div{
     width:100% !important;
 }
+
 .med_Combo_lg input{
     width:100% !important;
     padding-right:20px;
 }
+
 .med_Combo_lg:before {
     background: #fff none repeat scroll 0 0;
     /* border-right: 0px solid #ccc; */
@@ -559,12 +559,14 @@ input::placeholder {font-size:12px;}
 .med_Combo_lg:hover:before {
     background: #fff none repeat scroll 0 0;
 }
+
 .med_Combo_lg img {
     height: 36px;
     width: 20px !important;
     position: absolute;
     right: 0px;
 }
+
 .med_Combo_lg > .x-form-field-wrap .x-form-trigger {
     background-image: none !important;
     border-bottom-color: transparent;
@@ -961,6 +963,7 @@ input::placeholder {font-size:12px;}
     font-size: 16px;
     text-align: center;
 }
+
 .med_ListFilter_Red:hover{
     background: #d7e0e4 none repeat scroll 0 0;
 }
@@ -1170,6 +1173,7 @@ input::placeholder {font-size:12px;}
     font-weight: bold;
     text-align: center;
 }
+
 .med_primaryBtn_md:hover{
     background: #0e78d5 none repeat scroll 0 0;
 }
@@ -1187,6 +1191,7 @@ input::placeholder {font-size:12px;}
     text-align: center;
     font-weight: bold;
 }
+
 .med_secondaryBtn_md:hover{
     background: #d7e0e4 none repeat scroll 0 0;
 }
@@ -1235,6 +1240,7 @@ input::placeholder {font-size:12px;}
     float: left;
     font-weight: bold;
 }
+
 .med_warningBtn_md:hover{
     background: #F7952A none repeat scroll 0 0;
 }
@@ -1254,6 +1260,7 @@ input::placeholder {font-size:12px;}
     margin:0px 10px;
     text-align: center;
 }
+
 .med_secondaryAlertBtn_md:hover{
     background: #d7e0e4 none repeat scroll 0 0;
     border: 1px solid transparent;
@@ -1287,6 +1294,7 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
 }
+
 .med_dangerAlertBtn_md:hover{
     background: #e06e6e none repeat scroll 0 0;
 }
@@ -1304,6 +1312,7 @@ input::placeholder {font-size:12px;}
     float: left;
     font-weight: bold;
 }
+
 .med_informationAlertBtn_md:hover{
     background: #F7952A none repeat scroll 0 0;
 }
@@ -1322,6 +1331,7 @@ input::placeholder {font-size:12px;}
     float: left;
     text-align: center;
 }
+
 .med_primaryBtn_sm:hover{
     background: #0e78d5 none repeat scroll 0 0;
 }
@@ -1338,6 +1348,7 @@ input::placeholder {font-size:12px;}
     padding: 0 6px;
     text-align: center;
 }
+
 .med_secondaryBtn_sm:hover{
     background: #d7e0e4 none repeat scroll 0 0;
 }
@@ -1353,6 +1364,7 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
 }
+
 .med_successBtn_sm:hover{
     background: #369d3a none repeat scroll 0 0;
 }
@@ -1383,6 +1395,7 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
 }
+
 .med_warningBtn_sm:hover{
     background: #F7952A none repeat scroll 0 0;
 }
@@ -1452,6 +1465,7 @@ input::placeholder {font-size:12px;}
     font-size: 12px !important;
     width: 20px;
 }
+
 .med_iconBtn_sm:hover{
     background: #d7e0e4 none repeat scroll 0 0;
 }
@@ -2533,7 +2547,6 @@ input:checked + .med_slider:before {
     color:#000;
 }
 
-
 .med_alertMsgCloseIcon {
     border-radius: 100%;
     cursor: pointer;
@@ -2965,7 +2978,7 @@ input:checked + .med_slider:before {
         color: #000;
     }
 
-    dropdown input {
+    .med_companyHeaderDropdown input {
         display: none;
     }
 
@@ -3836,11 +3849,13 @@ dropdown input {
     text-align: center;
     width: 100px;
 }
+
 .med_blankPageOuter{
     border: 1px solid #ccc;
     height: 100%;
     width: 100%;
 }
+
 .med_blankPageContent {
     background: #fff none repeat scroll 0 0;
     color: #777;
@@ -3848,10 +3863,12 @@ dropdown input {
     text-align: center;
     width: 100%;
 }
+
 .med_blankPageMsg{
     margin-top:25px;
     line-height:1.2em;
 }
+
 .med_middleAllign{
     display: flex;
     justify-content: center;
