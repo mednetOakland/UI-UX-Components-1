@@ -871,11 +871,10 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
     font-size: 9px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
     margin-right: 8px;
-    padding: 1px;
     position: relative;
     text-align: center;
     top: -3px;
@@ -891,14 +890,13 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
     font-size: 9px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
     margin-right: 8px;
-    padding: 1px;
     position: relative;
     text-align: center;
-    top: -3px;
+    top: -2px;
 }
 /* Radio end*/
 
@@ -917,14 +915,13 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
     margin-right: 8px;
-    padding: 1px;
     position: relative;
     text-align: center;
-    top: -3px;
+    top: -2px;
 }
 
 .med_fancy-checkbox input[type="checkbox"]:checked ~ label:before {
@@ -937,14 +934,13 @@ input::placeholder {font-size:12px;}
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
     margin-right: 8px;
-    padding: 1px;
     position: relative;
     text-align: center;
-    top: -3px;
+    top: -2px;
 }
 
 .med_fancy-checkbox input[type="checkbox"]:disabled ~ label:before {
@@ -1875,7 +1871,6 @@ input:checked + .med_slider:before {
 }
 /* switchable Icon tabs end */
 
-
 /* switchable tabs */
 .med_Tabs{
     border-bottom:1px solid #dedede;
@@ -2103,14 +2098,14 @@ input:checked + .med_slider:before {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
     margin-right: 8px;
     padding: 1px;
     position: relative;
     text-align: center;
-    top: -3px;
+    top: -2px;
 }
 
 .med_squareFilter input[type="checkbox"]:checked ~ label:before {
@@ -2121,14 +2116,14 @@ input:checked + .med_slider:before {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
     margin-right: 8px;
     padding: 1px;
     position: relative;
     text-align: center;
-    top: -3px;
+    top: -2px;
 }
 
 .med_squareFilter input[type="checkbox"]:disabled ~ label:before {
