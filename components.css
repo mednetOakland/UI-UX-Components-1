@@ -2355,7 +2355,7 @@ input:checked + .med_slider:before {
     border-bottom: 1px solid #dedede;
     border-top: 1px solid #dedede;
     padding: 7px 10px;
-    z-index: 99;
+    z-index: 9;
     font-weight:normal;
     text-transform: uppercase;
 }
