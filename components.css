@@ -50,6 +50,10 @@
 
 .med_transition{transition: all 0.2s ease;}
 
+.med_italic {font-style: italic;}
+
+.med_italicGrey {color: #777;font-style: italic;}
+
 .med_wideDIV{
     float:left;
     width:100%;
@@ -244,6 +248,7 @@ input::placeholder {font-size:12px;}
 /* padding top bottom*/
 .med_paddingTB3{padding: 3px 0px;}
 .med_paddingTB5{padding: 5px 0px;}
+.med_paddingTB7{padding: 7px 0px;}
 .med_paddingTB10{padding: 10px 0px;}
 .med_paddingTB15{padding: 15px 0px;}
 .med_paddingTB20{padding: 20px 0px;}
@@ -876,6 +881,10 @@ input::placeholder {font-size:12px;}
     background: #f5f5f5;
     pointer-events: none;
 }
+
+.med_input_readonlyPointer {
+    pointer-events: auto;
+}
 /* disabled end*/
 
 /* Radio */
@@ -1113,7 +1122,7 @@ input::placeholder {font-size:12px;}
     position: absolute;
     font-size: 12px;
     right: 5px;
-    top: 8px;
+    top: 7px;
     color: #aaa;
 }
 
@@ -1546,6 +1555,17 @@ input::placeholder {font-size:12px;}
 .med_iconStatus {
     color: #aaa;
     font-size: 16px !important;
+}
+/* status icons end*/
+
+/* status icons */
+.med_iconDrilldown {
+    color: #555;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
 }
 /* status icons end*/
 
@@ -2275,11 +2295,36 @@ input:checked + .med_slider:before {
 
 .med_listFooterDiv {
     background: #f4f2f2 none repeat scroll 0 0;
-    border-top: 1px solid #edeff0;
+    border-top: 1px solid #dedede;
     float: left;
     padding: 5px 0;
     width: 100%;
     font-weight:bold;
+}
+
+.med_drilldownSlot{
+    margin:7px 10px;
+    margin-bottom:0px;
+    width:calc(100% - 20px);
+    background:lightyellow;
+    border:1px solid #dedede;
+}
+
+.med_listHeader_thin {
+    background: #e0dfdf;
+    border-bottom: 1px solid #dedede;
+    padding: 5px 0;
+    width: 100%;
+    line-height: normal !important;
+    font-size: 11px;
+}
+
+.med_tableRowDiv_thin {
+    background: transparent;
+    border-bottom: 1px solid #edeff0;
+    float: left;
+    padding: 2.5px 0;
+    width: 100%;
 }
 
 .med_overflowData{
@@ -2423,6 +2468,7 @@ input:checked + .med_slider:before {
     float: left;
     width: 100%;
     background-color: #f4f2f2;
+    border-top: 1px solid #dedede;
 }
 
 .med_staticTable table tbody{
@@ -2544,12 +2590,13 @@ input:checked + .med_slider:before {
     border-radius: 100%;
     cursor: pointer;
     float: right !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     height: 34px;
-    line-height: 34px !important;
+    line-height: 32px !important;
     margin: 3px 0;
     text-align: center;
     width: 34px;
+    border: 1px solid #dedede;
 }
 
 .med_commonPopupCloseIcon:hover {
@@ -2947,6 +2994,7 @@ input:checked + .med_slider:before {
 
 .med_filterClose:before {
     content: '+';
+    font-family: Arial, sans-serif;
 }
 
 .med_filterClose:hover {
@@ -3355,11 +3403,6 @@ input:checked + .med_slider:before {
 .med_imgThumb_img img{
     max-width:100%;
     max-height:100%;
-}
-
-.med_italicGrey {
-    color: #777;
-    font-style: italic;
 }
 
 .med_scrollLRIcon {
@@ -3998,23 +4041,4 @@ dropdown input {
 .med_heighlightedBorder:hover {
     border: 1px solid #1E88E5;
     border-radius: 3px;
-}
-/* Custom Scrollbar for .custom-scrollbar class */
-.custom-scrollbar::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 15px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #bdbcbc;
-    border-radius: 15px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #888787;
 }

@@ -363,7 +363,18 @@ function toggleUser() {
     }
 }
 
-
+function dribble_down() {
+    var detailedDiv = document.getElementById("detailedListDIV");
+    var arrowIcon = document.getElementById("drillArrow");
+    
+    if (detailedDiv.style.display === 'none' || detailedDiv.style.display === '') {
+        detailedDiv.style.display = 'block';
+        arrowIcon.className = 'fa_mednet fa-caret-down med_iconDrilldown';
+    } else {
+        detailedDiv.style.display = 'none';
+        arrowIcon.className = 'fa_mednet fa-caret-right med_iconDrilldown';
+    }
+}
 
 // Lists view for eye 3
 function toggleEye_listView() {

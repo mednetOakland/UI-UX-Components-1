@@ -57,6 +57,7 @@
                     <li><a href="#accordionPanel" onclick="toggleActive('leftNav_accordionPanel')">Accordion Panel</a></li>
                     <li><a href="#collapsePanel" onclick="toggleActive('leftNav_collapsePanel')">Collapse Panel</a></li>
                     <li><a href="#listsView" onclick="toggleActive('leftNav_listsView')">List View</a></li>
+                    <li><a href="#drillDown_lists" onclick="toggleActive('leftNav_drillDown_lists')">Drill-Down List</a></li>
                     <li><a href="#gridView" onclick="toggleActive('leftNav_gridView')">List Grid View</a></li>
                     <li><a href="#tableView" onclick="toggleActive('leftNav_tableView')">Table</a></li>
                     <li><a href="#Hor/VerScroll" onclick="toggleActive('leftNav_Hor/VerScroll')">Hor/Ver Scroll Table</a></li>
@@ -130,7 +131,7 @@
             <a href="#switchableVerticalTabs"><div id="leftNav_switchableVerticalTabs" class="wrapperToggle_btn">Vertical Tabs</div></a>
             <a href="#accordionPanel"><div id="leftNav_accordionPanel" class="wrapperToggle_btn">Accordion Panel</div></a>
             <a href="#collapsePanel"><div id="leftNav_collapsePanel" class="wrapperToggle_btn">Collapse Panel</div></a>
-            <a href="#listsView"><div id="leftNav_listsView" class="wrapperToggle_btn">List View</div></a>
+            <a href="#drillDown_lists"><div id="leftNav_drillDown_lists" class="wrapperToggle_btn">Drill-Down List</div></a>
             <a href="#gridView"><div id="leftNav_gridView" class="wrapperToggle_btn">List Grid View</div></a>
             <a href="#tableView"><div id="leftNav_tableView" class="wrapperToggle_btn">Table</div></a>
             <a href="#Hor/VerScroll"><div id="leftNav_Hor/VerScroll" class="wrapperToggle_btn">Hor/Ver Scroll Table</div></a>
@@ -1147,6 +1148,14 @@
                                     <div class="fa_mednet fa-angle-right med_iconDatePicker"></div>
                                 </div>
                             </div>
+                            <div class="med_Width100pr med_marginT25">
+                                <div class="fa_mednet fa-angle-left med_iconDatePicker"></div>
+                                <div class="med_marginLR5 med_datePickerYearly">
+                                    <input class="med_input_md_readonly" readonly="true;" type="text" placeholder="10-01-2024 to 10-02-2025" autocomplete="off">
+                                </div>
+                                <div class="fa_mednet fa-angle-right med_iconDatePicker"></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -3332,12 +3341,13 @@
                                             &lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
+                                    &lt;div class="med_listFooterDiv med_stickyBottom"&gt;
+                                        &lt;div class="med_marginTB5 med_Width90pr med_textRight" style="width: calc(90% - 45px);"&gt;Total - &lt;/div&gt;
+                                        &lt;div class="med_marginTB5 med_Width10pr med_paddingR10 med_textRight"&gt;4,90,000.00&lt;/div&gt;
+                                    &lt;/div&gt;
                                 &lt;/div&gt;
 
-                                &lt;div class="med_listFooterDiv"&gt;
-                                    &lt;div class="med_marginTB5 med_Width90pr med_textRight" style="width: calc(90% - 45px);"&gt;Total - &lt;/div&gt;
-                                    &lt;div class="med_marginTB5 med_Width10pr med_paddingR10 med_textRight"&gt;4,90,000.00&lt;/div&gt;
-                                &lt;/div&gt;
+                               
                             </code>
                         </pre>
                     </div>
@@ -3469,11 +3479,95 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="med_listFooterDiv med_stickyBottom">
+                                    <div class="med_marginTB5 med_Width90pr med_textRight" style="width: calc(90% - 45px);">Total - </div>
+                                    <div class="med_marginTB5 med_Width10pr med_paddingR10 med_textRight">4,90,000.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Lists view end-->
+
+                <!--Lists view -->
+                <div class="container" style="display: block;" id="drillDown_lists">
+                    <div class="html med_Width100pr">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+
+                            <div class="med_pull_right">
+                                <div class="med_pull_left" onclick="toggleEye_drillDown_lists();" title="Show / Hide Code">
+                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_drillDown_lists"></div>
+                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_drillDown_lists" style="display: none;"></div>
+                                </div>
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('drillDown_lists_code')"></div>
+                            </div>
+                        </div>
+
+                        <pre id="drillDown_lists_code" style="display: none;">
+                            <code>
+
+                               
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="preview med_Width100pr">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent" style="padding:0px;">
+                            <div class="med_Width100pr med_padding10">
+                                <h3 class="med_pull_left" style="margin-bottom: 0px;">Drill-Down View</h3>
                             </div>
 
-                            <div class="med_listFooterDiv">
-                                <div class="med_marginTB5 med_Width90pr med_textRight" style="width: calc(90% - 45px);">Total - </div>
-                                <div class="med_marginTB5 med_Width10pr med_paddingR10 med_textRight">4,90,000.00</div>
+                            <div class="med_Width100pr med_overflowData" style="height:auto;">
+                                <div class="med_listHeader">
+                                    <div class="med_Width30pr med_paddingLR20">
+                                        <div class="med_Width100pr med_search">
+                                            <input type="text" placeholder="Approval No." class="med_input_md">
+                                        </div>
+                                    </div>
+                                    <div class="med_Width10pr med_Width20pr med_marginT7">Approval Date</div>
+                                    <div class="med_Width10pr med_marginT7" style="width:calc(40% - 45px);">Approval By</div>
+                                    <div class="med_Width10pr med_Width10pr med_paddingR10 med_textRight med_marginT7">AMOUNT</div>
+                                </div>
+
+                                <div class="med_Width100pr">
+                                    <div class="med_tableRowDiv med_hoverSection">
+                                        <div class="med_wideDIV">
+                                            <div class="med_marginTB3 med_pointer med_paddingL10 med_Width30pr" onclick="dribble_down();">
+                                                <div class="fa_mednet fa-caret-right med_iconDrilldown" id="drillArrow"></div>
+                                                <div style="width:calc(100% - 20px);" class="med_pull_left med_textEllipsis" title="AV.122">AV.122</div>
+                                            </div>
+                                            <div class="med_Width20pr med_marginTB3">17-02-2025</div>
+                                            <div class="med_pull_left med_marginTB3" style="width:calc(40% - 45px);">Mr. DIPESH VINODKUMAR SARAWAGI</div>
+                                            <div class="med_textRight med_Width10pr med_paddingR10 med_marginTB3">1,000.00</div>
+                                            <div class="med_pull_right med_marginR10 med_onHoverBlock">
+                                                <div class="fa_mednet fa-pencil med_icons med_IconMargin" title="Edit"></div>
+                                            </div>
+                                        </div>
+                                   
+                                        <div class="med_drilldownSlot" id="detailedListDIV" style="display: none;">
+                                            <div class="med_listHeader_thin med_wideDIV">
+                                                <div class="med_Width34pr med_paddingL10">ACCOUNT NAME</div>
+                                                <div class="med_Width12pr med_textRight med_paddingR20">APPROVAL AMT</div>
+                                                <div class="med_Width15pr">TAX SECTION</div>
+                                                <div class="med_textRight med_Width12pr med_paddingR20">TAX AMT</div>
+                                                <div class="med_textRight med_Width12pr med_paddingR20">NET AMT</div>
+                                                <div class="med_Width15pr">STATUS</div> 
+                                            </div>
+                                            <div class="med_tableRowDiv_thin med_wideDIV">
+                                                <div class="med_marginTB3 med_paddingL10 med_Width34pr">A-ONE SURGICALS</div>
+                                                <div class="med_marginTB3 med_textRight med_paddingR20 med_Width12pr">1,000.00</div>
+                                                <div class="med_marginTB3 med_Width15pr">-</div>
+                                                <div class="med_marginTB3 med_textRight med_paddingR20 med_Width12pr">0.00</div>
+                                                <div class="med_marginTB3 med_textRight med_paddingR20 med_Width12pr">1,000.00</div>
+                                                <div class="med_marginTB3 med_Width15pr">PENDING</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3886,7 +3980,7 @@
 
                         <pre id="listTableView_code" style="display: none;">
                             <code>
-                                &lt;div class="med_Width100pr med_listTable med_overflowData" style="height:203px;"&gt;
+                                &lt;div class="med_Width100pr med_staticTable med_overflowData" style="height:203px;"&gt;
                                     &lt;table&gt;
                                         &lt;thead class="med_Width100pr"&gt;
                                         &lt;tr class="med_Width100pr"&gt;
@@ -3976,7 +4070,7 @@
                         </div>
                         <div class="PreContent" style="padding:0px;">
                             <h3 class="med_padding10" style="margin-bottom:0px;">Table View</h3>
-                            <div class="med_Width100pr med_listTable med_overflowData" style="height:203px;">
+                            <div class="med_Width100pr med_staticTable med_overflowData" style="height:203px;">
                                 <table>
                                     <thead class="med_Width100pr">
                                         <tr class="med_Width100pr">
