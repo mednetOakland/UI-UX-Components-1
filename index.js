@@ -376,6 +376,20 @@ function dribble_down() {
     }
 }
 
+// Drill-Down Lists for eye 3
+function toggleEye_drillDown() {
+    var x = document.getElementById("drillDown_lists_code");
+    if (x.style.display === "none") {
+        document.getElementById('drillDown_lists_code').style.display = "block";
+        document.getElementById('toggleEyeIcon_slash_drillDown').style.display = "block";
+        document.getElementById('toggleEyeIcon_drillDown').style.display = "none";
+    } else {
+        document.getElementById('drillDown_lists_code').style.display = "none";
+        document.getElementById('toggleEyeIcon_slash_drillDown').style.display = "none";
+        document.getElementById('toggleEyeIcon_drillDown').style.display = "block";
+    }
+} 
+
 // Lists view for eye 3
 function toggleEye_listView() {
     var x = document.getElementById("listView_code");

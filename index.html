@@ -1113,6 +1113,14 @@
                                         &lt;div class="fa_mednet fa-angle-right med_iconDatePicker"&gt;&lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
+
+                                &lt;div class="med_Width100pr med_marginT25"&gt;
+                                    &lt;div class="fa_mednet fa-angle-left med_iconDatePicker"&gt;&lt;/div&gt;
+                                    &lt;div class="med_marginLR5 med_datePickerYearly"&gt;
+                                        &lt;input class="med_input_md_readonly" readonly="true;" type="text" placeholder="10-01-2024 to 10-02-2025" autocomplete="off"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="fa_mednet fa-angle-right med_iconDatePicker"&gt;&lt;/div&gt;
+                                &lt;/div&gt;
                             </code>
                         </pre>
                     </div>
@@ -3496,9 +3504,9 @@
                             <div class="med_marginT10">HTML CODE</div>
 
                             <div class="med_pull_right">
-                                <div class="med_pull_left" onclick="toggleEye_drillDown_lists();" title="Show / Hide Code">
-                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_drillDown_lists"></div>
-                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_drillDown_lists" style="display: none;"></div>
+                                <div class="med_pull_left" onclick="toggleEye_drillDown();" title="Show / Hide Code">
+                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_drillDown"></div>
+                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_drillDown" style="display: none;"></div>
                                 </div>
                                 <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('drillDown_lists_code')"></div>
                             </div>
@@ -3506,8 +3514,69 @@
 
                         <pre id="drillDown_lists_code" style="display: none;">
                             <code>
+                                &lt;div class="med_Width100pr med_overflowData"&gt;
+                                    &lt;div class="med_listHeader"&gt;
+                                        &lt;div class="med_Width30pr med_paddingLR20"&gt;
+                                            &lt;div class="med_Width100pr med_search"&gt;
+                                                &lt;input type="text" placeholder="Approval No." class="med_input_md"&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_Width10pr med_Width20pr med_marginT7"&gt;Approval Date&lt;/div&gt;
+                                        &lt;div class="med_Width10pr med_marginT7" style="width:calc(40% - 45px);"&gt;Approval By&lt;/div&gt;
+                                        &lt;div class="med_Width10pr med_Width10pr med_paddingR10 med_textRight med_marginT7"&gt;AMOUNT&lt;/div&gt;
+                                    &lt;/div&gt;
 
-                               
+                                    &lt;div class="med_Width100pr"&gt;
+                                        &lt;div class="med_tableRowDiv med_hoverSection"&gt;
+                                            &lt;div class="med_wideDIV"&gt;
+                                                &lt;div class="med_marginTB3 med_pointer med_paddingL10 med_Width30pr" onclick="dribble_down();"&gt;
+                                                    &lt;div class="fa_mednet fa-caret-right med_iconDrilldown" id="drillArrow"&gt;&lt;/div&gt;
+                                                    &lt;div style="width:calc(100% - 20px);" class="med_pull_left med_textEllipsis" title="AV.122"&gt;AV.122&lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="med_Width20pr med_marginTB3"&gt;17-02-2025&lt;/div&gt;
+                                                &lt;div class="med_pull_left med_marginTB3" style="width:calc(40% - 45px);"&gt;Mr. DIPESH VINODKUMAR SARAWAGI&lt;/div&gt;
+                                                &lt;div class="med_textRight med_Width10pr med_paddingR10 med_marginTB3"&gt;1,000.00&lt;/div&gt;
+                                                &lt;div class="med_pull_right med_marginR10 med_onHoverBlock"&gt;
+                                                    &lt;div class="fa_mednet fa-pencil med_icons med_IconMargin" title="Edit"&gt;&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                    
+                                            &lt;div class="med_drilldownSlot" id="detailedListDIV" style="display: none;"&gt;
+                                                &lt;div class="med_listHeader_thin med_wideDIV"&gt;
+                                                    &lt;div class="med_Width34pr med_paddingL10"&gt;ACCOUNT NAME&lt;/div&gt;
+                                                    &lt;div class="med_Width12pr med_textRight med_paddingR20"&gt;APPROVAL AMT&lt;/div&gt;
+                                                    &lt;div class="med_Width15pr"&gt;TAX SECTION&lt;/div&gt;
+                                                    &lt;div class="med_textRight med_Width12pr med_paddingR20"&gt;TAX AMT&lt;/div&gt;
+                                                    &lt;div class="med_textRight med_Width12pr med_paddingR20"&gt;NET AMT&lt;/div&gt;
+                                                    &lt;div class="med_Width15pr"&gt;STATUS&lt;/div&gt; 
+                                                &lt;/div&gt;
+                                                &lt;div class="med_tableRowDiv_thin med_wideDIV"&gt;
+                                                    &lt;div class="med_marginTB3 med_paddingL10 med_Width34pr"&gt;A-ONE SURGICALS&lt;/div&gt;
+                                                    &lt;div class="med_marginTB3 med_textRight med_paddingR20 med_Width12pr"&gt;1,000.00&lt;/div&gt;
+                                                    &lt;div class="med_marginTB3 med_Width15pr"&gt;-&lt;/div&gt;
+                                                    &lt;div class="med_marginTB3 med_textRight med_paddingR20 med_Width12pr"&gt;0.00&lt;/div&gt;
+                                                    &lt;div class="med_marginTB3 med_textRight med_paddingR20 med_Width12pr"&gt;1,000.00&lt;/div&gt;
+                                                    &lt;div class="med_marginTB3 med_Width15pr"&gt;PENDING&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;script&gt;
+                                    function dribble_down() {
+                                        var detailedDiv = document.getElementById("detailedListDIV");
+                                        var arrowIcon = document.getElementById("drillArrow");
+                                        
+                                        if (detailedDiv.style.display === 'none' || detailedDiv.style.display === '') {
+                                            detailedDiv.style.display = 'block';
+                                            arrowIcon.className = 'fa_mednet fa-caret-down med_iconDrilldown';
+                                        } else {
+                                            detailedDiv.style.display = 'none';
+                                            arrowIcon.className = 'fa_mednet fa-caret-right med_iconDrilldown';
+                                        }
+                                    }
+                                &lt;/script&gt;
                             </code>
                         </pre>
                     </div>
@@ -3518,7 +3587,7 @@
                         </div>
                         <div class="PreContent" style="padding:0px;">
                             <div class="med_Width100pr med_padding10">
-                                <h3 class="med_pull_left" style="margin-bottom: 0px;">Drill-Down View</h3>
+                                <h3 class="med_pull_left" style="margin-bottom: 0px;">Drill - Down View</h3>
                             </div>
 
                             <div class="med_Width100pr med_overflowData" style="height:auto;">
