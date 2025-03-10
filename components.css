@@ -50,9 +50,11 @@
 
 .med_transition{transition: all 0.2s ease;}
 
-.med_italic {font-style: italic;}
+.med_italic{font-style: italic;}
 
 .med_italicGrey {color: #777;font-style: italic;}
+
+.med_wordWrap {word-wrap:break-word;}
 
 .med_wideDIV{
     float:left;
@@ -286,6 +288,8 @@ input::placeholder {font-size:12px;}
 /* margin right end*/
 
 /* margin top*/
+.med_marginT1{margin-top: 1px;}
+.med_marginT2{margin-top: 2px;}
 .med_marginT3{margin-top: 3px;}
 .med_marginT4{margin-top: 4px;}
 .med_marginT5{margin-top: 5px;}
@@ -740,6 +744,7 @@ input::placeholder {font-size:12px;}
     right: 7px;
     top: 7px;
     color: #999;
+    font-weight: normal;
 }
 
 .med_search_lg{
@@ -768,9 +773,10 @@ input::placeholder {font-size:12px;}
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
     box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-    z-index: 9;
+    z-index: 99;
     min-height:100px;
     margin-top: 1px;
+    font-weight: normal;
 }
 /* Search list end*/
 
@@ -909,7 +915,7 @@ input::placeholder {font-size:12px;}
     margin-right: 8px;
     position: relative;
     text-align: center;
-    top: -4px;
+    top: -2px;
 }
 
 .med_fancy-radio input[type="radio"]:checked ~ label:before {
@@ -928,7 +934,7 @@ input::placeholder {font-size:12px;}
     margin-right: 8px;
     position: relative;
     text-align: center;
-    top: -4px;
+    top: -2px;
 }
 /* Radio end*/
 
@@ -979,6 +985,15 @@ input::placeholder {font-size:12px;}
     opacity:0.5;
 }
 /* checkbox end*/
+
+/* Radio Checkbox group*/
+.med_radioChkGroup {
+    background: #e9eef6;
+    border-radius: 20px;
+    height: 28px;
+    padding: 8px 8px;
+}
+/* Radio Checkbox group end*/
 
 /* List Filter */
 .med_ListFilter_Red{
@@ -1130,6 +1145,10 @@ input::placeholder {font-size:12px;}
 .med_datePicker_md{
     width: 90px;
     position: relative;
+}
+
+.med_datePicker_md input{
+    text-transform:lowercase;
 }
 
 .med_datePicker_md:after {
@@ -1288,6 +1307,10 @@ input::placeholder {font-size:12px;}
 }
 .med_warningBtn_md:hover{
     background: #F7952A none repeat scroll 0 0;
+}
+
+.med_buttonFocus:focus{
+    background: #4aa570;
 }
 /* buttons end*/
 
@@ -1637,6 +1660,12 @@ input::placeholder {font-size:12px;}
     border: 1px solid red;
 }
 
+.med_greyCount{
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #dedede;
+    color: #333;
+}
+
 .med_separates {
     display: flex;
     align-items: center;
@@ -1690,6 +1719,7 @@ input::placeholder {font-size:12px;}
     box-shadow: 0 6px 12px rgba(0,0,0,0.175);
     z-index:999;
     padding:5px 0px;
+    font-weight: normal;
 }
 
 .med_listDialogBox {
@@ -1717,7 +1747,7 @@ input::placeholder {font-size:12px;}
     left: 0px;
     top: 100%;
     border-radius: 4px;
-    z-index: 9;
+    z-index: 99;
     padding: 10px;
     background: rgba(0,0,0,0.7);
     color: #fff;
@@ -1788,7 +1818,7 @@ input::placeholder {font-size:12px;}
     border-radius: 20px;
     float: left;
     font-size: 11px !important;
-    background: #F3F4F6 none repeat scroll 0 0;
+    background: #e9eef6 none repeat scroll 0 0;
     height: 28px;
 }
 
@@ -1802,7 +1832,7 @@ input::placeholder {font-size:12px;}
 }
 
 .med_radioTabs label span:hover{
-    background: #DBDCDE none repeat scroll 0 0 !important;
+    background: #ccdcf6 none repeat scroll 0 0 !important;
 }
 
 .med_radioTabs label input {
@@ -1914,7 +1944,7 @@ input:checked + .med_slider:before {
     border-radius: 20px;
     float: left;
     font-size: 14px;
-    background: #F3F4F6 none repeat scroll 0 0;
+    background: #e9eef6 none repeat scroll 0 0;
     height: 28px;
 }
 
@@ -1929,7 +1959,7 @@ input:checked + .med_slider:before {
 }
 
 .med_IconTab:hover{
-    background: #DBDCDE none repeat scroll 0 0 !important;
+    background: #ccdcf6 none repeat scroll 0 0 !important;
 }
 
 .med_IconTab_active {
@@ -2032,7 +2062,7 @@ input:checked + .med_slider:before {
 /* switchable vertical tabs*/
 .med_verticalTabs {
       width: 30%;
-      background: #F3F4F6;
+      background: #e9eef6;
       border-right: 1px solid #dedede;
 }
 
@@ -2057,7 +2087,7 @@ input:checked + .med_slider:before {
 }
 
 .med_commonTabVertical:hover{
-    background: #DBDCDE;
+    background: #ccdcf6;
 }
 /* switchable vertical tabs end*/
 
@@ -2176,7 +2206,6 @@ input:checked + .med_slider:before {
     width: 14px;
     line-height: 14px;
     margin-right: 8px;
-    padding: 1px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -2194,7 +2223,6 @@ input:checked + .med_slider:before {
     width: 14px;
     line-height: 14px;
     margin-right: 8px;
-    padding: 1px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -2296,6 +2324,12 @@ input:checked + .med_slider:before {
     position: sticky;
     top:0px;
     line-height: normal !important;
+    font-weight: 600;
+    font-size: 11.5px;
+}
+
+.med_listHeader th{
+    font-weight: 600;
 }
 
 .med_tableRowDiv {
@@ -2347,20 +2381,6 @@ input:checked + .med_slider:before {
 
 .med_hoverSection:hover{
     background:#f5f5f5;
-}
-
-.med_grayCount {
-    background: #e8e7e79c none repeat scroll 0 0;
-    border: 1px solid #ccc;
-    color: #777;
-    border-radius: 20px;
-    height: 20px;
-    font-weight: bold;
-    min-width: 20px;
-    padding: 0px 5px;
-    font-size: 1em;
-    line-height: 20px;
-    text-align: center;
 }
 /* lists view end*/
 
@@ -2437,7 +2457,8 @@ input:checked + .med_slider:before {
     border-top: 1px solid #dedede;
     padding: 7px 5px;
     z-index: 9;
-    font-weight:normal;
+    font-weight:600;
+    font-size:11.5px;
     text-transform: uppercase;
 }
 
@@ -2500,9 +2521,10 @@ input:checked + .med_slider:before {
 .med_staticTable table th {
     border-right: 1px solid #dedede;
     padding: 7px 5px;
-    font-weight:normal;
     text-transform: uppercase;
     float: left;
+    font-weight: 600;
+    font-size: 11.5px;
 }
 
 .med_staticTable table th:first-child {
@@ -2558,6 +2580,15 @@ input:checked + .med_slider:before {
 /* horizontal/vertical scroll table end*/
 
 /* popup */
+.med_modalOverlayTrans {
+    background: transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .med_commonPopupOuter {
     background: rgba(11, 11, 11, 0.2) linear-gradient(rgba(11, 11, 11, 0.1), rgba(11, 11, 11, 0.6)) repeat-x scroll 0 0;
     height: 100%;
@@ -2971,7 +3002,7 @@ input:checked + .med_slider:before {
 /* Drawer toggle*/
 .med_toggleDrawer {
     position: absolute;
-    top: 30px;
+    top: 100%;
     right: 0px;
     width: 320px;
     height: 100%;
@@ -3368,6 +3399,10 @@ input:checked + .med_slider:before {
 
 .med_headingBandLightYellow {
     background: lightyellow !important;
+}
+
+.med_headingBandLightBlue {
+    background: #1E88E518;
 }
 /* Heading band end*/
 
@@ -4055,4 +4090,13 @@ dropdown input {
 .med_heighlightedBorder:hover {
     border: 1px solid #1E88E5;
     border-radius: 3px;
+}
+
+.med_link{
+    color:#1E88E5;
+    cursor:pointer;
+}
+
+.med_link:hover{
+    text-decoration:underline;
 }
