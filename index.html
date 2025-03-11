@@ -59,6 +59,7 @@
                     <li><a href="#listsView" onclick="toggleActive('leftNav_listsView')">List View</a></li>
                     <li><a href="#drillDown_lists" onclick="toggleActive('leftNav_drillDown_lists')">Drill-Down List</a></li>
                     <li><a href="#gridView" onclick="toggleActive('leftNav_gridView')">List Grid View</a></li>
+                    <li><a href="#divTable" onclick="toggleActive('leftNav_divTable')">Table Using Div</a></li>
                     <li><a href="#tableView" onclick="toggleActive('leftNav_tableView')">Table</a></li>
                     <li><a href="#Hor/VerScroll" onclick="toggleActive('leftNav_Hor/VerScroll')">Hor/Ver Scroll Table</a></li>
                     <li><a href="#commonPopups" onclick="toggleActive('leftNav_commonPopups')">Popup</a></li>
@@ -133,6 +134,7 @@
             <a href="#collapsePanel"><div id="leftNav_collapsePanel" class="wrapperToggle_btn">Collapse Panel</div></a>
             <a href="#drillDown_lists"><div id="leftNav_drillDown_lists" class="wrapperToggle_btn">Drill-Down List</div></a>
             <a href="#gridView"><div id="leftNav_gridView" class="wrapperToggle_btn">List Grid View</div></a>
+            <a href="#divTable"><div id="leftNav_divTable" class="wrapperToggle_btn">Table Using Div</div></a>
             <a href="#tableView"><div id="leftNav_tableView" class="wrapperToggle_btn">Table</div></a>
             <a href="#Hor/VerScroll"><div id="leftNav_Hor/VerScroll" class="wrapperToggle_btn">Hor/Ver Scroll Table</div></a>
             <a href="#commonPopups"><div id="leftNav_commonPopups" class="wrapperToggle_btn">Popup</div></a>
@@ -872,9 +874,27 @@
                                     &lt;input class="med_pointer" name="toggle" type="radio" id="yes"&gt;
                                     &lt;label class="med_pointer" for="yes"&gt;Yes&lt;/label&gt;
                                 &lt;/div&gt;
+
                                 &lt;div class="med_fancy-radio med_marginR10"&gt;
                                     &lt;input class="med_pointer" name="toggle" type="radio" id="no"&gt;
                                     &lt;label class="med_pointer" for="no"&gt;No&lt;/label&gt;
+                                &lt;/div&gt;
+
+                                -----------------------------------------------------------------------------------
+       
+                                &lt;div class="med_radioChkGroup med_marginT10"&gt;
+                                    &lt;div class="med_pull_left med_fancy-radio"&gt;
+                                        &lt;input class="med_pointer" type="radio" checked="checked" name="recon" id="nonRecon"&gt;
+                                        &lt;label class="med_pointer" for="nonRecon"&gt;Pending Reconciliation&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_pull_left med_fancy-radio med_marginL10"&gt;
+                                        &lt;input class="med_pointer" type="radio" name="recon" id="pendingRecon"&gt;
+                                        &lt;label class="med_pointer" for="pendingRecon"&gt;Pending Tally&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_pull_left med_fancy-radio med_marginL10"&gt;
+                                        &lt;input class="med_pointer" type="radio" name="recon" id="postedRecon"&gt;
+                                        &lt;label class="med_pointer" for="postedRecon"&gt;Tally Posted&lt;/label&gt;
+                                    &lt;/div&gt;
                                 &lt;/div&gt;
                             </code>
                         </pre>
@@ -892,6 +912,20 @@
                             <div class="med_fancy-radio med_marginR10">
                                 <input class="med_pointer" name="toggle" type="radio" id="no">
                                 <label class="med_pointer" for="no">No</label>
+                            </div>
+                            <div class="med_radioChkGroup med_marginT10">
+                                <div class="med_pull_left med_fancy-radio">
+                                    <input class="med_pointer" type="radio" checked="checked" name="recon" id="nonRecon">
+                                    <label class="med_pointer" for="nonRecon">Pending Reconciliation</label>
+                                </div>
+                                <div class="med_pull_left med_fancy-radio med_marginL10">
+                                    <input class="med_pointer" type="radio" name="recon" id="pendingRecon">
+                                    <label class="med_pointer" for="pendingRecon">Pending Tally</label>
+                                </div>
+                                <div class="med_pull_left med_fancy-radio med_marginL10">
+                                    <input class="med_pointer" type="radio" name="recon" id="postedRecon">
+                                    <label class="med_pointer" for="postedRecon">Tally Posted</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -913,9 +947,27 @@
                                     &lt;input class="med_pointer" name="toggle"type="checkbox" id="Chk"&gt;
                                     &lt;label class="med_pointer" for="Chk"&gt;Yes&lt;/label&gt;
                                 &lt;/div&gt;
+
                                 &lt;div class="med_fancy-checkbox med_marginR10"&gt;
                                     &lt;input class="med_pointer" name="toggle" type="checkbox" id="Chk1"&gt;
                                     &lt;label class="med_pointer" for="Chk1"&gt;No&lt;/label&gt;
+                                &lt;/div&gt;
+                                
+                                -----------------------------------------------------------------------------------
+
+                                &lt;div class="med_radioChkGroup med_marginT10"&gt;
+                                    &lt;div class="med_pull_left med_fancy-checkbox"&gt;
+                                        &lt;input class="med_pointer" type="checkbox" checked="checked" name="recon" id="nonRecon"&gt;
+                                        &lt;label class="med_pointer" for="nonRecon"&gt;Pending Reconciliation&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_pull_left med_fancy-checkbox med_marginL10"&gt;
+                                        &lt;input class="med_pointer" type="checkbox" name="recon" id="pendingRecon"&gt;
+                                        &lt;label class="med_pointer" for="pendingRecon"&gt;Pending Tally&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_pull_left med_fancy-checkbox med_marginL10"&gt;
+                                        &lt;input class="med_pointer" type="checkbox" name="recon" id="postedRecon"&gt;
+                                        &lt;label class="med_pointer" for="postedRecon"&gt;Tally Posted&lt;/label&gt;
+                                    &lt;/div&gt;
                                 &lt;/div&gt;
                             </code>
                         </pre>
@@ -933,6 +985,21 @@
                             <div class="med_fancy-checkbox med_marginR10">
                                 <input class="med_pointer" type="checkbox" id="Chk1">
                                 <label class="med_pointer" for="Chk1">No</label>
+                            </div>
+
+                            <div class="med_radioChkGroup med_marginT10">
+                                <div class="med_pull_left med_fancy-checkbox">
+                                    <input class="med_pointer" type="checkbox" checked="checked" name="recon" id="nonRecon">
+                                    <label class="med_pointer" for="nonRecon">Pending Reconciliation</label>
+                                </div>
+                                <div class="med_pull_left med_fancy-checkbox med_marginL10">
+                                    <input class="med_pointer" type="checkbox" name="recon" id="pendingRecon">
+                                    <label class="med_pointer" for="pendingRecon">Pending Tally</label>
+                                </div>
+                                <div class="med_pull_left med_fancy-checkbox med_marginL10">
+                                    <input class="med_pointer" type="checkbox" name="recon" id="postedRecon">
+                                    <label class="med_pointer" for="postedRecon">Tally Posted</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -4052,6 +4119,176 @@
                     </div>
                 </div>
                 <!--Lists grid view end-->
+
+                <!-- Table Using Div -->
+                <div class="container" id="divTable" style="display: block;">
+                    <div class="html med_Width100pr">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="med_pull_left" onclick="toggleEye_DivTable();" title="Show / Hide Code">
+                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_DivTable"></div>
+                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_DivTable" style="display: none;"></div>
+                                </div>
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('listDivTable_code')"></div>
+                            </div>
+                        </div>
+
+                        <pre id="listDivTable_code" style="display: none;">
+                            <code>
+                                &lt;div class="med_Width100pr med_overflowData" style="height:173px;"&gt;
+                                    &lt;div class="med_TableHeader med_zIndex9"&gt;
+                                        &lt;div class="med_Width20pr med_tableSlot med_paddingL10"&gt;Full Name&lt;/div&gt;
+                                        &lt;div class="med_Width10pr med_tableSlot"&gt;Age&lt;/div&gt;
+                                        &lt;div class="med_Width10pr med_tableSlot"&gt;Country&lt;/div&gt;
+                                        &lt;div class="med_Width15pr med_tableSlot"&gt;State&lt;/div&gt;
+                                        &lt;div class="med_Width15pr med_tableSlot"&gt;City&lt;/div&gt;
+                                        &lt;div class="med_Width30pr med_tableSlot"&gt;Address&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_Width100pr"&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Peter Parkar&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;28&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;United State&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alabama&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alexander City&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Tallapoosa county, east-central&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Noah James&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;32&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;United State&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alabama&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Andalusia&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Covington county, southern Alabama, U.S.&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Jack Connor&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;35&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;United State&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alabama&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Anniston&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Calhoun county, eastern Alabama, U.S.&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Bharat Kumar&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;40&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;India&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Andhra Pradesh&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Chittoor&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Palar River, Tirupati&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Peter Parkar&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;28&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;United State&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alabama&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alexander City&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Tallapoosa county, east-central&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Noah James&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;32&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;United State&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alabama&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Andalusia&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Covington county, southern Alabama, U.S.&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_RowDivTable med_hoverSection"&gt;
+                                            &lt;div class="med_Width20pr med_tableSlot"&gt;Jack Connor&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;35&lt;/div&gt;
+                                            &lt;div class="med_Width10pr med_tableSlot"&gt;United State&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Alabama&lt;/div&gt;
+                                            &lt;div class="med_Width15pr med_tableSlot"&gt;Anniston&lt;/div&gt;
+                                            &lt;div class="med_Width30pr med_tableSlot"&gt;Calhoun county, eastern Alabama, U.S.&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="preview med_Width100pr">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent" style="padding:0px;">
+                            <h3 class="med_padding10" style="margin-bottom:0px;">Table Using Div</h3>
+                            <div class="med_Width100pr med_overflowData" style="height:173px;">
+                                <div class="med_TableHeader med_zIndex9">
+                                    <div class="med_Width20pr med_tableSlot med_paddingL10">Full Name</div>
+                                    <div class="med_Width10pr med_tableSlot">Age</div>
+                                    <div class="med_Width10pr med_tableSlot">Country</div>
+                                    <div class="med_Width15pr med_tableSlot">State</div>
+                                    <div class="med_Width15pr med_tableSlot">City</div>
+                                    <div class="med_Width30pr med_tableSlot">Address</div>
+                                </div>
+                                <div class="med_Width100pr">
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Peter Parkar</div>
+                                        <div class="med_Width10pr med_tableSlot">28</div>
+                                        <div class="med_Width10pr med_tableSlot">United State</div>
+                                        <div class="med_Width15pr med_tableSlot">Alabama</div>
+                                        <div class="med_Width15pr med_tableSlot">Alexander City</div>
+                                        <div class="med_Width30pr med_tableSlot">Tallapoosa county, east-central</div>
+                                    </div>
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Noah James</div>
+                                        <div class="med_Width10pr med_tableSlot">32</div>
+                                        <div class="med_Width10pr med_tableSlot">United State</div>
+                                        <div class="med_Width15pr med_tableSlot">Alabama</div>
+                                        <div class="med_Width15pr med_tableSlot">Andalusia</div>
+                                        <div class="med_Width30pr med_tableSlot">Covington county, southern Alabama, U.S.</div>
+                                    </div>
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Jack Connor</div>
+                                        <div class="med_Width10pr med_tableSlot">35</div>
+                                        <div class="med_Width10pr med_tableSlot">United State</div>
+                                        <div class="med_Width15pr med_tableSlot">Alabama</div>
+                                        <div class="med_Width15pr med_tableSlot">Anniston</div>
+                                        <div class="med_Width30pr med_tableSlot">Calhoun county, eastern Alabama, U.S.</div>
+                                    </div>
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Bharat Kumar</div>
+                                        <div class="med_Width10pr med_tableSlot">40</div>
+                                        <div class="med_Width10pr med_tableSlot">India</div>
+                                        <div class="med_Width15pr med_tableSlot">Andhra Pradesh</div>
+                                        <div class="med_Width15pr med_tableSlot">Chittoor</div>
+                                        <div class="med_Width30pr med_tableSlot">Palar River, Tirupati</div>
+                                    </div>
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Peter Parkar</div>
+                                        <div class="med_Width10pr med_tableSlot">28</div>
+                                        <div class="med_Width10pr med_tableSlot">United State</div>
+                                        <div class="med_Width15pr med_tableSlot">Alabama</div>
+                                        <div class="med_Width15pr med_tableSlot">Alexander City</div>
+                                        <div class="med_Width30pr med_tableSlot">Tallapoosa county, east-central</div>
+                                    </div>
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Noah James</div>
+                                        <div class="med_Width10pr med_tableSlot">32</div>
+                                        <div class="med_Width10pr med_tableSlot">United State</div>
+                                        <div class="med_Width15pr med_tableSlot">Alabama</div>
+                                        <div class="med_Width15pr med_tableSlot">Andalusia</div>
+                                        <div class="med_Width30pr med_tableSlot">Covington county, southern Alabama, U.S.</div>
+                                    </div>
+                                    <div class="med_RowDivTable med_hoverSection">
+                                        <div class="med_Width20pr med_tableSlot">Jack Connor</div>
+                                        <div class="med_Width10pr med_tableSlot">35</div>
+                                        <div class="med_Width10pr med_tableSlot">United State</div>
+                                        <div class="med_Width15pr med_tableSlot">Alabama</div>
+                                        <div class="med_Width15pr med_tableSlot">Anniston</div>
+                                        <div class="med_Width30pr med_tableSlot">Calhoun county, eastern Alabama, U.S.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="med_FooterDiv">
+                                <div class="med_primaryBtn_md">Save</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Using Div-->
 
                 <!-- Table view -->
                 <div class="container" id="tableView" style="display: block;">

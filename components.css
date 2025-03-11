@@ -848,6 +848,16 @@ input::placeholder {font-size:12px;}
     background: #f5f5f5 none repeat scroll 0 0;
 }
 
+.med_disabled_60per{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.med_disabled_80per{
+    pointer-events: none;
+    opacity: 0.8;
+}
+
 .med_input_readonly{
     pointer-events:none;
 }
@@ -937,6 +947,50 @@ input::placeholder {font-size:12px;}
     top: -2px;
 }
 /* Radio end*/
+
+/* Radio like check box*/
+.med_fancy-radioCheckbox input[type="radio"] {
+    display: none;
+}
+
+.med_fancy-radioCheckbox label:before {
+    border: 1px solid #bbb;
+    background:#fff;
+    color: transparent;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 8px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+}
+
+.med_fancy-radioCheckbox input[type="radio"]:checked ~ label:before {
+    border: 1px solid #1e88e5;
+    background:#1e88e5;
+    color: #fff;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 8px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+}
+/* Radio like check box end*/
 
 /* checkbox */
 .med_fancy-checkbox input[type="checkbox"] {
@@ -1145,6 +1199,10 @@ input::placeholder {font-size:12px;}
 .med_datePicker_md{
     width: 90px;
     position: relative;
+}
+
+.med_datePicker input{
+    text-transform:lowercase;
 }
 
 .med_datePicker_md input{
@@ -1552,7 +1610,7 @@ input::placeholder {font-size:12px;}
 }
 
 .med_IconMargin{
-    margin: -3px 0px;
+    margin: -2px 0px;
 }
 /* icons end*/
 
@@ -2540,6 +2598,7 @@ input:checked + .med_slider:before {
     padding-right: 10px;
 }
 /* table Using Div end */
+
 
 /* static table view*/
 .med_staticTable table {

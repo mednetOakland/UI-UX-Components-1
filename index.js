@@ -418,6 +418,20 @@ function toggleEye_gridView() {
     }
 }
 
+//toggleEye for table Using Div
+function toggleEye_DivTable() {
+    var x = document.getElementById("listDivTable_code");
+    if (x.style.display === "none") {
+        document.getElementById('listDivTable_code').style.display = "block";
+        document.getElementById('toggleEyeIcon_slash_DivTable').style.display = "block";
+        document.getElementById('toggleEyeIcon_DivTable').style.display = "none";
+    } else {
+        document.getElementById('listDivTable_code').style.display = "none";
+        document.getElementById('toggleEyeIcon_slash_DivTable').style.display = "none";
+        document.getElementById('toggleEyeIcon_DivTable').style.display = "block";
+    }
+}
+
 //toggleEye for table view 5
 function toggleEye_tableView() {
     var x = document.getElementById("listTableView_code");
