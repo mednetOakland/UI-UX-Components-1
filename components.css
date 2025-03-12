@@ -925,7 +925,7 @@ input::placeholder {font-size:12px;}
     margin-right: 8px;
     position: relative;
     text-align: center;
-    top: -2px;
+    top: -3px;
 }
 
 .med_fancy-radio input[type="radio"]:checked ~ label:before {
@@ -944,7 +944,7 @@ input::placeholder {font-size:12px;}
     margin-right: 8px;
     position: relative;
     text-align: center;
-    top: -2px;
+    top: -3px;
 }
 /* Radio end*/
 

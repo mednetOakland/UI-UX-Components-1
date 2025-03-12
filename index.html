@@ -32,6 +32,7 @@
                     <li><a href="#textArea" onclick="toggleActive('leftNav_textArea')">Textarea</a></li>
                     <li><a href="#textEditor" onclick="toggleActive('leftNav_textEditor')">Text Editor</a></li>
                     <li><a href="#radioButton" onclick="toggleActive('leftNav_radioButton')">Radio</a></li>
+                    <li><a href="#radioCheck" onclick="toggleActive('leftNav_radioCheck')">Checkbox Single Selection</a></li>
                     <li><a href="#checkbox" onclick="toggleActive('leftNav_checkbox')">Checkbox</a></li>
                     <li><a href="#listFilter" onclick="toggleActive('leftNav_listFilter')">List Filter</a></li>
                     <li><a href="#agePicker" onclick="toggleActive('leftNav_agePicker')">Age Picker</a></li>
@@ -41,6 +42,7 @@
                     <li><a href="#headings" onclick="toggleActive('leftNav_headings')">Headings</a></li>
                     <li><a href="#buttons" onclick="toggleActive('leftNav_buttons')">Buttons</a></li>
                     <li><a href="#iconBtns" onclick="toggleActive('leftNav_iconBtns')">Icon Buttons</a></li>
+                    <li><a href="#linkDiv" onclick="toggleActive('leftNav_linkDiv')">Link</a></li>
                     <li><a href="#icons" onclick="toggleActive('leftNav_icons')">Icons</a></li>
                     <li><a href="#iconStatus" onclick="toggleActive('leftNav_iconStatus')">Status Icons</a></li>
                     <li><a href="#iconsGroup" onclick="toggleActive('leftNav_iconsGroup')">Icons Group</a></li>
@@ -108,6 +110,7 @@
             <a href="#textArea"><div id="leftNav_textArea" class="wrapperToggle_btn">Textarea</div></a>
             <a href="#textEditor"><div id="leftNav_textEditor" class="wrapperToggle_btn">Text Editor</div></a>
             <a href="#radioButton"><div id="leftNav_radioButton" class="wrapperToggle_btn">Radio</div></a>
+            <a href="#radioCheck"><div id="leftNav_radioCheck" class="wrapperToggle_btn">Checkbox Single Selection</div></a>
             <a href="#checkbox"><div id="leftNav_checkbox" class="wrapperToggle_btn" >Checkbox</div></a>
             <a href="#listFilter"><div id="leftNav_listFilter" class="wrapperToggle_btn" >List Filter</div></a>
             <a href="#agePicker"><div id="leftNav_agePicker" class="wrapperToggle_btn">Age Picker</div></a>
@@ -117,6 +120,7 @@
             <a href="#headings"><div id="leftNav_headings" class="wrapperToggle_btn">Headings</div></a>
             <a href="#buttons"><div id="leftNav_buttons" class="wrapperToggle_btn">Buttons</div></a>
             <a href="#iconBtns"><div id="leftNav_iconBtns" class="wrapperToggle_btn">Icon Buttons</div></a>
+            <a href="#linkDiv"><div id="leftNav_linkDiv" class="wrapperToggle_btn">Link</div></a>
             <a href="#icons"><div id="leftNav_icons" class="wrapperToggle_btn">Icons</div></a>
             <a href="#iconStatus"><div id="leftNav_iconStatus" class="wrapperToggle_btn">Status Icons</div></a>
             <a href="#iconsGroup"><div id="leftNav_iconsGroup" class="wrapperToggle_btn">Icons Group</div></a>
@@ -885,7 +889,7 @@
                                 &lt;div class="med_radioChkGroup med_marginT10"&gt;
                                     &lt;div class="med_pull_left med_fancy-radio"&gt;
                                         &lt;input class="med_pointer" type="radio" checked="checked" name="recon" id="nonRecon"&gt;
-                                        &lt;label class="med_pointer" for="nonRecon"&gt;Pending Reconciliation&lt;/label&gt;
+                                        &lt;label class="med_pointer" for="nonRecon"&gt;Pending&lt;/label&gt;
                                     &lt;/div&gt;
                                     &lt;div class="med_pull_left med_fancy-radio med_marginL10"&gt;
                                         &lt;input class="med_pointer" type="radio" name="recon" id="pendingRecon"&gt;
@@ -916,7 +920,7 @@
                             <div class="med_radioChkGroup med_marginT10">
                                 <div class="med_pull_left med_fancy-radio">
                                     <input class="med_pointer" type="radio" checked="checked" name="recon" id="nonRecon">
-                                    <label class="med_pointer" for="nonRecon">Pending Reconciliation</label>
+                                    <label class="med_pointer" for="nonRecon">Pending</label>
                                 </div>
                                 <div class="med_pull_left med_fancy-radio med_marginL10">
                                     <input class="med_pointer" type="radio" name="recon" id="pendingRecon">
@@ -931,6 +935,59 @@
                     </div>
                 </div>
                 <!-- Radio button end-->
+
+                <!-- Radio like check box -->
+                <div class="container" id="radioCheck">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('radioCheck_code')"></div>
+                            </div>
+                        </div>
+                        <pre id="radioCheck_code">
+                            <code>
+                                &lt;div class="med_Width100pr"&gt;
+                                    &lt;div class="med_Width100pr med_fancy-radioCheckbox"&gt;
+                                    &lt;input type="radio" class="med_pointer" id="reversal" name="toggleRE"&gt;
+                                    &lt;label class="med_pointer" for="reversal"&gt;Reversal&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class="med_Width100pr med_fancy-radioCheckbox med_marginT7"&gt;
+                                    &lt;input type="radio" class="med_pointer" id="currentActive" name="toggleRE"&gt;
+                                    &lt;label class="med_pointer" for="currentActive"&gt;Active&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class="med_Width100pr med_fancy-radioCheckbox med_marginT7"&gt;
+                                    &lt;input type="radio" class="med_pointer" id="modified" name="toggleRE"&gt;
+                                    &lt;label class="med_pointer" for="modified"&gt;Modified&lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Checkbox Single Selection </h3>
+                            <div class="med_Width100pr">
+                                <div class="med_Width100pr med_fancy-radioCheckbox">
+                                   <input type="radio" class="med_pointer" id="reversal" name="toggleRE">
+                                   <label class="med_pointer" for="reversal">Reversal</label>
+                               </div>
+                               <div class="med_Width100pr med_fancy-radioCheckbox med_marginT7">
+                                   <input type="radio" class="med_pointer" id="currentActive" name="toggleRE">
+                                   <label class="med_pointer" for="currentActive">Active</label>
+                               </div>
+                               <div class="med_Width100pr med_fancy-radioCheckbox med_marginT7">
+                                   <input type="radio" class="med_pointer" id="modified" name="toggleRE">
+                                   <label class="med_pointer" for="modified">Modified</label>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Radio like check box end-->
 
                 <!-- Checkbox -->
                 <div class="container" id="checkbox">
@@ -957,16 +1014,16 @@
 
                                 &lt;div class="med_radioChkGroup med_marginT10"&gt;
                                     &lt;div class="med_pull_left med_fancy-checkbox"&gt;
-                                        &lt;input class="med_pointer" type="checkbox" checked="checked" name="recon" id="nonRecon"&gt;
-                                        &lt;label class="med_pointer" for="nonRecon"&gt;Pending Reconciliation&lt;/label&gt;
+                                        &lt;input class="med_pointer" type="checkbox" checked="checked" name="recona" id="recon"&gt;
+                                        &lt;label class="med_pointer" for="recon"&gt;Pending&lt;/label&gt;
                                     &lt;/div&gt;
                                     &lt;div class="med_pull_left med_fancy-checkbox med_marginL10"&gt;
-                                        &lt;input class="med_pointer" type="checkbox" name="recon" id="pendingRecon"&gt;
-                                        &lt;label class="med_pointer" for="pendingRecon"&gt;Pending Tally&lt;/label&gt;
+                                        &lt;input class="med_pointer" type="checkbox" name="recona" id="pending"&gt;
+                                        &lt;label class="med_pointer" for="pending"&gt;Pending Tally&lt;/label&gt;
                                     &lt;/div&gt;
                                     &lt;div class="med_pull_left med_fancy-checkbox med_marginL10"&gt;
-                                        &lt;input class="med_pointer" type="checkbox" name="recon" id="postedRecon"&gt;
-                                        &lt;label class="med_pointer" for="postedRecon"&gt;Tally Posted&lt;/label&gt;
+                                        &lt;input class="med_pointer" type="checkbox" name="recona" id="posted"&gt;
+                                        &lt;label class="med_pointer" for="posted"&gt;Tally Posted&lt;/label&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
                             </code>
@@ -989,16 +1046,16 @@
 
                             <div class="med_radioChkGroup med_marginT10">
                                 <div class="med_pull_left med_fancy-checkbox">
-                                    <input class="med_pointer" type="checkbox" checked="checked" name="recon" id="nonRecon">
-                                    <label class="med_pointer" for="nonRecon">Pending Reconciliation</label>
+                                    <input class="med_pointer" type="checkbox" checked="checked" name="recona" id="recon">
+                                    <label class="med_pointer" for="recon">Pending </label>
                                 </div>
                                 <div class="med_pull_left med_fancy-checkbox med_marginL10">
-                                    <input class="med_pointer" type="checkbox" name="recon" id="pendingRecon">
-                                    <label class="med_pointer" for="pendingRecon">Pending Tally</label>
+                                    <input class="med_pointer" type="checkbox" name="recona" id="pending">
+                                    <label class="med_pointer" for="pending">Pending Tally</label>
                                 </div>
                                 <div class="med_pull_left med_fancy-checkbox med_marginL10">
-                                    <input class="med_pointer" type="checkbox" name="recon" id="postedRecon">
-                                    <label class="med_pointer" for="postedRecon">Tally Posted</label>
+                                    <input class="med_pointer" type="checkbox" name="recona" id="posted">
+                                    <label class="med_pointer" for="posted">Tally Posted</label>
                                 </div>
                             </div>
                         </div>
@@ -1867,6 +1924,38 @@
                 </div>
                 <!-- Icon Buttons end-->
 
+                <!-- Icon Buttons -->
+                <div class="container" id="linkDiv">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('link_code')"></div>
+                            </div>
+                        </div>
+                        <pre id="link_code">
+                            <code>
+                                &lt;div class="med_Width100pr"&gt;
+                                     &lt;div class="med_link"&gt; Html Link &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+
+                        <div class="PreContent">
+                            <h3>Link</h3>
+                            <div class="med_Width100pr" style="padding-bottom:10px;">
+                                <div class="med_link">Html Link</div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Icon Buttons end-->
+
                 <!-- Icons -->
                 <div class="container" id="icons">
                     <div class="html">
@@ -2273,15 +2362,19 @@
                 <!-- Icons group end-->
 
                 <!-- Show Count-->
-                <div class="container" id="countHeighlight">
-                    <div class="html">
+                <div class="container" id="countHeighlight" style="display:block;">
+                    <div class="html med_Width100pr">
                         <div class="header med_Width100pr">
                             <div class="med_marginT10">HTML CODE</div>
                             <div class="med_pull_right">
+                                <div class="med_pull_left" onclick="toggleEye_countHeighlight();" title="Show / Hide Code">
+                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_countHeighlight"></div>
+                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_countHeighlight" style="display: none;"></div>
+                                </div>
                                 <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('countHeighlight_code')"></div>
                             </div>
                         </div>
-                        <pre id="countHeighlight_code">
+                        <pre id="countHeighlight_code" style="display:none;">
                             <code>
                                                 &lt;!-- Count Small --&gt;
                                 &lt;div class="med_pull_left med_separates"&gt;
@@ -2295,6 +2388,10 @@
                                 &lt;div class="med_pull_left med_separates"&gt;
                                     &lt;div class="med_pull_left med_marginR5"&gt;Pending&lt;/div&gt;
                                     &lt;div class="med_SM_count med_redCount"&gt;20&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="med_pull_left med_separates"&gt;
+                                    &lt;div class="med_pull_left med_marginR5"&gt;Draft&lt;/div&gt;
+                                    &lt;div class="med_SM_count med_greyCount"&gt;21&lt;/div&gt;
                                 &lt;/div&gt;
 
                                                 &lt;!-- Count Medium --&gt;
@@ -2310,6 +2407,10 @@
                                     &lt;div class="med_pull_left med_marginR5"&gt;Pending&lt;/div&gt;
                                     &lt;div class="med_MD_count med_redCount"&gt;20&lt;/div&gt;
                                 &lt;/div&gt;
+                                &lt;div class="med_pull_left med_separates"&gt;
+                                    &lt;div class="med_pull_left med_marginR5"&gt;Draft&lt;/div&gt;
+                                    &lt;div class="med_MD_count med_greyCount"&gt;21&lt;/div&gt;
+                                &lt;/div&gt;
 
                                                 &lt;!-- Count Large --&gt;
                                 &lt;div class="med_pull_left med_separates"&gt;
@@ -2324,15 +2425,19 @@
                                     &lt;div class="med_pull_left med_marginR5"&gt;Pending&lt;/div&gt;
                                     &lt;div class="med_LG_count med_redCount"&gt;20&lt;/div&gt;
                                 &lt;/div&gt;
+                                &lt;div class="med_pull_left med_separates"&gt;
+                                    &lt;div class="med_pull_left med_marginR5"&gt;Draft&lt;/div&gt;
+                                    &lt;div class="med_LG_count med_greyCount"&gt;21&lt;/div&gt;
+                                &lt;/div&gt;
                             </code>
                         </pre>
                     </div>
 
-                    <div class="preview">
+                    <div class="preview med_Width100pr">
                         <div class="header med_Width100pr">
                             <div class="med_marginT10">PREVIEW</div>
                         </div>
-                        <div class="PreContent">
+                        <div class="PreContent med_paddingL20">
                             <h3>Count Small</h3>
                             <div class="med_pull_left med_separates">
                                 <div class="med_pull_left med_marginR5">Completed</div>
@@ -2346,9 +2451,13 @@
                                 <div class="med_pull_left med_marginR5">Pending</div>
                                 <div class="med_SM_count med_redCount">20</div>
                             </div>
+                            <div class="med_pull_left med_separates">
+                                <div class="med_pull_left med_marginR5">Draft</div>
+                                <div class="med_SM_count med_greyCount">21</div>
+                            </div>
                         </div>
 
-                        <div class="PreContent">
+                        <div class="PreContent med_paddingL20">
                             <h3>Count Medium</h3>
                             <div class="med_pull_left med_separates">
                                 <div class="med_pull_left med_marginR5">Completed</div>
@@ -2359,12 +2468,16 @@
                                 <div class="med_MD_count med_orangeCount">27</div>
                             </div>
                             <div class="med_pull_left med_separates">
-                                <div class="med_pull_left med_marginR5">Pending</div>
-                                <div class="med_MD_count med_redCount">20</div>
+                                <div class="med_pull_left med_marginR5">Draft</div>
+                                <div class="med_MD_count med_redCount">21</div>
+                            </div>
+                            <div class="med_pull_left med_separates">
+                                <div class="med_pull_left med_marginR5">Draft</div>
+                                <div class="med_MD_count med_greyCount">21</div>
                             </div>
                         </div>
 
-                        <div class="PreContent">
+                        <div class="PreContent med_paddingL20">
                             <h3>Count Large</h3>
                             <div class="med_pull_left med_separates">
                                 <div class="med_pull_left med_marginR5">Completed</div>
@@ -2377,6 +2490,10 @@
                             <div class="med_pull_left med_separates">
                                 <div class="med_pull_left med_marginR5">Pending</div>
                                 <div class="med_LG_count med_redCount">20</div>
+                            </div>
+                            <div class="med_pull_left med_separates">
+                                <div class="med_pull_left med_marginR5">Pending</div>
+                                <div class="med_LG_count med_greyCount">20</div>
                             </div>
                         </div>
                     </div>
@@ -2778,13 +2895,13 @@
                                     &lt;/div&gt;
                                     
                                     &lt;div id="listTabDIV" class="med_Width100pr med_marginT10" style="display:block;"&gt;
-                                        &lt;img src="images/listTabDIV.png" alt="ListTabDIV" height="200"&gt;
+                                        &lt;img src="images/listTabDIV.png" alt="ListTabDIV" height="180"&gt;
                                     &lt;/div&gt;
                                     &lt;div id="graphTabDIV" class="med_Width100pr med_marginT10" style="display:none;"&gt;
-                                        &lt;img src="images/graphTabDIV.png" alt="GraphTabDIV" height="200"&gt;
+                                        &lt;img src="images/graphTabDIV.png" alt="GraphTabDIV" height="180"&gt;
                                     &lt;/div&gt;
                                     &lt;div id="lineGraphTabDIV" class="med_Width100pr med_marginT10" style="display:none;"&gt;
-                                        &lt;img src="images/lineGraphTabDIV.png" alt="LineGraphTabDIV" height="200"&gt;
+                                        &lt;img src="images/lineGraphTabDIV.png" alt="LineGraphTabDIV" height="180"&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
 
@@ -2830,13 +2947,13 @@
                                     <div onclick="toggleIconSwitchableTabs(this);" class="med_IconTab fa_mednet fa-line-chart" id="iconTabs_lineGraphTabDIV" title="Line Graph View"></div>
                                 </div>
                                 <div id="listTabDIV" class="med_Width100pr med_marginT10" style="display:block;">
-                                    <img src="images/listTabDIV.png" alt="ListTabDIV" height="200">
+                                    <img src="images/listTabDIV.png" alt="ListTabDIV" height="180">
                                 </div>
                                 <div id="graphTabDIV" class="med_Width100pr med_marginT10" style="display:none;">
-                                    <img src="images/graphTabDIV.png" alt="GraphTabDIV" height="200">
+                                    <img src="images/graphTabDIV.png" alt="GraphTabDIV" height="180">
                                 </div>
                                 <div id="lineGraphTabDIV" class="med_Width100pr med_marginT10" style="display:none;">
-                                    <img src="images/lineGraphTabDIV.png" alt="LineGraphTabDIV" height="200">
+                                    <img src="images/lineGraphTabDIV.png" alt="LineGraphTabDIV" height="180">
                                 </div>
                             </div>
                         </div>

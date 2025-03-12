@@ -251,6 +251,20 @@ function toggleEye_iconGrp_mouseover() {
     }
 }
 
+// Eye icon for Count 
+function toggleEye_countHeighlight() {
+    var x = document.getElementById("countHeighlight_code");
+    if (x.style.display === "none") {
+        document.getElementById('countHeighlight_code').style.display = "block";
+        document.getElementById('toggleEyeIcon_slash_countHeighlight').style.display = "block";
+        document.getElementById('toggleEyeIcon_countHeighlight').style.display = "none";
+    } else {
+        document.getElementById('countHeighlight_code').style.display = "none";
+        document.getElementById('toggleEyeIcon_slash_countHeighlight').style.display = "none";
+        document.getElementById('toggleEyeIcon_countHeighlight').style.display = "block";
+    }
+}
+
 //Icon Switchable Tabs for Eye 1
 function toggleEye_iconSwitchableTabs() {
     var x = document.getElementById("iconSwitchableTabs_code");

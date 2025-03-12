@@ -92,7 +92,7 @@ html{
     height:calc(100% - 0px);
     overflow-y:auto;
     overflow-x: hidden;
-    width:calc(100% - 155px);
+    width:calc(100% - 168px);
     float: left;
     position: relative;
 
@@ -241,7 +241,7 @@ code {
 
 .FixedInner {
     z-index:999;
-    width:155px;
+    width:168px;
     height:calc(100% - 0px);
     /* position:fixed; */
     overflow-y:auto;
