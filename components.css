@@ -48,6 +48,10 @@
 
 .med_radiusNone{border-radius:0px !important;}
 
+.med_radius3{border-radius:3px !important;}
+
+.med_radius5{border-radius:5px !important;}
+
 .med_transition{transition: all 0.2s ease;}
 
 .med_italic{font-style: italic;}
@@ -2687,6 +2691,14 @@ input:checked + .med_slider:before {
     min-width: 250px;
     text-align:left;
 }
+
+.med_FooterDiv {
+    background: #f5f5f5;
+    border-top: 1px solid #dedede;
+    float: left;
+    padding: 7px 10px;
+    width: 100%;
+}
 /* horizontal/vertical scroll table end*/
 
 /* popup */
@@ -2794,7 +2806,7 @@ input:checked + .med_slider:before {
     height:100%;
     position:absolute;
     width: 100%;
-    z-index: 9;
+    z-index: 100;
     top:0px;
     right:0px;
 }
