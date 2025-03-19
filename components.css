@@ -422,6 +422,18 @@ input::placeholder {font-size:12px;}
 }
 /* on mouse hover end*/
 
+/* on mouse hover2*/
+.med_onHoverBlock2{
+    display:none !important;
+}
+.med_onHoverBlock2:hover {
+    display:block !important;
+}
+.med_onHover2:hover .med_onHoverBlock2{
+    display:block !important;
+}
+/* on mouse hover2 end*/
+
 /* Select Option md*/
 .med_selectOption_md {
     position:relative;
