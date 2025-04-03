@@ -32,6 +32,8 @@
 
 .med_flexCenter{display: flex; align-items: center;}
 
+.med_flexCenterVert{display: flex; justify-content: center;}
+
 .med_pull_left {float:left;}
 
 .med_pull_right {float: right !important;}
@@ -630,7 +632,7 @@ input::placeholder {font-size:12px;}
     height: 15px;
     line-height: 15px;
     margin-left: 5px;
-    color: #777;
+    /*color: #777;*/
     font-size: 11px;
     z-index:9;
 }
@@ -700,6 +702,11 @@ input::placeholder {font-size:12px;}
 .med_input_lgCurrency{
     text-indent:40px;
 }
+
+input[type="text"]:disabled {
+  border:1px solid #ccc;
+}
+
 /* Input box end*/
 
 /* Input + Add box */
