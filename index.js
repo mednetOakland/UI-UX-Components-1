@@ -1037,7 +1037,7 @@ tinymce.init({
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
 });
 
-//For draggable popup
+//Use for Drag the popup and Reset
 function dragElement(elmnt) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     const header = elmnt.querySelector(".med_header_draggable");
@@ -1054,19 +1054,27 @@ function dragElement(elmnt) {
     };
 }
 
-document.querySelectorAll(".med_commonPopup_draggable").forEach(elmnt => {
-    dragElement(elmnt);
-});
+function fixElementPosition(elmnt) {
+    let closestEle = elmnt.closest('.med_commonPopup_draggable');
+    if (closestEle) {
+        closestEle.style.position = 'absolute';
+        closestEle.style.top = '50%';
+        closestEle.style.left = '50%';
+        closestEle.style.transform = 'translate(-50%, -50%)';
+    }
+}
 
-document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
-    elmnt.addEventListener('click', () => {
-          let closestEle = elmnt.closest('.med_commonPopup_draggable');
-          if(closestEle) {
-                closestEle.style.top = '50%';
-                closestEle.style.left = '50%';
-
-          }
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".med_commonPopup_draggable").forEach(elmnt => {
+        dragElement(elmnt);
     });
+
+    document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
+        elmnt.addEventListener('click', () => {
+              fixElementPosition(elmnt);
+        });
+    });
+
 });
 
 //toggleEye for Company header
