@@ -24,69 +24,64 @@
                 <input class="med_input_lg" type="text" id="myInput" onclick="document.getElementById('myUL').style.display='block'" onkeyup="myFunction()" style="width:100%;" placeholder="Search Components...">
 
                 <ul id="myUL" style="display:none;">
-                    <li><a href="#selectOption" onclick="toggleActive('leftNav_selectOption')">Select Option</a></li>
-                    <li><a href="#comboBox" onclick="toggleActive('leftNav_comboBox')">Combo Box</a></li>
-                    <li><a href="#inputType" onclick="toggleActive('leftNav_inputType')">Input Type</a></li>
-                    <li><a href="#searchBar" onclick="toggleActive('leftNav_searchBar')">Search Bar</a></li>
-                    <li><a href="#searchbarInputAdd" onclick="toggleActive('leftNav_searchbarInputAdd')">Search Bar + Add</a></li>
-                    <li><a href="#textArea" onclick="toggleActive('leftNav_textArea')">Textarea</a></li>
-                    <li><a href="#textEditor" onclick="toggleActive('leftNav_textEditor')">Text Editor</a></li>
-                    <li><a href="#radioButton" onclick="toggleActive('leftNav_radioButton')">Radio</a></li>
-                    <li><a href="#radioCheck" onclick="toggleActive('leftNav_radioCheck')">Checkbox Single Selection</a></li>
-                    <li><a href="#checkbox" onclick="toggleActive('leftNav_checkbox')">Checkbox</a></li>
-                    <li><a href="#listFilter" onclick="toggleActive('leftNav_listFilter')">List Filter</a></li>
-                    <li><a href="#agePicker" onclick="toggleActive('leftNav_agePicker')">Age Picker</a></li>
-                    <li><a href="#datePicker" onclick="toggleActive('leftNav_datePicker')">Date Picker</a></li>
-                    <li><a href="#timePicker" onclick="toggleActive('leftNav_timePicker')">Time Picker</a></li>
-                    <li><a href="#colors" onclick="toggleActive('leftNav_colors')">Colors</a></li>
-                    <li><a href="#headings" onclick="toggleActive('leftNav_headings')">Headings</a></li>
-                    <li><a href="#buttons" onclick="toggleActive('leftNav_buttons')">Buttons</a></li>
-                    <li><a href="#iconBtns" onclick="toggleActive('leftNav_iconBtns')">Icon Buttons</a></li>
-                    <li><a href="#linkDiv" onclick="toggleActive('leftNav_linkDiv')">Link</a></li>
-                    <li><a href="#icons" onclick="toggleActive('leftNav_icons')">Icons</a></li>
-                    <li><a href="#iconStatus" onclick="toggleActive('leftNav_iconStatus')">Status Icons</a></li>
-                    <li><a href="#iconsGroup" onclick="toggleActive('leftNav_iconsGroup')">Icons Group</a></li>
-                    <li><a href="#countHeighlight" onclick="toggleActive('leftNav_iconStatus')">Show Count</a></li>
-                    <li><a href="#dialogBox" onclick="toggleActive('leftNav_dialogBox')">Dialog Box</a></li>
-                    <li><a href="#tooltip" onclick="toggleActive('leftNav_tooltip')">Tooltip</a></li>
-                    <li><a href="#radioTabs" onclick="toggleActive('leftNav_radioTabs')">Radio Tabs</a></li>
-                    <li><a href="#toggleSwitch" onclick="toggleActive('leftNav_toggleSwitch')">Toggle Switch</a></li>
-                    <li><a href="#starRatings" onclick="toggleActive('leftNav_starRatings')">Ratings</a></li>
-                    <li><a href="#iconSwitchableTabs" onclick="toggleActive('leftNav_iconSwitchableTabs')">Icon Tabs</a></li>
-                    <li><a href="#switchableTabs" onclick="toggleActive('leftNav_switchableTabs')">Tabs</a></li>
-                    <li><a href="#switchableTabs_v2" onclick="toggleActive('leftNav_switchableTabs_v2')">Tabs V2</a></li>
-                    <li><a href="#switchableVerticalTabs" onclick="toggleActive('leftNav_switchableVerticalTabs')">Vertical Tabs</a></li>
-                    <li><a href="#accordionPanel" onclick="toggleActive('leftNav_accordionPanel')">Accordion Panel</a></li>
-                    <li><a href="#collapsePanel" onclick="toggleActive('leftNav_collapsePanel')">Collapse Panel</a></li>
-                    <li><a href="#listsView" onclick="toggleActive('leftNav_listsView')">List View</a></li>
-                    <li><a href="#drillDown_lists" onclick="toggleActive('leftNav_drillDown_lists')">Drill-Down List</a></li>
-                    <li><a href="#gridView" onclick="toggleActive('leftNav_gridView')">List Grid View</a></li>
-                    <li><a href="#divTable" onclick="toggleActive('leftNav_divTable')">Table Using Div</a></li>
-                    <li><a href="#tableView" onclick="toggleActive('leftNav_tableView')">Table</a></li>
-                    <li><a href="#Hor/VerScroll" onclick="toggleActive('leftNav_Hor/VerScroll')">Hor/Ver Scroll Table</a></li>
-                    <li><a href="#commonPopups" onclick="toggleActive('leftNav_commonPopups')">Popup</a></li>
-                    <li><a href="#alertPopups" onclick="toggleActive('leftNav_alertPopups')">Alert Popup</a></li>
+                    <li><a href="#diabledDiv" onclick="toggleActive('leftNav_diabledDiv','Disable Div')">Disable Div</a></li>
+                    <li><a href="#selectOption" onclick="toggleActive('leftNav_selectOption','Select Option')">Select Option</a></li>
+                    <li><a href="#comboBox" onclick="toggleActive('leftNav_comboBox','Combo Box')">Combo Box</a></li>
+                    <li><a href="#inputType" onclick="toggleActive('leftNav_inputType','Input Type')">Input Type</a></li>
+                    <li><a href="#searchBar" onclick="toggleActive('leftNav_searchBar','Search Bar')">Search Bar</a></li>
+                    <li><a href="#searchbarInputAdd" onclick="toggleActive('leftNav_searchbarInputAdd','Search Bar + Add')">Search Bar + Add</a></li>
+                    <li><a href="#textArea" onclick="toggleActive('leftNav_textArea','Textarea')">Textarea</a></li>
+                    <li><a href="#textEditor" onclick="toggleActive('leftNav_textEditor','Text Editor')">Text Editor</a></li>
+                    <li><a href="#radioButton" onclick="toggleActive('leftNav_radioButton','Radio')">Radio</a></li>
+                    <li><a href="#checkbox" onclick="toggleActive('leftNav_checkbox','Checkbox')">Checkbox</a></li>
+                    <li><a href="#agePicker" onclick="toggleActive('leftNav_agePicker','Age Picker')">Age Picker</a></li>
+                    <li><a href="#datePicker" onclick="toggleActive('leftNav_datePicker','Date Picker')">Date Picker</a></li>
+                    <li><a href="#timePicker" onclick="toggleActive('leftNav_timePicker','Time Picker')">Time Picker</a></li>
+                    <li><a href="#colors" onclick="toggleActive('leftNav_colors','Colors')">Colors</a></li>
+                    <li><a href="#headings" onclick="toggleActive('leftNav_headings','Headings')">Headings</a></li>
+                    <li><a href="#buttons" onclick="toggleActive('leftNav_buttons','Buttons')">Buttons</a></li>
+                    <li><a href="#iconBtns" onclick="toggleActive('leftNav_iconBtns','Icon Buttons')">Icon Buttons</a></li>
+                    <li><a href="#icons" onclick="toggleActive('leftNav_icons','Icons')">Icons</a></li>
+                    <li><a href="#iconStatus" onclick="toggleActive('leftNav_iconStatus','Status Icons')">Status Icons</a></li>
+                    <li><a href="#iconsGroup" onclick="toggleActive('leftNav_iconsGroup','Icons Group')">Icons Group</a></li>
+                    <li><a href="#countHeighlight" onclick="toggleActive('leftNav_iconStatus','Show Count')">Show Count</a></li>
+                    <li><a href="#dialogBox" onclick="toggleActive('leftNav_dialogBox','Dialog Box')">Dialog Box</a></li>
+                    <li><a href="#tooltip" onclick="toggleActive('leftNav_tooltip','Tooltip')">Tooltip</a></li>
+                    <li><a href="#radioTabs" onclick="toggleActive('leftNav_radioTabs','Radio Tabs')">Radio Tabs</a></li>
+                    <li><a href="#toggleSwitch" onclick="toggleActive('leftNav_toggleSwitch','Toggle Switch')">Toggle Switch</a></li>
+                    <li><a href="#starRatings" onclick="toggleActive('leftNav_starRatings','Ratings')">Ratings</a></li>
+                    <li><a href="#switchableTabs" onclick="toggleActive('leftNav_switchableTabs','Tabs')">Tabs</a></li>
+                    <li><a href="#switchableTabs_v2" onclick="toggleActive('leftNav_switchableTabs_v2','Tabs V2')">Tabs V2</a></li>
+                    <li><a href="#switchableVerticalTabs" onclick="toggleActive('leftNav_switchableVerticalTabs','Vertical Tabs')">Vertical Tabs</a></li>
+                    <li><a href="#accordionPanel" onclick="toggleActive('leftNav_accordionPanel','Accordion Panel')">Accordion Panel</a></li>
+                    <li><a href="#collapsePanel" onclick="toggleActive('leftNav_collapsePanel','Collapse Panel')">Collapse Panel</a></li>
+                    <li><a href="#listsView" onclick="toggleActive('leftNav_listsView','List View')">List View</a></li>
+                    <li><a href="#gridView" onclick="toggleActive('leftNav_gridView','List Grid View')">List Grid View</a></li>
+                    <li><a href="#tableView" onclick="toggleActive('leftNav_tableView','Table')">Table</a></li>
+                    <li><a href="#Hor/VerScroll" onclick="toggleActive('leftNav_Hor/VerScroll','Hor/Ver Scroll Table')">Hor/Ver Scroll Table</a></li>
+                    <li><a href="#commonPopups" onclick="toggleActive('leftNav_commonPopups','Popup')">Popup</a></li>
+                    <li><a href="#alertPopups" onclick="toggleActive('leftNav_alertPopups','Alert Popup')">Alert Popup</a></li>
 
-                    <li><a href="#rightLeft_Drawer" style="display:none;" onclick="toggleActive('leftNav_rightLeft_Drawer')">Drawer</a></li>
+                    <li><a href="#rightLeft_Drawer" style="display:none;" onclick="toggleActive('leftNav_rightLeft_Drawer','Drawer')">Drawer</a></li>
 
-                    <li><a href="#toggle_Filter" onclick="toggleActive('leftNav_toggle_Filter')">Filter</a></li>
-                    <li><a href="#progressBar" onclick="toggleActive('leftNav_progressBar')">Progress Bar</a></li>
-                    <li><a href="#textEllipsis_div" onclick="toggleActive('leftNav_textEllipsis_div')">Text Ellipsis</a></li>
-                    <li><a href="#alertMessage" onclick="toggleActive('leftNav_alertMessage')">Alert Message</a></li>
-                    <li><a href="#topAlertMessage" onclick="toggleActive('leftNav_topAlertMessage')">Top Alert</a></li>
-                    <li><a href="#breadcrumb" onclick="toggleActive('leftNav_breadcrumb')">Breadcrumb</a></li>
-                    <li><a href="#pagination" onclick="toggleActive('leftNav_pagination')">Pagination</a></li>
-                    <li><a href="#companyHeader" style="display:none;" onclick="toggleActive('leftNav_companyHeader')">Company Header</a></li>
-                    <li><a href="#blankpageContent" onclick="toggleActive('leftNav_blankpageContent')">Blank Page Content</a></li>
-                    <li><a href="#slotViewPattern" onclick="toggleActive('leftNav_slotViewPattern')">Slot View</a></li>
-                    <li><a href="#headingBand" onclick="toggleActive('leftNav_headingBand')">Heading Band</a></li>
-                    <li><a href="#thumbnailView" onclick="toggleActive('leftNav_thumbnailView')">Thumbnail View</a></li>
-                    <li><a href="#copyClipboard" onclick="toggleActive('leftNav_thumbnailView')">Copy to Clipboard</a></li>
-                    <li><a href="#imgAspectRatio" onclick="toggleActive('leftNav_imgAspectRatio')">Image Aspect Ratio</a></li>
-                    <li><a href="#zoomIO_img" onclick="toggleActive('leftNav_zoomIO_img')">Zoom In/Out Image Slot</a></li>
+                    <li><a href="#toggle_Filter" onclick="toggleActive('leftNav_toggle_Filter','Filter')">Filter</a></li>
+                    <li><a href="#progressBar" onclick="toggleActive('leftNav_progressBar','Progress Bar')">Progress Bar</a></li>
+                    <li><a href="#textEllipsis_div" onclick="toggleActive('leftNav_textEllipsis_div','Text Ellipsis')">Text Ellipsis</a></li>
+                    <li><a href="#alertMessage" onclick="toggleActive('leftNav_alertMessage','Alert Message')">Alert Message</a></li>
+                    <li><a href="#topAlertMessage" onclick="toggleActive('leftNav_topAlertMessage','Top Alert')">Top Alert</a></li>
+                    <li><a href="#breadcrumb" onclick="toggleActive('leftNav_breadcrumb','Breadcrumb')">Breadcrumb</a></li>
+                    <li><a href="#pagination" onclick="toggleActive('leftNav_pagination','Pagination')">Pagination</a></li>
+                    <li><a href="#companyHeader" style="display:none;" onclick="toggleActive('leftNav_companyHeader','Company Header')">Company Header</a></li>
+                    <li><a href="#blankpageContent" onclick="toggleActive('leftNav_blankpageContent','Blank Page Content')">Blank Page Content</a></li>
+                    <li><a href="#slotViewPattern" onclick="toggleActive('leftNav_slotViewPattern','Slot View')">Slot View</a></li>
+                    <li><a href="#headingBand" onclick="toggleActive('leftNav_headingBand','Heading Band')">Heading Band</a></li>
+                    <li><a href="#thumbnailView" onclick="toggleActive('leftNav_thumbnailView','Thumbnail View')">Thumbnail View</a></li>
+                    <li><a href="#copyClipboard" onclick="toggleActive('leftNav_thumbnailView','Copy to Clipboard')">Copy to Clipboard</a></li>
+                    <li><a href="#imgAspectRatio" onclick="toggleActive('leftNav_imgAspectRatio','Image Aspect Ratio')">Image Aspect Ratio</a></li>
+                    <li><a href="#zoomIO_img" onclick="toggleActive('leftNav_zoomIO_img','Zoom In/Out Image Slot')">Zoom In/Out Image Slot</a></li>
 
-                    <li><a href="#patientHeader_band1" style="display:none;" onclick="toggleActive('leftNav_patientHeader_band1')">Pat_HeaderBand - 1</a></li>
-                    <li><a href="#patientHeader_Band2" style="display:none;" onclick="toggleActive('leftNav_patientHeader_Band2')">Pat_HeaderBand - 2</a></li>
+                    <li><a href="#patientHeader_band1" style="display:none;" onclick="toggleActive('leftNav_patientHeader_band1','Pat_HeaderBand - 1')">Pat_HeaderBand - 1</a></li>
+                    <li><a href="#patientHeader_Band2" style="display:none;" onclick="toggleActive('leftNav_patientHeader_Band2','Pat_HeaderBand - 2')">Pat_HeaderBand - 2</a></li>
                 </ul>
             </div>
 
@@ -101,8 +96,9 @@
     </div>
 
     <div class="med_Width100pr" id="showForWeb" style="height:calc(100% - 60px);display:block;">
-        <div class="FixedInner" id="leftNav">
-            <a href="#selectOption"><div id="leftNav_selectOption" class="wrapperToggle_btn wrapperToggle_btnActive">Select Option</div></a>
+        <div class="FixedInner" id="leftNav" style="">
+            <a href="#diabledDiv"><div id="leftNav_diabledDiv" class="wrapperToggle_btn wrapperToggle_btnActive">Disable Div</div></a>
+            <a href="#selectOption"><div id="leftNav_selectOption" class="wrapperToggle_btn">Select Option</div></a>
             <a href="#comboBox"><div id="leftNav_comboBox" class="wrapperToggle_btn">Combo Box</div></a>
             <a href="#inputType"><div id="leftNav_inputType" class="wrapperToggle_btn">Input Type</div></a>
             <a href="#searchBar"><div id="leftNav_searchBar" class="wrapperToggle_btn">Search Bar</div></a>
@@ -168,6 +164,79 @@
      
         <div class="mainContainer" id="webDataDIV" style="display:block;">
             <div class="med_Width100pr" id="webMiddleDataDIV">
+                <!-- Disable Div -->
+                <div class="container" id="diabledDiv">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('diabledDiv_code') "></div>
+                            </div>
+                        </div>
+                        <pre id="diabledDiv_code">
+                            <code>
+                                -------------Disable Div ------------
+                               &lt;div class="med_Width100pr med_disabled"&gt;
+                                    &lt;div class="med_Width100pr med_border med_padding10 med_radius5"&gt;
+                                        &lt;div class="med_fontBold"&gt;Company&lt;/div&gt;
+                                        &lt;div class="med_Width100pr med_marginT10"&gt;
+                                            The data saved during company creation wizard will be active after company is activated
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                -------------Disable Button ------------ 
+                                &lt;div class="med_Width100pr med_marginT20 med_disabled"&gt;
+                                    &lt;div class="med_primaryBtn_md"&gt;Primary&lt;/div&gt;
+                                &lt;/div&gt;
+                                
+                                -------------Disable Input ------------
+                                &lt;div class="med_Width100pr med_marginT20 med_disabled"&gt;
+                                    &lt;div class="med_marginT8" style="width:90px;"&gt;Enter Country&lt;/div&gt;
+                                    &lt;div class="med_pull_left" style="width:calc(100% - 90px);"&gt;
+                                        &lt;div class="med_Width100pr"&gt;
+                                            &lt;input type="text" class="med_input_md" placeholder=""&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                               
+                            </code>
+                        </pre >
+                    </div>
+
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Disabled Div</h3>
+                            <div class="med_Width100pr">
+                                <div class="med_Width100pr med_disabled">
+                                    <div class="med_Width100pr med_border med_padding10 med_radius5">
+                                        <div class="med_fontBold">Company</div>
+                                        <div class="med_Width100pr med_marginT10">
+                                            The data saved during company creation wizard will be active after company is activated
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="med_Width100pr med_marginT20 med_disabled">
+                                    <div class="med_primaryBtn_md">Primary</div>
+                                </div>
+                                
+                                <div class="med_Width100pr med_marginT20 med_disabled">
+                                    <div class="med_marginT8" style="width:90px;">Enter Country</div>
+                                    <div class="med_pull_left" style="width:calc(100% - 90px);">
+                                        <div class="med_Width100pr">
+                                            <input type="text" class="med_input_md" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diable Div end-->
                 <!-- Select Option -->
                 <div class="container" id="selectOption">
                     <div class="html">

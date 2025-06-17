@@ -339,6 +339,16 @@ input::placeholder {font-size:12px;}
 .med_colorBlack{color:#000 !important;}
 /* color end */
 
+/* bg color */
+.med_backgroundLightGrey{
+    background: #f5f5f5;
+}
+
+.med_backgroundDarkGrey{
+    background: #e0dfdf;
+}
+/* bg color end*/
+
 /* color code*/
 .med_colorSlot {
     color: #fff;
@@ -379,6 +389,19 @@ input::placeholder {font-size:12px;}
     font-size:2.5em;
 }
 /* headings end*/
+/* color border On hover start*/
+.med_HeaderBand_btn {
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #000;
+}
+
+.med_HeaderBand_btn:hover{
+    background:white;
+    border: 1px solid #4778C6;
+    border-radius: 3px;
+}
+/* color border On hover end*/
 
 /* border */
 .med_borderTop{
@@ -459,7 +482,7 @@ input::placeholder {font-size:12px;}
     content: "\f107";
     display: block;
     font-family: FontAwesome;
-    font-size: 14px;
+    font-size: 18px;
     height: 26px;
     line-height: 26px;
     width: 20px;
@@ -540,7 +563,7 @@ input::placeholder {font-size:12px;}
     content: "\f107";
     display: block;
     font-family: FontAwesome;
-    font-size: 14px;
+    font-size: 18px;
     height: 26px;
     line-height: 26px;
     width: 20px;
@@ -673,9 +696,11 @@ input::placeholder {font-size:12px;}
     height: 36px !important;
     outline: none;
     border: 1px solid #ccc;
-    text-indent: 5px;
+    text-indent: 8px;
     padding-top: 3px;
-    width:100% !important;
+    width: 100% !important;
+    padding: 0px;
+    padding-top: 3px;
 }
 
 .med_input_lg:hover{
@@ -819,6 +844,8 @@ input[type="text"]:disabled {
     resize: none;
     outline: none;
     font-size: 12px;
+    font-family: arial,sans-serif,roboto,helvetica !important;
+    color: unset;
 }
 
 .med_txtarea:hover{
@@ -942,10 +969,11 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 9px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
     margin-right: 8px;
+    padding: 1px;
     position: relative;
     text-align: center;
     top: -3px;
@@ -961,59 +989,16 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 9px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
     margin-right: 8px;
+    padding: 1px;
     position: relative;
     text-align: center;
     top: -3px;
 }
 /* Radio end*/
-
-/* Radio like check box*/
-.med_fancy-radioCheckbox input[type="radio"] {
-    display: none;
-}
-
-.med_fancy-radioCheckbox label:before {
-    border: 1px solid #bbb;
-    background:#fff;
-    color: transparent;
-    border-radius: 3px;
-    content: '\f00c';
-    font-family: "FontAwesome";
-    cursor: pointer;
-    float: left;
-    font-size: 12px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
-    margin-right: 8px;
-    position: relative;
-    text-align: center;
-    top: -2px;
-}
-
-.med_fancy-radioCheckbox input[type="radio"]:checked ~ label:before {
-    border: 1px solid #1e88e5;
-    background:#1e88e5;
-    color: #fff;
-    border-radius: 3px;
-    content: '\f00c';
-    font-family: "FontAwesome";
-    cursor: pointer;
-    float: left;
-    font-size: 12px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
-    margin-right: 8px;
-    position: relative;
-    text-align: center;
-    top: -2px;
-}
-/* Radio like check box end*/
 
 /* checkbox */
 .med_fancy-checkbox input[type="checkbox"] {
@@ -1030,10 +1015,11 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
     margin-right: 8px;
+    padding: 1px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -1049,10 +1035,11 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
     margin-right: 8px;
+    padding: 1px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -1249,9 +1236,9 @@ input[type="text"]:disabled {
 .med_iconDatePicker {
     /* background: #e1eaee none repeat scroll 0 0; */
     border-radius: 3px;
-    color: black;
+    /*color: black;*/
     cursor: pointer;
-    font-size: 14px !important;
+    font-size: 18px !important;
     height: 28px;
     line-height: 28px !important;
     text-align: center;
@@ -1300,6 +1287,7 @@ input[type="text"]:disabled {
 .med_timeColon {
     margin: 0px 1px;
     line-height: 26px;
+    background:#fff;
 }
 
 .med_selectOption_amPm{
@@ -1648,6 +1636,7 @@ input[type="text"]:disabled {
     width: 12px;
     border-radius: 48px;
     line-height: 12px;
+    text-align: center;
 }
 
 .med_icons:hover .med_iconsSmallOverlap {
@@ -1783,6 +1772,7 @@ input[type="text"]:disabled {
     width: auto;
     border-radius: 18px;
     border:1px solid #eee;
+    overflow: unset;
 }
 /* icons group end*/
 
@@ -1830,7 +1820,7 @@ input[type="text"]:disabled {
     border-radius: 4px;
     z-index: 99;
     padding: 10px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.85);
     color: #fff;
     margin-top: 8px;
     line-height:normal;
@@ -1843,7 +1833,7 @@ input[type="text"]:disabled {
     font-size: 20px;
     left: 10px;
     top: -13px;
-    color: #555;
+    color: #333;
 }
 /* Tooltip end*/
 
@@ -1896,7 +1886,7 @@ input[type="text"]:disabled {
 
 /* -- Radio tabs -- */
 .med_radioTabs {
-    border-radius: 20px;
+    border-radius: 5px;
     float: left;
     font-size: 11px !important;
     background: #e9eef6 none repeat scroll 0 0;
@@ -1909,7 +1899,7 @@ input[type="text"]:disabled {
     line-height: 30px !important;
     padding: 0 8px !important;
     text-align: center !important;
-    border-radius: 16px !important;
+    border-radius: 5px !important;
 }
 
 .med_radioTabs label span:hover{
@@ -2352,10 +2342,11 @@ input:checked + .med_toggleSlider:before {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
     margin-right: 8px;
+    padding: 1px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -2369,10 +2360,11 @@ input:checked + .med_toggleSlider:before {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
     margin-right: 8px;
+    padding: 1px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -3394,7 +3386,7 @@ input:checked + .med_toggleSlider:before {
         height: 100%;
         width: 100%;
         position: relative;
-        border: 1px solid #dedede;
+        border: 1px solid #ccc;
         border-radius: 15px;
         background: #fff;
         display: flex;
@@ -3439,6 +3431,7 @@ input:checked + .med_toggleSlider:before {
     }
 
     .med_dropdownCompanyList {
+        border: 0px;
         border-top: 1px solid #dedede;
         box-sizing: border-box;
         font-weight: normal;
@@ -3448,6 +3441,7 @@ input:checked + .med_toggleSlider:before {
         padding-right: 25px;
         text-align: center;
         cursor:pointer;
+        background:#fff;
     }
 
     .med_dropdownCompanyList:hover{
@@ -3711,16 +3705,6 @@ input:checked + .med_toggleSlider:before {
 /* Img aspect ratio end*/
 
 /* Patient Header Band 1 */
-.med_HeaderBand_btn {
-    border: 1px solid transparent;
-    color: #000;
-}
-
-.med_HeaderBand_btn:hover{
-    background:white;
-    border: 1px solid #4778C6;
-    border-radius: 3px;
-}
 
 .med_commonPopup_draggable {
     border-radius: 5px;
@@ -4103,21 +4087,6 @@ input:checked + .med_toggleSlider:before {
     margin-left: 10px;
     background-size: 90% 20px;
 }
-.med_hamburger {
-    background: rgba(0,0,0,0.1);
-    width: 24px;
-    height: 24px;
-    line-height: 24px !important;
-    border-radius: 24px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 1.2em !important;
-}
-
-.med_hamburger:hover{
-    background: rgba(0,0,0,0.3);
-}
 
 /* Company dropdown*/
 .med_companyHeaderDropdown_white{
@@ -4125,10 +4094,6 @@ input:checked + .med_toggleSlider:before {
     height: 28px;
     margin-left: 10px;
     color: #000;
-}
-
-dropdown input {
-    display: none;
 }
 
 .med_companyHeaderDropdownLabel_white {
@@ -4145,30 +4110,6 @@ dropdown input {
     cursor:pointer;
 }
 
-.med_selectedCompanyName {
-    float: left;
-    width: calc(100% - 0px);
-    box-sizing: border-box;
-    overflow: hidden;
-    padding: 0 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-align: center !important;
-    padding-right: 25px;
-}
-
-.med_companySelectDDArrow {
-    font-size: 18px !important;
-    height: 100%;
-    line-height: 26px !important;
-    position: absolute;
-    right: 0;
-    width: 25px;
-    z-index: 9999;
-    text-align: center;
-    top: 0px;
-}
-
 .med_companyHeaderDropdown_white ul {
     border: 1px solid #dedede;
     box-sizing: border-box;
@@ -4179,22 +4120,6 @@ dropdown input {
     background: #fff;
     padding: 0px;
     margin: 0px;
-}
-
-.med_dropdownCompanyList {
-    border-top: 1px solid #dedede;
-    box-sizing: border-box;
-    font-weight: normal;
-    padding: 7px 10px;
-    width: 100%;
-    float: left;
-    padding-right: 25px;
-    text-align: center;
-    cursor:pointer;
-}
-
-.med_dropdownCompanyList:hover{
-    background:#f5f5f5;
 }
 
 .med_companyHeaderDropdown_white input:checked + label{

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Function to toggle active class on clicked element
-function toggleActive(elementId) {
+function toggleActive(elementId, inputText) {
     // Remove 'wrapperToggle_btnActive' from all elements
     const buttons = document.querySelectorAll('.wrapperToggle_btn');
     
@@ -44,6 +44,10 @@ function toggleActive(elementId) {
       element.classList.add('wrapperToggle_btnActive');
     }
 
+    if(inputText) {
+        document.getElementById('myInput').value = inputText;
+    }
+    
   }
   
 
