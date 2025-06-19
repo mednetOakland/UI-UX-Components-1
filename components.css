@@ -969,11 +969,10 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 9px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
-    margin-right: 8px;
-    padding: 1px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
     top: -3px;
@@ -989,16 +988,59 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 9px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
-    margin-right: 8px;
-    padding: 1px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
     top: -3px;
 }
 /* Radio end*/
+
+/* Radio like check box*/
+.med_fancy-radioCheckbox input[type="radio"] {
+    display: none;
+}
+
+.med_fancy-radioCheckbox label:before {
+    border: 1px solid #bbb;
+    background:#fff;
+    color: transparent;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+}
+
+.med_fancy-radioCheckbox input[type="radio"]:checked ~ label:before {
+    border: 1px solid #1e88e5;
+    background:#1e88e5;
+    color: #fff;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+}
+/* Radio like check box end*/
 
 /* checkbox */
 .med_fancy-checkbox input[type="checkbox"] {
@@ -1015,11 +1057,10 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
-    margin-right: 8px;
-    padding: 1px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -1035,11 +1076,10 @@ input[type="text"]:disabled {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
-    margin-right: 8px;
-    padding: 1px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -2342,11 +2382,10 @@ input:checked + .med_toggleSlider:before {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
-    margin-right: 8px;
-    padding: 1px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
     top: -2px;
@@ -2360,11 +2399,10 @@ input:checked + .med_toggleSlider:before {
     cursor: pointer;
     float: left;
     font-size: 12px;
-    height: 13px;
-    width: 13px;
-    line-height: 13px;
-    margin-right: 8px;
-    padding: 1px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    margin-right: 5px;
     position: relative;
     text-align: center;
     top: -2px;
