@@ -1041,30 +1041,71 @@ tinymce.init({
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
 });
 
-//Use for Drag the popup and Reset
 function dragElement(elmnt) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
     const header = elmnt.querySelector(".med_header_draggable");
+
     (header || elmnt).onmousedown = (e) => {
         e.preventDefault();
-        pos3 = e.clientX; pos4 = e.clientY;
-        document.onmouseup = () => document.onmousemove = null;
+
+        // Get current screen position
+        const rect = elmnt.getBoundingClientRect();
+
+        // Set pixel position from screen
+        elmnt.style.left = `${rect.left + window.scrollX}px`;
+        elmnt.style.top = `${rect.top + window.scrollY}px`;
+
+        // Remove transform and margin so it doesn't affect positioning
+        elmnt.style.transform = "none";
+        elmnt.style.margin = "0";
+        elmnt.style.position = "absolute";
+
+        // Set mouse starting positions
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+
+        document.onmouseup = () => {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        };
+
         document.onmousemove = (e) => {
-            pos1 = pos3 - e.clientX; pos2 = pos4 - e.clientY;
-            pos3 = e.clientX; pos4 = e.clientY;
-            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            e.preventDefault();
+
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+
+            let newTop = elmnt.offsetTop - pos2;
+            let newLeft = elmnt.offsetLeft - pos1;
+
+            // Clamp inside viewport
+            const maxLeft = window.innerWidth - elmnt.offsetWidth;
+            const maxTop = window.innerHeight - elmnt.offsetHeight;
+
+            newLeft = Math.min(Math.max(newLeft, 0), maxLeft);
+            newTop = Math.min(Math.max(newTop, 0), maxTop);
+
+            elmnt.style.left = newLeft + "px";
+            elmnt.style.top = newTop + "px";
         };
     };
 }
 
-function fixElementPosition(elmnt) {
-    let closestEle = elmnt.closest('.med_commonPopup_draggable');
-    if (closestEle) {
-        closestEle.style.position = 'absolute';
-        closestEle.style.top = '50%';
-        closestEle.style.left = '50%';
-        closestEle.style.transform = 'translate(-50%, -50%)';
+function fixElementPosition(triggerElmnt) {
+    const popup = triggerElmnt.closest('.med_commonPopup_draggable');
+    if (popup) {
+        popup.style.position = 'absolute';
+        popup.style.top = '50%';
+        popup.style.left = '50%';
+        popup.style.transform = 'translate(-50%, -50%)';
+
+        // Remove previous inline left/top set during drag
+        popup.style.removeProperty('left');
+        popup.style.removeProperty('top');
+        popup.style.removeProperty('margin');
     }
 }
 
@@ -1075,10 +1116,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
         elmnt.addEventListener('click', () => {
-              fixElementPosition(elmnt);
+            fixElementPosition(elmnt);
         });
     });
-
 });
 
 //toggleEye for Company header

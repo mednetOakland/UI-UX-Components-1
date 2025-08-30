@@ -369,8 +369,20 @@ input::placeholder {font-size:12px;}
     font-size:1.2em;
 }
 
+.med_heading1_3{
+    font-size:1.3em;
+}
+
+.med_heading1_4{
+    font-size:1.4em;
+}
+
 .med_heading1_5{
     font-size:1.5em;
+}
+
+.med_heading1_6{
+    font-size:1.6em;
 }
 
 .med_heading1_8{
@@ -492,6 +504,7 @@ input::placeholder {font-size:12px;}
     top: 1px !important;
     text-align: center;
     font-weight: normal;
+    z-index:1;
 }
 
 .med_selectOption_md:hover:before {
@@ -522,7 +535,7 @@ input::placeholder {font-size:12px;}
     content: "\f107";
     display: block;
     font-family: FontAwesome;
-    font-size: 14px;
+    font-size: 18px;
     height: 34px;
     line-height: 34px;
     width: 20px;
@@ -538,6 +551,16 @@ input::placeholder {font-size:12px;}
     background: #fff none repeat scroll 0 0;
 }
 /* Select Option lg end*/
+
+.med_selectOption_md select[disabled]{
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+}
+
+.med_selectOption_lg select[disabled]{
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+}
 
 /*Combo box md*/
 .med_Combo_md {
@@ -616,7 +639,7 @@ input::placeholder {font-size:12px;}
     content: "\f107";
     display: block;
     font-family: FontAwesome;
-    font-size: 14px;
+    font-size: 18px;
     height: 34px;
     line-height: 34px;
     width: 20px;
@@ -669,11 +692,11 @@ input::placeholder {font-size:12px;}
 }
 
 .med_input_md:hover{
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 
 .med_input_md:focus{
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 
 .med_md_currencyFlag {
@@ -704,11 +727,11 @@ input::placeholder {font-size:12px;}
 }
 
 .med_input_lg:hover{
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 
 .med_input_lg:focus{
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 
 .med_lg_currencyFlag {
@@ -730,6 +753,10 @@ input::placeholder {font-size:12px;}
 
 input[type="text"]:disabled {
   border:1px solid #ccc;
+}
+
+.med_timePicker input[type="text"]:disabled {
+  border: 1px solid transparent;
 }
 
 /* Input box end*/
@@ -820,9 +847,9 @@ input[type="text"]:disabled {
     top: 100%;
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: -1px 0 16px rgba(0, 0, 0, 0.4);
     z-index: 99;
-    min-height:100px;
+    min-height: 100px;
     margin-top: 1px;
     font-weight: normal;
 }
@@ -849,11 +876,11 @@ input[type="text"]:disabled {
 }
 
 .med_txtarea:hover{
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 
 .med_txtarea:focus{
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 /* textarea end*/
 
@@ -979,8 +1006,8 @@ input[type="text"]:disabled {
 }
 
 .med_fancy-radio input[type="radio"]:checked ~ label:before {
-    border: 2px solid #1e88e5;
-    background:#1e88e5;
+    border: 2px solid #1976D2;
+    background:#1976D2;
     color: #fff;
     border-radius: 50%;
     content: '\f111';
@@ -995,6 +1022,11 @@ input[type="text"]:disabled {
     position: relative;
     text-align: center;
     top: -3px;
+}
+
+.med_fancy-radio input[type="radio"]:disabled ~ label:before {
+    opacity:0.5;
+    cursor: auto;
 }
 /* Radio end*/
 
@@ -1023,8 +1055,8 @@ input[type="text"]:disabled {
 }
 
 .med_fancy-radioCheckbox input[type="radio"]:checked ~ label:before {
-    border: 1px solid #1e88e5;
-    background:#1e88e5;
+    border: 1px solid #1976D2;
+    background:#1976D2;
     color: #fff;
     border-radius: 3px;
     content: '\f00c';
@@ -1039,6 +1071,11 @@ input[type="text"]:disabled {
     position: relative;
     text-align: center;
     top: -2px;
+}
+
+.med_fancy-radioCheckbox input[type="radio"]:disabled ~ label:before {
+    opacity:0.5;
+    cursor: auto;
 }
 /* Radio like check box end*/
 
@@ -1067,8 +1104,8 @@ input[type="text"]:disabled {
 }
 
 .med_fancy-checkbox input[type="checkbox"]:checked ~ label:before {
-    border: 1px solid #1e88e5;
-    background:#1e88e5;
+    border: 1px solid #1976D2;
+    background:#1976D2;
     color: #fff;
     border-radius: 3px;
     content: '\f00c';
@@ -1087,6 +1124,7 @@ input[type="text"]:disabled {
 
 .med_fancy-checkbox input[type="checkbox"]:disabled ~ label:before {
     opacity:0.5;
+    cursor: auto;
 }
 /* checkbox end*/
 
@@ -1298,6 +1336,7 @@ input[type="text"]:disabled {
     border: 1px solid #ccc;
     display: flex;
     height:28px;
+    background: #fff;
 }
 
 .med_timeInput {
@@ -1314,6 +1353,7 @@ input[type="text"]:disabled {
     border: 1px solid #ccc;
     display: flex;
     height:28px;
+    background: #fff;
 }
 
 .med_timeInput_TM {
@@ -1337,7 +1377,7 @@ input[type="text"]:disabled {
 
 /* buttons */
 .med_primaryBtn_md{
-    background: #1E88E5 none repeat scroll 0 0;
+    background: #1976D2 none repeat scroll 0 0;
     border: 1px solid transparent;
     border-radius: 3px;
     color: #fff;
@@ -1350,12 +1390,12 @@ input[type="text"]:disabled {
     text-align: center;
 }
 .med_primaryBtn_md:hover{
-    background: #0e78d5 none repeat scroll 0 0;
+    background: #1565C0 none repeat scroll 0 0;
 }
 
 .med_secondaryBtn_md{
     background: #e1eaee none repeat scroll 0 0;
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
     border-radius: 3px;
     color: #333;
     cursor: pointer;
@@ -1494,7 +1534,7 @@ input[type="text"]:disabled {
 
 /* small button */
 .med_primaryBtn_sm{
-    background: #1E88E5 none repeat scroll 0 0;
+    background: #1976D2 none repeat scroll 0 0;
     border: 1px solid transparent;
     border-radius: 3px;
     color: #fff;
@@ -1506,7 +1546,7 @@ input[type="text"]:disabled {
     text-align: center;
 }
 .med_primaryBtn_sm:hover{
-    background: #0e78d5 none repeat scroll 0 0;
+    background: #1565C0 none repeat scroll 0 0;
 }
 
 .med_secondaryBtn_sm{
@@ -1660,6 +1700,11 @@ input[type="text"]:disabled {
     color:#555;
 }
 
+.med_active{
+    background: #d8d8d8;
+    color:#555;
+}
+
 .med_IconMargin{
     margin: -2px 0px;
 }
@@ -1673,7 +1718,7 @@ input[type="text"]:disabled {
     top: 12px;
     background: #fff;
     height: 12px;
-    width: 12px;
+    min-width: 12px;
     border-radius: 48px;
     line-height: 12px;
     text-align: center;
@@ -1813,6 +1858,7 @@ input[type="text"]:disabled {
     border-radius: 18px;
     border:1px solid #eee;
     overflow: unset;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 4px 8px 0px;
 }
 /* icons group end*/
 
@@ -1827,9 +1873,9 @@ input[type="text"]:disabled {
     top: 100%;
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-    z-index:999;
-    padding:5px 0px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.300);
+    z-index: 999;
+    padding: 5px 0px;
     font-weight: normal;
 }
 
@@ -1951,7 +1997,7 @@ input[type="text"]:disabled {
 }
 
 .med_radioTabs input:checked + span {
-    background: #1E88E5 none repeat scroll 0 0 !important;
+    background: #1976D2 none repeat scroll 0 0 !important;
     color: #fff !important;
 }
 
@@ -2001,7 +2047,7 @@ input[type="text"]:disabled {
 }
 
 input:checked + .med_slider {
-    background-color: #1e88e5;
+    background-color: #1976D2;
 }
 
 input:checked + .med_slider:before {
@@ -2071,7 +2117,7 @@ input:checked + .med_slider:before {
 }
 
 input:checked + .med_toggleSlider {
-  background-color: #1e88e5;
+  background-color: #1976D2;
 }
 
 input:checked + .med_toggleSlider .med_toggleOff {
@@ -2124,7 +2170,7 @@ input:checked + .med_toggleSlider:before {
     border-radius: 20px;
     float: left;
     font-size: 14px;
-    background: #e9eef6 none repeat scroll 0 0;
+    background: #d4d9e1 none repeat scroll 0 0;
     height: 28px;
 }
 
@@ -2149,7 +2195,7 @@ input:checked + .med_toggleSlider:before {
     padding: 0 12px;
     text-align: center;
     border-radius: 16px;
-    background: #1e88e5;
+    background: #1976D2;
     color: #fff;
     cursor: pointer;
 }
@@ -2170,8 +2216,8 @@ input:checked + .med_toggleSlider:before {
     text-align: center;
     height:100%;
     line-height:32px;
-    color: #1e88e5;
-    border-bottom: 3px solid #1e88e5;
+    color: #1976D2;
+    border-bottom: 3px solid #1976D2;
 }
 
 .med_commonTab {
@@ -2186,7 +2232,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_commonTab:hover {
-    color: #1e88e5;
+    color: #1976D2;
 }
 
 .med_commonTab_dottedPipe {
@@ -2199,7 +2245,7 @@ input:checked + .med_toggleSlider:before {
 
 /* switchable tabs v2*/
 .med_Tabs_v2{
-    border-bottom:1px solid #1e88e5;
+    border-bottom:1px solid #1976D2;
     font-weight:bold;
     width:100%;
     height:32px;
@@ -2214,8 +2260,8 @@ input:checked + .med_toggleSlider:before {
     height: 100%;
     line-height: 32px;
     color: #fff;
-    border: 1px solid #1e88e5;
-    background: #1e88e5;
+    border: 1px solid #1976D2;
+    background: #1976D2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-right: 5px;
@@ -2235,7 +2281,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_commonTab_v2:hover {
-    color: #1e88e5;
+    color: #1976D2;
 }
 /* switchable tabs end v2*/
 
@@ -2254,7 +2300,7 @@ input:checked + .med_toggleSlider:before {
     cursor: pointer;
     padding: 8px 10px;
     width: 100%;
-    background: #1e88e5;
+    background: #1976D2;
     color: #fff;
     border-left: 3px solid #033d70;
 }
@@ -2357,7 +2403,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_listStatus_blue{
-    color:#1E88E5;
+    color:#1976D2;
 }
 
 .med_listStatus_purple{
@@ -2448,6 +2494,11 @@ input:checked + .med_toggleSlider:before {
     background:#77777718;
 }
 
+.med_squareFilter-brown label:before{
+    border: 1px solid #6c2504cf;
+    background: #6c250428;
+}
+
 /* white filter*/
 .med_squareFilter-white label:before{
     border: 1px solid #bbb;
@@ -2462,40 +2513,41 @@ input:checked + .med_toggleSlider:before {
     border-radius:10px;
 }
 
-.med_TableStatus_green{
-    background:#4aa57028;
-    color:#4aa570;
-
+.med_TableStatus_green {
+    background: #4aa57035;
+    color: #2e7f4f;
 }
-.med_TableStatus_red{
-    background:#E5737328;
-    color:#E57373;
-
+.med_TableStatus_red {
+    background: #E5737335;
+    color: #ef4e4e;
 }
-.med_TableStatus_orange{
-    background:#f7a42a28;
-    color:#f7a42a;
-
+.med_TableStatus_orange {
+    background: #f7a42a35;
+    color: #c77702;
 }
-.med_TableStatus_blue{
-    background:#1E88E528;
-    color:#1E88E5;
+.med_TableStatus_blue {
+    background: #1E88E535;
+    color: #096fc9;
 }
 
-.med_TableStatus_purple{
-    background:#7E57C228;
-    color:#7E57C2;
+.med_TableStatus_brown{
+    color: #6c2504cf;
+    background: #6c250428;
+}
+.med_TableStatus_purple {
+    background: #7E57C235;
+    color: #632ebe;
 }
 
-.med_TableStatus_gray{
-    background:#77777728;
-    color:#777777;
+.med_TableStatus_gray {
+    background: #77777735;
+    color: #555;
 }
 /* table list view status end*/
 
 /* lists view */
 .med_listHeader {
-    background: #f4f2f2;
+    background: #e7eaee;
     border-bottom: 1px solid #dedede;
     border-top: 1px solid #dedede;
     padding: 5px 0;
@@ -2846,8 +2898,8 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_commonPopupHeader {
-    background: #eef4f6 none repeat scroll 0 0;
-    border-bottom: 1px solid #e8e8e8;
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     line-height: 40px;
@@ -3240,9 +3292,9 @@ input:checked + .med_toggleSlider:before {
     width: 320px;
     height: 100%;
     background-color: white;
-    border:1px solid #dedede;
-    border-radius:5px;
-    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    box-shadow: -1px 0 16px rgba(0, 0, 0, 0.4);
     transition: right 0.3s ease;
     z-index: 99;
 }
@@ -3309,7 +3361,7 @@ input:checked + .med_toggleSlider:before {
 
 .med_breadcrumb a:hover {
     text-decoration:underline;
-    color: #1e88e5;
+    color: #1976D2;
 }
 
 .med_breadcrumbHome {
@@ -3367,7 +3419,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_paginationInput:focus {
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
 }
 
 .med_RPP{
@@ -3377,7 +3429,7 @@ input:checked + .med_toggleSlider:before {
 
 /* Company header*/
     .med_CompanyHeader {
-        background: #1E88E5;
+        background: #1976D2;
         height: 32px;
         color: #fff;
     }
@@ -3425,7 +3477,7 @@ input:checked + .med_toggleSlider:before {
         width: 100%;
         position: relative;
         border: 1px solid #ccc;
-        border-radius: 15px;
+        border-radius: 0px;
         background: #fff;
         display: flex;
         align-items: center;
@@ -3604,8 +3656,8 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_slotView_blue{
-    background: #1E88E518;
-    border: 1px solid #1E88E5;
+    background: #1976D218;
+    border: 1px solid #1976D2;
 }
 
 .med_slotViewLabel_color {
@@ -3621,7 +3673,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_headingBandHeader {
-    background: #1E88E518;
+    background: #1976D218;
     width: 100%;
     padding: 5px 10px;
     border-bottom: 1px solid #dedede;
@@ -3637,7 +3689,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_headingBandLightBlue {
-    background: #1E88E518;
+    background: #1976D218;
 }
 /* Heading band end*/
 
@@ -3668,10 +3720,10 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_imgThumb:hover{
-    /*border: 1px solid #1e88e5;
+    /*border: 1px solid #1976D2;
     background:#E1F5FE;*/
-    background: #1E88E518;
-    border: 1px solid #1E88E5;
+    background: #1976D218;
+    border: 1px solid #1976D2;
 }
 
 .med_imgThumb_img {
@@ -3944,7 +3996,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 #med_leftNavigation li.menu-active > a {
-    background-color: #1E88E5 !important;
+    background-color: #1976D2 !important;
     color: white;
 }
 
@@ -4099,7 +4151,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 #med_leftNavigation_white li.menu-active > a {
-    background-color: #1E88E5 !important;
+    background-color: #1976D2 !important;
     color: white;
 }
 
@@ -4140,8 +4192,8 @@ input:checked + .med_toggleSlider:before {
     width: 100%;
     position: relative;
     border: 1px solid #dedede;
-    border-radius: 15px;
-    background: #1E88E5;
+    border-radius: 0px;
+    background: #1976D2;
     color:#fff;
     display: flex;
     align-items: center;
@@ -4253,16 +4305,57 @@ input:checked + .med_toggleSlider:before {
     border: 1px solid transparent;
 }
 
+.med_heighlightedBorderGrey {
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
 .med_heighlightedBorder:hover {
-    border: 1px solid #1E88E5;
+    border: 1px solid #1976D2;
     border-radius: 3px;
 }
 
 .med_link{
-    color:#1E88E5;
+    color:#1976D2;
     cursor:pointer;
 }
 
 .med_link:hover{
     text-decoration:underline;
+}
+
+/* on mouse hover*/
+.med_linkBlue:hover .med_linkHover{
+    color:blue;
+    text-decoration:underline;
+}
+/* on mouse hover end*/
+
+.med_ST_count {
+    border-radius: 20px;
+    height: 17px;
+    font-weight: bold;
+    color: #0c0b0b;
+    min-width: 18px;
+    padding: 0px 5px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.med_successGrayBtn_sm {
+    background: #dedede none repeat scroll 0 0;
+    border: 1px solid #99999963;
+    border-radius: 3px;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    cursor: pointer;
+    float: left;
+    color : unset;
+}
+.med_successGrayBtn_sm:hover{
+    background: #d5d3d3;
 }
