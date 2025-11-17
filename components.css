@@ -581,7 +581,6 @@ input::placeholder {font-size:12px;}
 
 .med_Combo_md:before {
     background: #fff none repeat scroll 0 0;
-    / border-right: 0px solid #ccc; /
     color: #34485d;
     content: "\f107";
     display: block;
