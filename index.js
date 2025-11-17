@@ -1149,6 +1149,34 @@ function toggleReviewData_zoomIO_img() {
     }
 }
 
+//toggleEye for dashboard
+function toggleReviewData_dashboard() {
+    var x = document.getElementById("dashboardDiv");
+    if (x.style.display === "none") {
+        document.getElementById('dashboardDiv').style.display = "block";
+        document.getElementById('toggleEyeIcon_dashboard').style.display = "block";
+        document.getElementById('toggleEyeIcon_slash_dashboard').style.display = "none";
+    } else {
+        document.getElementById('dashboardDiv').style.display = "none";
+        document.getElementById('toggleEyeIcon_dashboard').style.display = "none";
+        document.getElementById('toggleEyeIcon_slash_dashboard').style.display = "block";
+    }
+}
+
+//toggleEye for dashboard Chart
+function toggleReviewData_dashboardChart() {
+    var x = document.getElementById("dashboardChartDiv");
+    if (x.style.display === "none") {
+        document.getElementById('dashboardChartDiv').style.display = "block";
+        document.getElementById('toggleEyeIcon_dashboardChart').style.display = "block";
+        document.getElementById('toggleEyeIcon_slash_dashboardChart').style.display = "none";
+    } else {
+        document.getElementById('dashboardChartDiv').style.display = "none";
+        document.getElementById('toggleEyeIcon_dashboardChart').style.display = "none";
+        document.getElementById('toggleEyeIcon_slash_dashboardChart').style.display = "block";
+    }
+}
+
 // code for Comapany header slot
 function toggleSidebar() {
     const sidebar = document.querySelector('.med_left-sidebar');
@@ -1404,6 +1432,119 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     // Trigger a click event on the link to start the download
     link.click();
 });
+
+
+// ---------------- BAR CHART ----------------
+window.onload = function () {
+    const barCtx = document.getElementById('myBarChart').getContext('2d');
+
+    new Chart(barCtx, {
+        type: 'bar',
+        data: {
+            labels: ["January","February","March","April","May","June"],
+            datasets: [
+                {
+                    label: "ICU Wise Occupancy",
+                    data: [0, 0, 0.47, 0.49, 0, 0],
+                    backgroundColor: "blue"
+                },
+                {
+                    label: "Ward Wise Occupancy",
+                    data: [0, 0, 0.16, 0.18, 0, 0],
+                    backgroundColor: "pink"
+                }
+            ]
+        },
+        options: {
+            scales: {
+                x: { ticks: { maxRotation: 60, minRotation: 60 } },
+                y: { beginAtZero: true }
+            }
+        }
+    });
+};
+
+
+// ---------------- PIE CHART ----------------
+document.addEventListener("DOMContentLoaded", () => {
+    const pieCtx = document.getElementById("myPieChart").getContext("2d");
+
+    new Chart(pieCtx, {
+        type: "pie",
+        data: {
+            labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
+            datasets: [{
+                data: [47, 16, 25, 32, 40],
+                backgroundColor: ["#1f77b4", "#ff7f7f", "#2ca02c", "#ffbb00", "#9467bd"]
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: "right" }
+            }
+        }
+    });
+});
+
+
+// ---------------- LINE CHART ----------------
+document.addEventListener("DOMContentLoaded", () => {
+    const lineCtx = document.getElementById("myLineChart").getContext("2d");
+
+    new Chart(lineCtx, {
+        type: "line",
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Apr"],
+            datasets: [{
+                label: "Patients",
+                data: [10, 20, 15, 30],
+                borderWidth: 2,
+                borderColor: "blue",
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: "bottom" }
+            }
+        }
+    });
+});
+
+
+// ---------------- HORIZONTAL BAR CHART ----------------
+document.addEventListener("DOMContentLoaded", () => {
+    const hBarCtx = document.getElementById("myHorizontalBarChart").getContext("2d");
+
+    new Chart(hBarCtx, {
+        type: "bar",
+        data: {
+            labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
+            datasets: [{
+                label: "Number of Patients",
+                data: [40, 70, 25, 60, 55],
+                backgroundColor: ["blue", "pink", "green", "orange", "purple"],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            indexAxis: "y",
+            responsive: true,
+            scales: {
+                x: { beginAtZero: true }
+            },
+            plugins: {
+                legend: { position: "bottom" }
+            }
+        }
+    });
+});
+
+
+
+
 
 
 

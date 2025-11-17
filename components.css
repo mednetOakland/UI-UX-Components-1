@@ -4359,3 +4359,135 @@ input:checked + .med_toggleSlider:before {
 .med_successGrayBtn_sm:hover{
     background: #d5d3d3;
 }
+
+
+.med_slotBoxWhite {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 10px;
+  min-height: 85px;
+  padding: 15px 0 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.med_icon-shape-round {
+  align-items: center;
+  border-radius: 100%;
+  display: inline-flex;
+  float: none !important;
+  font-size: 14px;
+  height: 36px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 36px;
+}
+
+.med_icon-shape-blue {
+  background-color: rgba(2, 136, 209, 0.1);
+  color: #0288D1;
+}
+
+.med_icon-shape-purple {
+  background-color: rgba(81, 45, 168, 0.1);
+  color: #512DA8;
+}
+
+.med_icon-shape-orange {
+  background-color: rgba(245, 124, 0, 0.1);
+  color: #F57C00;
+}
+
+.med_icon-shape-green {
+  background-color: rgba(56, 142, 60, 0.1);
+  color: #388E3C;
+}
+
+.med_icon-shape-indigo {
+  background-color: rgba(48, 63, 159, 0.1);
+  color: #303F9F;
+}
+
+.med_icon-shape-brown {
+  background-color: rgba(93, 64, 55, 0.1);
+  color: #5D4037;
+}
+
+.med_icon-shape-lime {
+  background-color: rgba(130, 119, 23, 0.1);
+  color: #827717;
+}
+
+.med_icon-shape-grey {
+  background-color: rgba(69, 90, 100, 0.1);
+  color: #455A64;
+}
+
+.med_slotCountLabel {
+  color: #777;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding:0px 10px
+}
+
+.med_slotCount {
+  color: #000;
+  font-size: 24px;
+  height: 35px;
+  line-height: 36px;
+  margin-top: 10px;
+}
+
+.med_shadowBox {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+   
+.med_slotBottomBand {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border-bottom: 1px solid #ececec;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 32px;
+}
+
+.med_countMiddle_no {
+    color:black;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.med_secondary_slotBox{
+    border-left:1px solid #dedede;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.med_chartBand {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #f3f3f3;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 5px 0 10px;
+    text-align: left;
+    text-decoration: underline;
+}
+
