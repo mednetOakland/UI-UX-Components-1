@@ -7939,169 +7939,194 @@
                         </div>
                         <pre id="dashboardChartDiv" style="display: none;">                            
                             <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;div class="med_wideDIV med_padding10" style="background-color: #f5f5f5;"&gt;
-                                        &lt;div class="med_wideDIV med_marginT10 med_flex"&gt;
-                                            &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
-                                                &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
-                                                    &lt;div class="med_wideDIV med_chartBand"&gt;
-                                                        &lt;div class="pull_left"&gt;Month Wise Occupancy&lt;/div&gt;
-                                                        &lt;div class="pull_right med_icons fa_mednet fa-th" onclick=""&gt;&lt;/div&gt;
-                                                    &lt;/div&gt;  
-                                                    &lt;div class="med_wideDIV"&gt;
-                                                        &lt;canvas id="myBarChart"&gt;&lt;/canvas&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
+                                Path:- &lt;script type="text/javascript" src="js/apexcharts.min.js"&gt;&lt;/script&gt;
 
-                                            &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
-                                                &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
-                                                    &lt;div class="med_wideDIV med_chartBand"&gt;
-                                                        &lt;div class="pull_left"&gt;ICU & Ward Occupancy&lt;/div&gt;
-                                                        &lt;div class="pull_right med_icons fa_mednet fa-th" onclick=""&gt;&lt;/div&gt;
-                                                    &lt;/div&gt;  
-                                                    &lt;div class="med_wideDIV"&gt;
-                                                        &lt;canvas id="myPieChart" style="margin:auto; width:250px; height:250px"&gt;&lt;/canvas&gt;
-                                                    &lt;/div&gt;
+                                &lt;div class="med_wideDIV med_padding10" style="background-color: #f5f5f5;"&gt;
+                                    &lt;div class="med_wideDIV med_marginT10 med_flex" style="height:300px;"&gt;
+                                        &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
+                                            &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
+                                                &lt;div class="med_wideDIV med_chartBand"&gt;
+                                                    &lt;div class="pull_left"&gt;Month Wise Occupancy&lt;/div&gt;
+                                                    &lt;div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""&gt;&lt;/div&gt;
+                                                &lt;/div&gt;  
+                                                &lt;div class="med_wideDIV med_padding10" style="height:90%;"&gt;
+                                                    &lt;div class="med_wideDIV" id="myBarChart"&gt;&lt;/div&gt;
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
                                         &lt;/div&gt;
-
-                                        &lt;div class="med_wideDIV med_marginT10 med_flex"&gt;
-                                            &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
-                                                &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
-                                                    &lt;div class="med_wideDIV med_chartBand"&gt;
-                                                        &lt;div class="pull_left"&gt;Patients Line Chart&lt;/div&gt;
-                                                        &lt;div class="pull_right med_icons fa_mednet fa-th" onclick=""&gt;&lt;/div&gt;
-                                                    &lt;/div&gt;  
-                                                    &lt;div class="med_wideDIV"&gt;
-                                                        &lt;canvas id="myLineChart" width="400" height="250" style="margin:auto; display:block;"&gt;&lt;/canvas&gt;
-                                                    &lt;/div&gt;
+                                        &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
+                                            &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
+                                                &lt;div class="med_wideDIV med_chartBand"&gt;
+                                                    &lt;div class="pull_left"&gt;ICU & Ward Occupancy&lt;/div&gt;
+                                                    &lt;div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""&gt;&lt;/div&gt;
+                                                &lt;/div&gt;  
+                                                &lt;div class="med_wideDIV med_padding10" style="height:90%;"&gt;
+                                                    &lt;div class="med_wideDIV" id="myPieChart"&gt;&lt;/div&gt;
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
-
-                                            &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
-                                                &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
-                                                    &lt;div class="med_wideDIV med_chartBand"&gt;
-                                                        &lt;div class="pull_left"&gt;Department Wise Patients (Horizontal Bar Chart)&lt;/div&gt;
-                                                        &lt;div class="pull_right med_icons fa_mednet fa-th" onclick=""&gt;&lt;/div&gt;
-                                                    &lt;/div&gt;  
-                                                    &lt;div class="med_wideDIV"&gt;
-                                                        &lt;canvas id="myHorizontalBarChart" width="500" height="300" style="margin:auto; display:block;"&gt;&lt;/canvas&gt;
-                                                    &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_wideDIV med_marginT10 med_flex" style="height:300px;"&gt;
+                                        &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
+                                            &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
+                                                &lt;div class="med_wideDIV med_chartBand"&gt;
+                                                    &lt;div class="pull_left"&gt;Patients Line Chart&lt;/div&gt;
+                                                    &lt;div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""&gt;&lt;/div&gt;
+                                                &lt;/div&gt;  
+                                                &lt;div class="med_wideDIV med_padding10" style="height:90%;"&gt;
+                                                    &lt;div class="med_wideDIV" id="myLineChart"&gt;&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="med_paddingLR5 med_Width50pr med_flex"&gt;
+                                            &lt;div class="med_slotBoxWhite med_relative" style="padding:0px;"&gt;
+                                                &lt;div class="med_wideDIV med_chartBand"&gt;
+                                                    &lt;div class="pull_left"&gt;Department Wise Patients (Horizontal Bar Chart)&lt;/div&gt;
+                                                    &lt;div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""&gt;&lt;/div&gt;
+                                                &lt;/div&gt;  
+                                                &lt;div class="med_wideDIV med_padding10" style="height:90%;"&gt;
+                                                    &lt;div class="med_wideDIV" id="myHorizontalBarChart"&gt;&lt;/div&gt;
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
                                 &lt;/div&gt;
+                                
+                                &lt;script&gt;
+                                // ---------------- BAR CHART ----------------
 
-                                &lt;script&gt; 
-                                    // ---------------- BAR CHART ----------------
                                     window.onload = function () {
-                                        const barCtx = document.getElementById('myBarChart').getContext('2d');
-
-                                        new Chart(barCtx, {
+                                    var options = {
+                                        chart: {
                                             type: 'bar',
-                                            data: {
-                                                labels: ["January","February","March","April","May","June"],
-                                                datasets: [
-                                                    {
-                                                        label: "ICU Wise Occupancy",
-                                                        data: [0, 0, 0.47, 0.49, 0, 0],
-                                                        backgroundColor: "blue"
-                                                    },
-                                                    {
-                                                        label: "Ward Wise Occupancy",
-                                                        data: [0, 0, 0.16, 0.18, 0, 0],
-                                                        backgroundColor: "pink"
-                                                    }
-                                                ]
-                                            },
-                                            options: {
-                                                scales: {
-                                                    x: { ticks: { maxRotation: 60, minRotation: 60 } },
-                                                    y: { beginAtZero: true }
-                                                }
+                                            height:"100%",
+                                            width: "100%", 
+                                            toolbar: {
+                                                show: false
                                             }
-                                        });
+                                        },
+                                        series: [{
+                                            name: 'Number of Patients',
+                                            data: [40, 70, 25, 60, 55]
+                                        }],
+                                        xaxis: {
+                                            categories: ["ICU", "Ward", "NICU", "Emergency", "OPD"]
+                                        },
+                                        plotOptions: {
+                                            bar: {
+                                                borderRadius: 0,
+                                                distributed: true
+                                            }
+                                        },
+                                        dataLabels: {
+                                            enabled: true
+                                        }
                                     };
 
+                                    var chart = new ApexCharts(document.querySelector("#myBarChart"), options);
+                                    chart.render();
+
+                                    };
 
                                     // ---------------- PIE CHART ----------------
+
                                     document.addEventListener("DOMContentLoaded", () => {
-                                        const pieCtx = document.getElementById("myPieChart").getContext("2d");
-
-                                        new Chart(pieCtx, {
-                                            type: "pie",
-                                            data: {
-                                                labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
-                                                datasets: [{
-                                                    data: [47, 16, 25, 32, 40],
-                                                    backgroundColor: ["#1f77b4", "#ff7f7f", "#2ca02c", "#ffbb00", "#9467bd"]
-                                                }]
+                                        var options = {
+                                            chart: {
+                                                type: "pie",
+                                                height: "100%", 
+                                                width: "100%",    
+                                                toolbar: { show: false }
                                             },
-                                            options: {
-                                                responsive: true,
-                                                plugins: {
-                                                    legend: { position: "bottom" }
-                                                }
-                                            }
-                                        });
-                                    });
 
+                                            labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
+                                            series: [47, 16, 25, 32, 40],
+                                            colors: ["#1f77b4", "#ff7f7f", "#2ca02c", "#ffbb00", "#9467bd"],
+                                            legend: { position: "right" }
+                                        };
+
+                                        var chart = new ApexCharts(document.querySelector("#myPieChart"), options);
+                                        chart.render();
+                                    });
 
                                     // ---------------- LINE CHART ----------------
-                                    document.addEventListener("DOMContentLoaded", () => {
-                                        const lineCtx = document.getElementById("myLineChart").getContext("2d");
 
-                                        new Chart(lineCtx, {
-                                            type: "line",
-                                            data: {
-                                                labels: ["Jan", "Feb", "Mar", "Apr"],
-                                                datasets: [{
-                                                    label: "Patients",
-                                                    data: [10, 20, 15, 30],
-                                                    borderWidth: 2,
-                                                    borderColor: "blue",
-                                                    fill: false
-                                                }]
+                                    document.addEventListener("DOMContentLoaded", () => {
+                                        var options = {
+                                            chart: {
+                                                type: "line",
+                                                height: "100%",    
+                                                width: "100%",    
+                                                toolbar: { show: false }
                                             },
-                                            options: {
-                                                responsive: true,
-                                                plugins: {
-                                                    legend: { position: "right" }
-                                                }
+
+                                            series: [{
+                                                name: "Patients",
+                                                data: [10, 20, 15, 30]
+                                            }],
+
+                                            xaxis: {
+                                                categories: ["Jan", "Feb", "Mar", "Apr"]
+                                            },
+
+                                            stroke: {
+                                                width: 2,
+                                                curve: "straight"
+                                            },
+
+                                            markers: {
+                                                size: 0
+                                            },
+
+                                            legend: {
+                                                position: "bottom"
                                             }
-                                        });
+                                        };
+
+                                        var chart = new ApexCharts(document.querySelector("#myLineChart"), options);
+                                        chart.render();
                                     });
 
-
                                     // ---------------- HORIZONTAL BAR CHART ----------------
-                                    document.addEventListener("DOMContentLoaded", () => {
-                                        const hBarCtx = document.getElementById("myHorizontalBarChart").getContext("2d");
 
-                                        new Chart(hBarCtx, {
-                                            type: "bar",
-                                            data: {
-                                                labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
-                                                datasets: [{
-                                                    label: "Number of Patients",
-                                                    data: [40, 70, 25, 60, 55],
-                                                    backgroundColor: ["blue", "pink", "green", "orange", "purple"],
-                                                    borderWidth: 1
-                                                }]
+                                    document.addEventListener("DOMContentLoaded", () => {
+                                        var options = {
+                                            chart: {
+                                                type: "bar",
+                                                height: "100%",  
+                                                width: "100%",  
+                                                toolbar: { show: false }
                                             },
-                                            options: {
-                                                indexAxis: "y",
-                                                responsive: true,
-                                                scales: {
-                                                    x: { beginAtZero: true }
-                                                },
-                                                plugins: {
-                                                    legend: { position: "bottom" }
+
+                                            series: [{
+                                                name: "Number of Patients",
+                                                data: [40, 70, 25, 60, 55]
+                                            }],
+
+                                            xaxis: {
+                                                categories: ["ICU", "Ward", "NICU", "Emergency", "OPD"]
+                                            },
+
+                                            plotOptions: {
+                                                bar: {
+                                                    horizontal: true,   
+                                                    barHeight: "70%"     
                                                 }
+                                            },
+
+                                            colors: ["blue", "pink", "green", "orange", "purple"],
+
+                                            legend: {
+                                                position: "bottom"
                                             }
-                                        });
+                                        };
+
+                                        var chart = new ApexCharts(
+                                            document.querySelector("#myHorizontalBarChart"),
+                                            options
+                                        );
+
+                                        chart.render();
                                     });
                                 &lt;/script&gt;
                             </code>
@@ -8117,15 +8142,15 @@
                             <h3>Dashboard Chart</h3>
                             <div class="med_Width100pr">
                                 <div class="med_wideDIV med_padding10" style="background-color: #f5f5f5;">
-                                    <div class="med_wideDIV med_marginT10 med_flex">
+                                    <div class="med_wideDIV med_marginT10 med_flex" style="height:300px;">
                                         <div class="med_paddingLR5 med_Width50pr med_flex">
                                             <div class="med_slotBoxWhite med_relative" style="padding:0px;">
                                                 <div class="med_wideDIV med_chartBand">
                                                     <div class="pull_left">Month Wise Occupancy</div>
-                                                    <div class="pull_right med_icons fa_mednet fa-th" onclick=""></div>
+                                                    <div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""></div>
                                                 </div>  
-                                                <div class="med_wideDIV">
-                                                    <canvas id="myBarChart"></canvas>
+                                                <div class="med_wideDIV med_padding10" style="height:90%;">
+                                                    <div class="med_wideDIV" id="myBarChart"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -8133,23 +8158,23 @@
                                             <div class="med_slotBoxWhite med_relative" style="padding:0px;">
                                                 <div class="med_wideDIV med_chartBand">
                                                     <div class="pull_left">ICU & Ward Occupancy</div>
-                                                    <div class="pull_right med_icons fa_mednet fa-th" onclick=""></div>
+                                                    <div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""></div>
                                                 </div>  
-                                                <div class="med_wideDIV">
-                                                    <canvas id="myPieChart" style="margin:auto; width:250px; height:250px"></canvas>
+                                                <div class="med_wideDIV med_padding10" style="height:90%;">
+                                                    <div class="med_wideDIV" id="myPieChart"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="med_wideDIV med_marginT10 med_flex">
+                                    <div class="med_wideDIV med_marginT10 med_flex" style="height:300px;">
                                         <div class="med_paddingLR5 med_Width50pr med_flex">
                                             <div class="med_slotBoxWhite med_relative" style="padding:0px;">
                                                 <div class="med_wideDIV med_chartBand">
                                                     <div class="pull_left">Patients Line Chart</div>
-                                                    <div class="pull_right med_icons fa_mednet fa-th" onclick=""></div>
+                                                    <div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""></div>
                                                 </div>  
-                                                <div class="med_wideDIV">
-                                                    <canvas id="myLineChart" width="400" height="250" style="margin:auto; display:block;"></canvas>
+                                                <div class="med_wideDIV med_padding10" style="height:90%;">
+                                                    <div class="med_wideDIV" id="myLineChart"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -8157,10 +8182,10 @@
                                             <div class="med_slotBoxWhite med_relative" style="padding:0px;">
                                                 <div class="med_wideDIV med_chartBand">
                                                     <div class="pull_left">Department Wise Patients (Horizontal Bar Chart)</div>
-                                                    <div class="pull_right med_icons fa_mednet fa-th" onclick=""></div>
+                                                    <div class="pull_right med_icons fa_mednet fa-th med_marginT2" onclick=""></div>
                                                 </div>  
-                                                <div class="med_wideDIV">
-                                                    <canvas id="myHorizontalBarChart" width="500" height="300" style="margin:auto; display:block;"></canvas>
+                                                <div class="med_wideDIV med_padding10" style="height:90%;">
+                                                    <div class="med_wideDIV" id="myHorizontalBarChart"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -10564,7 +10589,7 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="js/apexcharts.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 

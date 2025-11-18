@@ -1436,110 +1436,139 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
 // ---------------- BAR CHART ----------------
 window.onload = function () {
-    const barCtx = document.getElementById('myBarChart').getContext('2d');
-
-    new Chart(barCtx, {
+   var options = {
+    chart: {
         type: 'bar',
-        data: {
-            labels: ["January","February","March","April","May","June"],
-            datasets: [
-                {
-                    label: "ICU Wise Occupancy",
-                    data: [0, 0, 0.47, 0.49, 0, 0],
-                    backgroundColor: "blue"
-                },
-                {
-                    label: "Ward Wise Occupancy",
-                    data: [0, 0, 0.16, 0.18, 0, 0],
-                    backgroundColor: "pink"
-                }
-            ]
-        },
-        options: {
-            scales: {
-                x: { ticks: { maxRotation: 60, minRotation: 60 } },
-                y: { beginAtZero: true }
-            }
+        height:"100%",
+        width: "100%", 
+        toolbar: {
+            show: false
         }
-    });
+    },
+    series: [{
+        name: 'Number of Patients',
+        data: [40, 70, 25, 60, 55]
+    }],
+    xaxis: {
+        categories: ["ICU", "Ward", "NICU", "Emergency", "OPD"]
+    },
+    plotOptions: {
+        bar: {
+            borderRadius: 0,
+            distributed: true
+        }
+    },
+    dataLabels: {
+        enabled: true
+    }
 };
+
+var chart = new ApexCharts(document.querySelector("#myBarChart"), options);
+chart.render();
+
+};
+
+
 
 
 // ---------------- PIE CHART ----------------
 document.addEventListener("DOMContentLoaded", () => {
-    const pieCtx = document.getElementById("myPieChart").getContext("2d");
-
-    new Chart(pieCtx, {
-        type: "pie",
-        data: {
-            labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
-            datasets: [{
-                data: [47, 16, 25, 32, 40],
-                backgroundColor: ["#1f77b4", "#ff7f7f", "#2ca02c", "#ffbb00", "#9467bd"]
-            }]
+    var options = {
+        chart: {
+            type: "pie",
+            height: "100%", 
+            width: "100%",    
+            toolbar: { show: false }
         },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { position: "right" }
-            }
-        }
-    });
+
+        labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
+        series: [47, 16, 25, 32, 40],
+        colors: ["#1f77b4", "#ff7f7f", "#2ca02c", "#ffbb00", "#9467bd"],
+        legend: { position: "right" }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#myPieChart"), options);
+    chart.render();
 });
 
 
 // ---------------- LINE CHART ----------------
 document.addEventListener("DOMContentLoaded", () => {
-    const lineCtx = document.getElementById("myLineChart").getContext("2d");
-
-    new Chart(lineCtx, {
-        type: "line",
-        data: {
-            labels: ["Jan", "Feb", "Mar", "Apr"],
-            datasets: [{
-                label: "Patients",
-                data: [10, 20, 15, 30],
-                borderWidth: 2,
-                borderColor: "blue",
-                fill: false
-            }]
+    var options = {
+        chart: {
+            type: "line",
+            height: "100%",    
+            width: "100%",    
+            toolbar: { show: false }
         },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { position: "bottom" }
-            }
+
+        series: [{
+            name: "Patients",
+            data: [10, 20, 15, 30]
+        }],
+
+        xaxis: {
+            categories: ["Jan", "Feb", "Mar", "Apr"]
+        },
+
+        stroke: {
+            width: 2,
+            curve: "straight"
+        },
+
+        markers: {
+            size: 0
+        },
+
+        legend: {
+            position: "bottom"
         }
-    });
+    };
+
+    var chart = new ApexCharts(document.querySelector("#myLineChart"), options);
+    chart.render();
 });
 
 
 // ---------------- HORIZONTAL BAR CHART ----------------
 document.addEventListener("DOMContentLoaded", () => {
-    const hBarCtx = document.getElementById("myHorizontalBarChart").getContext("2d");
-
-    new Chart(hBarCtx, {
-        type: "bar",
-        data: {
-            labels: ["ICU", "Ward", "NICU", "Emergency", "OPD"],
-            datasets: [{
-                label: "Number of Patients",
-                data: [40, 70, 25, 60, 55],
-                backgroundColor: ["blue", "pink", "green", "orange", "purple"],
-                borderWidth: 1
-            }]
+    var options = {
+        chart: {
+            type: "bar",
+            height: "100%",  
+            width: "100%",  
+            toolbar: { show: false }
         },
-        options: {
-            indexAxis: "y",
-            responsive: true,
-            scales: {
-                x: { beginAtZero: true }
-            },
-            plugins: {
-                legend: { position: "bottom" }
+
+        series: [{
+            name: "Number of Patients",
+            data: [40, 70, 25, 60, 55]
+        }],
+
+        xaxis: {
+            categories: ["ICU", "Ward", "NICU", "Emergency", "OPD"]
+        },
+
+        plotOptions: {
+            bar: {
+                horizontal: true,   
+                barHeight: "70%"     
             }
+        },
+
+        colors: ["blue", "pink", "green", "orange", "purple"],
+
+        legend: {
+            position: "bottom"
         }
-    });
+    };
+
+    var chart = new ApexCharts(
+        document.querySelector("#myHorizontalBarChart"),
+        options
+    );
+
+    chart.render();
 });
 
 
