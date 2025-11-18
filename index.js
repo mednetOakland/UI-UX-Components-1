@@ -1426,12 +1426,36 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = zipFileUrl;
+    link.href = zipFileUrl; 
     link.download = 'tinymce.zip'; // Optionally, specify the name of the file
     
     // Trigger a click event on the link to start the download
     link.click();
 });
+
+document.getElementById('downloadButton_chart').addEventListener('click', function () {
+
+    const fileUrl = 'https://raw.githubusercontent.com/mednetOakland/UI-UX-Components-1/main/js/apexcharts.min.js';
+
+    // Fetch the file and convert it to a blob
+    fetch(fileUrl)
+        .then(response => response.blob())
+        .then(blob => {
+            const downloadUrl = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = 'apexcharts.min.js'; // File name when downloading
+            document.body.appendChild(a);
+            a.click();
+
+            // Cleanup
+            a.remove();
+            URL.revokeObjectURL(downloadUrl);
+        })
+        .catch(err => console.error('Download failed:', err));
+});
+
 
 
 // ---------------- BAR CHART ----------------
