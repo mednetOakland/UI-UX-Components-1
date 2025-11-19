@@ -1969,6 +1969,43 @@ input[type="text"]:disabled {
 }
 /* Tooltip bottom right end*/
 
+/* Tooltip Top Middle */
+.med_tooltip_top_middle {
+    top: auto;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+}
+
+.med_tooltip_top_middle:after {
+    content: '\f0d7';
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+}
+
+/* Tooltip Bottom Middle */
+.med_tooltip_bottom_middle {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+}
+
+.med_tooltip_bottom_middle:after {
+    content: '\f0d8';
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -13px;
+}
+
 /* -- Radio tabs -- */
 .med_radioTabs {
     border-radius: 5px;
