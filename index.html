@@ -76,12 +76,11 @@
                     <li><a href="#slotViewPattern" onclick="toggleActive('leftNav_slotViewPattern','Slot View')">Slot View</a></li>
                     <li><a href="#headingBand" onclick="toggleActive('leftNav_headingBand','Heading Band')">Heading Band</a></li>
                     <li><a href="#thumbnailView" onclick="toggleActive('leftNav_thumbnailView','Thumbnail View')">Thumbnail View</a></li>
+                    <li><a href="#dashboardView" onclick="toggleActive('leftNav_dashboardView','Dashboard')">Dashboard</a></li>
+                    <li><a href="#dashboardChartView" onclick="toggleActive('leftNav_dashboardChartView','Dashboard')">Dashboard Chart</a></li>
                     <li><a href="#copyClipboard" onclick="toggleActive('leftNav_thumbnailView','Copy to Clipboard')">Copy to Clipboard</a></li>
                     <li><a href="#imgAspectRatio" onclick="toggleActive('leftNav_imgAspectRatio','Image Aspect Ratio')">Image Aspect Ratio</a></li>
                     <li><a href="#zoomIO_img" onclick="toggleActive('leftNav_zoomIO_img','Zoom In/Out Image Slot')">Zoom In/Out Image Slot</a></li>
-                    <li><a href="#dashboardView" onclick="toggleActive('leftNav_dashboardView','Dashboard')">Dashboard</a></li>
-                    <li><a href="#dashboardChartView" onclick="toggleActive('leftNav_dashboardChartView','Dashboard')">Dashboard Chart</a></li>
-
 
                     <li><a href="#patientHeader_band1" style="display:none;" onclick="toggleActive('leftNav_patientHeader_band1','Pat_HeaderBand - 1')">Pat_HeaderBand - 1</a></li>
                     <li><a href="#patientHeader_Band2" style="display:none;" onclick="toggleActive('leftNav_patientHeader_Band2','Pat_HeaderBand - 2')">Pat_HeaderBand - 2</a></li>
@@ -157,11 +156,11 @@
             <a href="#slotViewPattern"><div id="leftNav_slotViewPattern" class="wrapperToggle_btn">Slot View</div></a>
             <a href="#headingBand"><div id="leftNav_headingBand" class="wrapperToggle_btn">Heading Band</div></a>
             <a href="#thumbnailView"><div id="leftNav_thumbnailView" class="wrapperToggle_btn">Thumbnail View</div></a>
+            <a href="#dashboardView"><div id="leftNav_dashboardView" class="wrapperToggle_btn">Dashboard</div></a>
+            <a href="#dashboardChartView"><div id="leftNav_dashboardChartView" class="wrapperToggle_btn">Dashboard Chart</div></a>
             <a href="#copyClipboard"><div id="leftNav_copyClipboard" class="wrapperToggle_btn">Copy to Clipboard</div></a>
             <a href="#imgAspectRatio"><div id="leftNav_imgAspectRatio" class="wrapperToggle_btn">Image Aspect Ratio</div></a>
             <a href="#zoomIO_img"><div id="leftNav_zoomIO_img" class="wrapperToggle_btn">Zoom In/Out Image Slot</div></a>
-            <a href="#dashboardView"><div id="leftNav_dashboardView" class="wrapperToggle_btn">Dashboard</div></a>
-            <a href="#dashboardChartView"><div id="leftNav_dashboardChartView" class="wrapperToggle_btn">Dashboard Chart</div></a>
 
             <a href="#patientHeader_band1" style="display:none;"><div id="leftNav_patientHeader_band1" class="wrapperToggle_btn">Pat_HeaderBand - 1</div></a>
             <a href="#patientHeader_Band2" style="display:none;"><div id="leftNav_patientHeader_Band2" class="wrapperToggle_btn">Pat_HeaderBand - 2</div></a>
@@ -7367,245 +7366,6 @@
                     </div>
                 </div>
                 <!-- Thumbnail band view end-->
-
-                <!-- Copy clipboard-->
-                <div class="container" id="copyClipboard">
-                    <div class="html">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10 med_pull_left">HTML CODE</div>
-                            <div class="med_pull_right">
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('copyClipboard_code')"></div>
-                            </div>
-                        </div>
-                        <pre id="copyClipboard_code">
-                            <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;div class="med_pull_left med_marginT10" id="copyToClipboard_code"&gt;MRN-241200165&lt;/div&gt;
-                                    &lt;div class="med_pull_left med_relative"&gt;
-                                        &lt;div class="fa_mednet fa-clone med_icons med_marginL10" title="Copy Code" onclick="copyClipboardText('copyToClipboard_code')"&gt;&lt;/div&gt;
-                                        &lt;div id="copiedPopupMsg" class="copy_popup_sm"&gt;Code copied successfully !&lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-
-                                &lt;script&gt;
-                                    function copyClipboardText(id) {
-                                        var code = document.getElementById(id).innerText;
-                                        navigator.clipboard.writeText(code).then(function() {
-                                            showCopyMsgPopup("Code copied successfully !");
-                                        }, function() {
-                                            showCopyMsgPopup("Failed to copy code !");
-                                        });
-                                    }
-
-                                    function showCopyMsgPopup(message) {
-                                        var popup = document.getElementById("copiedPopupMsg");
-                                        popup.textContent = message;
-                                        popup.style.display = "block";
-
-                                        setTimeout(function() {
-                                            popup.style.display = "none";
-                                        }, 2000);
-                                    }
-                                &lt;/script&gt;
-                            </code>
-                        </pre>
-                    </div>
-
-                    <div class="preview">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>
-                        </div>
-                        <div class="PreContent">
-                            <h3>Copy to Clipboard</h3>
-                            <div class="med_Width100pr">
-                                <div class="med_pull_left med_marginT10" id="copyToClipboard_code">MRN-241200165</div>
-                                <div class="med_pull_left med_relative">
-                                    <div class="fa_mednet fa-clone med_icons med_marginL10" title="Copy Code" onclick="copyClipboardText('copyToClipboard_code')"></div>
-                                    <div id="copiedPopupMsg" class="copy_popup_sm">Code copied successfully !</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Copy clipboard end-->
-
-                <!-- Image aspect ratio-->
-                <div class="container" style="display: block;" id="imgAspectRatio">
-                    <div class="html med_Width100pr">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10 med_pull_left">HTML CODE</div>
-                            <div class="med_pull_right">
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('imgAspectRatio_code')"></div>
-                            </div>
-                        </div>
-                        <pre id="imgAspectRatio_code">
-                            <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;div class="med_Width50pr med_aspectRatio"&gt;
-                                        &lt;img src="images/a4 ivanchuk.jpg"&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class="med_Width50pr med_aspectRatio"&gt;
-                                        &lt;img src="images/mobView.png"&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            </code>
-                        </pre>
-                    </div>
-
-                    <div class="preview med_Width100pr">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>
-                        </div>
-                        <div class="PreContent">
-                            <h3>Image Aspect Ratio</h3>
-                            <div class="med_Width100pr">
-                                <div class="med_Width50pr med_aspectRatio">
-                                    <img src="images/a4 ivanchuk.jpg">
-                                </div>
-                                <div class="med_Width50pr med_aspectRatio">
-                                    <img src="images/mobView.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slot view end-->
-
-                <!-- Zoom In/Out Image -->
-                <div class="container" id="zoomIO_img">
-                    <div class="html">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">HTML CODE</div>
-                            
-                            <div class="med_pull_right">
-                                <div class="med_pull_left" onclick="toggleReviewData_zoomIO_img();" title="Show / Hide Code">
-                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_zoomIOimg"></div>
-                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_zoomIOimg" style="display: none;"></div>
-                                </div>
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('zoomIO_imgDiv')"></div>
-                            </div>
-                        </div>
-                        <pre id="zoomIO_imgDiv" style="display: none;">
-                            <code>
-                                &lt;div class="fa_mednet fa-minus med_iconBtn_sm" id="zoomOutBtn"&gt;&lt;/div&gt;
-                                &lt;div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" id="zoomInBtn"&gt;&lt;/div&gt;
-
-                                &lt;div class="med_Outerbody"&gt;
-                                    &lt;div class="med_button-container"&gt;
-                                        &lt;div class="fa_mednet fa-minus med_iconBtn_sm" onclick="zoomIn()"&gt;&lt;/div&gt;
-                                        &lt;div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" onclick="zoomOut()"&gt;&lt;/div&gt;
-                                      &lt;/div&gt;
-                                    
-                                      &lt;div class="med_zoom_outer"&gt;
-                                        &lt;div id="imageArea" onmousedown="startPanning(event)"  onmouseup="stopPanning()" onmouseleave="stopPanning()" onmousemove="panImage(event)" &gt;
-                                          &lt;embed src="images/aadhar.png" alt="Zoomable content"&gt;
-                                        &lt;/div&gt;
-                                      &lt;/div&gt;
-                                &lt;/div&gt;
-
-                                &lt;script&gt;
-                                    document.addEventListener('DOMContentLoaded', () => {
-                                        manageZoomInOut('imageArea', 'zoomInBtn','zoomOutBtn');
-                                    });
-
-                                    let scale = 1, pointX = 0, pointY = 0, start = { x: 0, y: 0 }, panning = false, originalScale = 1;
-                                    function manageZoomInOut(imageID, zoomInID, zoomOutID) {
-                                        let imageEle = document.getElementById(imageID);
-                                        let zoomIn = document.getElementById(zoomInID);
-                                        let zoomOut = document.getElementById(zoomOutID);
-
-                                        imageEle.addEventListener('mousedown', (event) => {
-                                            event.preventDefault();
-                                            start = { x: event.clientX - pointX, y: event.clientY - pointY };
-                                            panning = true;
-                                            imageEle.style.cursor = "grabbing";
-                                        });
-
-                                        imageEle.addEventListener('mouseup', () => {
-                                            panning = false;
-                                            imageEle.style.cursor = "default";
-                                        });
-
-                                        imageEle.addEventListener('mouseleave', () => {
-                                            panning = false;
-                                            imageEle.style.cursor = "default";
-                                        });
-
-                                        imageEle.addEventListener('mousemove', (event) => {
-                                            if (!panning) return;
-                                            event.preventDefault();
-                                            pointX = event.clientX - start.x;
-                                            pointY = event.clientY - start.y;
-                                            setTransform();
-                                        });
-
-                                        zoomIn.addEventListener('click', () => {
-                                            var factor = 1.2;
-                                            scale = Math.min(scale * factor, 5);
-                                            setTransform();
-                                        });
-
-                                        zoomOut.addEventListener('click', () => {
-                                            var factor = 1 / 1.2;
-                                            scale = Math.max(scale * factor, originalScale);
-                                            if (scale === originalScale) {
-                                                pointX = 0;
-                                                pointY = 0;
-                                            }
-                                            setTransform();
-                                        });
-                                        resetZoom();
-                                    }
-
-                                    function setTransform() {
-                                        // Constrain movement within zoom_outer bounds
-                                        zoom = document.getElementById("imageArea");
-                                        zoomOuter = document.querySelector(".med_zoom_outer");
-                                        const zoomOuterRect = zoomOuter.getBoundingClientRect();
-                                        const zoomRect = zoom.getBoundingClientRect();
-                                        // Calculate max bounds for panning
-                                        const maxTranslateX = Math.max(0, (zoomRect.width - zoomOuterRect.width) / 2);
-                                        const maxTranslateY = Math.max(0, (zoomRect.height - zoomOuterRect.height) / 2);
-                                        // Constrain pointX and pointY
-                                        pointX = Math.min(maxTranslateX, Math.max(-maxTranslateX, pointX));
-                                        pointY = Math.min(maxTranslateY, Math.max(-maxTranslateY, pointY));
-                                        zoom.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
-                                    }
-
-                                    function resetZoom() {
-                                        scale = 1, pointX = 0, pointY = 0;
-                                        setTransform();
-                                    }
-                                &lt;/script&gt;
-                            </code>
-                        </pre>
-                    </div>
-
-                    <div class="preview">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>
-                        </div>
-                        <div class="PreContent">
-                            <h3>Zoom In/Out Image Slot</h3>
-                            <div class="med_Width100pr">
-                                <div class="med_Outerbody">
-                                    <div class="med_button-container">
-                                        <div class="fa_mednet fa-minus med_iconBtn_sm" id="zoomOutBtn"></div>
-                                        <div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" id="zoomInBtn"></div>
-                                    </div>
-                                    
-                                    <div class="med_zoom_outer">
-                                        <div id="imageArea">
-                                            <embed src="images/aadhar.png" alt="Zoomable content">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Zoom In/Out Image end-->
-
                 <!-- Dashboard -->
                 <div class="container" style="display: block;" id="dashboardView">
                     <div class="html med_Width100pr">
@@ -8234,6 +7994,246 @@
                     </div>
                 </div>
                 <!-- Dashboard Chart-->
+
+                <!-- Copy clipboard-->
+                <div class="container" id="copyClipboard">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10 med_pull_left">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('copyClipboard_code')"></div>
+                            </div>
+                        </div>
+                        <pre id="copyClipboard_code">
+                            <code>
+                                &lt;div class="med_Width100pr"&gt;
+                                    &lt;div class="med_pull_left med_marginT10" id="copyToClipboard_code"&gt;MRN-241200165&lt;/div&gt;
+                                    &lt;div class="med_pull_left med_relative"&gt;
+                                        &lt;div class="fa_mednet fa-clone med_icons med_marginL10" title="Copy Code" onclick="copyClipboardText('copyToClipboard_code')"&gt;&lt;/div&gt;
+                                        &lt;div id="copiedPopupMsg" class="copy_popup_sm"&gt;Code copied successfully !&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;script&gt;
+                                    function copyClipboardText(id) {
+                                        var code = document.getElementById(id).innerText;
+                                        navigator.clipboard.writeText(code).then(function() {
+                                            showCopyMsgPopup("Code copied successfully !");
+                                        }, function() {
+                                            showCopyMsgPopup("Failed to copy code !");
+                                        });
+                                    }
+
+                                    function showCopyMsgPopup(message) {
+                                        var popup = document.getElementById("copiedPopupMsg");
+                                        popup.textContent = message;
+                                        popup.style.display = "block";
+
+                                        setTimeout(function() {
+                                            popup.style.display = "none";
+                                        }, 2000);
+                                    }
+                                &lt;/script&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Copy to Clipboard</h3>
+                            <div class="med_Width100pr">
+                                <div class="med_pull_left med_marginT10" id="copyToClipboard_code">MRN-241200165</div>
+                                <div class="med_pull_left med_relative">
+                                    <div class="fa_mednet fa-clone med_icons med_marginL10" title="Copy Code" onclick="copyClipboardText('copyToClipboard_code')"></div>
+                                    <div id="copiedPopupMsg" class="copy_popup_sm">Code copied successfully !</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copy clipboard end-->
+
+                <!-- Image aspect ratio-->
+                <div class="container" style="display: block;" id="imgAspectRatio">
+                    <div class="html med_Width100pr">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10 med_pull_left">HTML CODE</div>
+                            <div class="med_pull_right">
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('imgAspectRatio_code')"></div>
+                            </div>
+                        </div>
+                        <pre id="imgAspectRatio_code">
+                            <code>
+                                &lt;div class="med_Width100pr"&gt;
+                                    &lt;div class="med_Width50pr med_aspectRatio"&gt;
+                                        &lt;img src="images/a4 ivanchuk.jpg"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="med_Width50pr med_aspectRatio"&gt;
+                                        &lt;img src="images/mobView.png"&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="preview med_Width100pr">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Image Aspect Ratio</h3>
+                            <div class="med_Width100pr">
+                                <div class="med_Width50pr med_aspectRatio">
+                                    <img src="images/a4 ivanchuk.jpg">
+                                </div>
+                                <div class="med_Width50pr med_aspectRatio">
+                                    <img src="images/mobView.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slot view end-->
+
+                <!-- Zoom In/Out Image -->
+                <div class="container" id="zoomIO_img">
+                    <div class="html">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">HTML CODE</div>
+                            
+                            <div class="med_pull_right">
+                                <div class="med_pull_left" onclick="toggleReviewData_zoomIO_img();" title="Show / Hide Code">
+                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon_zoomIOimg"></div>
+                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash_zoomIOimg" style="display: none;"></div>
+                                </div>
+                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('zoomIO_imgDiv')"></div>
+                            </div>
+                        </div>
+                        <pre id="zoomIO_imgDiv" style="display: none;">
+                            <code>
+                                &lt;div class="fa_mednet fa-minus med_iconBtn_sm" id="zoomOutBtn"&gt;&lt;/div&gt;
+                                &lt;div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" id="zoomInBtn"&gt;&lt;/div&gt;
+
+                                &lt;div class="med_Outerbody"&gt;
+                                    &lt;div class="med_button-container"&gt;
+                                        &lt;div class="fa_mednet fa-minus med_iconBtn_sm" onclick="zoomIn()"&gt;&lt;/div&gt;
+                                        &lt;div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" onclick="zoomOut()"&gt;&lt;/div&gt;
+                                      &lt;/div&gt;
+                                    
+                                      &lt;div class="med_zoom_outer"&gt;
+                                        &lt;div id="imageArea" onmousedown="startPanning(event)"  onmouseup="stopPanning()" onmouseleave="stopPanning()" onmousemove="panImage(event)" &gt;
+                                          &lt;embed src="images/aadhar.png" alt="Zoomable content"&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;script&gt;
+                                    document.addEventListener('DOMContentLoaded', () => {
+                                        manageZoomInOut('imageArea', 'zoomInBtn','zoomOutBtn');
+                                    });
+
+                                    let scale = 1, pointX = 0, pointY = 0, start = { x: 0, y: 0 }, panning = false, originalScale = 1;
+                                    function manageZoomInOut(imageID, zoomInID, zoomOutID) {
+                                        let imageEle = document.getElementById(imageID);
+                                        let zoomIn = document.getElementById(zoomInID);
+                                        let zoomOut = document.getElementById(zoomOutID);
+
+                                        imageEle.addEventListener('mousedown', (event) => {
+                                            event.preventDefault();
+                                            start = { x: event.clientX - pointX, y: event.clientY - pointY };
+                                            panning = true;
+                                            imageEle.style.cursor = "grabbing";
+                                        });
+
+                                        imageEle.addEventListener('mouseup', () => {
+                                            panning = false;
+                                            imageEle.style.cursor = "default";
+                                        });
+
+                                        imageEle.addEventListener('mouseleave', () => {
+                                            panning = false;
+                                            imageEle.style.cursor = "default";
+                                        });
+
+                                        imageEle.addEventListener('mousemove', (event) => {
+                                            if (!panning) return;
+                                            event.preventDefault();
+                                            pointX = event.clientX - start.x;
+                                            pointY = event.clientY - start.y;
+                                            setTransform();
+                                        });
+
+                                        zoomIn.addEventListener('click', () => {
+                                            var factor = 1.2;
+                                            scale = Math.min(scale * factor, 5);
+                                            setTransform();
+                                        });
+
+                                        zoomOut.addEventListener('click', () => {
+                                            var factor = 1 / 1.2;
+                                            scale = Math.max(scale * factor, originalScale);
+                                            if (scale === originalScale) {
+                                                pointX = 0;
+                                                pointY = 0;
+                                            }
+                                            setTransform();
+                                        });
+                                        resetZoom();
+                                    }
+
+                                    function setTransform() {
+                                        // Constrain movement within zoom_outer bounds
+                                        zoom = document.getElementById("imageArea");
+                                        zoomOuter = document.querySelector(".med_zoom_outer");
+                                        const zoomOuterRect = zoomOuter.getBoundingClientRect();
+                                        const zoomRect = zoom.getBoundingClientRect();
+                                        // Calculate max bounds for panning
+                                        const maxTranslateX = Math.max(0, (zoomRect.width - zoomOuterRect.width) / 2);
+                                        const maxTranslateY = Math.max(0, (zoomRect.height - zoomOuterRect.height) / 2);
+                                        // Constrain pointX and pointY
+                                        pointX = Math.min(maxTranslateX, Math.max(-maxTranslateX, pointX));
+                                        pointY = Math.min(maxTranslateY, Math.max(-maxTranslateY, pointY));
+                                        zoom.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+                                    }
+
+                                    function resetZoom() {
+                                        scale = 1, pointX = 0, pointY = 0;
+                                        setTransform();
+                                    }
+                                &lt;/script&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="preview">
+                        <div class="header med_Width100pr">
+                            <div class="med_marginT10">PREVIEW</div>
+                        </div>
+                        <div class="PreContent">
+                            <h3>Zoom In/Out Image Slot</h3>
+                            <div class="med_Width100pr">
+                                <div class="med_Outerbody">
+                                    <div class="med_button-container">
+                                        <div class="fa_mednet fa-minus med_iconBtn_sm" id="zoomOutBtn"></div>
+                                        <div class="fa_mednet fa-plus med_iconBtn_sm med_marginR5" id="zoomInBtn"></div>
+                                    </div>
+                                    
+                                    <div class="med_zoom_outer">
+                                        <div id="imageArea">
+                                            <embed src="images/aadhar.png" alt="Zoomable content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Zoom In/Out Image end-->
+
+                
 
                 <!-- patientHeader Band 1 -->
                 <div class="container" style="display:none;" id="patientHeader_band1">
