@@ -1,55 +1,3 @@
-
-  .med_borderHidden-table{
-    border-collapse: collapse;
-    border: none;
-  }
-  .med_borderHidden-table td, .med_borderHidden-table tr {
-    border: none;
-   
-    
-  }
-  .med_borderHidden-table td{
-    vertical-align: top; 
-  }
-
-  tr{
-    vertical-align: top; 
-  }
-
-.med_custom-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top:5px;
-  table-layout: auto;
-}
-.med_custom-table th, .med_custom-table td {
-  border: 1px solid #ddd;
-  padding: 5px;
-}
-.med_custom-table th {
-  background-color: #dedbdb;
-  font-weight: bold;
-  text-align: left;
-}
-.med_no-vertical-lines th, .med_no-vertical-lines td {
-  border-right: none;
-  border-left: none;
-}
-
-.med_no-vertical-lines {
-  border-collapse: collapse;
-  border:1px solid #ccc;
-}
-
-.med_secondHeader{
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-.med_bold {
-  font-weight: bold;
-}
-
-
 .pdfWrapper {
   display: flex;
   justify-content: center;
@@ -67,7 +15,6 @@
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  padding-left:5mm;
 }
 
 .page {
@@ -75,7 +22,6 @@
   height: 297mm; /* A4 height */
   page-break-after: always; /* Ensure each page breaks properly */
 }
-
 
 .mainContainer2 {
   background-color: rgb(82, 86, 89);
@@ -123,95 +69,7 @@
   margin-right:5px;
 }
 
-.print_tableHeader{
-  font-weight:bold;
-  font-size:1.3em; 
-  text-align:center;
-  width:100%;
-  padding:10px;
-}
-.print_customTable {
-  width: 100%;
-  border-collapse: collapse; 
-  table-layout:auto;
-}
 
-.print_customTable td {
-  vertical-align: top; 
-  border: none; 
-}
-
-.med_bold {
-  font-weight: bold; 
-}
-
-.print_barcode{
-  height:68px;
-  margin-bottom:-25px;
-  margin-top:-22px;
-  float: right;
-}
-.print_qrcode{
-  width:50px;
-  float:right;
-  margin-right:5px;
-}
-
-.print_patientH_name{
-  font-size:1.5em;
-}
-.print_font9 .med_Left_Width,
-.print_font10 .med_Left_Width,
-.print_font11 .med_Left_Width{
-  width:60%;
-}
-
-.print_font9 .med_Right_Width,
-.print_font10 .med_Right_Width,
-.print_font11 .med_Right_Width{
-  width:40%;
-}
-
-.print_font12 .med_Left_Width,
-.print_font13 .med_Left_Width,
-.print_font14 .med_Left_Width{
-  width:52%;
-}
-
-.print_font12 .med_Right_Width, 
-.print_font13 .med_Right_Width,
-.print_font14 .med_Right_Width{
-  width:48%;
-}
- 
-.print_font9{font-size:9px;}
-.print_font10{font-size:10px;}
-.print_font11{font-size: 11px;}
-.print_font12{font-size:12px;}
-.print_font13{font-size:13px;}
-.print_font14{font-size:14px;}
-
-.med_styledEMR_table {
-  border-collapse: collapse;
-  width:100%;
-}
-
-.med_styledEMR_table td, .med_styledEMR_table th {
-  border: 1px solid #ccc;
-  padding: 5px;
-  vertical-align: middle;
-           
-}
-.med_styledEMR_table th {
-  background-color: #f2f2f2;
-}
-
-.med_EMRtable_tab{
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  padding: 5px 3px;
-}
 
 
 

@@ -89,7 +89,7 @@
 
             <div id="copiedPopup" class="copy_popup">Code copied successfully !</div>
 
-            <div class="med_pull_right tabWebPrintOuter" style="display:none;">
+            <div class="med_pull_right tabWebPrintOuter" style="display:block;">
                 <div onclick="toggleWebPrint(this);" class="tabWebPrint-active" id="webTabDIV"><span class="fa_mednet fa-desktop med_marginR10"></span>Web</div>
                 <div onclick="toggleWebPrint(this);" class="tabWebPrint" id="printTabDIV"><span class="fa_mednet fa-file-text-o med_marginR10"></span>Print</div>
             </div>
@@ -8600,13 +8600,11 @@
         
         <div class="med_Width100pr" id="printDataDIV" style="display:none; height:calc(100% - 30px);">
             <div class="FixedInner2">
-                <a href="#header_Template1"><div class="wrapperToggle_btn wrapperToggle_btnActive">Header Temp.1</div></a>
-                <a href="#header_Template4"><div class="wrapperToggle_btn">Header Temp.4</div></a>
-                <a href="#print_table"><div class="wrapperToggle_btn">Print_View Table</div></a>
-                <a href="#printview_table2"><div class="wrapperToggle_btn">Print_View Table2</div></a>
-                <a href="#printview_table3"><div class="wrapperToggle_btn">Print_View Table3</div></a>
-                <a href="#printview_notes"><div class="wrapperToggle_btn">Print_View Notes</div></a>
-                <a href="#dr_Sign"><div class="wrapperToggle_btn">Dr. Sign</div></a>
+                <a href="#header_Template1"><div class="wrapperToggle_btn wrapperToggle_btnActive">Header Section</div></a>
+                <a href="#print_table"><div class="wrapperToggle_btn">Print Table View</div></a>
+                <a href="#printview_table2"><div class="wrapperToggle_btn">Print List View</div></a>
+                <a href="#freeFlowText"><div class="wrapperToggle_btn">Free flow Text</div></a>
+                <a href="#footerSection"><div class="wrapperToggle_btn">Footer Section</div></a>
             </div>
             <div class="mainContainer" id="showForhtml">
                 <!-- first -->
@@ -8624,141 +8622,7 @@
                         </div>   
                         <pre id="HeaderTemplateDIV_Header1" style="display: none;">
                             <code>
-                                &lt;div class="med_Width100pr"&gt;                              
-                                    &lt;div class="med_Width100pr"&gt;
-                                        &lt;table class="med_borderHidden-table med_Width100pr"&gt;
-                                            &lt;tbody&gt;
-                                                &lt;tr&gt;
-                                                    &lt;td colspan="2"&gt;
-                                                        &lt;span class="med_fontBold print_patientH_name"&gt;MRS. SEEMA KAUR [ NPHACE2312799 ]&lt;/span&gt;
-                                                    &lt;/td&gt;
-                                                
-                                                    &lt;td colspan="2"&gt;
-                                                        &lt;img src="images/49681290_9185570.png" class="print_barcode"&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                            &lt;/tbody&gt;
-                                        &lt;/table&gt;
-                                    &lt;/div&gt;
-                                        
-                                    &lt;div class="med_Width100pr med_marginT5 med_borderBottom"&gt;
-                                        &lt;div class="med_paddingR5 med_Left_Width"&gt;
-                                            &lt;div class="med_Width85pr"&gt;
-                                                &lt;table class="med_borderHidden-table"&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Age&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;
-                                                                &lt;span class="med_paddingR5"&gt;56 yrs / Female&lt;/span&gt;
-                                                                &lt;span class="fa_mednet fa-phone" style="color:#aaa;"&gt;&lt;/span&gt;
-                                                                &lt;span&gt;2654377234&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Blood Group&lt;/span&gt;
-                                                                &lt;span class=""&gt;&nbsp;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;B +ve&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Reg ID&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;IPD-2324-1111&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Req By&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;Dr. AMIT KUMAR&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Address&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;
-                                                                Adiun Trade Center, 38, 3rd Floor, Ambazari, Nagpur, Maharashtra 440033
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Collected At&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt; FGW11/FGW/FEMALE GENERAL WARD &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class="med_pull_right med_Width15pr"&gt;
-                                                &lt;table class="med_pull_right"&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td rowspan="3"&gt;
-                                                                &lt;img src="images/qr-code-148732_640.png" style="width:50px;"&gt;
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;div class="med_borderLeft med_paddingL5 med_Right_Width"&gt;
-                                            &lt;table&gt;
-                                                &lt;tbody&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td style="white-space:nowrap;"&gt;
-                                                            &lt;span class="med_fontBold"&gt;Collection on&lt;/span&gt;
-                                                            &lt;span class=""&gt;&nbsp; :&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td style="word-wrap:break-word;"&gt;
-                                                            &lt;span class="med_borderRight med_paddingR5"&gt;21-10-2023 05:36 PM&lt;/span&gt;
-                                                            &lt;span class=""&gt;AD777&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                    &lt;tr&gt; 
-                                                        &lt;td style="white-space:nowrap;"&gt;
-                                                            &lt;span class="med_fontBold"&gt;Accepted on&lt;/span&gt;
-                                                            &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td  style="word-wrap: break-word;"&gt;21-10-2023 05:36 PM&lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td style="white-space:nowrap;"&gt;
-                                                            &lt;span class="med_fontBold"&gt;Report Date&lt;/span&gt;
-                                                            &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td  style="word-wrap:break-word;"&gt;21-10-2023 05:36 PM&lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td style="white-space:nowrap;"&gt;
-                                                            &lt;span class="med_fontBold"&gt;Status&lt;/span&gt;
-                                                            &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td style="word-wrap:break-word;"&gt;Finalised 
-                                                            &lt;span class="med_paddingL5 med_borderLeft"&gt;TAT :&lt;/span&gt;
-                                                            &lt;span&gt;4:35 (HH:MM)&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td style="white-space:nowrap;"&gt;
-                                                            &lt;span class="med_fontBold"&gt;Sample Type&lt;/span&gt;
-                                                            &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td style="word-wrap:break-word;"&gt; Blood &lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                &lt;/tbody&gt;
-                                            &lt;/table&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                    
-                                &lt;/div&gt;
+                                
                             </code>
                         </pre>     
                     </div>
@@ -8767,531 +8631,126 @@
                             <div class="med_marginT10">PREVIEW</div>  
                         </div>
                         <div class="PreContent med_padding10">
-                            <div class="med_Width100pr">                              
+                            <div class="med_Width100pr med_marginT5 med_borderBottom" style="padding-bottom: 5px;">
                                 <div class="med_Width100pr">
-                                    <table class="med_borderHidden-table med_Width100pr">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <span class="med_fontBold print_patientH_name">MRS. SEEMA KAUR [ NPHACE2312799 ]</span>
-                                                </td>
-                                            
-                                                <td colspan="2">
-                                                    <img src="images/49681290_9185570.png" class="print_barcode">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    
-                                <div class="med_Width100pr med_marginT5 med_borderBottom">
-                                    <div class="med_paddingR5 med_Left_Width">
-                                        <div class="med_Width85pr">
-                                            <table class="med_borderHidden-table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Age</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
-                                                            <span class="med_paddingR5">56 yrs / Female</span>
-                                                            <span class="fa_mednet fa-phone" style="color:#aaa;"></span>
-                                                            <span>2654377234</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Blood Group</span>
-                                                            <span class="">&nbsp;:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">B +ve</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Reg ID</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">IPD-2324-1111</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Req By</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">Dr. AMIT KUMAR</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Address</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
-                                                            Adiun Trade Center, 38, 3rd Floor, Ambazari, Nagpur, Maharashtra 440033
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Collected At</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;"> FGW11/FGW/FEMALE GENERAL WARD </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="med_pull_right med_Width15pr">
-                                            <table class="med_pull_right">
-                                                <tbody>
-                                                    <tr>
-                                                        <td rowspan="3">
-                                                            <img src="images/qr-code-148732_640.png" style="width:50px;">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+
+                                    <div class="med_Width100pr med_pull_left">
+                                        <div class="med_Width50pr med_pull_left med_fontBold print_patientH_name">MRS. SEEMA KAUR [ NPHACE2312799 ] </div>
+
+                                        <div class="med_Width50pr med_pull_left med_textRight">
+                                            <img src="images/49681290_9185570.png" class="print_barcode">
                                         </div>
                                     </div>
-                                    <div class="med_borderLeft med_paddingL5 med_Right_Width">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td style="white-space:nowrap;">
-                                                        <span class="med_fontBold">Collection on</span>
-                                                        <span class="">&nbsp; :</span>
-                                                    </td>
-                                                    <td style="word-wrap:break-word;">
-                                                        <span class="med_borderRight med_paddingR5">21-10-2023 05:36 PM</span>
-                                                        <span class="">AD777</span>
-                                                    </td>
-                                                </tr>
-                                                <tr> 
-                                                    <td style="white-space:nowrap;">
-                                                        <span class="med_fontBold">Accepted on</span>
-                                                        <span class="med_pull_right">:</span>
-                                                    </td>
-                                                    <td  style="word-wrap: break-word;">21-10-2023 05:36 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="white-space:nowrap;">
-                                                        <span class="med_fontBold">Report Date</span>
-                                                        <span class="med_pull_right">:</span>
-                                                    </td>
-                                                    <td  style="word-wrap:break-word;">21-10-2023 05:36 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="white-space:nowrap;">
-                                                        <span class="med_fontBold">Status</span>
-                                                        <span class="med_pull_right">:</span>
-                                                    </td>
-                                                    <td style="word-wrap:break-word;">Finalised 
-                                                        <span class="med_paddingL5 med_borderLeft">TAT :</span>
-                                                        <span>4:35 (HH:MM)</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="white-space:nowrap;">
-                                                        <span class="med_fontBold">Sample Type</span>
-                                                        <span class="med_pull_right">:</span>
-                                                    </td>
-                                                    <td style="word-wrap:break-word;"> Blood </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+
+                                    <div class="med_Width100pr med_marginT5 med_pull_left">
+                                        <div class="med_Width65pr med_pull_left med_paddingR5">
+                                            <div class="med_Width85pr med_pull_left">
+                                                <div class="med_Width100pr med_pull_left">
+                                                    <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                        Age <span class="med_pull_right"> :</span>
+                                                    </div>
+                                                    <div class="med_pull_left" style="width:calc(100% - 90px);">
+                                                        <span class="med_paddingR5">56 yrs / Female</span>
+                                                        <span class="fa_mednet fa-phone" style="color:#aaa;"></span>
+                                                        <span>2654377234</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="med_Width100pr med_pull_left med_marginT5">
+                                                    <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                        Blood Group <span class="med_pull_right"> :</span>
+                                                    </div>
+                                                    <div class="med_pull_left" style="width:calc(100% - 90px);">B +ve</div>
+                                                </div>
+
+                                                <div class="med_Width100pr med_pull_left med_marginT5">
+                                                    <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                        Reg ID <span class="med_pull_right"> :</span>
+                                                    </div>
+                                                    <div class="med_pull_left" style="width:calc(100% - 90px);">IPD-2324-1111</div>
+                                                </div>
+
+                                                <div class="med_Width100pr med_pull_left med_marginT5">
+                                                    <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                        Req By <span class="med_pull_right"> :</span>
+                                                    </div>
+                                                    <div class="med_pull_left" style="width:calc(100% - 90px);">Dr. AMIT KUMAR</div>
+                                                </div>
+
+                                                <div class="med_Width100pr med_pull_left med_marginT5">
+                                                    <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                        Address <span class="med_pull_right"> :</span>
+                                                    </div>
+                                                    <div class="med_pull_left" style="width:calc(100% - 90px);">
+                                                        Adiun Trade Center, 38, 3rd Floor, Ambazari, Nagpur, Maharashtra 440033
+                                                    </div>
+                                                </div>
+
+                                                <div class="med_Width100pr med_pull_left med_marginT5">
+                                                    <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                        Collected At <span class="med_pull_right"> :</span>
+                                                    </div>
+                                                    <div class="med_pull_left" style="width:calc(100% - 90px);">FGW11/FGW/FEMALE GENERAL WARD</div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="med_Width15pr med_pull_left med_textRight med_paddingL10">
+                                                <img src="images/qr-code-148732_640.png" style="width:50px;">
+                                            </div>
+                                        </div>
+
+                                        <div class="med_pull_left med_borderLeft med_paddingL5 med_Width35pr">
+
+                                            <div class="med_Width100pr med_pull_left">
+                                                <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                    Collection On <span class="med_pull_right"> :</span>
+                                                </div>
+                                                <div class="med_pull_left" style="width:calc(100% - 90px);">
+                                                    <span class="med_borderRight med_paddingR5">21-10-2023 05:36 PM</span>
+                                                    <span class="med_paddingL5">AD777</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="med_Width100pr med_pull_left med_marginT5">
+                                                <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                    Accepted On <span class="med_pull_right"> :</span>
+                                                </div>
+                                                <div class="med_pull_left" style="width:calc(100% - 90px);">21-10-2023 05:36 PM</div>
+                                            </div>
+
+                                            <div class="med_Width100pr med_pull_left med_marginT5">
+                                                <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                    Report Date <span class="med_pull_right"> :</span>
+                                                </div>
+                                                <div class="med_pull_left" style="width:calc(100% - 90px);">21-10-2023 05:36 PM</div>
+                                            </div>
+
+                                            <div class="med_Width100pr med_pull_left med_marginT5">
+                                                <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                    Status <span class="med_pull_right"> :</span>
+                                                </div>
+                                                <div class="med_pull_left" style="width:calc(100% - 90px);">
+                                                    Finalised 
+                                                    <span class="med_paddingL5 med_borderLeft">TAT :</span>
+                                                    <span>4:35 (HH:MM)</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="med_Width100pr med_pull_left med_marginT5">
+                                                <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                    Sample Type <span class="med_pull_right"> :</span>
+                                                </div>
+                                                <div class="med_pull_left" style="width:calc(100% - 90px);">Blood</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>  
                 </div>
                 <!-- Second -->
-                <div class="container" style="display: block;" id="header_Template4">
-                    <div class="html med_Width100pr">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10 med_pull_left">HTML CODE</div> 
-
-                            <div class="med_pull_right"> 
-                                <div  onclick="toggleReviewData_Header4();">
-                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon6"></div>
-                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash6" style="display: none;"></div>
-                                </div>
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('HeaderTemplateDIV_Header4')"></div> 
-                            </div>
-                        </div>   
-                    
-                        <pre id="HeaderTemplateDIV_Header4" style="display: none;">
-                            <code>
-                                &lt;div class="med_Width100pr med_marginT10"&gt;                              
-                                    &lt;div class="med_Width100pr"&gt;
-                                        &lt;table class="med_borderHidden-table med_Width100pr"&gt;
-                                            &lt;tbody&gt;
-                                                &lt;tr&gt;
-                                                    &lt;td colspan="2"&gt;
-                                                        &lt;span class="med_fontBold print_patientH_name"&gt;MRS. SEEMA KAUR [ NPHACE2312799 ]&lt;/span&gt;
-                                                    &lt;/td&gt;
-                                                
-                                                    &lt;td style="vertical-align:middle;"&gt;
-                                                        &lt;span class="med_pull_right"&gt;
-                                                            &lt;b&gt;Age :&lt;/b&gt;56 yrs / Female 
-                                                            &lt;i class="fa_mednet fa-phone med_paddingL5 med_borderLeft" style="color:#aaa;"&gt;&lt;/i&gt;
-                                                            265437723452
-                                                        &lt;/span&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                            &lt;/tbody&gt;
-                                        &lt;/table&gt;
-                                    &lt;/div&gt;
-                                        
-                                    &lt;div class="med_Width100pr med_marginT5 med_border"&gt;
-                                        &lt;div class="med_padding5" style="width:38%;"&gt;
-                                            &lt;div class="med_Width85pr med_pull_left"&gt;
-                                                &lt;table class="med_borderHidden-table" &gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;MRN&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;
-                                                                NPHACE2312789
-                                                            &lt;/td&gt;
-                                                        
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Blood Group &lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;B +ve&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Reg ID&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;IPD-2324-1111&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Order #&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;OR-123&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Req By&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;
-                                                                Dr. AMIT KUMAR
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class="med_Width15pr med_pull_right"&gt;
-                                                &lt;table class="med_pull_right"&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td rowspan="3"&gt;
-                                                                &lt;img src="images/qr-code-148732_640.png" style="width:50px;"&gt;
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;div class="med_borderLeft" style="width:62%;"&gt;
-                                            &lt;div class="med_padding5 med_Width100pr med_borderBottom" style="background-color: beige;"&gt;
-                                                &lt;table&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Sample Collection At&lt;/span&gt;
-                                                                &lt;span&gt;&nbsp;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;Neoteric Care Hospital&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class="med_padding5" style="width: 47%;"&gt;
-                                                &lt;table class="med_borderHidden-table"&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold med_pull_left med_flex"&gt;Finalised/TAT&lt;/span&gt;
-                                                                &lt;span class=""&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;
-                                                                04:98(HH:MM)
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold med_pull_left"&gt;Sample ID&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;HAP58796&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                            
-                                            &lt;div class="med_paddingTB5" style="width:53%;"&gt;
-                                                &lt;table&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold med_pull_left med_flex"&gt;Collected&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;
-                                                                21-10-2023 05:35 PM
-                                                            &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt; 
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold med_pull_left med_flex"&gt;Accepted&lt;/span&gt;
-                                                                &lt;span class="med_pull_right"&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;21-10-2023 09:39 PM&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold med_pull_left"&gt;Reporting&lt;/span&gt;
-                                                                &lt;span class=""&gt;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;IPD-2324-1111 &lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class="med_padding5 med_Width100pr med_borderTop"&gt;
-                                                &lt;table&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td style="white-space:nowrap;"&gt;
-                                                                &lt;span class="med_fontBold"&gt;Sample Type&lt;/span&gt;
-                                                                &lt;span&gt;&nbsp;:&lt;/span&gt;
-                                                            &lt;/td&gt;
-                                                            &lt;td style="word-wrap:break-word;"&gt;Blood&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;div class="med_padding5 med_Width100pr med_borderTop"&gt;
-                                            &lt;table&gt;
-                                                &lt;tbody&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td style="white-space:nowrap;"&gt;
-                                                            &lt;span class="med_fontBold"&gt;Address&lt;/span&gt;
-                                                            &lt;span&gt;&nbsp;:&lt;/span&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td style="word-wrap:break-word;"&gt;Adiun Trade Center, 38, 3rf Floor, Ambazari, Nagpur, Maharashtra 440033 &lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                &lt;/tbody&gt;
-                                            &lt;/table&gt;
-                                        &lt;/div&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;    
-                            </code>
-                        </pre>     
-                    </div>
-                    <div class="preview med_Width100pr" style=" border-top: 1px solid #cccccc75;">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>  
-                        </div>
-                        <div class="PreContent" style="padding:10px;">
-                            <h3 style="margin-bottom: 0px;">Header Template 4</h3>
-                            <div class="med_Width100pr med_marginT10">                              
-                                <div class="med_Width100pr">
-                                    <table class="med_borderHidden-table med_Width100pr">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <span class="med_fontBold print_patientH_name">MRS. SEEMA KAUR [ NPHACE2312799 ]</span>
-                                                </td>
-                                            
-                                                <td style="vertical-align:middle;">
-                                                    <span class="med_pull_right">
-                                                        <b>Age :</b>56 yrs / Female 
-                                                        <i class="fa_mednet fa-phone med_paddingL5 med_borderLeft" style="color:#aaa;"></i>
-                                                        265437723452
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    
-                                <div class="med_Width100pr med_marginT5 med_border">
-                                    <div class="med_padding5" style="width:38%;">
-                                        <div class="med_Width85pr med_pull_left">
-                                            <table class="med_borderHidden-table" >
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">MRN</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
-                                                            NPHACE2312789
-                                                        </td>
-                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Blood Group </span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">B +ve</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Reg ID</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">IPD-2324-1111</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Order #</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">OR-123</td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Req By</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
-                                                            Dr. AMIT KUMAR
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="med_Width15pr med_pull_right">
-                                            <table class="med_pull_right">
-                                                <tbody>
-                                                    <tr>
-                                                        <td rowspan="3">
-                                                            <img src="images/qr-code-148732_640.png" style="width:50px;">
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="med_borderLeft" style="width:62%;">
-                                        <div class="med_padding5 med_Width100pr med_borderBottom" style="background-color: beige;">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Sample Collection At</span>
-                                                            <span>&nbsp;:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">Neoteric Care Hospital</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="med_padding5" style="width: 47%;">
-                                            <table class="med_borderHidden-table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold med_pull_left med_flex">Finalised/TAT</span>
-                                                            <span class="">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
-                                                            04:98(HH:MM)
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold med_pull_left">Sample ID</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">HAP58796</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        
-                                        <div class="med_paddingTB5" style="width:53%;">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold med_pull_left med_flex">Collected</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
-                                                            21-10-2023 05:35 PM
-                                                        </td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold med_pull_left med_flex">Accepted</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">21-10-2023 09:39 PM</td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold med_pull_left">Reporting</span>
-                                                            <span class="">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">IPD-2324-1111 </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="med_padding5 med_Width100pr med_borderTop">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Sample Type</span>
-                                                            <span>&nbsp;:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">Blood</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="med_padding5 med_Width100pr med_borderTop">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td style="white-space:nowrap;">
-                                                        <span class="med_fontBold">Address</span>
-                                                        <span>&nbsp;:</span>
-                                                    </td>
-                                                    <td style="word-wrap:break-word;">Adiun Trade Center, 38, 3rf Floor, Ambazari, Nagpur, Maharashtra 440033 </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
             
                 <div class="container" style="display: block;" id="print_table">
                     <div class="html med_Width100pr">
@@ -9309,59 +8768,7 @@
                     
                         <pre id="PrintViewDIV_table" style="display: none;">
                             <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;div class="print_tableHeader" &gt;HAEMATOLOGY &lt;/div&gt;
-                                    &lt;table class="med_custom-table med_no-vertical-lines"&gt;
-                                        &lt;thead&gt;
-                                            &lt;tr&gt;
-                                                &lt;th &gt;INVESTIGATION &lt;/th&gt;
-                                                &lt;th &gt;RESULT &lt;/th&gt;
-                                                &lt;th &gt;RANGE &lt;/th&gt;
-                                            &lt;/tr&gt;
-                                        &lt;/thead&gt;
-                                        &lt;tbody&gt;
-                                            &lt;tr&gt;
-                                                &lt;td colspan="3" class="med_secondHeader"&gt;
-                                                    &lt;div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"&gt; &lt;/div &gt;
-                                                    &lt;div &gt;HEMOGRAM WITH ESR [ WHOLE BLOOD ] &lt;/div&gt;
-                                                &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR20" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;HEMOGLOBIN &lt;/div&gt;
-                                                &lt;/td &gt;
-                                                &lt;td class="med_bold" &gt;10.3 L &lt;/td&gt;
-                                                &lt;td &gt;Male: 13.00-16.00 gm% &lt;br &gt;Female: 11.50-14.00 gm% &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR20" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;PACKED CELL VOLUME (PCV) &lt;/div &gt;
-                                                &lt;/td &gt;
-                                                &lt;td class="med_bold" &gt;34.1 L &lt;/td&gt;
-                                                &lt;td &gt;36 - 46 &lt;/td &gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR40" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;MCV &lt;/div&gt;
-                                                &lt;/td &gt;
-                                                &lt;td class="med_bold" &gt;73.02 L &lt;/td&gt;
-                                                &lt;td &gt;83 - 101 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR40" &gt;#&lt;/div&gt;
-                                                    &lt;div &gt;MCH &lt;/div&gt;
-                                                &lt;/td &gt;
-                                                &lt;td class="med_bold" &gt;34.06 H &lt;/td&gt;
-                                                &lt;td &gt;26 - 33 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                        
-                                        &lt;/tbody&gt;
-                                    &lt;/table&gt;
-                                &lt;/div&gt;
+                                
                             </code>
                         </pre>     
                     </div>
@@ -9371,57 +8778,47 @@
                         </div>
                         <div class="PreContent " style="padding:10px;">
                             <div class="med_Width100pr">
-                                <div class="print_tableHeader">HAEMATOLOGY</div>
-                                <table class="med_custom-table med_no-vertical-lines">
-                                    <thead>
-                                        <tr>
-                                            <th>INVESTIGATION</th>
-                                            <th>RESULT</th>
-                                            <th>RANGE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="3" class="med_secondHeader">
-                                                <div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"></div>
-                                                <div>HEMOGRAM WITH ESR [ WHOLE BLOOD ]</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR20">#</div>
-                                                <div>HEMOGLOBIN</div>
-                                            </td>
-                                            <td class="med_bold">10.3 L</td>
-                                            <td>Male: 13.00-16.00 gm%<br>Female: 11.50-14.00 gm%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR20">#</div>
-                                                <div>PACKED CELL VOLUME (PCV)</div>
-                                            </td>
-                                            <td class="med_bold">34.1 L</td>
-                                            <td>36 - 46</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR40">#</div>
-                                                <div>MCV</div>
-                                            </td>
-                                            <td class="med_bold">73.02 L</td>
-                                            <td>83 - 101</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR40">#</div>
-                                                <div>MCH</div>
-                                            </td>
-                                            <td class="med_bold">34.06 H</td>
-                                            <td>26 - 33</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
+                                <div class="print_tableHeader">ISSUE NOTES</div>
+
+                                <div class="med_Width100pr" style="border-left:1px solid #aaa;">
+                                    <div class="med_TableHeader_print">
+                                        <div class="med_Width25pr med_tableSlot_print med_paddingL10">Item Name</div>
+                                        <div class="med_Width10pr med_tableSlot_print">Batch</div>
+                                        <div class="med_Width10pr med_tableSlot_print">Expiry</div>
+                                        <div class="med_Width10pr med_tableSlot_print">Qty</div>
+                                        <div class="med_Width20pr med_tableSlot_print">Remark</div>
+                                        <div class="med_Width10pr med_tableSlot_print med_textRight">Unit Price</div>
+                                        <div class="med_Width15pr med_tableSlot_print med_textRight">Total Amount</div>
+                                    </div>
+
+                                    <div class="med_Width100pr">
+                                        <div class="med_RowDivTable_print">
+                                            <div class="med_Width25pr med_tableSlot_print">DOLO 650MG</div>
+                                            <div class="med_Width10pr med_tableSlot_print">100</div>
+                                            <div class="med_Width10pr med_tableSlot_print">10-2030</div>
+                                            <div class="med_Width10pr med_tableSlot_print">1</div>
+                                            <div class="med_Width20pr med_tableSlot_print">Cross-checked</div>
+                                            <div class="med_Width10pr med_tableSlot_print med_textRight">2.00</div>
+                                            <div class="med_Width15pr med_tableSlot_print med_textRight">2.00</div>
+                                        </div>
+
+                                        <div class="med_RowDivTable_print">
+                                            <div class="med_Width25pr med_tableSlot_print">MONO GEL</div>
+                                            <div class="med_Width10pr med_tableSlot_print">1234</div>
+                                            <div class="med_Width10pr med_tableSlot_print">10-2030</div>
+                                            <div class="med_Width10pr med_tableSlot_print">1</div>
+                                            <div class="med_Width20pr med_tableSlot_print">Re-tested</div>
+                                            <div class="med_Width10pr med_tableSlot_print med_textRight">25.00</div>
+                                            <div class="med_Width15pr med_tableSlot_print med_textRight">25.00</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="med_FooterDiv_print">
+                                        <div class="med_Width75pr med_tableSlot_print med_textRight med_paddingR10">Total</div>
+                                        <div class="med_Width10pr med_tableSlot_print med_textRight">27.00</div>
+                                        <div class="med_Width15pr med_tableSlot_print med_textRight">27.00</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>  
@@ -9443,64 +8840,7 @@
                     
                         <pre id="PrintViewDIV_table2" style="display: none;">
                             <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;div class="print_tableHeader"&gt;HAEMATOLOGY &lt;/div&gt;
-                                    &lt;table class="med_custom-table med_no-vertical-lines" style="border:none;"&gt;
-                                        &lt;thead&gt;
-                                            &lt;tr&gt;
-                                                &lt;th &gt;INVESTIGATION &lt;/th&gt;
-                                                &lt;th &gt;RESULT &lt;/th&gt;
-                                                &lt;th &gt;RANGE &lt;/th&gt;
-                                            &lt;/tr&gt;
-                                        &lt;/thead&gt;
-                                        &lt;tbody&gt;
-                                            &lt;tr&gt;
-                                                &lt;td colspan="3" class="med_secondHeader"&gt;
-                                                    &lt;div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;" &gt; &lt;/div&gt;
-                                                    &lt;div&gt;HEMOGRAM WITH ESR [ WHOLE BLOOD ] &lt;/div&gt;
-                                                &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR20" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;RBC COUNT &lt;/div&gt;
-                                                &lt;/td &gt;
-                                                &lt;td&gt;4.67 &lt;/td&gt;
-                                                &lt;td&gt;4.5 - 6.5 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR20" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;PACKED CELL VOLUME (PCV) &lt;/div &gt;
-                                                &lt;/td&gt;
-                                                &lt;td class="med_bold" &gt;34.1 L &lt;/td&gt;
-                                                &lt;td&gt;36 - 46 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td colspan="3" class="med_secondHeader"&gt;
-                                                    &lt;div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;" &gt; &lt;/div &gt;
-                                                    &lt;div &gt;HEMOGRAM WITH ESR [ WHOLE BLOOD ] &lt;/div&gt;
-                                                &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;
-                                                    &lt;div class="med_pull_left med_paddingR40" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;MCHC &lt;/div &gt;
-                                                &lt;/td&gt;
-                                                &lt;td class="med_bold" &gt;30.21 L &lt;/td&gt;
-                                                &lt;td&gt;32 - 36 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                &lt;td &gt;
-                                                    &lt;div class="med_pull_left med_paddingR40" &gt;# &lt;/div&gt;
-                                                    &lt;div &gt;WBC &lt;/div&gt;
-                                                &lt;/td&gt;
-                                                &lt;td &gt;4900 &lt;/td&gt;
-                                                &lt;td &gt;4000 - 10000 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                        &lt;/tbody&gt;
-                                    &lt;/table&gt;
-                                &lt;/div&gt;
+                               
                             </code>
                         </pre>     
                     </div>
@@ -9508,70 +8848,67 @@
                         <div class="header med_Width100pr">
                             <div class="med_marginT10">PREVIEW</div>  
                         </div>
-                        <div class="PreContent " style="padding:10px;">
+                        <div class="PreContent" style="padding:10px;">
                             <div class="med_Width100pr">
-                                <div class="print_tableHeader">HAEMATOLOGY</div>
-                                <table class="med_custom-table med_no-vertical-lines" style="border:none;">
-                                    <thead>
-                                        <tr>
-                                            <th>INVESTIGATION</th>
-                                            <th>RESULT</th>
-                                            <th>RANGE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="3" class="med_secondHeader">
-                                                <div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"></div>
-                                                <div>HEMOGRAM WITH ESR [ WHOLE BLOOD ]</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR20">#</div>
-                                                <div>RBC COUNT</div>
-                                            </td>
-                                            <td>4.67</td>
-                                            <td>4.5 - 6.5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR20">#</div>
-                                                <div>PACKED CELL VOLUME (PCV)</div>
-                                            </td>
-                                            <td class="med_bold">34.1 L</td>
-                                            <td>36 - 46</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3" class="med_secondHeader">
-                                                <div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"></div>
-                                                <div>HEMOGRAM WITH ESR [ WHOLE BLOOD ]</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR40">#</div>
-                                                <div>MCHC</div>
-                                            </td>
-                                            <td class="med_bold">30.21 L</td>
-                                            <td>32 - 36</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="med_pull_left med_paddingR40">#</div>
-                                                <div>WBC</div>
-                                            </td>
-                                            <td>4900</td>
-                                            <td>4000 - 10000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="print_tableHeader">ENTITY CHART</div>
+                                <div class="med_Width100pr med_borderDark">
+                                    <div class="med_listHeader_print">
+                                        <div class="med_Width20pr med_paddingL10 med_marginT3">Entity</div>
+                                        <div class="med_Width15pr med_marginT2">Token No</div>
+                                        <div class="med_Width10pr med_marginT2">DATE</div>
+                                        <div class="med_Width10pr med_marginT2">TYPE</div>
+                                        <div class="med_Width35pr med_marginT2">NOTES</div>
+                                        <div class="med_Width10pr med_marginT2 med_paddingR10 med_textRight">AMOUNT</div>
+                                    </div>
+
+                                    <div class="med_Width100pr">
+                                        <div class="med_tableRowDiv_print">
+                                            <div class="med_marginTB2 med_Width20pr med_paddingL10">Electrical Equipment</div>
+                                            <div class="med_marginTB2 med_Width15pr">JV24-25-956</div>
+                                            <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                            <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                            <div class="med_marginTB2 med_Width35pr">Electricity to various electronic devices</div>
+                                            <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">50,000.00</div>
+                                        </div>
+
+                                        <div class="med_tableRowDiv_print">
+                                            <div class="med_marginTB2 med_Width20pr med_paddingL10">Medical Equipment</div>
+                                            <div class="med_marginTB2 med_Width15pr">JV24-25-543</div>
+                                            <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                            <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                            <div class="med_marginTB2 med_Width35pr">Medical equipment refers to powered medical devices</div>
+                                            <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">100,000.00</div>
+                                        </div>
+
+                                        <div class="med_tableRowDiv_print">
+                                            <div class="med_marginTB2 med_Width20pr med_paddingL10">Dental Equipment</div>
+                                            <div class="med_marginTB2 med_Width15pr">JV24-25-300</div>
+                                            <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                            <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                            <div class="med_marginTB2 med_Width35pr">Dental Patient Chairs, Operatory Cabinetry</div>
+                                            <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">300,000.00</div>
+                                        </div>
+
+                                        <div class="med_tableRowDiv_print">
+                                            <div class="med_marginTB2 med_Width20pr med_paddingL10">Office Stationary Equipment</div>
+                                            <div class="med_marginTB2 med_Width15pr">JV24-25-500</div>
+                                            <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                            <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                            <div class="med_marginTB2 med_Width35pr">Staplers, Punching Machine, Sticky Tapes, Etc.</div>
+                                            <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">20,000.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="med_listFooterDiv_print">
+                                        <div class="med_marginTB2 med_Width90pr med_textRight med_paddingR10">Total - </div>
+                                        <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">4,90,000.00</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>  
                 </div>
 
-                <div class="container" style="display: block;" id="printview_table3">
+                <div class="container" style="display: block;" id="freeFlowText">
                     <div class="html med_Width100pr">
                         <div class="header med_Width100pr">
                             <div class="med_marginT10 med_pull_left">HTML CODE</div> 
@@ -9587,27 +8924,7 @@
                     
                         <pre id="PrintViewDIV_table3" style="display: none;">
                             <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;div class="print_tableHeader" &gt;CLINICAL BIOCHEMISTRY &lt;/div&gt;
-                                    &lt;table class="med_custom-table"&gt;
-                                        &lt;thead&gt;
-                                            &lt;tr&gt;
-                                                &lt;th &gt;INVESTIGATION &lt;/th&gt;
-                                                &lt;th &gt;RESULT &lt;/th&gt;
-                                                &lt;th &gt;UNIT &lt;/th&gt;
-                                                &lt;th &gt;RANGE &lt;/th&gt;
-                                            &lt;/tr&gt;
-                                        &lt;/thead&gt;
-                                        &lt;tbody&gt;
-                                            &lt;tr&gt;
-                                                &lt;td &gt;Gama GT (GGT) &lt;/td&gt;
-                                                &lt;td &gt;100 &lt;/td&gt;
-                                                &lt;td &gt;U/l &lt;/td&gt;
-                                                &lt;td &gt;22.45 &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                        &lt;/tbody&gt;
-                                    &lt;/table&gt;
-                                &lt;/div&gt;
+                               
                             </code>
                         </pre>     
                     </div>
@@ -9617,86 +8934,30 @@
                         </div>
                         <div class="PreContent " style="padding:10px;">
                             <div class="med_Width100pr">
-                                <div class="print_tableHeader">CLINICAL BIOCHEMISTRY</div>
-                                <table class="med_custom-table">
-                                    <thead>
-                                        <tr>
-                                            <th>INVESTIGATION</th>
-                                            <th>RESULT</th>
-                                            <th>UNIT</th>
-                                            <th>RANGE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Gama GT (GGT)</td>
-                                            <td>100</td>
-                                            <td>U/l</td>
-                                            <td>22.45</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
+                                <div class="med_Width100pr med_marginT5">
+                                    <div class="med_headerFreeFlow_print med_uppercase">Bilirubin Direct Calculated</div>
+                                    <div class="med_Width100pr med_padding10">
+                                        <div class="med_pull_left">
+                                            <div class="med_pull_left med_fontBold" style="width:100px;">Interpretation<span class="med_pull_right med_paddingR5">:</span></div>
+                                            <div class="med_pull_left" style="width: calc(100% - 100px);">TESTING DATA</div>
+                                        </div>
 
-                <div class="container" style="display: block;" id="printview_notes">
-                    <div class="html med_Width100pr">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10 med_pull_left">HTML CODE</div> 
-
-                            <div class="med_pull_right"> 
-                                <div  onclick="toggleReviewData_PrintViewNotes();">
-                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon10"></div>
-                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash10" style="display: none;"></div>
-                                </div>
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('PrintViewDIV_notes')"></div> 
-                            </div>
-                        </div>   
-                    
-                        <pre id="PrintViewDIV_notes" style="display: none;">
-                            <code>
-
-                            </code>
-                        </pre>     
-                    </div>
-                    <div class="preview med_Width100pr" style=" border-top: 1px solid #cccccc75;">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>  
-                        </div>
-                        <div class="PreContent" style="padding:10px;">
-                            <div class="med_Width100pr med_marginT5">
-                                <em>Method: IFCC Measured: Bilirubin Direct Calculated: Bilirubin Indirect</em>
-                                <table class="print_customTable">
-                                    <tbody>
-                                        <tr>
-                                            <td style="white-space:nowrap;" class="med_paddingR5">
-                                                <span class="med_bold">Interpretation</span><span class="med_pull_right">:</span>
-                                            </td>
-                                            <td>
-                                                TESTING DATA
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="white-space:nowrap;"  class="med_paddingR5">
-                                                <span class="med_bold">Revised Notes</span><span class=""> &nbsp;:</span>
-                                            </td>
-                                            <td>
+                                        <div class="med_Width100pr med_marginT5">
+                                            <div class="med_pull_left med_fontBold" style="width:100px;">Revised Notes <span class="med_pull_right med_paddingR5">:</span></div>
+                                            <div class="med_pull_left" style="width: calc(100% - 100px);">
                                                 <div>This is an amended report. Previous report was released on <b>25-07-2024 03:01 PM</b> stands cancelled.</div>
                                                 <div>1. The previous value of <b>ALT / SGOT</b> was <b>9 U/L</b> and has been changed to <b>12 U/L</b> in the new report.</div>
                                                 <div>2. The previous value of <b>AST / SGPT</b> was <b>12 U/L</b> and has been changed to <b>18 U/L</b> in the new report. Hence the previous report is null and void.</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>  
                 </div>
 
-
-                <div class="container" style="display: block;" id="dr_Sign">
+                <div class="container" style="display: block;" id="footerSection">
                     <div class="html med_Width100pr">
                         <div class="header med_Width100pr">
                             <div class="med_marginT10 med_pull_left">HTML CODE</div> 
@@ -9712,32 +8973,7 @@
                     
                         <pre id="PrintViewDIV_deSign" style="display: none;">
                             <code>
-                                &lt;div class="med_Width100pr"&gt;
-                                    &lt;table class="print_customTable"&gt;
-                                        &lt;tbody&gt;
-                                            &lt;tr&gt;
-                                                &lt;td style="width:33.33%;text-align:left;"&gt;
-                                                    &lt;div class="med_Width100pr" &gt; &lt;img src="images/sign127(1).png" style="width:80px;"&gt; &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr med_bold" &gt;DR.KRUSHNA SIRMANWAR &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr" &gt;M.B.B.S,M.D. &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr" &gt;PREPARED BY &lt;/div&gt;
-                                                &lt;/td &gt;
-                                                &lt;td style="width:33.33%;text-align:center;"&gt;
-                                                    &lt;div class="med_Width100pr" &gt; &lt;img src="images/sign149(1).png" style="width:80px;"&gt; &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr med_bold" &gt;DR.KRUSHNA SIRMANWAR &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr" &gt;M.B.B.S, M.D.(Raditaion Oncology) &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr" &gt;PREPARED BY &lt;/div&gt;
-                                                &lt;/td&gt;
-                                                &lt;td style="width:33.33%;text-align:right;"&gt;
-                                                    &lt;div class="med_Width100pr" &gt; &lt;img src="images/sign106(2).png" style="width:80px;"&gt; &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr med_bold" &gt;DR.KRUSHNA SIRMANWAR &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr" &gt;CONSULTANT PATHOLOGIST &lt;/div&gt;
-                                                    &lt;div class="med_Width100pr" &gt;PREPARED BY &lt;/div&gt;
-                                                &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                        &lt;/tbody&gt;
-                                    &lt;/table&gt;
-                                &lt;/div&gt;
+                                
                             </code>
                         </pre>     
                     </div>
@@ -9745,211 +8981,43 @@
                         <div class="header med_Width100pr">
                             <div class="med_marginT10">PREVIEW</div>  
                         </div>
-                        <div class="PreContent " style="padding:10px;">
-                            <div class="med_Width100pr" style="margin-top:30px;">
-                                <table class="print_customTable">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width:33.33%;text-align:left;">
-                                                <div class="med_Width100pr"><img src="images/sign127(1).png" style="width:80px;"></div>
-                                                <div class="med_Width100pr med_bold">DR.KRUSHNA SIRMANWAR</div>
-                                                <div class="med_Width100pr">M.B.B.S,M.D.</div>
-                                                <div class="med_Width100pr">PREPARED BY</div>
-                                            </td>
-                                            <td style="width:33.33%;text-align:center;">
-                                                <div class="med_Width100pr"><img src="images/sign149(1).png" style="width:80px;"></div>
-                                                <div class="med_Width100pr med_bold">DR.KRUSHNA SIRMANWAR</div>
-                                                <div class="med_Width100pr">M.B.B.S, M.D.(Raditaion Oncology)</div>
-                                                <div class="med_Width100pr">PREPARED BY</div>
-                                            </td>
-                                            <td style="width:33.33%;text-align:right;">
-                                                <div class="med_Width100pr"><img src="images/sign106(2).png" style="width:80px;"></div>
-                                                <div class="med_Width100pr med_bold">DR.KRUSHNA SIRMANWAR</div>
-                                                <div class="med_Width100pr">CONSULTANT PATHOLOGIST</div>
-                                                <div class="med_Width100pr">PREPARED BY</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
+                        <div class="PreContent" style="padding:10px;">
+                            <div class="med_wideDIV med_relative">
+                                <div class="med_wideDIV med_flex">
+                                    <div class="med_pull_left med_Width33_33pr">
+                                        <div class="med_Width100pr">
+                                            <img src="images/sign127(1).png" style="width:80px;">
+                                        </div>
+                                        <div class="med_Width100pr med_fontBold">DR.KRUSHNA SIRMANWAR</div>
+                                        <div class="med_Width100pr">M.B.B.S,M.D.</div>
+                                        <div class="med_Width100pr">PREPARED BY</div>
+                                    </div>
 
-                <div class="container" style="display: block;" id="emrTable1">
-                    <div class="html med_Width100pr">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10 med_pull_left">HTML CODE</div> 
+                                    <div class="med_pull_left med_Width33_33pr med_textCenter">
+                                        <div class="med_Width100pr">
+                                            <img src="images/sign149(1).png" style="width:80px;">
+                                        </div>
+                                        <div class="med_Width100pr med_fontBold">DR.KRUSHNA SIRMANWAR</div>
+                                        <div class="med_Width100pr">M.B.B.S, M.D.(Radiation Oncology)</div>
+                                        <div class="med_Width100pr">PREPARED BY</div>
+                                    </div>
 
-                            <div class="med_pull_right"> 
-                                <div  onclick="toggleReviewData_PrintEMRTable1();">
-                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon12"></div>
-                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash12" style="display: none;"></div>
+                                    <div class="med_pull_left med_Width33_33pr med_textRight">
+                                        <div class="med_Width100pr">
+                                            <img src="images/sign106(2).png" style="width:80px;">
+                                        </div>
+                                        <div class="med_Width100pr med_fontBold">DR.KRUSHNA SIRMANWAR</div>
+                                        <div class="med_Width100pr">CONSULTANT PATHOLOGIST</div>
+                                        <div class="med_Width100pr">PREPARED BY</div>
+                                    </div>
                                 </div>
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('PrintViewDIV_emrTable1')"></div> 
-                            </div>
-                        </div>   
-                    
-                        <pre id="PrintViewDIV_emrTable1" style="display: none;">
-                            <code>
-                                
-                            </code>
-                        </pre>     
-                    </div>
-                    <div class="preview med_Width100pr" style=" border-top: 1px solid #cccccc75;">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>  
-                        </div>
-                        <div class="PreContent " style="padding:10px;">
-                            <div class="med_Width100pr">
-                                <table class="med_custom-table med_no-vertical-lines">
-                                    <thead>
-                                        <tr>
-                                            <th>SR.</th>
-                                            <th>MEDICINE</th>
-                                            <th>DRUG CODE</th>
-                                            <th>DOSAGE INSTRUCTIONS</th>
-                                            <th>DURATION/ROUTE</th>
-                                            <th>QTY</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1. </td>
-                                            <td class="med_bold" style="font-size:1.1em;">
-                                                TABLETS TWYNSTA<br><i style="color: #7a7878db;">TELMISARTAN/AMLODIPINE(AS BESYLATE) [80 MG\5MG]</i>
-                                            </td>
-                                            <td style="white-space:nowrap;">0041-442202-1171</td>
-                                            <td>
-                                                2 TABLETS two times a day after breakfast<br>
-                                                <span style="color:#817f7f;white-space:nowrap;white-space:nowrap;">18-05-2024 - 19-05-2024</span>
-                                            </td>
-                                            <td>2 days<br><span style="color:#817f7f;">ORAL</span></td>
-                                            <td>8</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2. </td>
-                                            <td class="med_bold" style="font-size:1.1em;">TABLETS BUSCOPAN<br><i style="color:#7a7878db;">HYOSCINE[10 MG]</i></td>
-                                            <td style="white-space:nowrap;">0041-136501-1173</td>
-                                            <td>
-                                                1 TABLETS, every morning, before meal for 2 days<br><span style="color:#817f7f;white-space:nowrap;">20-05-2024 - 21-05-2024</span>
-                                            </td>
-                                            <td>2 days<br><span style="color:#817f7f;">ORAL</span></td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3. </td>
-                                            <td class="med_bold" style="font-size:1.1em;">
-                                                TABLETS TWYNSTA<br><i style="color:#7a7878db;">TELMISARTAN/AMLODIPINE(AS BESYLATE) [80 MG\5MG]</i>
-                                            </td>
-                                            <td style="white-space:nowrap;">0041-442202-1171</td>
-                                            <td>
-                                                2 TABLETS two times a day after breakfast<br>
-                                                <span style="color:#817f7f;white-space:nowrap;">18-05-2024 - 19-05-2024</span>
-                                            </td>
-                                            <td>2 days<br><span style="color:#817f7f;">ORAL</span></td>
-                                            <td>4</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="container" style="display: block;" id="emrTable2">
-                    <div class="html med_Width100pr">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10 med_pull_left">HTML CODE</div> 
-
-                            <div class="med_pull_right"> 
-                                <div  onclick="toggleReviewData_PrintEMRTable2();">
-                                    <div class="fa_mednet fa-eye med_icons" id="toggleEyeIcon13"></div>
-                                    <div class="fa_mednet fa-eye-slash med_icons" id="toggleEyeIcon_slash13" style="display: none;"></div>
+                                <div class="med_Width100pr med_marginT20">
+                                    <img src="images/a4 nairobi west footer.jpg" class="med_Width100pr">
                                 </div>
-                                <div class="fa_mednet fa-clone med_icons" title="Copy Code" onclick="copyText('PrintViewDIV_emrTable2')"></div> 
-                            </div>
-                        </div>   
-                    
-                        <pre id="PrintViewDIV_emrTable2" style="display: none;">
-                            <code>
-                                
-                            </code>
-                        </pre>     
-                    </div>
-                    <div class="preview med_Width100pr" style=" border-top: 1px solid #cccccc75;">
-                        <div class="header med_Width100pr">
-                            <div class="med_marginT10">PREVIEW</div>  
-                        </div>
-                        <div class="PreContent " style="padding:10px;">
-                            <div class="med_Width100pr">
-                                <table class="med_styledEMR_table">
-                                    <thead>
-                                        <tr>
-                                            <th rowspan="2">NAME OF MEDICINE</th>
-                                            <th colspan="2">BREAKFAST</th>
-                                            <th colspan="2">LUNCH</th>
-                                            <th colspan="2">DINNER</th>
-                                            <th rowspan="2">DURATION</th>
-                                            <th rowspan="2">DATE</th>
-                                        </tr>
-                                        <tr>
-                                            <th>BEFORE</th>
-                                            <th>AFTER</th>
-                                            <th>BEFORE</th>
-                                            <th>AFTER</th>
-                                            <th>BEFORE</th>
-                                            <th>AFTER</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="med_bold" style="font-size:1.1em;">Tab Dolonex 20mg DT Tab<br><i style="color:#7a7878db;">Piroxicam</i></td>
-                                            <td></td>
-                                            <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                            <td></td>
-                                            <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                            <td></td>
-                                            <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                            <td>1 day<br><i style="color:#817f7f;">ORAL</i></td>
-                                            <td style="white-space:nowrap;">26 Jun - 26 Jun</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="med_bold" style="font-size:1.1em;">Cream Dolo Cream<br><i style="color:#7a7878db;">Cholecalciferol 1000 IU + Elemental Calcium 500 mg</i></td>
-                                            <td colspan="6">Apply gently</td>
-                                            <td>2 days</td>
-                                            <td style="white-space:nowrap;">26 Jun - 27 Jun</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="med_bold" style="font-size:1.1em;">Tab Cidmus 100mg Tab<br><i style="color:#7a7878db;">Sacubitril/Valsartan Tablets</i></td>
-                                            <td></td>
-                                            <td><span class="med_EMRtable_tab">2 TAB</span></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><span class="med_EMRtable_tab">2 TAB</span></td>
-                                            <td>5 days<br><i style="color:#817f7f;">ORAL</i></td>
-                                            <td style="white-space:nowrap;">26 Jun - 30 Jun</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="med_bold" style="font-size:1.1em;">Tab Cidmus 100mg Tab<br><i style="color:#7a7878db;">Sacubitril/Valsartan Tablets</i></td>
-                                            <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>5 days<br><i style="color:#817f7f;">ORAL</i></td>
-                                            <td style="white-space:nowrap;">01 Jul - 05 Jul</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                
                             </div>
                         </div>
                     </div>  
                 </div>
-
             </div>
 
             <div class="mainContainer2" id="showForPrintview" style="display:none;">
@@ -9959,663 +9027,284 @@
                         <div class="page" id="page1">
                             <!-- Content for page 1 -->
                             <div class="med_Width100pr">
-                                <!-- <table class="customTable">
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="9" class="label" style="font-size:20px;">RASHATRASANT TUKDOJI CANCER HOSPITAL AND RESEARCH CENTER</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="8" class="value">TUKDOJI PUTLA CHOWK, MANEWADA RD, NAGPUR, MAHARASHTRA</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="8" class="value">Contact No. :1234567899</td>
-                                        </tr>
-                                    </tbody>
-                                </table> -->
-                                <img src="images/a4 ivanchuk.jpg" class="med_Width100pr">
+                                <img src="images/a4 ivanchuk.jpg" class="med_Width100pr" style="height:2cm;">
                             </div>
-                            <div class="pdfBody print_font14" style="font-family:Verdana;">
-                                <div class="med_Width100pr">                              
-                                    <div class="med_Width100pr">
-                                        <table class="med_borderHidden-table med_Width100pr">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <span class="med_fontBold print_patientH_name">MRS. SEEMA KAUR [ NPHACE2312799 ]</span>
-                                                    </td>
-                                                
-                                                    <td colspan="2">
-                                                        <img src="images/49681290_9185570.png" class="print_barcode">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                        
-                                    <div class="med_Width100pr med_marginT5 med_borderBottom">
-                                        <div class="med_Left_Width" style="padding-right:2px;">
-                                            <div class="med_Width90pr">
-                                                <table class="med_borderHidden-table">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Age</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">
+                            <div class="pdfBody print_font12">
+                                <div class="med_Width100pr med_relative">
+                                    <div class="med_header_print">PRINT HEADING</div>
+                                    <div class="med_Width100pr med_marginT20 med_borderBottom" style="padding-bottom: 5px;">
+                                        <div class="med_Width100pr">
+                                            <div class="med_Width100pr med_pull_left">
+                                                <div class="med_Width50pr med_pull_left med_fontBold print_patientH_name">MRS. SEEMA KAUR [ NPHACE2312799 ] </div>
+
+                                                <div class="med_Width50pr med_pull_left med_textRight">
+                                                    <img src="images/49681290_9185570.png" class="print_barcode">
+                                                </div>
+                                            </div>
+
+                                            <div class="med_Width100pr med_marginT5 med_pull_left">
+                                                <div class="med_Width65pr med_pull_left med_paddingR5">
+                                                    <div class="med_Width85pr med_pull_left">
+                                                        <div class="med_Width100pr med_pull_left">
+                                                            <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                                Age <span class="med_pull_right"> :</span>
+                                                            </div>
+                                                            <div class="med_pull_left" style="width:calc(100% - 90px);">
                                                                 <span class="med_paddingR5">56 yrs / Female</span>
                                                                 <span class="fa_mednet fa-phone" style="color:#aaa;"></span>
                                                                 <span>2654377234</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Blood G</span>
-                                                                <span class="med_pull_right">&nbsp;:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">B +ve</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Reg ID</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">IPD-2324-1111</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Req By</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">Dr. AMIT KUMAR</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Address</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="med_Width100pr med_pull_left med_marginT5">
+                                                            <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                                Blood Group <span class="med_pull_right"> :</span>
+                                                            </div>
+                                                            <div class="med_pull_left" style="width:calc(100% - 90px);">B +ve</div>
+                                                        </div>
+
+                                                        <div class="med_Width100pr med_pull_left med_marginT5">
+                                                            <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                                Reg ID <span class="med_pull_right"> :</span>
+                                                            </div>
+                                                            <div class="med_pull_left" style="width:calc(100% - 90px);">IPD-2324-1111</div>
+                                                        </div>
+
+                                                        <div class="med_Width100pr med_pull_left med_marginT5">
+                                                            <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                                Req By <span class="med_pull_right"> :</span>
+                                                            </div>
+                                                            <div class="med_pull_left" style="width:calc(100% - 90px);">Dr. AMIT KUMAR</div>
+                                                        </div>
+
+                                                        <div class="med_Width100pr med_pull_left med_marginT5">
+                                                            <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                                Address <span class="med_pull_right"> :</span>
+                                                            </div>
+                                                            <div class="med_pull_left" style="width:calc(100% - 90px);">
                                                                 Adiun Trade Center, 38, 3rd Floor, Ambazari, Nagpur, Maharashtra 440033
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Collected At</span>
-                                                                <span class="">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;"> FGW11/FGW/FEMALE GENERAL WARD </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="med_pull_right med_Width10pr">
-                                                <table class="med_pull_right">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td rowspan="3">
-                                                                <img src="images/qr-code-148732_640.png" style="width:50px;">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="med_borderLeft med_paddingL5 med_Right_Width">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Collection on</span>
-                                                            <span class="">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="med_Width100pr med_pull_left med_marginT5">
+                                                            <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                                Collected At <span class="med_pull_right"> :</span>
+                                                            </div>
+                                                            <div class="med_pull_left" style="width:calc(100% - 90px);">FGW11/FGW/FEMALE GENERAL WARD</div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="med_Width15pr med_pull_left med_textRight med_paddingL10">
+                                                        <img src="images/qr-code-148732_640.png" style="width:50px;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="med_pull_left med_borderLeft med_paddingL5 med_Width35pr">
+
+                                                    <div class="med_Width100pr med_pull_left">
+                                                        <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                            Collection On <span class="med_pull_right"> :</span>
+                                                        </div>
+                                                        <div class="med_pull_left" style="width:calc(100% - 90px);">
                                                             <span class="med_borderRight med_paddingR5">21-10-2023 05:36 PM</span>
-                                                            <span class="">AD777</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr> 
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Accepted on</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td  style="word-wrap: break-word;">21-10-2023 05:36 PM</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Report Date</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td  style="word-wrap:break-word;">21-10-2023 05:36 PM</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Status</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">Finalised 
+                                                            <span class="med_paddingL5">AD777</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="med_Width100pr med_pull_left med_marginT5">
+                                                        <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                            Accepted On <span class="med_pull_right"> :</span>
+                                                        </div>
+                                                        <div class="med_pull_left" style="width:calc(100% - 90px);">21-10-2023 05:36 PM</div>
+                                                    </div>
+
+                                                    <div class="med_Width100pr med_pull_left med_marginT5">
+                                                        <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                            Report Date <span class="med_pull_right"> :</span>
+                                                        </div>
+                                                        <div class="med_pull_left" style="width:calc(100% - 90px);">21-10-2023 05:36 PM</div>
+                                                    </div>
+
+                                                    <div class="med_Width100pr med_pull_left med_marginT5">
+                                                        <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                            Status <span class="med_pull_right"> :</span>
+                                                        </div>
+                                                        <div class="med_pull_left" style="width:calc(100% - 90px);">
+                                                            Finalised 
                                                             <span class="med_paddingL5 med_borderLeft">TAT :</span>
                                                             <span>4:35 (HH:MM)</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Sample Type</span>
-                                                            <span class="med_pull_right">:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;"> Blood </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="med_Width100pr med_marginT10">                              
-                                    <div class="med_Width100pr">
-                                        <table class="med_borderHidden-table med_Width100pr">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <span class="med_fontBold print_patientH_name">MRS. SEEMA KAUR [ NPHACE2312799 ]</span>
-                                                    </td>
-                                                
-                                                    <td style="vertical-align:middle;">
-                                                        <span class="med_pull_right">
-                                                            <b>Age :</b>56 yrs / Female 
-                                                            <i class="fa_mednet fa-phone med_paddingL5 med_borderLeft" style="color:#aaa;"></i>
-                                                            2654377234
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                        
-                                    <div class="med_Width100pr med_marginT5 med_border">
-                                        <div class="med_padding5" style="width:35%;">
-                                            <div class="med_Width85pr med_pull_left">
-                                                <table class="med_borderHidden-table" >
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">MRN</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">
-                                                                NPHACE2312789
-                                                            </td>
-                                                        
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Blood G </span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">B +ve</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Reg ID</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">IPD-2324-1111</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Order #</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">OR-123</td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Req By</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">
-                                                                Dr. AMIT KUMAR
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="med_Width15pr med_pull_right">
-                                                <table class="med_pull_right">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td rowspan="3">
-                                                                <img src="images/qr-code-148732_640.png" style="width:50px;">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="med_borderLeft" style="width:65%;">
-                                            <div class="med_padding5 med_Width100pr med_borderBottom" style="background-color: beige;">
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Sample Collection At</span>
-                                                                <span>:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">Neoteric Care Hospital</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="med_padding5" style="width: 48%;">
-                                                <table class="med_borderHidden-table">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold med_pull_left med_flex">Finalised/TAT</span>
-                                                                <span class="">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">
-                                                                04:98(HH:MM)
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold med_pull_left">Sample ID</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">HAP58796</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            
-                                            <div class="med_paddingTB5" style="width:52%;">
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold med_pull_left med_flex">Collected</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">
-                                                                21-10-2023 05:35 PM
-                                                            </td>
-                                                        </tr>
-                                                        <tr> 
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold med_pull_left med_flex">Accepted</span>
-                                                                <span class="med_pull_right">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">21-10-2023 09:39 PM</td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold med_pull_left">Reporting</span>
-                                                                <span class="">:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">IPD-2324-1111 </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="med_padding5 med_Width100pr med_borderTop">
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="white-space:nowrap;">
-                                                                <span class="med_fontBold">Sample Type</span>
-                                                                <span>:</span>
-                                                            </td>
-                                                            <td style="word-wrap:break-word;">Blood</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="med_padding5 med_Width100pr med_borderTop">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="white-space:nowrap;">
-                                                            <span class="med_fontBold">Address</span>
-                                                            <span>:</span>
-                                                        </td>
-                                                        <td style="word-wrap:break-word;">Adiun Trade Center, 38, 3rf Floor, Ambazari, Nagpur, Maharashtra 440033 </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                        
-                                
-                                <div class="med_Width100pr">
-                                    <div class="print_tableHeader">HAEMATOLOGY</div>
-                                    <table class="med_custom-table med_no-vertical-lines">
-                                        <thead>
-                                            <tr>
-                                                <th>INVESTIGATION</th>
-                                                <th>RESULT</th>
-                                                <th>RANGE</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="3" class="med_secondHeader">
-                                                    <div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"></div>
-                                                    <div>HEMOGRAM WITH ESR [ WHOLE BLOOD ]</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR20">#</div>
-                                                    <div>HEMOGLOBIN</div>
-                                                </td>
-                                                <td class="med_bold">10.3 L</td>
-                                                <td>Male: 13.00-16.00 gm%<br>Female: 11.50-14.00 gm%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR20">#</div>
-                                                    <div>PACKED CELL VOLUME (PCV)</div>
-                                                </td>
-                                                <td class="med_bold">34.1 L</td>
-                                                <td>36 - 46</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR40">#</div>
-                                                    <div>MCV</div>
-                                                </td>
-                                                <td class="med_bold">73.02 L</td>
-                                                <td>83 - 101</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR40">#</div>
-                                                    <div>MCH</div>
-                                                </td>
-                                                <td class="med_bold">34.06 H</td>
-                                                <td>26 - 33</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                        </div>
+                                                    </div>
 
-                                <div class="med_Width100pr">
-                                    <div class="print_tableHeader">HAEMATOLOGY</div>
-                                    <table class="med_custom-table med_no-vertical-lines" style="border:none;">
-                                        <thead>
-                                            <tr>
-                                                <th>INVESTIGATION</th>
-                                                <th>RESULT</th>
-                                                <th>RANGE</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="3" class="med_secondHeader">
-                                                    <div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"></div>
-                                                    <div>HEMOGRAM WITH ESR [ WHOLE BLOOD ]</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR20">#</div>
-                                                    <div>RBC COUNT</div>
-                                                </td>
-                                                <td>4.67</td>
-                                                <td>4.5 - 6.5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR20">#</div>
-                                                    <div>PACKED CELL VOLUME (PCV)</div>
-                                                </td>
-                                                <td class="med_bold">34.1 L</td>
-                                                <td>36 - 46</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3" class="med_secondHeader">
-                                                    <div class="fa_mednet fa-check med_paddingR10 med_pull_left" style="color:green;"></div>
-                                                    <div>HEMOGRAM WITH ESR [ WHOLE BLOOD ]</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR40">#</div>
-                                                    <div>MCHC</div>
-                                                </td>
-                                                <td class="med_bold">30.21 L</td>
-                                                <td>32 - 36</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="med_pull_left med_paddingR40">#</div>
-                                                    <div>WBC</div>
-                                                </td>
-                                                <td>4900</td>
-                                                <td>4000 - 10000</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="med_Width100pr">
-                                    <div class="print_tableHeader">CLINICAL BIOCHEMISTRY</div>
-                                    <table class="med_custom-table">
-                                        <thead>
-                                            <tr>
-                                                <th>INVESTIGATION</th>
-                                                <th>RESULT</th>
-                                                <th>UNIT</th>
-                                                <th>RANGE</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Gama GT (GGT)</td>
-                                                <td>100</td>
-                                                <td>U/l</td>
-                                                <td>22.45</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="page" id="page2">
-                            <!-- Content for page 2 -->
-                            <div class="pdfBody print_font14">
-                                <div class="med_Width100pr med_marginT5">
-                                    <em>Method: IFCC Measured: Bilirubin Direct Calculated: Bilirubin Indirect</em>
-                                    <table class="print_customTable">
-                                        <tbody>
-                                            <tr>
-                                                <td style="white-space:nowrap;" class="med_paddingR5">
-                                                    <span class="med_bold">Interpretation</span><span class="med_pull_right">:</span>
-                                                </td>
-                                                <td>
-                                                    TESTING DATA
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="white-space:nowrap;"  class="med_paddingR5">
-                                                    <span class="med_bold">Revised Notes</span><span class=""> &nbsp;:</span>
-                                                </td>
-                                                <td>
+                                                    <div class="med_Width100pr med_pull_left med_marginT5">
+                                                        <div class="med_fontBold med_pull_left med_paddingR5" style="width:90px;">
+                                                            Sample Type <span class="med_pull_right"> :</span>
+                                                        </div>
+                                                        <div class="med_pull_left" style="width:calc(100% - 90px);">Blood</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="med_Width100pr">
+                                        <div class="print_tableHeader">TABLE VIEW</div>
+
+                                        <div class="med_Width100pr" style="border-left:1px solid #aaa;">
+                                            <div class="med_TableHeader_print">
+                                                <div class="med_Width25pr med_tableSlot_print med_paddingL10">Item Name</div>
+                                                <div class="med_Width10pr med_tableSlot_print">Batch</div>
+                                                <div class="med_Width10pr med_tableSlot_print">Expiry</div>
+                                                <div class="med_Width10pr med_tableSlot_print">Qty</div>
+                                                <div class="med_Width20pr med_tableSlot_print">Remark</div>
+                                                <div class="med_Width10pr med_tableSlot_print med_textRight">Unit Price</div>
+                                                <div class="med_Width15pr med_tableSlot_print med_textRight">Total Amount</div>
+                                            </div>
+
+                                            <div class="med_Width100pr">
+                                                <div class="med_RowDivTable_print">
+                                                    <div class="med_Width25pr med_tableSlot_print">DOLO 650MG</div>
+                                                    <div class="med_Width10pr med_tableSlot_print">100</div>
+                                                    <div class="med_Width10pr med_tableSlot_print">10-2030</div>
+                                                    <div class="med_Width10pr med_tableSlot_print">1</div>
+                                                    <div class="med_Width20pr med_tableSlot_print">Cross-checked</div>
+                                                    <div class="med_Width10pr med_tableSlot_print med_textRight">2.00</div>
+                                                    <div class="med_Width15pr med_tableSlot_print med_textRight">2.00</div>
+                                                </div>
+
+                                                <div class="med_RowDivTable_print">
+                                                    <div class="med_Width25pr med_tableSlot_print">MONO GEL</div>
+                                                    <div class="med_Width10pr med_tableSlot_print">1234</div>
+                                                    <div class="med_Width10pr med_tableSlot_print">10-2030</div>
+                                                    <div class="med_Width10pr med_tableSlot_print">1</div>
+                                                    <div class="med_Width20pr med_tableSlot_print">Re-tested</div>
+                                                    <div class="med_Width10pr med_tableSlot_print med_textRight">25.00</div>
+                                                    <div class="med_Width15pr med_tableSlot_print med_textRight">25.00</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="med_FooterDiv_print">
+                                                <div class="med_Width75pr med_tableSlot_print med_textRight med_paddingR10">Total</div>
+                                                <div class="med_Width10pr med_tableSlot_print med_textRight">27.00</div>
+                                                <div class="med_Width15pr med_tableSlot_print med_textRight">27.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="med_Width100pr med_marginT20">
+                                        <div class="print_tableHeader">LIST VIEW</div>
+                                        <div class="med_Width100pr med_borderDark">
+                                            <div class="med_listHeader_print">
+                                                <div class="med_Width20pr med_paddingL10 med_marginT3">Entity</div>
+                                                <div class="med_Width15pr med_marginT2">Token No</div>
+                                                <div class="med_Width10pr med_marginT2">DATE</div>
+                                                <div class="med_Width10pr med_marginT2">TYPE</div>
+                                                <div class="med_Width35pr med_marginT2">NOTES</div>
+                                                <div class="med_Width10pr med_marginT2 med_paddingR10 med_textRight">AMOUNT</div>
+                                            </div>
+
+                                            <div class="med_Width100pr">
+                                                <div class="med_tableRowDiv_print">
+                                                    <div class="med_marginTB2 med_Width20pr med_paddingL10">Electrical Equipment</div>
+                                                    <div class="med_marginTB2 med_Width15pr">JV24-25-956</div>
+                                                    <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                                    <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                                    <div class="med_marginTB2 med_Width35pr">Electricity to various electronic devices</div>
+                                                    <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">50,000.00</div>
+                                                </div>
+
+                                                <div class="med_tableRowDiv_print">
+                                                    <div class="med_marginTB2 med_Width20pr med_paddingL10">Medical Equipment</div>
+                                                    <div class="med_marginTB2 med_Width15pr">JV24-25-543</div>
+                                                    <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                                    <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                                    <div class="med_marginTB2 med_Width35pr">Medical equipment refers to powered medical devices</div>
+                                                    <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">100,000.00</div>
+                                                </div>
+
+                                                <div class="med_tableRowDiv_print">
+                                                    <div class="med_marginTB2 med_Width20pr med_paddingL10">Dental Equipment</div>
+                                                    <div class="med_marginTB2 med_Width15pr">JV24-25-300</div>
+                                                    <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                                    <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                                    <div class="med_marginTB2 med_Width35pr">Dental Patient Chairs, Operatory Cabinetry</div>
+                                                    <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">300,000.00</div>
+                                                </div>
+
+                                                <div class="med_tableRowDiv_print">
+                                                    <div class="med_marginTB2 med_Width20pr med_paddingL10">Office Stationary Equipment</div>
+                                                    <div class="med_marginTB2 med_Width15pr">JV24-25-500</div>
+                                                    <div class="med_marginTB2 med_Width10pr">06-04-2024</div>
+                                                    <div class="med_marginTB2 med_Width10pr">Journal</div>
+                                                    <div class="med_marginTB2 med_Width35pr">Staplers, Punching Machine, Sticky Tapes, Etc.</div>
+                                                    <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">20,000.00</div>
+                                                </div>
+                                            </div>
+                                            <div class="med_listFooterDiv_print">
+                                                <div class="med_marginTB2 med_Width90pr med_textRight med_paddingR10">Total - </div>
+                                                <div class="med_marginTB2 med_Width10pr med_paddingR10 med_textRight">4,90,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="med_Width100pr med_marginT20">
+                                        <div class="med_headerFreeFlow_print med_uppercase">Bilirubin Direct Calculated</div>
+                                        <div class="med_Width100pr med_padding10">
+                                            <div class="med_pull_left">
+                                                <div class="med_pull_left med_fontBold" style="width:100px;">Interpretation<span class="med_pull_right med_paddingR5">:</span></div>
+                                                <div class="med_pull_left" style="width: calc(100% - 100px);">TESTING DATA</div>
+                                            </div>
+
+                                            <div class="med_Width100pr med_marginT5">
+                                                <div class="med_pull_left med_fontBold" style="width:100px;">Revised Notes <span class="med_pull_right med_paddingR5">:</span></div>
+                                                <div class="med_pull_left" style="width: calc(100% - 100px);">
                                                     <div>This is an amended report. Previous report was released on <b>25-07-2024 03:01 PM</b> stands cancelled.</div>
                                                     <div>1. The previous value of <b>ALT / SGOT</b> was <b>9 U/L</b> and has been changed to <b>12 U/L</b> in the new report.</div>
                                                     <div>2. The previous value of <b>AST / SGPT</b> was <b>12 U/L</b> and has been changed to <b>18 U/L</b> in the new report. Hence the previous report is null and void.</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>                 
-
-
-                                <div class="med_Width100pr" style="margin-top:10px;">
-                                    <table class="print_customTable">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width:33.33%;text-align:left;">
-                                                    <div class="med_Width100pr"><img src="images/sign127(1).png" style="width:80px;"></div>
-                                                    <div class="med_Width100pr med_bold">DR.KRUSHNA SIRMANWAR</div>
-                                                    <div class="med_Width100pr">M.B.B.S,M.D.</div>
-                                                    <div class="med_Width100pr">PREPARED BY</div>
-                                                </td>
-                                                <td style="width:33.33%;text-align:center;">
-                                                    <div class="med_Width100pr"><img src="images/sign149(1).png" style="width:80px;"></div>
-                                                    <div class="med_Width100pr med_bold">DR.KRUSHNA SIRMANWAR</div>
-                                                    <div class="med_Width100pr">M.B.B.S, M.D.(Raditaion Oncology)</div>
-                                                    <div class="med_Width100pr">PREPARED BY</div>
-                                                </td>
-                                                <td style="width:33.33%;text-align:right;">
-                                                    <div class="med_Width100pr"><img src="images/sign106(2).png" style="width:80px;"></div>
-                                                    <div class="med_Width100pr med_bold">DR.KRUSHNA SIRMANWAR</div>
-                                                    <div class="med_Width100pr">CONSULTANT PATHOLOGIST</div>
-                                                    <div class="med_Width100pr">PREPARED BY</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                    <div class="med_wideDIV med_flex" style="margin-top:40px;">
+                                        <div class="med_pull_left med_Width33_33pr">
+                                            <div class="med_Width100pr">
+                                                <img src="images/sign127(1).png" style="width:80px;">
+                                            </div>
+                                            <div class="med_Width100pr med_fontBold">DR.KRUSHNA SIRMANWAR</div>
+                                            <div class="med_Width100pr">M.B.B.S,M.D.</div>
+                                            <div class="med_Width100pr">PREPARED BY</div>
+                                        </div>
 
-                                <div class="med_Width100pr" style="margin-top:20px;">
-                                    <table class="print_customTable">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width:33.33%;text-align:right;">
-                                                    <div class="med_Width100pr med_bold">MR.ADMIN</div>
-                                                    <div class="med_Width100pr">PREPARED BY</div>
-                                                    <div class="med_Width100pr">13-08-2024 03:56 PM</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="med_Width100pr med_marginT10">
-                                    <table class="med_custom-table med_no-vertical-lines">
-                                        <thead>
-                                            <tr>
-                                                <th>SR.</th>
-                                                <th>MEDICINE</th>
-                                                <th>DRUG CODE</th>
-                                                <th>DOSAGE INSTRUCTIONS</th>
-                                                <th>DURATION/ROUTE</th>
-                                                <th>QTY</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1. </td>
-                                                <td class="med_bold" style="font-size:1.1em;">
-                                                    TABLETS TWYNSTA<br><i style="color: #7a7878db;">TELMISARTAN/AMLODIPINE(AS BESYLATE) [80 MG\5MG]</i>
-                                                </td>
-                                                <td style="white-space:nowrap;">0041-442202-1171</td>
-                                                <td>
-                                                    2 TABLETS two times a day after breakfast<br>
-                                                    <span style="color:#817f7f;white-space:nowrap;">18-05-2024 - 19-05-2024</span>
-                                                </td>
-                                                <td>2 days<br><span style="color:#817f7f;">ORAL</span></td>
-                                                <td>8</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2. </td>
-                                                <td class="med_bold" style="font-size:1.1em;">TABLETS BUSCOPAN<br><i style="color:#7a7878db;">HYOSCINE[10 MG]</i></td>
-                                                <td style="white-space:nowrap;">0041-136501-1173</td>
-                                                <td>
-                                                    1 TABLETS, every morning, before meal for 2 days<br><span style="color:#817f7f;white-space:nowrap;">20-05-2024 - 21-05-2024</span>
-                                                </td>
-                                                <td>2 days<br><span style="color:#817f7f;">ORAL</span></td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3. </td>
-                                                <td class="med_bold" style="font-size:1.1em;">
-                                                    TABLETS TWYNSTA<br><i style="color:#7a7878db;">TELMISARTAN/AMLODIPINE(AS BESYLATE) [80 MG\5MG]</i>
-                                                </td>
-                                                <td style="white-space:nowrap;">0041-442202-1171</td>
-                                                <td>
-                                                    2 TABLETS two times a day after breakfast<br>
-                                                    <span style="color:#817f7f;white-space:nowrap;">18-05-2024 - 19-05-2024</span>
-                                                </td>
-                                                <td>2 days<br><span style="color:#817f7f;">ORAL</span></td>
-                                                <td>4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                        <div class="med_pull_left med_Width33_33pr med_textCenter">
+                                            <div class="med_Width100pr">
+                                                <img src="images/sign149(1).png" style="width:80px;">
+                                            </div>
+                                            <div class="med_Width100pr med_fontBold">DR.KRUSHNA SIRMANWAR</div>
+                                            <div class="med_Width100pr">M.B.B.S, M.D.(Radiation Oncology)</div>
+                                            <div class="med_Width100pr">PREPARED BY</div>
+                                        </div>
 
-                                <div class="med_Width100pr med_marginT10">
-                                    <table class="med_styledEMR_table">
-                                        <thead>
-                                            <tr>
-                                                <th rowspan="2">NAME OF MEDICINE</th>
-                                                <th colspan="2">BREAKFAST</th>
-                                                <th colspan="2">LUNCH</th>
-                                                <th colspan="2">DINNER</th>
-                                                <th rowspan="2">DURATION</th>
-                                                <th rowspan="2">DATE</th>
-                                            </tr>
-                                            <tr>
-                                                <th>BEFORE</th>
-                                                <th>AFTER</th>
-                                                <th>BEFORE</th>
-                                                <th>AFTER</th>
-                                                <th>BEFORE</th>
-                                                <th>AFTER</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="med_bold" style="font-size:1.1em;">Tab Dolonex 20mg DT Tab<br><i style="color:#7a7878db;">Piroxicam</i></td>
-                                                <td></td>
-                                                <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                                <td></td>
-                                                <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                                <td></td>
-                                                <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                                <td>1 day<br><i style="color:#817f7f;">ORAL</i></td>
-                                                <td style="white-space:nowrap;">26 Jun - 26 Jun</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="med_bold" style="font-size:1.1em;">Cream Dolo Cream<br><i style="color:#7a7878db;">Cholecalciferol 1000 IU + Elemental Calcium 500 mg</i></td>
-                                                <td colspan="6">Apply gently</td>
-                                                <td>2 days</td>
-                                                <td>26 Jun - 27 Jun</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="med_bold" style="font-size:1.1em;">Tab Cidmus 100mg Tab<br><i style="color:#7a7878db;">Sacubitril/Valsartan Tablets</i></td>
-                                                <td></td>
-                                                <td><span class="med_EMRtable_tab">2 TAB</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><span class="med_EMRtable_tab">2 TAB</span></td>
-                                                <td>5 days<br><i style="color:#817f7f;">ORAL</i></td>
-                                                <td style="white-space:nowrap;">26 Jun - 30 Jun</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="med_bold" style="font-size:1.1em;">Tab Cidmus 100mg Tab<br><i style="color:#7a7878db;">Sacubitril/Valsartan Tablets</i></td>
-                                                <td><span class="med_EMRtable_tab">1 TAB</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>5 days<br><i style="color:#817f7f;">ORAL</i></td>
-                                                <td style="white-space:nowrap;">01 Jul - 05 Jul</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <div class="med_pull_left med_Width33_33pr med_textRight">
+                                            <div class="med_Width100pr">
+                                                <img src="images/sign106(2).png" style="width:80px;">
+                                            </div>
+                                            <div class="med_Width100pr med_fontBold">DR.KRUSHNA SIRMANWAR</div>
+                                            <div class="med_Width100pr">CONSULTANT PATHOLOGIST</div>
+                                            <div class="med_Width100pr">PREPARED BY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="med_Width100pr med_absolute" style="bottom:0px;right:0px;">
+                                    <img src="images/a4 nairobi west footer.jpg" class="med_Width100pr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page" id="page2" style="display:none;">
+                            <!-- Content for page 2 -->
+                            <div class="pdfBody print_font12">
+                                <div class="med_Width100pr med_marginT5">
                                     
-                                </div>
-
+                                </div>                 
                             </div>
                         </div>
                     </div>
