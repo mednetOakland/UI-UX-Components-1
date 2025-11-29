@@ -4548,7 +4548,7 @@ input:checked + .med_toggleSlider:before {
 .med_headerFreeFlow_print{
     border-top:1px solid #ddd;
     border-bottom:1px solid #ddd;
-    background-color: #e7e6e6;
+    background-color: #edebeb;
     padding: 5px 10px;
     font-size: 1em;
     font-weight: bold;
@@ -4558,7 +4558,7 @@ input:checked + .med_toggleSlider:before {
 
 /* table Using Div for print*/
 .med_FooterDiv_print{
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #ccc;
     float: left;
     width: 100%;
     display: flex;
@@ -4566,13 +4566,13 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_tableSlot_print{
-    border-right:1px solid #aaa;
+    border-right:1px solid #ccc;
     padding:5px;
 }
 .med_TableHeader_print {
-    background: #e7e6e6;
-    border-bottom: 1px solid #aaa;
-    border-top: 1px solid #aaa;
+    background: #edebeb;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
     text-transform: uppercase;
     width: 100%;
     line-height: normal !important;
@@ -4580,40 +4580,23 @@ input:checked + .med_toggleSlider:before {
     font-size: 11px;
     display: flex;
 }
-
-.med_TableHeader_print > div:first-child {
-    padding-left: 10px;
-}
-
-.med_TableHeader_print > div:last-child {
-    padding-right: 10px;
-}
-
 .med_RowDivTable_print{
     background: #fff none repeat scroll 0 0;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #ccc;
     float: left;
     width: 100%;
     display: flex;
-}
-
-.med_RowDivTable_print > div:first-child {
-    padding-left: 10px;
-}
-
-.med_RowDivTable_print > div:last-child {
-    padding-right: 10px;
 }
 /* table Using Div end for print */
 
 /* lists view for print*/
 .med_borderDark{
-    border:1px solid #aaa;
+    border:1px solid #ccc;
 }
 
 .med_listHeader_print {
-    background: #e7e6e6;
-    border-bottom: 1px solid #aaa;
+    background: #edebeb;
+    border-bottom: 1px solid #ccc;
     padding: 5px 0;
     text-transform: uppercase;
     width: 100%;
@@ -4624,7 +4607,7 @@ input:checked + .med_toggleSlider:before {
 
 .med_tableRowDiv_print {
     background: #fff none repeat scroll 0 0;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #ccc;
     float: left;
     padding: 5px 0;
     width: 100%;
