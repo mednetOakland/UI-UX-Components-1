@@ -4559,6 +4559,7 @@ input:checked + .med_toggleSlider:before {
 /* table Using Div for print*/
 .med_FooterDiv_print{
     border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     float: left;
     width: 100%;
     display: flex;
@@ -4573,6 +4574,7 @@ input:checked + .med_toggleSlider:before {
     background: #edebeb;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     text-transform: uppercase;
     width: 100%;
     line-height: normal !important;
@@ -4583,6 +4585,7 @@ input:checked + .med_toggleSlider:before {
 .med_RowDivTable_print{
     background: #fff none repeat scroll 0 0;
     border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     float: left;
     width: 100%;
     display: flex;
@@ -4590,13 +4593,9 @@ input:checked + .med_toggleSlider:before {
 /* table Using Div end for print */
 
 /* lists view for print*/
-.med_borderDark{
-    border:1px solid #ccc;
-}
-
 .med_listHeader_print {
     background: #edebeb;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     padding: 5px 0;
     text-transform: uppercase;
     width: 100%;
@@ -4607,7 +4606,8 @@ input:checked + .med_toggleSlider:before {
 
 .med_tableRowDiv_print {
     background: #fff none repeat scroll 0 0;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-top:0px;
     float: left;
     padding: 5px 0;
     width: 100%;
@@ -4618,6 +4618,8 @@ input:checked + .med_toggleSlider:before {
     padding: 5px 0;
     width: 100%;
     font-weight:bold;
+    border: 1px solid #ccc;
+    border-top: 0px;
 }
 
 /* lists view end for print*/
