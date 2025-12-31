@@ -4546,8 +4546,6 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_headerFreeFlow_print{
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
     background-color: #edebeb;
     padding: 5px 10px;
     font-size: 1em;
