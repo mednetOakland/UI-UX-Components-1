@@ -4703,6 +4703,67 @@ embed {
     }
 }
 
+/* tr td table */
+.med_printTableBorder {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.med_printTableBorder thead {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: table-row-group !important;
+}
+
+.med_printTableBorder thead tr {
+    background: #edebeb;
+    border-bottom: 1px solid #ccc;
+}
+
+.med_printTableBorder tbody tr {
+    border-bottom: 1px solid #ccc;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.med_printTableBorder tfoot {
+    font-weight: bold;
+    display: table-row-group !important;
+    border-top: 1px solid #ccc;
+}
+
+.med_printTableBorder th,
+.med_printTableBorder td {
+    padding: 5px;
+    vertical-align: top;
+    word-break: break-word;
+    border-right: 1px solid #ccc;
+}
+
+.med_printTableBorder th:last-child,
+.med_printTableBorder td:last-child {
+    border-right: none;
+}
+
+.med_printTableBorder tbody tr:last-child {
+    border-bottom: none;
+}
+
+.med_printTableBorder tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+@media print {
+    .med_printTableBorder tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+}
+
 .med_secondaryRow_print {
     background: #f5f5f5;
     text-transform: uppercase;
