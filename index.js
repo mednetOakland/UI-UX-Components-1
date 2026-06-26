@@ -1596,6 +1596,106 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+(function () {
+
+    let currentFocus = -1;
+
+    const input = document.getElementById("myInput");
+    const ul = document.getElementById("myUL");
+
+    input.addEventListener("keydown", function (e) {
+
+        let li = ul.getElementsByTagName("li");
+
+        // visible items only
+        let visibleItems = [];
+        for (let i = 0; i < li.length; i++) {
+            if (li[i].style.display !== "none") {
+                visibleItems.push(li[i]);
+            }
+        }
+
+        if (e.key === "ArrowDown") {
+            e.preventDefault();
+            currentFocus++;
+            setActive(visibleItems);
+        }
+
+        else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            currentFocus--;
+            setActive(visibleItems);
+        }
+
+        else if (e.key === "Enter") {
+            e.preventDefault();
+            if (currentFocus > -1 && visibleItems[currentFocus]) {
+                visibleItems[currentFocus].querySelector("a").click();
+                
+                // ✅ hide dropdown after selection
+                ul.style.display = "none";
+
+                // ✅ reset focus
+                currentFocus = -1;
+            }
+        }
+    });
+
+    function setActive(items) {
+        if (!items.length) return;
+
+        removeActive(items);
+
+        if (currentFocus >= items.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = items.length - 1;
+
+        let activeItem = items[currentFocus];
+
+        activeItem.classList.add("active");
+
+        activeItem.scrollIntoView({
+            block: "nearest"
+        });
+    }
+
+    function removeActive(items) {
+        for (let i = 0; i < items.length; i++) {
+            items[i].classList.remove("active");
+        }
+    }
+
+})();
+
+function resetListFocus() {
+    let li = ul.getElementsByTagName("li");
+
+    for (let i = 0; i < li.length; i++) {
+        li[i].classList.remove("active");
+    }
+
+    currentFocus = -1;
+}
+
+input.addEventListener("input", function () {
+    ul.style.display = "block";
+    resetListFocus(); // ✅ instead of only currentFocus = -1
+});
+
+
+//choose file
+function showCancelIcon(){
+    document.getElementById('fileChooseCancelIcon').style.display = 'block';
+}
+
+function fileChooseHideCancelIcon() {
+    document.getElementById("documentFile1").value = "";
+    document.getElementById("documentSelectedFile1").innerHTML = "+ Choose File";
+    document.getElementById("documentSelectedFile1").title = "";
+    document.getElementById("fileChooseCancelIcon").style.display = "none";
+}
+
+
+
 
 
 

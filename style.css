@@ -306,3 +306,12 @@ code {
     background: #888787;
 }
 /* Custom Scrollbar end*/
+
+#myUL li.active {
+    border:1px solid blue;
+}
+
+/* focus style */
+#myUL li a:focus {
+    outline: none;
+}

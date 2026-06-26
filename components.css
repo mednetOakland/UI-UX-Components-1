@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 12px!important;
+    height: 100%;
+    font-family: arial,sans-serif,roboto,helvetica !important;
+}
+
 .med_borderBox {box-sizing: border-box;}
 
 .med_relative {position: relative;}
@@ -61,6 +67,8 @@
 .med_italicGrey {color: #777;font-style: italic;}
 
 .med_wordWrap {word-wrap:break-word;}
+
+.med_noWrap {white-space: nowrap;}
 
 .med_wideDIV{
     float:left;
@@ -751,11 +759,11 @@ input::placeholder {font-size:12px;}
 }
 
 input[type="text"]:disabled {
-  border:1px solid #ccc;
+    border:1px solid #ccc;
 }
 
 .med_timePicker input[type="text"]:disabled {
-  border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 
 /* Input box end*/
@@ -905,7 +913,7 @@ input[type="text"]:disabled {
 }
 
 .med_tinymc .tox-statusbar__help-text{
-   opacity: 0;
+    opacity: 0;
 }
 
 /* text editor end*/
@@ -2110,62 +2118,62 @@ input:checked + .med_slider:before {
 }
 
 .med_switchToggle input {
-  display: none;
+    display: none;
 }
 
 .med_toggleSlider {
-  position: absolute;
-  cursor: pointer;
-  inset: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
 }
 
 .med_toggleOff, .med_toggleOn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
 }
 
 .med_toggleOff {
-  left: 25px;
-  color: #444;
+    left: 25px;
+    color: #444;
 }
 
 .med_toggleOn {
-  right: 25px;
-  color: #fff;
-  display: none;
+    right: 25px;
+    color: #fff;
+    display: none;
 }
 
 .med_toggleSlider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .2s;
-  border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .2s;
+    border-radius: 50%;
 }
 
 input:checked + .med_toggleSlider {
-  background-color: #1976D2;
+    background-color: #1976D2;
 }
 
 input:checked + .med_toggleSlider .med_toggleOff {
-  display: none;
+    display: none;
 }
 
 input:checked + .med_toggleSlider .med_toggleOn {
-  display: block;
+    display: block;
 }
 
 input:checked + .med_toggleSlider:before {
-  transform: translateX(48px);
+    transform: translateX(48px);
 }
 
 /*Active- Inactive Switch end */
@@ -2323,9 +2331,9 @@ input:checked + .med_toggleSlider:before {
 
 /* switchable vertical tabs*/
 .med_verticalTabs {
-      width: 30%;
-      background: #e9eef6;
-      border-right: 1px solid #dedede;
+    width: 30%;
+    background: #e9eef6;
+    border-right: 1px solid #dedede;
 }
 
 .med_verticalTabsContent {
@@ -3464,189 +3472,189 @@ input:checked + .med_toggleSlider:before {
 /* Pagination end*/
 
 /* Company header*/
-    .med_CompanyHeader {
-        background: #1976D2;
-        height: 32px;
-        color: #fff;
-    }
+.med_CompanyHeader {
+    background: #1976D2;
+    height: 32px;
+    color: #fff;
+}
 
-    .med_CompanyHeader .med_companyLogo {
-        background: url('images/logo mednet white.png') 0px 0px  no-repeat;
-        width: 120px;
-        height: 25px;
-        display: block;
-        margin-top: 6px;
-        margin-left: 10px;
-        background-size: 90% 20px;
-    }
-    .med_hamburger {
-        background: rgba(0,0,0,0.1);
-        width: 24px;
-        height: 24px;
-        line-height: 24px !important;
-        border-radius: 24px;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        font-size: 1.2em !important;
-    }
+.med_CompanyHeader .med_companyLogo {
+    background: url('images/logo mednet white.png') 0px 0px  no-repeat;
+    width: 120px;
+    height: 25px;
+    display: block;
+    margin-top: 6px;
+    margin-left: 10px;
+    background-size: 90% 20px;
+}
+.med_hamburger {
+    background: rgba(0,0,0,0.1);
+    width: 24px;
+    height: 24px;
+    line-height: 24px !important;
+    border-radius: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.2em !important;
+}
 
-    .med_hamburger:hover{
-        background: rgba(0,0,0,0.3);
-    }
+.med_hamburger:hover{
+    background: rgba(0,0,0,0.3);
+}
 
-    /* Company dropdown*/
-    .med_companyHeaderDropdown{
-        width: 260px;
-        height: 28px;
-        margin-left: 10px;
-        color: #000;
-    }
+/* Company dropdown*/
+.med_companyHeaderDropdown{
+    width: 260px;
+    height: 28px;
+    margin-left: 10px;
+    color: #000;
+}
 
-    dropdown input {
-        display: none;
-    }
+dropdown input {
+    display: none;
+}
 
-    .med_companyHeaderDropdownLabel {
-        box-sizing: border-box;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        border: 1px solid #ccc;
-        border-radius: 0px;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        cursor:pointer;
-    }
+.med_companyHeaderDropdownLabel {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
 
-    .med_selectedCompanyName {
-        float: left;
-        width: calc(100% - 0px);
-        box-sizing: border-box;
-        overflow: hidden;
-        padding: 0 10px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        text-align: center !important;
-        padding-right: 25px;
-    }
+.med_selectedCompanyName {
+    float: left;
+    width: calc(100% - 0px);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center !important;
+    padding-right: 25px;
+}
 
-    .med_companySelectDDArrow {
-        font-size: 18px !important;
-        height: 100%;
-        line-height: 26px !important;
-        position: absolute;
-        right: 0;
-        width: 25px;
-        z-index: 9999;
-        text-align: center;
-        top: 0px;
-    }
+.med_companySelectDDArrow {
+    font-size: 18px !important;
+    height: 100%;
+    line-height: 26px !important;
+    position: absolute;
+    right: 0;
+    width: 25px;
+    z-index: 9999;
+    text-align: center;
+    top: 0px;
+}
 
-    .med_companyHeaderDropdown ul {
-        border: 1px solid #dedede;
-        box-sizing: border-box;
-        max-height: 315px;
-        overflow-y: auto;
-        width: 100%;
-        word-wrap: break-word;
-        background: #fff;
-        padding: 0px;
-        margin: 0px;
-    }
+.med_companyHeaderDropdown ul {
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    max-height: 315px;
+    overflow-y: auto;
+    width: 100%;
+    word-wrap: break-word;
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+}
 
-    .med_dropdownCompanyList {
-        border: 0px;
-        border-top: 1px solid #dedede;
-        box-sizing: border-box;
-        font-weight: normal;
-        padding: 7px 10px;
-        width: 100%;
-        float: left;
-        padding-right: 25px;
-        text-align: center;
-        cursor:pointer;
-        background:#fff;
-    }
+.med_dropdownCompanyList {
+    border: 0px;
+    border-top: 1px solid #dedede;
+    box-sizing: border-box;
+    font-weight: normal;
+    padding: 7px 10px;
+    width: 100%;
+    float: left;
+    padding-right: 25px;
+    text-align: center;
+    cursor:pointer;
+    background:#fff;
+}
 
-    .med_dropdownCompanyList:hover{
-        background:#f5f5f5;
-    }
+.med_dropdownCompanyList:hover{
+    background:#f5f5f5;
+}
 
-    .med_companyHeaderDropdown input:checked + label{
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        border-bottom: 1px solid #dedede;
-    }
+.med_companyHeaderDropdown input:checked + label{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid #dedede;
+}
 
-    .med_companyHeaderDropdown input:checked ~ ul{
-        background: #fff none repeat scroll 0 0;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        opacity: 1;
-        top: -1px;
-        visibility: visible;
-        border-top:0px;
-        box-shadow: 0 3px 4px 0px #ddd;
-    }
+.med_companyHeaderDropdown input:checked ~ ul{
+    background: #fff none repeat scroll 0 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 1;
+    top: -1px;
+    visibility: visible;
+    border-top:0px;
+    box-shadow: 0 3px 4px 0px #ddd;
+}
 
-    .med_companyHeaderDropdown input ~ ul{
-        position: relative;
-        visibility: hidden;
-        opacity: 0;
-        top: 0px;
-        z-index: 1;
-    }
-    /* Company dropdown end*/
+.med_companyHeaderDropdown input ~ ul{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: 0px;
+    z-index: 1;
+}
+/* Company dropdown end*/
 
-    .med_notificationSlot {
-        position: relative;
-        cursor: pointer;
-        padding: 0px 10px;
-        margin-right:4px;
-    }
+.med_notificationSlot {
+    position: relative;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-right:4px;
+}
 
-    .med_notificationSlot:hover {
-        background: rgba(0,0,0,0.2);
-    }
+.med_notificationSlot:hover {
+    background: rgba(0,0,0,0.2);
+}
 
-    .med_notificationCount {
-        background: #e55353;
-        color: #fff;
-        min-width: 16px;
-        text-align: center;
-        border-radius: 10px;
-        height: 16px;
-        line-height: 16px;
-        font-size: 0.9em;
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        padding: 0px 4px;
-    }
+.med_notificationCount {
+    background: #e55353;
+    color: #fff;
+    min-width: 16px;
+    text-align: center;
+    border-radius: 10px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 0.9em;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0px 4px;
+}
 
-    .med_companyHeaderIcon{
-        font-size:18px !important
-    }
+.med_companyHeaderIcon{
+    font-size:18px !important
+}
 
-    .med_userSlot {
-        cursor: pointer;
-        padding: 0px 10px;
-        position: relative;
-    }
+.med_userSlot {
+    cursor: pointer;
+    padding: 0px 10px;
+    position: relative;
+}
 
-    .med_userSlot:hover {
-        background: rgba(0,0,0,0.2);
-    }
+.med_userSlot:hover {
+    background: rgba(0,0,0,0.2);
+}
 
-    .med_userName {
-        margin: 0px 10px;
-    }
+.med_userName {
+    margin: 0px 10px;
+}
 
-    .med_userDropArrow{
-        transition: all 0.1s ease;
-    }
+.med_userDropArrow{
+    transition: all 0.1s ease;
+}
 /* Company header end*/
 
 /* Slot view pattern*/
@@ -3855,9 +3863,9 @@ input:checked + .med_toggleSlider:before {
     padding-right: 5px;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+}
 
-  .med_textEllipsis2 {
+.med_textEllipsis2 {
     box-sizing: border-box;
     overflow: hidden;
     display: -webkit-box;
@@ -3912,7 +3920,7 @@ input:checked + .med_toggleSlider:before {
 }
 
 .med_left-sidebar.med_collapsed .med_leftNavIcon {
-   text-align: center !important;
+    text-align: center !important;
 }
 
 .med_modulename {
@@ -4059,18 +4067,18 @@ input:checked + .med_toggleSlider:before {
     width:100%;
     height: 350px;
     border:1px solid #ccc;
-  }
+}
 
-  .med_button-container {
+.med_button-container {
     padding: 5px 0px;
     background-color: #fff;
     display: flex;
     justify-content: right;
     align-items: center;
     gap:5px;
-  }
+}
 
-  .med_zoom_outer {
+.med_zoom_outer {
     overflow: hidden;
     flex: 1;
     padding:10px 0px;
@@ -4078,24 +4086,24 @@ input:checked + .med_toggleSlider:before {
     justify-content: center;
     background: linear-gradient(135deg, #f7f7f7, #ffffff);
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  #imageArea {
+#imageArea {
     position: relative;
     cursor: grab;
     transition: transform 0.1s ease;
-  }
+}
 
-  #imageArea:hover {
+#imageArea:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
+}
 
-  embed {
+embed {
     border-radius: 8px;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-  }
+}
 /* Zoom In/Out Image end*/
 
 
@@ -4398,85 +4406,85 @@ input:checked + .med_toggleSlider:before {
 
 
 .med_slotBoxWhite {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #e4e4e4;
-  border-radius: 5px;
-  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
-  float: left;
-  margin-bottom: 10px;
-  min-height: 85px;
-  padding: 15px 0 10px;
-  text-align: center;
-  width: 100%;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 10px;
+    min-height: 85px;
+    padding: 15px 0 10px;
+    text-align: center;
+    width: 100%;
 }
 
 .med_icon-shape-round {
-  align-items: center;
-  border-radius: 100%;
-  display: inline-flex;
-  float: none !important;
-  font-size: 14px;
-  height: 36px;
-  justify-content: center;
-  margin: 0 auto;
-  width: 36px;
+    align-items: center;
+    border-radius: 100%;
+    display: inline-flex;
+    float: none !important;
+    font-size: 14px;
+    height: 36px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 36px;
 }
 
 .med_icon-shape-blue {
-  background-color: rgba(2, 136, 209, 0.1);
-  color: #0288D1;
+    background-color: rgba(2, 136, 209, 0.1);
+    color: #0288D1;
 }
 
 .med_icon-shape-purple {
-  background-color: rgba(81, 45, 168, 0.1);
-  color: #512DA8;
+    background-color: rgba(81, 45, 168, 0.1);
+    color: #512DA8;
 }
 
 .med_icon-shape-orange {
-  background-color: rgba(245, 124, 0, 0.1);
-  color: #F57C00;
+    background-color: rgba(245, 124, 0, 0.1);
+    color: #F57C00;
 }
 
 .med_icon-shape-green {
-  background-color: rgba(56, 142, 60, 0.1);
-  color: #388E3C;
+    background-color: rgba(56, 142, 60, 0.1);
+    color: #388E3C;
 }
 
 .med_icon-shape-indigo {
-  background-color: rgba(48, 63, 159, 0.1);
-  color: #303F9F;
+    background-color: rgba(48, 63, 159, 0.1);
+    color: #303F9F;
 }
 
 .med_icon-shape-brown {
-  background-color: rgba(93, 64, 55, 0.1);
-  color: #5D4037;
+    background-color: rgba(93, 64, 55, 0.1);
+    color: #5D4037;
 }
 
 .med_icon-shape-lime {
-  background-color: rgba(130, 119, 23, 0.1);
-  color: #827717;
+    background-color: rgba(130, 119, 23, 0.1);
+    color: #827717;
 }
 
 .med_icon-shape-grey {
-  background-color: rgba(69, 90, 100, 0.1);
-  color: #455A64;
+    background-color: rgba(69, 90, 100, 0.1);
+    color: #455A64;
 }
 
 .med_slotCountLabel {
-  color: #777;
-  font-size: 12px;
-  font-weight: normal;
-  text-align: center;
-  padding:0px 10px
+    color: #777;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    padding:0px 10px
 }
 
 .med_slotCount {
-  color: #000;
-  font-size: 24px;
-  height: 35px;
-  line-height: 36px;
-  margin-top: 10px;
+    color: #000;
+    font-size: 24px;
+    height: 35px;
+    line-height: 36px;
+    margin-top: 10px;
 }
 
 .med_shadowBox {
@@ -4527,13 +4535,12 @@ input:checked + .med_toggleSlider:before {
     text-decoration: underline;
 }
 
-
 .print_tableHeader {
     font-weight: bold;
     font-size: 1.3em;
     text-align: center;
     width: 100%;
-    padding: 7px 10px;
+    padding: 5px 10px;
 }
 
 .med_header_print{
@@ -4576,7 +4583,7 @@ input:checked + .med_toggleSlider:before {
     width: 100%;
     line-height: normal !important;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 0.9em;
     display: flex;
 }
 .med_RowDivTable_print{
@@ -4598,7 +4605,19 @@ input:checked + .med_toggleSlider:before {
     width: 100%;
     line-height: normal !important;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 0.9em;
+}
+
+.med_listHeaderSecondary_print {
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-top: 0px;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: normal !important;
+    font-size: 0.9em;
+    padding:5px 0;
+    font-weight:bold;
 }
 
 .med_tableRowDiv_print {
@@ -4622,17 +4641,180 @@ input:checked + .med_toggleSlider:before {
 /* lists view end for print*/
 
 .print_barcode{
-  height:68px;
-  margin-bottom:-25px;
-  margin-top:-22px;
-  float: right;
+    height:68px;
+    margin-bottom:-25px;
+    margin-top:-22px;
+    float: right;
 }
 .print_qrcode{
-  width:50px;
-  float:right;
-  margin-right:5px;
+    width:50px;
+    float:right;
+    margin-right:5px;
 }
+
 .print_fontFamily{
     font-family: arial,sans-serif,helvetica !important;
 }
+
+.med_printTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    text-align:left;
+}
+
+.med_printTable thead tr {
+    border-bottom: 1px solid #ccc;
+    background: #edebeb;
+}
+
+.med_printTable tbody tr {
+    border-bottom: 1px solid #ccc;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.med_printTable th,
+.med_printTable td {
+    border: none;
+    padding: 5px 5px;
+}
+
+.med_printTable thead {
+    text-transform:uppercase;
+    display: table-row-group !important;
+    font-size:0.9em;
+}
+
+.med_printTable tfoot {
+    font-weight:bold;
+    display: table-row-group !important;
+}
+
+.med_printTable tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+@media print {
+    .med_printTable tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+}
+
+.med_secondaryRow_print {
+    background: #f5f5f5;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:0.9em;
+}
+
+.med_noBreak {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.med_headerLabel{
+    font-weight:bold;
+    white-space:nowrap;
+    padding-right:5px;
+    vertical-align: top;
+}
+
+.med_collapseBorder{
+    border-collapse:collapse;
+}
+
+.med_pauseBtn_md,
+.med_resumeBtn_md,
+.med_stopBtn_md {
+    padding: 0 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    background: #fff;
+    height: 28px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+/* Pause */
+.med_pauseBtn_md {
+    color: #1976D2;
+    border: 1px solid #1976D2;
+}
+
+.med_pauseBtn_md:hover {
+    background: #EEF5FD;
+}
+
+/* Resume */
+.med_resumeBtn_md {
+    color: #4AA570;
+    border: 1px solid #4AA570;
+}
+
+.med_resumeBtn_md:hover {
+    background: #EEF8F3;
+}
+
+/* Stop */
+.med_stopBtn_md {
+    color: #E57373;
+    border: 1px solid #E57373;
+}
+
+.med_stopBtn_md:hover {
+    background: #FDEEEE;
+}
+
+.med_pauseBtn_Xl,
+.med_resumeBtn_Xl,
+.med_stopBtn_Xl {
+    padding: 0 12px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    background: #fff;
+    height: 36px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+/* Pause */
+.med_pauseBtn_Xl {
+    color: #1976D2;
+    border: 1px solid #1976D2;
+}
+
+.med_pauseBtn_Xl:hover {
+    background: #EEF5FD;
+}
+
+/* Resume */
+.med_resumeBtn_Xl {
+    color: #4AA570;
+    border: 1px solid #4AA570;
+}
+
+.med_resumeBtn_Xl:hover {
+    background: #EEF8F3;
+}
+
+/* Stop */
+.med_stopBtn_Xl {
+    color: #E57373;
+    border: 1px solid #E57373;
+}
+
+.med_stopBtn_Xl:hover {
+    background: #FDEEEE;
+}
+
+
 

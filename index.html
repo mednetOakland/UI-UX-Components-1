@@ -1728,6 +1728,65 @@
                                 &lt;div class="med_dangerBtn_sm"&gt;Danger&lt;/div&gt;
 
                                 &lt;div class="med_warningBtn_sm"&gt;Warning&lt;/div&gt;
+                                 --------------------------------------------
+
+                                    &lt;!-- Upload Buttons --&gt;
+
+                                &lt;div class="med_secondaryBtn_md med_flexCenter">
+                                    &lt;div class="med_pull_left med_textEllipsis" style="max-width:280px;" id="documentSelectedFile1" onclick="document.getElementById('documentFile1').click();" title="">+ Choose File&lt;/div&gt;
+                                    &lt;div style="display:none;" class="fa_mednet fa-close" id="fileChooseCancelIcon" onclick="fileChooseHideCancelIcon();">&lt;/div&gt;
+                                    &lt;input type="file" id="documentFile1" style="display:none;" onchange="javacript : document.getElementById('documentSelectedFile1').innerHTML = (this.value); showCancelIcon();"&gt;
+                                &lt;/div&gt;
+
+                                &lt;script&gt; 
+                                    function showCancelIcon(){
+                                        document.getElementById('fileChooseCancelIcon').style.display = 'block';
+                                    }
+
+                                    function fileChooseHideCancelIcon() {
+                                        document.getElementById("documentFile1").value = "";
+                                        document.getElementById("documentSelectedFile1").innerHTML = "+ Choose File";
+                                        document.getElementById("documentSelectedFile1").title = "";
+                                        document.getElementById("fileChooseCancelIcon").style.display = "none";
+                                    }
+                                &lt;/script&gt;
+
+                                 --------------------------------------------
+
+                                    &lt;!-- Extra Large Round Buttons --&gt;
+
+                                &lt;div class="med_pauseBtn_Xl med_pull_left med_marginL10" tabindex="0"&gt;
+                                    &lt;span class="fa_mednet fa-pause med_iconSpan"&gt;&lt;/span&gt;
+                                    &lt;span class="med_marginL5"&gt;Pause&lt;/span&gt;
+                                &lt;/div&gt;
+                           
+                                &lt;div class="med_resumeBtn_Xl med_pull_left med_marginL10" tabindex="0"&gt;
+                                    &lt;span class="fa_mednet fa-play med_iconSpan"&gt;&lt;/span&gt;
+                                    &lt;span class="med_marginL5"&gt;Resume&lt;/span&gt;
+                                &lt;/div&gt;
+                                
+                                &lt;div class="med_stopBtn_Xl med_pull_left med_marginL10" tabindex="0"&gt;
+                                    &lt;span class="fa_mednet fa-stop med_iconSpan"&gt;&lt;/span&gt;
+                                    &lt;span class="med_marginL5"&gt;Stop&lt;/span&gt;
+                                &lt;/div&gt;
+                                 --------------------------------------------
+
+                                    &lt;!-- Medium Round Buttons --&gt;
+                                
+                                &lt;div class="med_pauseBtn_md med_pull_left med_marginL10" tabindex="0"&gt;
+                                    &lt;span class="fa_mednet fa-pause med_iconSpan"&gt;&lt;/span&gt;
+                                    &lt;span class="med_marginL5"&gt;Pause&lt;/span&gt;
+                                &lt;/div&gt;
+                            
+                                &lt;div class="med_resumeBtn_md med_pull_left med_marginL10" tabindex="0"&gt;
+                                    &lt;span class="fa_mednet fa-play med_iconSpan"&gt;&lt;/span&gt;
+                                    &lt;span class="med_marginL5"&gt;Resume&lt;/span&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="med_stopBtn_md med_pull_left med_marginL10" tabindex="0"&gt;
+                                    &lt;span class="fa_mednet fa-stop med_iconSpan"&gt;&lt;/span&gt;
+                                    &lt;span class="med_marginL5"&gt;Stop&lt;/span&gt;
+                                &lt;/div&gt;
                             </code>
                         </pre>
                     </div>
@@ -1750,6 +1809,55 @@
                             <div class="med_successBtn_sm marginR5">Success</div>
                             <div class="med_dangerBtn_sm marginR5">Danger</div>
                             <div class="med_warningBtn_sm marginR5">Warning</div>
+                        </div>
+                        <div class="PreContent med_marginT10">
+                            <h3> Upload Button </h3>
+                            <div class="med_secondaryBtn_md med_flexCenter">
+                                <div class="med_pull_left med_textEllipsis" style="max-width:280px;" id="documentSelectedFile1" onclick="document.getElementById('documentFile1').click();" title="">+ Choose File</div>
+                                <div style="display:none;" class="fa_mednet fa-close" id="fileChooseCancelIcon" onclick="fileChooseHideCancelIcon();"></div>
+                                <input type="file" id="documentFile1" style="display:none;" onchange="javacript : document.getElementById('documentSelectedFile1').innerHTML = (this.value); showCancelIcon();">
+                            </div>
+                        </div>
+
+                        <div class="PreContent med_marginT10">
+                            <h3> Extra Large Round Buttons </h3>
+                            <!-- Pause Button -->
+                            <div class="med_pauseBtn_Xl med_pull_left med_marginL10" tabindex="0">
+                                <span class="fa_mednet fa-pause med_iconSpan"></span>
+                                <span class="med_marginL5">Pause</span>
+                            </div>
+
+                            <!-- Resume Button -->
+                            <div class="med_resumeBtn_Xl med_pull_left med_marginL10" tabindex="0">
+                                <span class="fa_mednet fa-play med_iconSpan"></span>
+                                <span class="med_marginL5">Resume</span>
+                            </div>
+
+                            <!-- Stop Button -->
+                            <div class="med_stopBtn_Xl med_pull_left med_marginL10" tabindex="0">
+                                <span class="fa_mednet fa-stop med_iconSpan"></span>
+                                <span class="med_marginL5">Stop</span>
+                            </div>
+                        </div>
+                        <div class="PreContent med_marginT10">
+                            <h3> Medium Round Buttons </h3>
+                            <!-- Pause Button -->
+                            <div class="med_pauseBtn_md med_pull_left med_marginL10" tabindex="0">
+                                <span class="fa_mednet fa-pause med_iconSpan"></span>
+                                <span class="med_marginL5">Pause</span>
+                            </div>
+
+                            <!-- Resume Button -->
+                            <div class="med_resumeBtn_md med_pull_left med_marginL10" tabindex="0">
+                                <span class="fa_mednet fa-play med_iconSpan"></span>
+                                <span class="med_marginL5">Resume</span>
+                            </div>
+
+                            <!-- Stop Button -->
+                            <div class="med_stopBtn_md med_pull_left med_marginL10" tabindex="0">
+                                <span class="fa_mednet fa-stop med_iconSpan"></span>
+                                <span class="med_marginL5">Stop</span>
+                            </div>
                         </div>
                     </div>
                 </div>
