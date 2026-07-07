@@ -33,7 +33,9 @@
                     <li><a href="#textArea" onclick="toggleActive('leftNav_textArea','Textarea')">Textarea</a></li>
                     <li><a href="#textEditor" onclick="toggleActive('leftNav_textEditor','Text Editor')">Text Editor</a></li>
                     <li><a href="#radioButton" onclick="toggleActive('leftNav_radioButton','Radio')">Radio</a></li>
+                    <li><a href="#radioCheck" onclick="toggleActive('leftNav_radioCheck','Checkbox Single Selection')">Checkbox Single Selection</a></li>
                     <li><a href="#checkbox" onclick="toggleActive('leftNav_checkbox','Checkbox')">Checkbox</a></li>
+                    <li><a href="#listFilter" onclick="toggleActive('leftNav_listFilter','List Filter')">List Filter</a></li>
                     <li><a href="#agePicker" onclick="toggleActive('leftNav_agePicker','Age Picker')">Age Picker</a></li>
                     <li><a href="#datePicker" onclick="toggleActive('leftNav_datePicker','Date Picker')">Date Picker</a></li>
                     <li><a href="#timePicker" onclick="toggleActive('leftNav_timePicker','Time Picker')">Time Picker</a></li>
@@ -41,23 +43,26 @@
                     <li><a href="#headings" onclick="toggleActive('leftNav_headings','Headings')">Headings</a></li>
                     <li><a href="#buttons" onclick="toggleActive('leftNav_buttons','Buttons')">Buttons</a></li>
                     <li><a href="#iconBtns" onclick="toggleActive('leftNav_iconBtns','Icon Buttons')">Icon Buttons</a></li>
-                    <li><a href="#linkDiv" onclick="toggleActive('leftNav_linkDiv','Link')">Link</a></li>    
+                    <li><a href="#linkDiv" onclick="toggleActive('leftNav_linkDiv','Link')">Link</a></li>
                     <li><a href="#icons" onclick="toggleActive('leftNav_icons','Icons')">Icons</a></li>
                     <li><a href="#iconStatus" onclick="toggleActive('leftNav_iconStatus','Status Icons')">Status Icons</a></li>
                     <li><a href="#iconsGroup" onclick="toggleActive('leftNav_iconsGroup','Icons Group')">Icons Group</a></li>
-                    <li><a href="#countHeighlight" onclick="toggleActive('leftNav_iconStatus','Show Count')">Show Count</a></li>
+                    <li><a href="#countHeighlight" onclick="toggleActive('leftNav_countHeighlight','Show Count')">Show Count</a></li>
                     <li><a href="#dialogBox" onclick="toggleActive('leftNav_dialogBox','Dialog Box')">Dialog Box</a></li>
                     <li><a href="#tooltip" onclick="toggleActive('leftNav_tooltip','Tooltip')">Tooltip</a></li>
                     <li><a href="#radioTabs" onclick="toggleActive('leftNav_radioTabs','Radio Tabs')">Radio Tabs</a></li>
                     <li><a href="#toggleSwitch" onclick="toggleActive('leftNav_toggleSwitch','Toggle Switch')">Toggle Switch</a></li>
                     <li><a href="#starRatings" onclick="toggleActive('leftNav_starRatings','Ratings')">Ratings</a></li>
+                    <li><a href="#iconSwitchableTabs" onclick="toggleActive('leftNav_iconSwitchableTabs','Icon Tabs')">Icon Tabs</a></li>
                     <li><a href="#switchableTabs" onclick="toggleActive('leftNav_switchableTabs','Tabs')">Tabs</a></li>
                     <li><a href="#switchableTabs_v2" onclick="toggleActive('leftNav_switchableTabs_v2','Tabs V2')">Tabs V2</a></li>
                     <li><a href="#switchableVerticalTabs" onclick="toggleActive('leftNav_switchableVerticalTabs','Vertical Tabs')">Vertical Tabs</a></li>
                     <li><a href="#accordionPanel" onclick="toggleActive('leftNav_accordionPanel','Accordion Panel')">Accordion Panel</a></li>
                     <li><a href="#collapsePanel" onclick="toggleActive('leftNav_collapsePanel','Collapse Panel')">Collapse Panel</a></li>
                     <li><a href="#listsView" onclick="toggleActive('leftNav_listsView','List View')">List View</a></li>
+                    <li><a href="#drillDown_lists" onclick="toggleActive('leftNav_drillDown_lists','Drill-Down List')">Drill-Down List</a></li>
                     <li><a href="#gridView" onclick="toggleActive('leftNav_gridView','List Grid View')">List Grid View</a></li>
+                    <li><a href="#divTable" onclick="toggleActive('leftNav_divTable','Table Using Div')">Table Using Div</a></li>
                     <li><a href="#tableView" onclick="toggleActive('leftNav_tableView','Table')">Table</a></li>
                     <li><a href="#Hor/VerScroll" onclick="toggleActive('leftNav_Hor/VerScroll','Hor/Ver Scroll Table')">Hor/Ver Scroll Table</a></li>
                     <li><a href="#commonPopups" onclick="toggleActive('leftNav_commonPopups','Popup')">Popup</a></li>
@@ -78,8 +83,8 @@
                     <li><a href="#headingBand" onclick="toggleActive('leftNav_headingBand','Heading Band')">Heading Band</a></li>
                     <li><a href="#thumbnailView" onclick="toggleActive('leftNav_thumbnailView','Thumbnail View')">Thumbnail View</a></li>
                     <li><a href="#dashboardView" onclick="toggleActive('leftNav_dashboardView','Dashboard')">Dashboard</a></li>
-                    <li><a href="#dashboardChartView" onclick="toggleActive('leftNav_dashboardChartView','Dashboard')">Dashboard Chart</a></li>
-                    <li><a href="#copyClipboard" onclick="toggleActive('leftNav_thumbnailView','Copy to Clipboard')">Copy to Clipboard</a></li>
+                    <li><a href="#dashboardChartView" onclick="toggleActive('leftNav_dashboardChartView','Dashboard Chart')">Dashboard Chart</a></li>
+                    <li><a href="#copyClipboard" onclick="toggleActive('leftNav_copyClipboard','Copy to Clipboard')">Copy to Clipboard</a></li>
                     <li><a href="#imgAspectRatio" onclick="toggleActive('leftNav_imgAspectRatio','Image Aspect Ratio')">Image Aspect Ratio</a></li>
                     <li><a href="#zoomIO_img" onclick="toggleActive('leftNav_zoomIO_img','Zoom In/Out Image Slot')">Zoom In/Out Image Slot</a></li>
 
@@ -135,6 +140,7 @@
             <a href="#switchableVerticalTabs"><div id="leftNav_switchableVerticalTabs" class="wrapperToggle_btn">Vertical Tabs</div></a>
             <a href="#accordionPanel"><div id="leftNav_accordionPanel" class="wrapperToggle_btn">Accordion Panel</div></a>
             <a href="#collapsePanel"><div id="leftNav_collapsePanel" class="wrapperToggle_btn">Collapse Panel</div></a>
+            <a href="#listsView"><div id="leftNav_listsView" class="wrapperToggle_btn">List View</div></a>
             <a href="#drillDown_lists"><div id="leftNav_drillDown_lists" class="wrapperToggle_btn">Drill-Down List</div></a>
             <a href="#gridView"><div id="leftNav_gridView" class="wrapperToggle_btn">List Grid View</div></a>
             <a href="#divTable"><div id="leftNav_divTable" class="wrapperToggle_btn">Table Using Div</div></a>
@@ -3942,7 +3948,7 @@
                 </div>
                 <!--Lists view end-->
 
-                <!--Lists view -->
+                <!--Drill- DownLists view -->
                 <div class="container" style="display: block;" id="drillDown_lists">
                     <div class="html med_Width100pr">
                         <div class="header med_Width100pr">
