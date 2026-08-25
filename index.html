@@ -98,6 +98,7 @@
             <div class="med_pull_right tabWebPrintOuter" style="display:block;">
                 <div onclick="toggleWebPrint(this);" class="tabWebPrint-active" id="webTabDIV"><span class="fa_mednet fa-desktop med_marginR10"></span>Web</div>
                 <div onclick="toggleWebPrint(this);" class="tabWebPrint" id="printTabDIV"><span class="fa_mednet fa-file-text-o med_marginR10"></span>Print</div>
+                <div onclick="toggleWebPrint(this);" class="tabWebPrint" id="guidelineTabDIV"><span class="fa_mednet fa-book med_marginR10"></span>Guideline</div>
             </div>
             <div class="clr"></div>
         </div>
@@ -8713,7 +8714,7 @@
             </div>
         </div>
         
-        <div class="med_Width100pr" id="printDataDIV" style="display:none; height:calc(100% - 30px);">
+        <div class="med_Width100pr" id="printDataDIV" style="display:block; height:calc(100% - 30px);">
             <div class="FixedInner2">
                 <a href="#header_Template1"><div class="wrapperToggle_btn wrapperToggle_btnActive">Header Section</div></a>
                 <a href="#print_table"><div class="wrapperToggle_btn">Print Table View</div></a>
@@ -9733,6 +9734,435 @@
             
         </div>
     </div>
+    <div class="med_Width100pr" id="showForGuideline" style="height:calc(100% - 60px);display:none;">
+        <div class="mainContainer" id="showForGuidelineContent" style="width:100%;">
+            <!-- UI/UX Guideline -->
+            <div class="container" id="uiuxGuideline" style="display:block;">
+                <div class="html" style="width:100%;">
+                    <div class="header med_Width100pr">
+                        <div class="med_marginT10">GUIDELINE NOTES</div>
+                    </div>
+                    <div class="PreContent">
+                        <div class="med_Width100pr med_heading1_5 med_fontBold">
+                            UI / UX Development Guideline
+                        </div>
+                        <div class="med_Width100pr med_marginT10">
+                            This page has grown into a large component library, so components start to look inconsistent when every developer picks spacing, colors, list style or popup size on their own judgement.
+                            These notes explain <span class="med_fontBold">why</span> a class exists and <span class="med_fontBold">when</span> to use it, so new screens stay visually consistent with the rest of the app.
+                            Only classes already defined in <span class="med_fontBold">components.css</span> are used below &mdash; no new CSS was written for this page.
+                        </div>
+
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT20">
+                            <div class="med_heading1_8 med_fontBold">About This Library</div>
+                            <div class="med_Width100pr med_marginT10">
+                                The general principles below apply to every screen built on top of this library, as set by the UI/UX team &mdash; they take priority over the topic-specific rules that follow in sections 2&ndash;13.
+                            </div>
+                        </div>
+
+                        <!-- 1. Core Development Principles -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">1. Core Development Principles</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <ol class="med_Width100pr" style="padding-left:18px;">
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Use the Existing UI/UX Library</span> &mdash; Use the Mednet UI/UX Components Library as the primary reference and reuse existing components whenever possible.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Follow the Design System</span> &mdash; Maintain consistency in colors, typography, spacing, sizing, icons, borders, shadows, and interactions.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Reuse Before Creating</span> &mdash; Do not create new UI patterns, components, or styles when an existing solution is available.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Check Existing Components First</span> &mdash; Before modifying common components or CSS, verify existing usage to avoid breaking other screens.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Avoid Unnecessary Changes</span> &mdash; Do not introduce unnecessary custom CSS, UI changes, or new dependencies when an existing solution is available.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Use UX Judgment When Needed</span> &mdash; If a required component/style is unavailable or not specified, create a solution that matches the existing design system.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Maintain Consistency</span> &mdash; Keep all screens visually and functionally consistent across the application.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Reuse CSS &amp; Components</span> &mdash; Prefer existing CSS classes and components instead of creating duplicate styles or components.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Maintain Clear Visual Hierarchy</span> &mdash; Make important information and primary actions easy to identify.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Implement All UI States</span> &mdash; Support default, hover, focus, active, disabled, loading, empty, error, success, and read-only states where applicable.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Ensure Responsive Design</span> &mdash; Maintain proper behavior across different screen sizes without affecting the approved design.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Handle Edge Cases</span> &mdash; Consider long text, missing data, empty values, validation errors, large numbers, and large datasets.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Keep UX Consistent</span> &mdash; Use consistent terminology, labels, icons, and interactions throughout the application.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Do Not Hide Critical Information</span> &mdash; Important information must not be available only through hover or tooltips.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Follow Accessibility Basics</span> &mdash; Use proper labels, readable contrast, keyboard focus, and meaningful icons.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Keep UI Simple &amp; User-Focused</span> &mdash; Avoid unnecessary fields, actions, colors, and complexity.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Clarify Unclear Requirements</span> &mdash; If any requirement or UX behavior is unclear, discuss it with the UI/UX team before implementation.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Test Before Handover</span> &mdash; Test the complete user flow and important UI states before delivery.</li>
+                                    <li class="med_marginT10 med_Width100pr"><span class="med_fontBold">Final Design Review</span> &mdash; Before delivery, compare the implementation with the approved design and existing UI/UX library and ensure complete consistency.</li>
+                                </ol>
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_padding10 med_border med_radius5" style="background:#fffde7;">
+                                <span class="med_fontBold">&#9733; Key Rule</span> &mdash; Always reuse the existing UI/UX Components Library first. Create a new component or styling only when an existing solution is not available.
+                            </div>
+                        </div>
+
+                        <!-- 2. Colors -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">2. Color Guideline</div>
+                            <div class="med_Width100pr med_marginT10 med_heading1_2 med_fontBold">Action colors</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_blue">Primary (blue)</span> &mdash; Main action: Save / Submit / Confirm &mdash; the one main action on screen</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_gray">Secondary (grey)</span> &mdash; Neutral action: Cancel / alternate action, always paired next to a primary</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_green">Success (green)</span> &mdash; Positive: Approve / positive confirmation</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_red">Danger (red)</span> &mdash; Destructive: Delete / reject / destructive action</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_orange">Warning (orange)</span> &mdash; Caution: Needs attention / pending / caution</div>
+                            </div>
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Status legend (keep this meaning identical everywhere &mdash; list, grid, table badge, filter)</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_green">Green</span> &mdash; Completed / Active</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_red">Red</span> &mdash; Rejected / Inactive / Error</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_orange">Orange</span> &mdash; In Progress / Pending</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_blue">Blue</span> &mdash; Hold / Info</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_purple">Purple</span> &mdash; Custom / Special category</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold med_listStatus_gray">Gray</span> &mdash; Disabled / N-A</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Legend instruction</div>
+                            <div class="med_Width100pr med_marginT8">
+                                Place the legend (a colored dot &mdash; med_listStatus_circle + a color class, e.g. <span class=" med_fontBold">med_listStatus_green</span> &mdash; next to its text label) directly above the list/grid/table it belongs to, so the user learns the color mapping before scanning the rows below. The legend is read-only: it explains the colors, it does not filter anything. See it live in the <span class="med_fontBold">Web tab &rarr; List View</span> section, above the record list.
+                            </div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_pull_left med_paddingR20">
+                                    <div class="fa_mednet fa-circle med_listStatus_circle med_listStatus_green med_marginR5"></div>
+                                    <div class="med_pull_left">Completed</div>
+                                </div>
+                                <div class="med_pull_left med_paddingR20">
+                                    <div class="fa_mednet fa-circle med_listStatus_circle med_listStatus_red med_marginR5"></div>
+                                    <div class="med_pull_left">Rejected</div>
+                                </div>
+                                <div class="med_pull_left med_paddingR20">
+                                    <div class="fa_mednet fa-circle med_listStatus_circle med_listStatus_orange med_marginR5"></div>
+                                    <div class="med_pull_left">In progress</div>
+                                </div>
+                                <div class="med_pull_left">
+                                    <div class="fa_mednet fa-circle med_listStatus_circle med_listStatus_blue med_marginR5"></div>
+                                    <div class="med_pull_left">Hold</div>
+                                </div>
+                                <div class="med_clear"></div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Filter checkbox</div>
+                            <div class="med_Width100pr med_marginT8">
+                                When the same colors also need to be interactive &mdash; the user can tick a color to show/hide matching rows &mdash; use the square filter checkbox pattern instead of a plain legend dot. med_squareFilter takes a color modifier:
+                            </div>
+                            <div class="med_Width100pr med_marginT8 med_fontBold">
+                               med_squareFilter-green, med_squareFilter-white, med_squareFilter-gray, med_squareFilter-blue, med_squareFilter-purple, med_squareFilter-red , med_squareFilter-orange
+                            </div>
+                            <div class="med_Width100pr med_marginT8">
+                                Keep the exact same color-to-status mapping as the legend above, so a filter checkbox reads as "the same status, now filterable" and not a new color scheme. See it live in the <span class="med_fontBold">Web tab &rarr; List Grid View</span> section, above the patient queue grid.
+                            </div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_squareFilter med_squareFilter-white med_paddingR20">
+                                    <input type="checkbox" id="guidelineFilter_white" class="med_pointer" autocomplete="off">
+                                    <label for="guidelineFilter_white" class="med_pointer">Present</label>
+                                </div>
+                                <div class="med_squareFilter med_squareFilter-green med_paddingR20">
+                                    <input type="checkbox" id="guidelineFilter_green" class="med_pointer" autocomplete="off">
+                                    <label for="guidelineFilter_green" class="med_pointer">Active</label>
+                                </div>
+                                <div class="med_squareFilter med_squareFilter-red med_paddingR20">
+                                    <input type="checkbox" id="guidelineFilter_red" class="med_pointer" autocomplete="off">
+                                    <label for="guidelineFilter_red" class="med_pointer">Inactive</label>
+                                </div>
+                                <div class="med_squareFilter med_squareFilter-orange med_paddingR20">
+                                    <input type="checkbox" id="guidelineFilter_orange" class="med_pointer" autocomplete="off">
+                                    <label for="guidelineFilter_orange" class="med_pointer">In progress</label>
+                                </div>
+                                <div class="med_squareFilter med_squareFilter-blue">
+                                    <input type="checkbox" id="guidelineFilter_blue" class="med_pointer" autocomplete="off">
+                                    <label for="guidelineFilter_blue" class="med_pointer">Hold</label>
+                                </div>
+                                <div class="med_clear"></div>
+                            </div>
+                           
+                        </div>
+
+                        <!-- 3. Typography -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">3. Typography Scale</div>
+                            <div class="med_Width100pr med_marginT10">Pick heading size by the role of the text, not by how "important" it feels on the day:</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_heading2</span> (2em) &mdash; Page title (one per screen)</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_heading1_8</span> (1.8em) &mdash; Section title</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_heading1_5</span> (1.5em) &mdash; Card / popup title</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_heading1_3</span> (1.3em) &mdash; Sub-heading / primary field in a grid row (e.g. patient name)</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_heading1_2</span> (1.2em) &mdash; In-body emphasis text</div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Spacing -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">4. Spacing &amp; Gaping</div>
+                            <div class="med_Width100pr med_marginT10">
+                                Always use the existing <span class="med_fontBold">med_padding*</span> / <span class="med_fontBold">med_margin*</span> utility classes instead of hardcoding inline px values &mdash; this keeps gaps predictable across screens and makes a global spacing change possible from one place.
+                            </div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_padding3 / med_padding5</span> (3&ndash;5px) &mdash; Tight spacing inside badges, status chips, icon-only cells</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_padding10</span> (10px) &mdash; Default card / popup / form-section padding</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_padding15 / med_padding20</span> (15&ndash;20px) &mdash; Outer page padding, spacing between grouped sections</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_marginT5</span> (5px) &mdash; Gap between a label and its value (e.g. name + sub-text in a grid card)</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_marginT7</span> (7px) &mdash; Gap between stacked rows &mdash; the most commonly used row gap in this library</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_marginT10</span> (10px) &mdash; Gap between stacked fields / rows of controls</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">med_marginT20</span> (20px) &mdash; Gap between two major sections or two cards</div>
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_smallGreyText">
+                                Row lists use 5px vertical padding (med_tableRowDiv), grid cards use a 7&ndash;8px gap (med_gridListEven / med_gridListOdd), popup content uses 10px &mdash; keep new components aligned to these instead of inventing a new value.
+                            </div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Standard row pattern</div>
+                            <div class="med_Width100pr med_marginT8">
+                                To stack lines of content vertically (labels, instructions, checklist items, one fact per line), wrap each line in its own full-width row: <span class="med_fontBold">med_Width100pr</span> for the row so it always spans the container, plus <span class="med_fontBold">med_marginT7</span> for a consistent 7px gap above it. This is the most commonly used row gap in this library &mdash; reuse it instead of building a new row wrapper.
+                            </div>
+                        </div>
+
+                        <!-- 5. Buttons -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">5. Buttons &mdash; Small vs Medium</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Medium (28px)</span> &mdash; med_primaryBtn_md, med_secondaryBtn_md, med_successBtn_md, med_dangerBtn_md, med_warningBtn_md &mdash; Page / form footers, toolbars, popup footers &mdash; anywhere the button is a primary, page-level action.</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Small (24px)</span> &mdash; med_primaryBtn_sm, med_secondaryBtn_sm, med_successBtn_sm, med_dangerBtn_sm, med_warningBtn_sm &mdash; Inline actions inside a table row / list row, filter bars, compact toolbars &mdash; anywhere space is tight and the action is local to one row.</div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Icon Buttons -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">6. Icon Buttons in Lists</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">28px</span> (med_iconBtn) &mdash; Toolbar / header actions</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">24px</span> (med_iconBtn_sm) &mdash; Row actions in list / table (edit, view, delete)</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">20px</span> (med_iconBtn_Xsm) &mdash; Dense grids / chips</div>
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_smallGreyText">
+                                Inside a list/table row, keep row-action icons hidden until hover (med_onHoverBlock, as used in "List View") so the row stays clean &mdash; and never mix a 28px icon with 24px icons in the same row.
+                            </div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Status icon vs action icon</div>
+                            <div class="med_Width100pr med_marginT8">
+                                Not every icon is clickable &mdash; pick the class based on whether something happens when the user clicks it.
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                <div class="med_heading1_2 med_fontBold">Status Icon (med_iconStatus)</div>
+                                <div class="med_marginT5 med_Width100pr">Use when the icon only shows information or helps the user understand something at a glance &mdash; a bug flag, an emergency marker, a read-only indicator. It has no onclick, no hover background, no cursor pointer &mdash; just a glyph with a title tooltip. Never wire a click action to it; if it needs to be clickable, it isn't a status icon anymore.</div>
+                                <div class="med_marginT5 med_Width100pr">
+                                    <div class="fa_mednet fa-bug med_iconStatus med_colorRed" title="Bug"></div>
+                                    <div class="fa_mednet fa-check med_iconStatus med_colorGreen med_marginL10" title="Done"></div>
+                                    <div class="fa_mednet fa-ambulance med_iconStatus med_marginL10" title="Emergency"></div>
+                                </div>
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                <div class="med_heading1_2 med_fontBold">Action Icon (med_icons)</div>
+                                <div class="med_marginT5 med_Width100pr">Use when clicking the icon actually does something &mdash; opens a popup, toggles a view, triggers copy/edit/delete. It has a hover background and a pointer cursor so the user can tell it's interactive before they click it.</div>
+                                <div class="med_marginT5 med_Width100pr">
+                                    <div class="fa_mednet fa-clone med_icons" title="Copy"></div>
+                                    <div class="fa_mednet fa-eye med_icons" title="View"></div>
+                                    <div class="fa_mednet fa-pencil med_icons" title="Edit"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Form Inputs -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">7. Form Inputs &mdash; Select, Combo, Textarea, Radio, Checkbox</div>
+                            <div class="med_Width100pr med_marginT10">
+                                Pick the input by <span class="med_fontBold">how the value is chosen</span> and <span class="med_fontBold">where the option list comes from</span> &mdash; not by habit or what looks familiar.
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Select Option</div>
+                                <div class="med_marginT5 med_Width100pr">Use for a short, fixed, already-known list (roughly under 15 options) that doesn't need searching &mdash; e.g. Gender, Status, a fixed country list. Native &lt;select&gt; is fast and keyboard-accessible with no extra JS.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Combo Box</div>
+                                <div class="med_marginT5 med_Width100pr">Use when the option list is long, needs to be searched by typing, or is fetched from the backend as the user types &mdash; e.g. patient search, doctor lookup, product search across thousands of records. Never use it for a short fixed list &mdash; that's what Select Option is for.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Search Bar</div>
+                                <div class="med_marginT5     med_Width100pr">Same input look as Combo Box, but its job is <span class="med_fontBold">filtering a list or table</span> below it, not picking one value into a form field. Don't reuse it as a form input, and don't build a Combo Box when what you actually need is a Search Bar.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Textarea</div>
+                                <div class="med_marginT5 med_Width100pr">Use for free-form multi-line text the user types themselves &mdash; notes, remarks, addresses, descriptions. If the content needs formatting (bold, lists, links), use the Text Editor (TinyMCE) component instead of a plain textarea.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Radio Button</div>
+                                <div class="med_marginT5 med_Width100pr">Use when the user must pick exactly one option out of 2&ndash;5 choices and all choices should stay visible for comparison &mdash; e.g. Yes/No, reconciliation status. More than ~5 options should be a Select Option or Combo Box instead, so the choices don't take over the screen.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Checkbox Single Selection</div>
+                                <div class="med_marginT5 med_Width100pr">Visually a checkbox, but it's a radio group underneath (only one can stay checked) &mdash; use this look when a vertical list of single-choice options needs a checkbox shape instead of a round radio dot.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_heading1_2 med_fontBold med_Width100pr">Checkbox</div>
+                                <div class="med_marginT5 med_Width100pr">Use when the user can select zero, one, or many options independently, or for a single yes/no toggle of one setting. Checking one box never unchecks another.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10 med_smallGreyText">
+                                Never build a custom dropdown or autocomplete from scratch &mdash; Select Option and Combo Box already cover "fixed list" and "searched / backend list" respectively. Picking the wrong one is the most common cause of duplicate, near-identical input components in this library.
+                            </div>
+                        </div>
+
+                        <!-- 8. Lists / Grid / Table -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">8. List vs Div-Table vs Table vs Grid View</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Plain list (ul / li)</span> &mdash; Single line, non-tabular content with no column alignment needed &mdash; nav menus, dropdown options, notification/activity feeds, search suggestions.</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Row List &mdash; "List View" (med_listHeader + med_tableRowDiv)</span> &mdash; Each record fits in 1&ndash;2 lines and needs column alignment, an inline search header, and row actions on hover. Best for plain single-color record lists (journals, transactions, simple masters).</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Grid View (med_gridListEven / med_gridListOdd)</span> &mdash; Each record has <span class="med_fontBold">multi-line data</span> (2+ lines per column, e.g. name + doctor, MRN + visit no) <span class="med_fontBold">or</span> the row itself needs to be color-coded by status (e.g. patient queue, appointment state). Card-style rows stay readable once a row carries more than one line or a status color &mdash; a plain row list gets cramped.</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Table Using Div (med_TableHeader + med_RowDivTable)</span> &mdash; Needs strict table columns but the cells contain custom widgets &mdash; badges, icon buttons, inline edit controls &mdash; that are awkward inside a native &lt;table&gt;, or needs flexible sticky/responsive column widths.</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Native Table (&lt;table&gt; + med_listTable / med_staticTable)</span> &mdash; Pure tabular / reference / reporting data: printouts, exports, master data grids &mdash; anywhere data may be copy-pasted into Excel, or a screen reader needs real thead/tbody/th semantics.</div>
+                            </div>
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Quick decision rule</div>
+                            <div class="med_Width100pr med_marginT8">
+                                <div class="med_marginT5 med_Width100pr">1 line, no columns &rarr; ul/li</div>
+                                <div class="med_marginT5 med_Width100pr">1&ndash;2 lines, column-aligned &rarr; Row List</div>
+                                <div class="med_marginT5 med_Width100pr">2+ lines or status color per row &rarr; Grid View</div>
+                                <div class="med_marginT5 med_Width100pr">Strict columns + custom widgets &rarr; Div Table</div>
+                                <div class="med_marginT5 med_Width100pr">Strict columns, exportable/printable &rarr; Native Table</div>
+                            </div>
+                        </div>
+
+                        <!-- 9. Popups -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">9. Popup / Dialog Size</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Small</span> (med_commonPopupSm, 35% width, min-height 200px) &mdash; Confirmations, alerts that need one input, very short forms (1&ndash;4 fields)</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Medium</span> (med_commonPopupMd, 50% x 50%) &mdash; Standard create / edit forms &mdash; the default choice for most dialogs</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Large</span> (med_commonPopupLg, 85% x 85%) &mdash; Multi-tab forms, or a form that embeds a list/table/grid</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Full Screen</span> (med_commonPopupFs, 100% x 100%) &mdash; Wizards / record editors that need the full workspace</div>
+                                <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Sider</span> (med_commonPopupSide, right-side drawer) &mdash; Contextual panels that must not block the main screen &mdash; filters, quick view, notifications</div>
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_smallGreyText">Rule: pick the smallest size that fits the content without heavy scrolling. Don't open Full Screen for a 3-field form, and don't cram a data table into a Small popup.</div>
+                        </div>
+
+                        <!-- 10. Common Look-alikes -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">10. Common Look-alikes &mdash; Don't Mix These Up</div>
+                            <div class="med_Width100pr med_marginT10">
+                                These pairs look or sound similar in this library but solve different problems &mdash; picking the wrong one is a frequent source of duplicate components.
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                <div class="med_heading1_2 med_fontBold">Toggle Switch vs Checkbox</div>
+                                <div class="med_marginT8"><span class="med_fontBold">Toggle Switch</span> (med_switch / med_switchToggle) &mdash; an on/off setting that applies immediately when flipped, no Save button needed (e.g. "Enable notifications"). <span class="med_fontBold">Checkbox</span> (med_fancy-checkbox) &mdash; a selection that's part of a form and only takes effect when the form is submitted/saved. If flipping it doesn't do anything until Save, it's a checkbox, not a toggle.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                <div class="med_heading1_2 med_fontBold">Accordion Panel vs Collapse Panel</div>
+                                <div class="med_marginT8"><span class="med_fontBold">Accordion Panel</span> (med_accordionTitle + med_accordionContent, repeated) &mdash; several grouped sections shown as one list, each independently expandable (e.g. a FAQ, a list of departments). <span class="med_fontBold">Collapse Panel</span> &mdash; the same expand/collapse look, but for a single standalone block (e.g. "Show advanced options"). Don't reach for a full Accordion when you only have one thing to expand.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                <div class="med_heading1_2 med_fontBold">Dialog Box vs Popup</div>
+                                <div class="med_marginT8">Despite the name, <span class="med_fontBold">Dialog Box</span> (med_dialogBox + med_listDialogBox) in this library is a small <span class="med_fontBold">dropdown menu</span> attached under a trigger button (click-toggle or med_onHover) for a handful of quick actions &mdash; e.g. a user profile menu (Edit Profile / Log out / Setting). It does not block the screen. For an actual modal that blocks the screen and needs Save/Close, use <span class="med_fontBold">Popup</span> (med_commonPopup*, covered in section 9) instead.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                <div class="med_heading1_2 med_fontBold">Tooltip vs Alert Message vs Top Alert</div>
+                                <div class="med_marginT8">
+                                    <span class="med_fontBold">Tooltip</span> (med_tooltip, shown on med_onHover) &mdash; an optional hint next to a control. Content here must never be critical (see rule 14 in section 1 above: don't hide critical information behind hover).<br>
+                                    <span class="med_fontBold">Alert Message</span> (med_AlertSlot, success/error/info variants) &mdash; a persistent, dismissible message embedded in the page, for detailed context tied to a specific section or form.<br>
+                                    <span class="med_fontBold">Top Alert</span> (med_msgTop, auto-hide) &mdash; a transient toast-style confirmation right after an action (e.g. "Saved Successfully") that disappears on its own; don't use it for anything the user must actively read and act on.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT20" id="responsiveAccessGuideline">
+                            <div class="med_heading1_8 med_fontBold">Responsive &amp; Accessibility</div>
+                            <div class="med_Width100pr med_marginT10">
+                                This page is currently built for a fixed desktop layout &mdash; the CSS has no responsive breakpoints (only a print stylesheet). The notes below give a target breakpoint scale and the accessibility gaps to fix as new screens are built, so the component library scales down cleanly instead of every screen inventing its own fix.
+                            </div>
+                        </div>
+
+                        <!-- 11. Resolution / Breakpoints -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">11. Screen Resolution / Breakpoints</div>
+                            <div class="med_Width100pr med_marginT10">Design and test every screen at these widths. Treat them as the minimum guaranteed set &mdash; not just the two ends of the range.</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                    <div class="med_heading1_2 med_fontBold">Mobile</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Width range:</span> 320px &ndash; 480px</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Reference resolution:</span> 360x800, 390x844, 414x896</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Layout guidance:</span> Single column. Stack med_Width* columns to 100% width, hide the left nav behind a toggle, move row actions into a menu instead of inline icons.</div>
+                                </div>
+                                <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                    <div class="med_heading1_2 med_fontBold">Tablet (portrait)</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Width range:</span> 481px &ndash; 768px</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Reference resolution:</span> 600x960, 768x1024</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Layout guidance:</span> 1&ndash;2 columns. Collapse low-priority table/grid columns (date, secondary IDs) and reveal them on row-tap instead of showing every column.</div>
+                                </div>
+                                <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                    <div class="med_heading1_2 med_fontBold">Tablet (landscape) / Small laptop</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Width range:</span> 769px &ndash; 1024px</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Reference resolution:</span> 1024x768, 1024x1366</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Layout guidance:</span> Left nav can stay visible but narrower; reduce med_Width% column counts in list/grid headers so text doesn't wrap mid-word.</div>
+                                </div>
+                                <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                    <div class="med_heading1_2 med_fontBold">Desktop</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Width range:</span> 1025px &ndash; 1440px</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Reference resolution:</span> 1280x720, 1366x768, 1440x900</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Layout guidance:</span> Default target &mdash; this is the resolution the current component library is built and tested against.</div>
+                                </div>
+                                <div class="med_Width100pr med_marginT10 med_border med_radius5 med_padding10">
+                                    <div class="med_heading1_2 med_fontBold">Large desktop / Full HD+</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Width range:</span> 1441px and above</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Reference resolution:</span> 1920x1080, 2560x1440</div>
+                                    <div class="med_marginT5 med_Width100pr"><span class="med_fontBold">Layout guidance:</span> Let content grow with med_Width% classes, but cap free-flow text/paragraph content with a max-width so lines don't stretch edge-to-edge and become hard to read.</div>
+                                </div>
+                            </div>
+                            <div class="med_Width100pr med_marginT10 med_smallGreyText">
+                                Since there are no @media rules yet for these ranges, any screen built for mobile/tablet needs its own breakpoint CSS today &mdash; plan for that rather than assuming the existing med_Width% classes alone will reflow correctly below 1024px.
+                            </div>
+                        </div>
+
+                        <!-- 12. Responsive layout rules -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">12. Responsive Layout Rules</div>
+                            <div class="med_Width100pr med_marginT10">
+                                <div class="med_marginT5 med_Width100pr">&#10003; Use the med_Width1pr&ndash;med_Width100pr percentage classes for column widths instead of fixed px, so columns shrink with the container.</div>
+                                <div class="med_marginT5 med_Width100pr">&#10003; Wrap wide list/grid/table headers in med_overflowData so they scroll horizontally on narrow screens instead of squeezing every column unreadable.</div>
+                                <div class="med_marginT5 med_Width100pr">&#10003; Use med_textEllipsis on long single-line text (names, file paths) inside constrained columns rather than letting it wrap and break row height.</div>
+                                <div class="med_marginT5 med_Width100pr">&#10003; Popups: prefer Medium/Large (%-based) over a fixed-px custom size &mdash; they already scale with viewport. Full Screen is the safest choice on small viewports.</div>
+                                <div class="med_marginT5 med_Width100pr">&#8998; Don't add new fixed-px side rails (like the 168px left nav) &mdash; every extra fixed rail is one more thing that has to be hidden manually below tablet width.</div>
+                                <div class="med_marginT5 med_Width100pr">&#8998; Don't rely on hover-only interactions (row action icons, tooltips) as the only way to reach a control &mdash; touch screens have no hover, so also make the action reachable by tap.</div>
+                            </div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">When the layout still doesn't fit</div>
+                            <div class="med_Width100pr med_marginT8">
+                                The med_Width% classes and the rules above cover most cases, but they don't reflow columns or hide/stack elements on their own. If a specific component still looks broken at one of the breakpoints in section 11 (Screen Resolution / Breakpoints) &mdash; overlapping text, a squeezed table, a left nav with no room left &mdash; add a targeted <span class="med_fontBold">@media</span> query for that component at the matching breakpoint width, instead of forcing it to work with spacing/width classes alone.
+                            </div>
+                            <div class="med_Width100pr med_marginT8">
+                                <div class="med_marginT5">&#10003; Scope the media query to the one component that's broken, not the whole page.</div>
+                                <div class="med_marginT5">&#10003; Match the breakpoint width to the device classes in section 11, so every component breaks at the same points.</div>
+                                <div class="med_marginT5">&#8998; Don't add a media query as a first attempt &mdash; only after the existing med_Width%/med_overflowData/med_textEllipsis rules genuinely can't fix it.</div>
+                            </div>
+                        </div>
+
+                        <!-- 13. Accessibility -->
+                        <div class="med_Width100pr med_marginT10 med_borderTop med_paddingT15">
+                            <div class="med_heading1_5 med_fontBold">13. Accessibility Guideline</div>
+                            <div class="med_Width100pr med_marginT10 med_heading1_2 med_fontBold">Icons &amp; icon buttons</div>
+                            <div class="med_Width100pr med_marginT8">Every icon-only control (med_icons, med_iconBtn / _sm / _Xsm) already carries a <span class="med_fontBold">title</span> attribute in most places &mdash; keep that as the minimum. None currently carry <span class="med_fontBold">aria-label</span>; add one wherever the icon is the only clue to what it does, since <span class="med_fontBold">title</span> alone is not reliably read by all screen readers.</div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Images</div>
+                            <div class="med_Width100pr med_marginT8">Most &lt;img&gt; tags in this project have no alt text. Every meaningful image (signatures, logos, barcodes that carry information) needs a descriptive <span class="med_fontBold">alt</span>; purely decorative images (footers, dividers) should use <span class="med_fontBold">alt=""</span> so screen readers skip them.</div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Keyboard &amp; focus</div>
+                            <div class="med_Width100pr med_marginT8">Clickable &lt;div&gt; controls (tabs, toggle pills, round buttons) need <span class="med_fontBold">tabindex="0"</span> plus an Enter/Space key handler to be keyboard-reachable &mdash; the Pause/Resume/Stop round buttons already do this, reuse that same pattern for every new custom control instead of a plain onclick div. Keep tabindex values at "0" (natural tab order) or "-1" (focus by script only) &mdash; don't assign an arbitrary custom number, it breaks as soon as the layout changes.</div>
+
+                            <div class="med_Width100pr med_marginT15 med_heading1_2 med_fontBold">Color &amp; status</div>
+                            <div class="med_Width100pr med_marginT8">Never let color be the only signal for status. The existing pattern already pairs a status color with a text label (e.g. a green dot next to the word "Completed") &mdash; always keep that pairing so colorblind users aren't reading color alone.</div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Guideline end-->
+
+        </div>
+    </div>
+
 
 </div>
 

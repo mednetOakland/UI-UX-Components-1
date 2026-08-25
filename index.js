@@ -760,30 +760,27 @@ function toggleVerticalTabs(com){
     }
 }
 
-// Toggle screen web and print view
+// Toggle screen web, print and guideline view
 function toggleWebPrint(com){
     var myData = new Array();
     myData[0] = 'webTabDIV';
     myData[1] = 'printTabDIV';
+    myData[2] = 'guidelineTabDIV';
 
     var myData1 = new Array();
-    myData1[0] = 'webDataDIV';
-    myData1[1] = 'printDataDIV';
+    myData1[0] = 'showForWeb';
+    myData1[1] = 'showForPrint';
+    myData1[2] = 'showForGuideline';
 
     for(var i=0 ; i < myData.length ; i++){
         if(com.id == myData[i]){
             $('#'+myData[i]).removeClass("tabWebPrint");
             $('#'+myData[i]).addClass("tabWebPrint-active");
             document.getElementById(myData1[i]).style.display = 'block';
-            document.getElementById('showForWeb').style.display = 'none';
-            document.getElementById('showForPrint').style.display = 'block';
         }else{
             $('#'+myData[i]).removeClass("tabWebPrint-active");
             $('#'+myData[i]).addClass("tabWebPrint");
             document.getElementById(myData1[i]).style.display = 'none';
-            document.getElementById('showForWeb').style.display = 'block';
-            document.getElementById('showForPrint').style.display = 'none';
-
         }
     }
 }
