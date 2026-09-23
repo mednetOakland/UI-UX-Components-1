@@ -1038,84 +1038,74 @@ tinymce.init({
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
 });
 
+
+//Use for Drag the popup and Reset
 function dragElement(elmnt) {
-    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+	let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+	const header = elmnt.querySelector(".med_header_draggable");
+	(header || elmnt).onmousedown = (e) => {
+		e.preventDefault();
 
-    const header = elmnt.querySelector(".med_header_draggable");
+		const rect = elmnt.getBoundingClientRect();
+		const parentRect = (elmnt.offsetParent || document.body).getBoundingClientRect();
+		elmnt.style.left = (rect.left - parentRect.left) + "px";
+		elmnt.style.top = (rect.top - parentRect.top) + "px";
+		elmnt.style.transform = "none";
+		elmnt.style.margin = "0";
+		elmnt.style.position = "absolute";
 
-    (header || elmnt).onmousedown = (e) => {
-        e.preventDefault();
+		pos3 = e.clientX;
+		pos4 = e.clientY;
 
-        // Get current screen position
-        const rect = elmnt.getBoundingClientRect();
+		document.onmouseup = () => {
+			document.onmouseup = null;
+			document.onmousemove = null;
+		};
 
-        // Set pixel position from screen
-        elmnt.style.left = `${rect.left + window.scrollX}px`;
-        elmnt.style.top = `${rect.top + window.scrollY}px`;
+		document.onmousemove = (e) => {
+			e.preventDefault();
 
-        // Remove transform and margin so it doesn't affect positioning
-        elmnt.style.transform = "none";
-        elmnt.style.margin = "0";
-        elmnt.style.position = "absolute";
+			pos1 = pos3 - e.clientX;
+			pos2 = pos4 - e.clientY;
+			pos3 = e.clientX;
+			pos4 = e.clientY;
 
-        // Set mouse starting positions
-        pos3 = e.clientX;
-        pos4 = e.clientY;
+			let newTop = elmnt.offsetTop - pos2;
+			let newLeft = elmnt.offsetLeft - pos1;
 
-        document.onmouseup = () => {
-            document.onmouseup = null;
-            document.onmousemove = null;
-        };
+			const maxLeft = window.innerWidth - elmnt.offsetWidth;
+			const maxTop = window.innerHeight - elmnt.offsetHeight;
 
-        document.onmousemove = (e) => {
-            e.preventDefault();
+			newLeft = Math.min(Math.max(newLeft, 0), maxLeft);
+			newTop = Math.min(Math.max(newTop, 0), maxTop);
 
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-
-            let newTop = elmnt.offsetTop - pos2;
-            let newLeft = elmnt.offsetLeft - pos1;
-
-            // Clamp inside viewport
-            const maxLeft = window.innerWidth - elmnt.offsetWidth;
-            const maxTop = window.innerHeight - elmnt.offsetHeight;
-
-            newLeft = Math.min(Math.max(newLeft, 0), maxLeft);
-            newTop = Math.min(Math.max(newTop, 0), maxTop);
-
-            elmnt.style.left = newLeft + "px";
-            elmnt.style.top = newTop + "px";
-        };
-    };
+			elmnt.style.left = newLeft + "px";
+			elmnt.style.top = newTop + "px";
+		};
+	};
 }
 
 function fixElementPosition(triggerElmnt) {
-    const popup = triggerElmnt.closest('.med_commonPopup_draggable');
-    if (popup) {
-        popup.style.position = 'absolute';
-        popup.style.top = '50%';
-        popup.style.left = '50%';
-        popup.style.transform = 'translate(-50%, -50%)';
-
-        // Remove previous inline left/top set during drag
-        popup.style.removeProperty('left');
-        popup.style.removeProperty('top');
-        popup.style.removeProperty('margin');
-    }
+	const popup = triggerElmnt.closest('.med_commonPopup_draggable');
+	if (popup) {
+		popup.style.position = 'absolute';
+		popup.style.top = '50%';
+		popup.style.left = '50%';
+		popup.style.transform = 'translate(-50%, -50%)';
+		popup.style.removeProperty('margin');
+	}
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".med_commonPopup_draggable").forEach(elmnt => {
-        dragElement(elmnt);
-    });
+	document.querySelectorAll(".med_commonPopup_draggable").forEach(elmnt => {
+		dragElement(elmnt);
+	});
 
-    document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
-        elmnt.addEventListener('click', () => {
-            fixElementPosition(elmnt);
-        });
-    });
+	document.querySelectorAll(".med_resetPosition").forEach(elmnt => {
+		elmnt.addEventListener('click', () => {
+			fixElementPosition(elmnt);
+		});
+	});
 });
 
 //toggleEye for Company header
